@@ -24,9 +24,7 @@
 		B7E9B9251FCF710C00234840 /* LoanFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9B9241FCF710C00234840 /* LoanFinder.swift */; };
 		B7E9B9271FCF711700234840 /* Loan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9B9261FCF711700234840 /* Loan.swift */; };
 		B7E9B92A1FCF773A00234840 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9B9291FCF773A00234840 /* LoginViewController.swift */; };
-		D34FAC561FCFF37E0008A8AF /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = D34FAC531FCFF37D0008A8AF /* home.png */; };
-		D34FAC571FCFF37E0008A8AF /* wallet.png in Resources */ = {isa = PBXBuildFile; fileRef = D34FAC541FCFF37D0008A8AF /* wallet.png */; };
-		D34FAC581FCFF37E0008A8AF /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = D34FAC551FCFF37E0008A8AF /* calendar.png */; };
+		D34FAC5A1FCFF6F80008A8AF /* SignUpInfo1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34FAC591FCFF6F80008A8AF /* SignUpInfo1ViewController.swift */; };
 		E815D4F11FCFDFEC005CB34F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E815D4F01FCFDFEC005CB34F /* SignUpViewController.swift */; };
 		E815D4F31FCFE1C1005CB34F /* RepaymentPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = E815D4F21FCFE1C1005CB34F /* RepaymentPlan.swift */; };
 /* End PBXBuildFile section */
@@ -51,9 +49,7 @@
 		B7E9B9241FCF710C00234840 /* LoanFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanFinder.swift; sourceTree = "<group>"; };
 		B7E9B9261FCF711700234840 /* Loan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loan.swift; sourceTree = "<group>"; };
 		B7E9B9291FCF773A00234840 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		D34FAC531FCFF37D0008A8AF /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = ../../../../Downloads/home.png; sourceTree = "<group>"; };
-		D34FAC541FCFF37D0008A8AF /* wallet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wallet.png; path = ../../../../Downloads/wallet.png; sourceTree = "<group>"; };
-		D34FAC551FCFF37E0008A8AF /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = calendar.png; path = ../../../../Downloads/calendar.png; sourceTree = "<group>"; };
+		D34FAC591FCFF6F80008A8AF /* SignUpInfo1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInfo1ViewController.swift; sourceTree = "<group>"; };
 		E815D4F01FCFDFEC005CB34F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E815D4F21FCFE1C1005CB34F /* RepaymentPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepaymentPlan.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -140,9 +136,6 @@
 		D34FAC4C1FCFECB60008A8AF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D34FAC551FCFF37E0008A8AF /* calendar.png */,
-				D34FAC531FCFF37D0008A8AF /* home.png */,
-				D34FAC541FCFF37D0008A8AF /* wallet.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -151,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				E815D4F01FCFDFEC005CB34F /* SignUpViewController.swift */,
+				D34FAC591FCFF6F80008A8AF /* SignUpInfo1ViewController.swift */,
 			);
 			name = SignUp;
 			path = "New Group";
@@ -215,11 +209,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D34FAC561FCFF37E0008A8AF /* home.png in Resources */,
-				D34FAC581FCFF37E0008A8AF /* calendar.png in Resources */,
 				B7A264B21FBF996400893AFE /* LaunchScreen.storyboard in Resources */,
 				B7A264AF1FBF996400893AFE /* Assets.xcassets in Resources */,
-				D34FAC571FCFF37E0008A8AF /* wallet.png in Resources */,
 				B7A264AA1FBF996400893AFE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +236,7 @@
 				B7E9B91F1FCF6E2300234840 /* TabBarViewController.swift in Sources */,
 				B7780C261FCFBCDE0093A2C9 /* PlansTableViewCell.swift in Sources */,
 				B7E9B92A1FCF773A00234840 /* LoginViewController.swift in Sources */,
+				D34FAC5A1FCFF6F80008A8AF /* SignUpInfo1ViewController.swift in Sources */,
 				B7A264AD1FBF996400893AFE /* Loana.xcdatamodeld in Sources */,
 				B7780C221FCFB67A0093A2C9 /* PlansViewController.swift in Sources */,
 			);
