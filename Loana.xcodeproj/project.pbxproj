@@ -9,9 +9,7 @@
 /* Begin PBXBuildFile section */
 		B766CC791FCFFEA600495638 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B766CC781FCFFEA600495638 /* HomeViewController.swift */; };
 		B774C8391FCFF4AB009DFC76 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B774C8381FCFF4AB009DFC76 /* SettingsViewController.swift */; };
-		B774C83D1FCFFA5E009DFC76 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = B774C83A1FCFFA5D009DFC76 /* calendar.png */; };
 		B774C83E1FCFFA5E009DFC76 /* wallet.png in Resources */ = {isa = PBXBuildFile; fileRef = B774C83B1FCFFA5E009DFC76 /* wallet.png */; };
-		B774C83F1FCFFA5E009DFC76 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = B774C83C1FCFFA5E009DFC76 /* home.png */; };
 		B7780C221FCFB67A0093A2C9 /* PlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7780C211FCFB67A0093A2C9 /* PlansViewController.swift */; };
 		B7780C261FCFBCDE0093A2C9 /* PlansTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7780C251FCFBCDE0093A2C9 /* PlansTableViewCell.swift */; };
 		B7780C281FCFC92F0093A2C9 /* PlanDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7780C271FCFC92F0093A2C9 /* PlanDetailViewController.swift */; };
@@ -31,7 +29,6 @@
 		D34FAC5A1FCFF6F80008A8AF /* SignUpInfo1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34FAC591FCFF6F80008A8AF /* SignUpInfo1ViewController.swift */; };
 		E815D4F11FCFDFEC005CB34F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E815D4F01FCFDFEC005CB34F /* SignUpViewController.swift */; };
 		E815D4F31FCFE1C1005CB34F /* RepaymentPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = E815D4F21FCFE1C1005CB34F /* RepaymentPlan.swift */; };
-		E815D5051FD003B5005CB34F /* wallet.png in Resources */ = {isa = PBXBuildFile; fileRef = E815D5021FD003B3005CB34F /* wallet.png */; };
 		E815D5061FD003B5005CB34F /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = E815D5031FD003B3005CB34F /* house.png */; };
 		E815D5071FD003B5005CB34F /* money.png in Resources */ = {isa = PBXBuildFile; fileRef = E815D5041FD003B4005CB34F /* money.png */; };
 /* End PBXBuildFile section */
@@ -39,9 +36,7 @@
 /* Begin PBXFileReference section */
 		B766CC781FCFFEA600495638 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B774C8381FCFF4AB009DFC76 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		B774C83A1FCFFA5D009DFC76 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
 		B774C83B1FCFFA5E009DFC76 /* wallet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wallet.png; sourceTree = "<group>"; };
-		B774C83C1FCFFA5E009DFC76 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		B7780C211FCFB67A0093A2C9 /* PlansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansViewController.swift; sourceTree = "<group>"; };
 		B7780C251FCFBCDE0093A2C9 /* PlansTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansTableViewCell.swift; sourceTree = "<group>"; };
 		B7780C271FCFC92F0093A2C9 /* PlanDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanDetailViewController.swift; sourceTree = "<group>"; };
@@ -63,7 +58,6 @@
 		D34FAC591FCFF6F80008A8AF /* SignUpInfo1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInfo1ViewController.swift; sourceTree = "<group>"; };
 		E815D4F01FCFDFEC005CB34F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E815D4F21FCFE1C1005CB34F /* RepaymentPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepaymentPlan.swift; sourceTree = "<group>"; };
-		E815D5021FD003B3005CB34F /* wallet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wallet.png; sourceTree = "<group>"; };
 		E815D5031FD003B3005CB34F /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = house.png; sourceTree = "<group>"; };
 		E815D5041FD003B4005CB34F /* money.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = money.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,12 +145,9 @@
 		D34FAC4C1FCFECB60008A8AF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B774C83A1FCFFA5D009DFC76 /* calendar.png */,
-				B774C83C1FCFFA5E009DFC76 /* home.png */,
 				B774C83B1FCFFA5E009DFC76 /* wallet.png */,
 				E815D5031FD003B3005CB34F /* house.png */,
 				E815D5041FD003B4005CB34F /* money.png */,
-				E815D5021FD003B3005CB34F /* wallet.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -231,13 +222,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7A264B21FBF996400893AFE /* LaunchScreen.storyboard in Resources */,
-				B774C83D1FCFFA5E009DFC76 /* calendar.png in Resources */,
-				B774C83F1FCFFA5E009DFC76 /* home.png in Resources */,
 				B7A264AF1FBF996400893AFE /* Assets.xcassets in Resources */,
 				B774C83E1FCFFA5E009DFC76 /* wallet.png in Resources */,
 				E815D5071FD003B5005CB34F /* money.png in Resources */,
 				E815D5061FD003B5005CB34F /* house.png in Resources */,
-				E815D5051FD003B5005CB34F /* wallet.png in Resources */,
 				B7A264AA1FBF996400893AFE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
