@@ -212,7 +212,7 @@
         <!--SignUpInfo1ViewController-->
         <scene sceneID="dZ2-Zd-zrU">
             <objects>
-                <viewController id="ni2-JA-Usg" userLabel="SignUpInfo1ViewController" sceneMemberID="viewController">
+                <viewController id="ni2-JA-Usg" userLabel="SignUpInfo1ViewController" customClass="SignUpInfo1ViewController" customModule="Loana" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1cF-Zh-3nf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -226,7 +226,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Kzm-qV-fok">
                                                 <rect key="frame" x="10" y="10" width="355" height="482.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXg-8D-sYk">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your marital status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXg-8D-sYk">
                                                         <rect key="frame" x="0.0" y="0.0" width="355" height="60.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -235,16 +235,19 @@
                                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z1J-xW-hpH">
                                                         <rect key="frame" x="0.0" y="60.5" width="355" height="60"/>
                                                     </pickerView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFC-QO-BXa">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your annual adjusted gross-income" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFC-QO-BXa">
                                                         <rect key="frame" x="0.0" y="120.5" width="355" height="60.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9m5-mO-hWw">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fpz-uu-AZ3">
                                                         <rect key="frame" x="0.0" y="181" width="355" height="60.5"/>
-                                                    </pickerView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmT-ME-5Lf">
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your state of residence" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmT-ME-5Lf">
                                                         <rect key="frame" x="0.0" y="241.5" width="355" height="60"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -253,7 +256,7 @@
                                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cCP-FI-DlH">
                                                         <rect key="frame" x="0.0" y="301.5" width="355" height="60.5"/>
                                                     </pickerView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdl-Kf-fvi">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you work in the public sector?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdl-Kf-fvi">
                                                         <rect key="frame" x="0.0" y="362" width="355" height="60"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -265,12 +268,12 @@
                                                 </subviews>
                                                 <constraints>
                                                     <constraint firstItem="TFC-QO-BXa" firstAttribute="width" secondItem="Kzm-qV-fok" secondAttribute="width" id="01N-bV-wd0"/>
-                                                    <constraint firstItem="9m5-mO-hWw" firstAttribute="width" secondItem="Kzm-qV-fok" secondAttribute="width" id="Dcc-Da-jIT"/>
                                                     <constraint firstItem="Z1J-xW-hpH" firstAttribute="width" secondItem="Kzm-qV-fok" secondAttribute="width" id="J0l-Hd-u0j"/>
                                                     <constraint firstItem="xWV-xQ-4Va" firstAttribute="width" secondItem="Kzm-qV-fok" secondAttribute="width" id="JGa-0M-kXa"/>
                                                     <constraint firstItem="jdl-Kf-fvi" firstAttribute="width" secondItem="Kzm-qV-fok" secondAttribute="width" id="VKj-rJ-Igo"/>
                                                     <constraint firstItem="cCP-FI-DlH" firstAttribute="width" secondItem="Kzm-qV-fok" secondAttribute="width" id="bkh-yh-Qi2"/>
                                                     <constraint firstItem="bXg-8D-sYk" firstAttribute="width" secondItem="Kzm-qV-fok" secondAttribute="width" id="wsz-Fp-baF"/>
+                                                    <constraint firstItem="fpz-uu-AZ3" firstAttribute="width" secondItem="Kzm-qV-fok" secondAttribute="width" id="z3S-J0-8bl"/>
                                                     <constraint firstItem="cmT-ME-5Lf" firstAttribute="width" secondItem="Kzm-qV-fok" secondAttribute="width" id="zhN-CR-Aas"/>
                                                 </constraints>
                                             </stackView>
@@ -319,6 +322,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7VP-u2-xfW"/>
                     </view>
+                    <connections>
+                        <outlet property="incomeTextField" destination="fpz-uu-AZ3" id="f97-V5-ybf"/>
+                        <outlet property="maritalStatusPicker" destination="Z1J-xW-hpH" id="ldh-k7-ghd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7kE-tu-FAw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
