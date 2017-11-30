@@ -18,8 +18,4 @@ class NavigationBar: UINavigationBar {
     }
     */
     
-    override func draw(_ rect: CGRect) {
-        // Drawing code
-    }
-
 }
