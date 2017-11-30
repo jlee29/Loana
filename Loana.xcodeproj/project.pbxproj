@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B766CC791FCFFEA600495638 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B766CC781FCFFEA600495638 /* HomeViewController.swift */; };
 		B774C8391FCFF4AB009DFC76 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B774C8381FCFF4AB009DFC76 /* SettingsViewController.swift */; };
+		B774C83D1FCFFA5E009DFC76 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = B774C83A1FCFFA5D009DFC76 /* calendar.png */; };
+		B774C83E1FCFFA5E009DFC76 /* wallet.png in Resources */ = {isa = PBXBuildFile; fileRef = B774C83B1FCFFA5E009DFC76 /* wallet.png */; };
+		B774C83F1FCFFA5E009DFC76 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = B774C83C1FCFFA5E009DFC76 /* home.png */; };
 		B7780C221FCFB67A0093A2C9 /* PlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7780C211FCFB67A0093A2C9 /* PlansViewController.swift */; };
 		B7780C261FCFBCDE0093A2C9 /* PlansTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7780C251FCFBCDE0093A2C9 /* PlansTableViewCell.swift */; };
 		B7780C281FCFC92F0093A2C9 /* PlanDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7780C271FCFC92F0093A2C9 /* PlanDetailViewController.swift */; };
@@ -30,7 +34,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B766CC781FCFFEA600495638 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B774C8381FCFF4AB009DFC76 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		B774C83A1FCFFA5D009DFC76 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
+		B774C83B1FCFFA5E009DFC76 /* wallet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wallet.png; sourceTree = "<group>"; };
+		B774C83C1FCFFA5E009DFC76 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		B7780C211FCFB67A0093A2C9 /* PlansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansViewController.swift; sourceTree = "<group>"; };
 		B7780C251FCFBCDE0093A2C9 /* PlansTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansTableViewCell.swift; sourceTree = "<group>"; };
 		B7780C271FCFC92F0093A2C9 /* PlanDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanDetailViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +109,7 @@
 				B7A264A61FBF996400893AFE /* ViewController.swift */,
 				B7E9B91E1FCF6E2300234840 /* TabBarViewController.swift */,
 				B7A264A81FBF996400893AFE /* Main.storyboard */,
+				B766CC781FCFFEA600495638 /* HomeViewController.swift */,
 				B774C8381FCFF4AB009DFC76 /* SettingsViewController.swift */,
 				B7E9B92B1FCF77BD00234840 /* SignIn */,
 				B7E9B9281FCF750B00234840 /* Model */,
@@ -136,6 +145,9 @@
 		D34FAC4C1FCFECB60008A8AF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B774C83A1FCFFA5D009DFC76 /* calendar.png */,
+				B774C83C1FCFFA5E009DFC76 /* home.png */,
+				B774C83B1FCFFA5E009DFC76 /* wallet.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -210,7 +222,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7A264B21FBF996400893AFE /* LaunchScreen.storyboard in Resources */,
+				B774C83D1FCFFA5E009DFC76 /* calendar.png in Resources */,
+				B774C83F1FCFFA5E009DFC76 /* home.png in Resources */,
 				B7A264AF1FBF996400893AFE /* Assets.xcassets in Resources */,
+				B774C83E1FCFFA5E009DFC76 /* wallet.png in Resources */,
 				B7A264AA1FBF996400893AFE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,6 +242,7 @@
 				B7A264A71FBF996400893AFE /* ViewController.swift in Sources */,
 				B7E9B91D1FCF65B000234840 /* WelcomeViewController.swift in Sources */,
 				B7E9B9211FCF6EF000234840 /* User.swift in Sources */,
+				B766CC791FCFFEA600495638 /* HomeViewController.swift in Sources */,
 				B7E9B9271FCF711700234840 /* Loan.swift in Sources */,
 				B7A264A51FBF996400893AFE /* AppDelegate.swift in Sources */,
 				B774C8391FCFF4AB009DFC76 /* SettingsViewController.swift in Sources */,
