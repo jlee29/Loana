@@ -14,12 +14,6 @@ class NavigationViewController: UINavigationController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let logo = UIImage(named: "hat30.png")
-        let imageView = UIImageView(image: logo)
-        imageView.contentMode = .scaleAspectFit
-    
-        self.navigationBar.topItem?.titleView = imageView
 
         // Do any additional setup after loading the view.
     }
@@ -27,6 +21,11 @@ class NavigationViewController: UINavigationController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+        super.pushViewController(viewController, animated: animated)
+        viewController.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
     }
     
 
