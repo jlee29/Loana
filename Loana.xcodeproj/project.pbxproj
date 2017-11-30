@@ -61,6 +61,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B7780C291FCFEFA40093A2C9 /* PlansTab */ = {
+			isa = PBXGroup;
+			children = (
+				B7780C211FCFB67A0093A2C9 /* PlansViewController.swift */,
+				B7780C251FCFBCDE0093A2C9 /* PlansTableViewCell.swift */,
+				B7780C271FCFC92F0093A2C9 /* PlanDetailViewController.swift */,
+			);
+			path = PlansTab;
+			sourceTree = "<group>";
+		};
 		B7A264981FBF996400893AFE = {
 			isa = PBXGroup;
 			children = (
@@ -81,13 +91,11 @@
 			isa = PBXGroup;
 			children = (
 				E815D4EF1FCFDFC9005CB34F /* SignUp */,
-				B7780C211FCFB67A0093A2C9 /* PlansViewController.swift */,
-				B7780C251FCFBCDE0093A2C9 /* PlansTableViewCell.swift */,
+				B7780C291FCFEFA40093A2C9 /* PlansTab */,
 				B7A264A41FBF996400893AFE /* AppDelegate.swift */,
 				B7A264A61FBF996400893AFE /* ViewController.swift */,
 				B7E9B91E1FCF6E2300234840 /* TabBarViewController.swift */,
 				B7A264A81FBF996400893AFE /* Main.storyboard */,
-				B7780C271FCFC92F0093A2C9 /* PlanDetailViewController.swift */,
 				B7E9B92B1FCF77BD00234840 /* SignIn */,
 				B7E9B9281FCF750B00234840 /* Model */,
 				B7A264AE1FBF996400893AFE /* Assets.xcassets */,

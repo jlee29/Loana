@@ -14,8 +14,11 @@ class PlansViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     func updatedPlan(_ plan: String) {
         currentPlanLabel.text = "Current plan is: " + plan
+        plans = allPlans.filter {$0 != plan}
+        plansTableView.reloadData()
     }
     
+    var allPlans = ["IBR", "PAYE", "ICR", "Standard", "Graduated", "Extended"]
     var plans = ["IBR", "PAYE", "ICR", "Standard", "Graduated", "Extended"]
     var currPlan: String?
 
