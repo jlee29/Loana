@@ -8,8 +8,9 @@
 
 import UIKit
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: UIViewController, UITextFieldDelegate {
     
+    @IBOutlet weak var emailTextField: UITextField!
     //MARK: - Properties
     
     @IBOutlet weak var passwordOne: UITextField!
@@ -39,6 +40,9 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        emailTextField.delegate = self
+        passwordOne.delegate = self
+        passwordTwo.delegate = self
         // Do any additional setup after loading the view.
     }
     
@@ -47,9 +51,13 @@ class SignUpViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         return validLogin
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     /*
      // MARK: - Navigation

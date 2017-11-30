@@ -1,27 +1,20 @@
 //
-//  LoginViewController.swift
+//  HomeViewController.swift
 //  Loana
 //
-//  Created by Jiwoo Lee on 11/29/17.
+//  Created by Jiwoo Lee on 11/30/17.
 //  Copyright © 2017 Jiwoo Lee. All rights reserved.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController, UITextFieldDelegate {
+class HomeViewController: UIViewController {
 
-    @IBOutlet weak var emailField: UITextField!
-    @IBOutlet weak var passwordField: UITextField!
-    
-    @IBAction func logIn(_ sender: UIButton) {
-        Session.shared.user.name = emailField.text!
-    }
+    @IBOutlet weak var welcomeLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        emailField.delegate = self
-        passwordField.delegate = self
+        welcomeLabel.text = "Welcome Back " + Session.shared.user.name
 
         // Do any additional setup after loading the view.
     }
@@ -29,11 +22,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
     }
     
 

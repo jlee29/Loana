@@ -12,6 +12,8 @@ class Session {
     static let shared = Session(loggedIn:true)
     init(loggedIn: Bool){
         self.loggedIn = loggedIn
+        self.user = User(name: "test name")
     }
     var loggedIn: Bool
+    var user: User
 }
