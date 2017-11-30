@@ -16,4 +16,6 @@ struct User {
     var publicSector: Bool
 //    var loanIdArr:
     var id: String
+    
+    var currLoan: Loan?
 }

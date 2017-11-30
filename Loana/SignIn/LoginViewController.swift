@@ -12,7 +12,6 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        Session.shared.new = false
 
         // Do any additional setup after loading the view.
     }

@@ -10,10 +10,4 @@ import Foundation
 
 class Session {
     static let shared = Session()
-    
-    var new: Bool
-    
-    private init() {
-        self.new = true
-    }
 }

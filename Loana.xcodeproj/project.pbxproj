@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B7780C221FCFB67A0093A2C9 /* PlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7780C211FCFB67A0093A2C9 /* PlansViewController.swift */; };
+		B7780C261FCFBCDE0093A2C9 /* PlansTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7780C251FCFBCDE0093A2C9 /* PlansTableViewCell.swift */; };
+		B7780C281FCFC92F0093A2C9 /* PlanDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7780C271FCFC92F0093A2C9 /* PlanDetailViewController.swift */; };
 		B7A264A51FBF996400893AFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A264A41FBF996400893AFE /* AppDelegate.swift */; };
 		B7A264A71FBF996400893AFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A264A61FBF996400893AFE /* ViewController.swift */; };
 		B7A264AA1FBF996400893AFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A264A81FBF996400893AFE /* Main.storyboard */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B7780C211FCFB67A0093A2C9 /* PlansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansViewController.swift; sourceTree = "<group>"; };
+		B7780C251FCFBCDE0093A2C9 /* PlansTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansTableViewCell.swift; sourceTree = "<group>"; };
+		B7780C271FCFC92F0093A2C9 /* PlanDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanDetailViewController.swift; sourceTree = "<group>"; };
 		B7A264A11FBF996400893AFE /* Loana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A264A41FBF996400893AFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7A264A61FBF996400893AFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,10 +76,13 @@
 		B7A264A31FBF996400893AFE /* Loana */ = {
 			isa = PBXGroup;
 			children = (
+				B7780C211FCFB67A0093A2C9 /* PlansViewController.swift */,
+				B7780C251FCFBCDE0093A2C9 /* PlansTableViewCell.swift */,
 				B7A264A41FBF996400893AFE /* AppDelegate.swift */,
 				B7A264A61FBF996400893AFE /* ViewController.swift */,
 				B7E9B91E1FCF6E2300234840 /* TabBarViewController.swift */,
 				B7A264A81FBF996400893AFE /* Main.storyboard */,
+				B7780C271FCFC92F0093A2C9 /* PlanDetailViewController.swift */,
 				B7E9B92B1FCF77BD00234840 /* SignIn */,
 				B7E9B9281FCF750B00234840 /* Model */,
 				B7A264AE1FBF996400893AFE /* Assets.xcassets */,
@@ -177,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7E9B9231FCF6FF000234840 /* Session.swift in Sources */,
+				B7780C281FCFC92F0093A2C9 /* PlanDetailViewController.swift in Sources */,
 				B7A264A71FBF996400893AFE /* ViewController.swift in Sources */,
 				B7E9B91D1FCF65B000234840 /* WelcomeViewController.swift in Sources */,
 				B7E9B9211FCF6EF000234840 /* User.swift in Sources */,
@@ -184,8 +194,10 @@
 				B7A264A51FBF996400893AFE /* AppDelegate.swift in Sources */,
 				B7E9B9251FCF710C00234840 /* LoanFinder.swift in Sources */,
 				B7E9B91F1FCF6E2300234840 /* TabBarViewController.swift in Sources */,
+				B7780C261FCFBCDE0093A2C9 /* PlansTableViewCell.swift in Sources */,
 				B7E9B92A1FCF773A00234840 /* LoginViewController.swift in Sources */,
 				B7A264AD1FBF996400893AFE /* Loana.xcdatamodeld in Sources */,
+				B7780C221FCFB67A0093A2C9 /* PlansViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
