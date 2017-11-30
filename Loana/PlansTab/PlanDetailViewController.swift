@@ -18,7 +18,14 @@ class PlanDetailViewController: UIViewController {
 
     @IBOutlet weak var testLabel: UILabel!
     
+    func confirmationHandler(alert: UIAlertAction!) {
+        navigationController?.popViewController(animated: true)
+    }
+    
     @IBAction func setPlan(_ sender: UIButton) {
+        let alert = UIAlertController(title: "Confirmation", message: "You've selected this plan!", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: confirmationHandler))
+        self.present(alert, animated: true, completion: nil)
         delegate?.updatedPlan(testLabel.text!)
     }
     
