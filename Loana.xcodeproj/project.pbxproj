@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B766CC791FCFFEA600495638 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B766CC781FCFFEA600495638 /* HomeViewController.swift */; };
+		B766CC7B1FD00C0400495638 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B766CC7A1FD00C0400495638 /* NavigationBar.swift */; };
 		B774C8391FCFF4AB009DFC76 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B774C8381FCFF4AB009DFC76 /* SettingsViewController.swift */; };
 		B774C83E1FCFFA5E009DFC76 /* wallet.png in Resources */ = {isa = PBXBuildFile; fileRef = B774C83B1FCFFA5E009DFC76 /* wallet.png */; };
 		B7780C221FCFB67A0093A2C9 /* PlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7780C211FCFB67A0093A2C9 /* PlansViewController.swift */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		B766CC781FCFFEA600495638 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B766CC7A1FD00C0400495638 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		B774C8381FCFF4AB009DFC76 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		B774C83B1FCFFA5E009DFC76 /* wallet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wallet.png; sourceTree = "<group>"; };
 		B7780C211FCFB67A0093A2C9 /* PlansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				B7A264A61FBF996400893AFE /* ViewController.swift */,
 				B7E9B91E1FCF6E2300234840 /* TabBarViewController.swift */,
 				B7A264A81FBF996400893AFE /* Main.storyboard */,
+				B766CC7A1FD00C0400495638 /* NavigationBar.swift */,
 				B766CC781FCFFEA600495638 /* HomeViewController.swift */,
 				B774C8381FCFF4AB009DFC76 /* SettingsViewController.swift */,
 				B7E9B92B1FCF77BD00234840 /* SignIn */,
@@ -255,6 +258,7 @@
 				D34FAC5A1FCFF6F80008A8AF /* SignUpInfo1ViewController.swift in Sources */,
 				B7A264AD1FBF996400893AFE /* Loana.xcdatamodeld in Sources */,
 				B7780C221FCFB67A0093A2C9 /* PlansViewController.swift in Sources */,
+				B766CC7B1FD00C0400495638 /* NavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
