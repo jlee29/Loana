@@ -98,7 +98,7 @@
         <!--SignUpViewController-->
         <scene sceneID="5Ce-Us-lfi">
             <objects>
-                <viewController id="b2r-wm-C86" userLabel="SignUpViewController" sceneMemberID="viewController">
+                <viewController id="b2r-wm-C86" userLabel="SignUpViewController" customClass="SignUpViewController" customModule="Loana" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EbM-dc-7sn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -489,31 +489,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="bSN-DY-Zh8">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebq-DS-Xmw">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="539"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="502.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nHB-24-EZs">
-                                                <rect key="frame" x="10" y="10" width="355" height="519"/>
+                                                <rect key="frame" x="10" y="10" width="355" height="482.5"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your loan provider:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Evs-TQ-wE5">
-                                                        <rect key="frame" x="0.0" y="0.0" width="355" height="130"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="355" height="120.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lkr-9M-pOe">
-                                                        <rect key="frame" x="0.0" y="130" width="355" height="129.5"/>
+                                                        <rect key="frame" x="0.0" y="120.5" width="355" height="121"/>
                                                     </pickerView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your loan ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avq-UP-yP4">
-                                                        <rect key="frame" x="0.0" y="259.5" width="355" height="130"/>
+                                                        <rect key="frame" x="0.0" y="241.5" width="355" height="120.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rVK-Zi-66z">
-                                                        <rect key="frame" x="0.0" y="389.5" width="355" height="129.5"/>
+                                                        <rect key="frame" x="0.0" y="362" width="355" height="120.5"/>
                                                     </pickerView>
                                                 </subviews>
                                                 <constraints>
@@ -533,10 +533,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ft-TJ-Hep">
-                                        <rect key="frame" x="0.0" y="539" width="375" height="108"/>
+                                        <rect key="frame" x="0.0" y="502.5" width="375" height="100.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hB-Ab-hdO">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="108"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="100.5"/>
                                                 <state key="normal" title="Connect Loan"/>
                                                 <connections>
                                                     <segue destination="m2T-PB-jvw" kind="presentation" id="sn7-c4-Rc5"/>
@@ -1412,6 +1412,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="PIR-kr-NNc"/>
-        <segue reference="50l-pj-hDB"/>
+        <segue reference="5Sl-3b-kAp"/>
     </inferredMetricsTieBreakers>
 </document>

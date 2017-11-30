@@ -9,5 +9,9 @@
 import Foundation
 
 class Session {
-    static let shared = Session()
+    static let shared = Session(loggedIn:true)
+    init(loggedIn: Bool){
+        self.loggedIn = loggedIn
+    }
+    var loggedIn: Bool
 }
