@@ -33,6 +33,7 @@
 		E815D5061FD003B5005CB34F /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = E815D5031FD003B3005CB34F /* house.png */; };
 		E815D5071FD003B5005CB34F /* money.png in Resources */ = {isa = PBXBuildFile; fileRef = E815D5041FD003B4005CB34F /* money.png */; };
 		E815D50D1FD01136005CB34F /* hat30.png in Resources */ = {isa = PBXBuildFile; fileRef = E815D50C1FD01136005CB34F /* hat30.png */; };
+		E815D5111FD01366005CB34F /* icons in Resources */ = {isa = PBXBuildFile; fileRef = E815D5101FD01365005CB34F /* icons */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		E815D5031FD003B3005CB34F /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = house.png; sourceTree = "<group>"; };
 		E815D5041FD003B4005CB34F /* money.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = money.png; sourceTree = "<group>"; };
 		E815D50C1FD01136005CB34F /* hat30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hat30.png; sourceTree = "<group>"; };
+		E815D5101FD01365005CB34F /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icons; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 		D34FAC4C1FCFECB60008A8AF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E815D5101FD01365005CB34F /* icons */,
 				E815D50C1FD01136005CB34F /* hat30.png */,
 				B774C83B1FCFFA5E009DFC76 /* wallet.png */,
 				E815D5031FD003B3005CB34F /* house.png */,
@@ -228,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7A264B21FBF996400893AFE /* LaunchScreen.storyboard in Resources */,
+				E815D5111FD01366005CB34F /* icons in Resources */,
 				B7A264AF1FBF996400893AFE /* Assets.xcassets in Resources */,
 				E815D50D1FD01136005CB34F /* hat30.png in Resources */,
 				B774C83E1FCFFA5E009DFC76 /* wallet.png in Resources */,
