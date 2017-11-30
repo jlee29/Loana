@@ -27,6 +27,9 @@
 		D34FAC5A1FCFF6F80008A8AF /* SignUpInfo1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34FAC591FCFF6F80008A8AF /* SignUpInfo1ViewController.swift */; };
 		E815D4F11FCFDFEC005CB34F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E815D4F01FCFDFEC005CB34F /* SignUpViewController.swift */; };
 		E815D4F31FCFE1C1005CB34F /* RepaymentPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = E815D4F21FCFE1C1005CB34F /* RepaymentPlan.swift */; };
+		E815D5051FD003B5005CB34F /* wallet.png in Resources */ = {isa = PBXBuildFile; fileRef = E815D5021FD003B3005CB34F /* wallet.png */; };
+		E815D5061FD003B5005CB34F /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = E815D5031FD003B3005CB34F /* house.png */; };
+		E815D5071FD003B5005CB34F /* money.png in Resources */ = {isa = PBXBuildFile; fileRef = E815D5041FD003B4005CB34F /* money.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,9 @@
 		D34FAC591FCFF6F80008A8AF /* SignUpInfo1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInfo1ViewController.swift; sourceTree = "<group>"; };
 		E815D4F01FCFDFEC005CB34F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E815D4F21FCFE1C1005CB34F /* RepaymentPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepaymentPlan.swift; sourceTree = "<group>"; };
+		E815D5021FD003B3005CB34F /* wallet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wallet.png; sourceTree = "<group>"; };
+		E815D5031FD003B3005CB34F /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = house.png; sourceTree = "<group>"; };
+		E815D5041FD003B4005CB34F /* money.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = money.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +142,9 @@
 		D34FAC4C1FCFECB60008A8AF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E815D5031FD003B3005CB34F /* house.png */,
+				E815D5041FD003B4005CB34F /* money.png */,
+				E815D5021FD003B3005CB34F /* wallet.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -211,6 +220,9 @@
 			files = (
 				B7A264B21FBF996400893AFE /* LaunchScreen.storyboard in Resources */,
 				B7A264AF1FBF996400893AFE /* Assets.xcassets in Resources */,
+				E815D5071FD003B5005CB34F /* money.png in Resources */,
+				E815D5061FD003B5005CB34F /* house.png in Resources */,
+				E815D5051FD003B5005CB34F /* wallet.png in Resources */,
 				B7A264AA1FBF996400893AFE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
