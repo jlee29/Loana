@@ -15,11 +15,17 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var passwordOne: UITextField!
     @IBOutlet weak var passwordTwo: UITextField!
     
+    var validLogin: Bool = false
+    
     @IBAction func signUp(_ sender: UIButton) {
         if(passwordOne.text != passwordTwo.text){
             print("passwords not the same")
+            validLogin = false
         }else if( strlen(passwordOne.text) < 8){
             print("password is too short")
+            validLogin = false
+        }else {
+            validLogin = true
         }
         
     }
@@ -36,15 +42,14 @@ class SignUpViewController: UIViewController {
     }
     
     
-    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        return validLogin
+    }
     /*
      // MARK: - Navigation
      
      // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
+     
      */
     
 }
