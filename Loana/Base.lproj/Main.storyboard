@@ -999,6 +999,34 @@
             </objects>
             <point key="canvasLocation" x="6666" y="642"/>
         </scene>
+        <!--SettingsViewController-->
+        <scene sceneID="7s5-lF-wJH">
+            <objects>
+                <viewController id="5bD-4b-05T" userLabel="SettingsViewController" customClass="SettingsViewController" customModule="Loana" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KWt-1g-WAb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQw-Iu-FNA">
+                                <rect key="frame" x="160" y="350.5" width="55" height="30"/>
+                                <state key="normal" title="Log Out"/>
+                                <connections>
+                                    <action selector="logOut:" destination="5bD-4b-05T" eventType="touchUpInside" id="b0E-pa-X8u"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HQw-Iu-FNA" firstAttribute="centerX" secondItem="SeL-dO-7wy" secondAttribute="centerX" id="Fan-WS-GTY"/>
+                            <constraint firstItem="HQw-Iu-FNA" firstAttribute="centerY" secondItem="SeL-dO-7wy" secondAttribute="centerY" id="qX3-6L-NDa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SeL-dO-7wy"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t77-qp-QQk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4432" y="-546"/>
+        </scene>
         <!--AutoPayViewController-->
         <scene sceneID="7hl-PP-guE">
             <objects>
@@ -1394,7 +1422,13 @@
             <objects>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="v6y-HW-BwZ" customClass="TabBarViewController" customModule="Loana" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="Vz1-7Y-3SN"/>
+                    <navigationItem key="navigationItem" id="Vz1-7Y-3SN">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="XqX-4z-d2g">
+                            <connections>
+                                <segue destination="5bD-4b-05T" kind="show" id="8qu-Ur-yjS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gST-6U-ndT">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>

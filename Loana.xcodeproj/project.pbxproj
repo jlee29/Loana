@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B774C8391FCFF4AB009DFC76 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B774C8381FCFF4AB009DFC76 /* SettingsViewController.swift */; };
 		B7780C221FCFB67A0093A2C9 /* PlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7780C211FCFB67A0093A2C9 /* PlansViewController.swift */; };
 		B7780C261FCFBCDE0093A2C9 /* PlansTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7780C251FCFBCDE0093A2C9 /* PlansTableViewCell.swift */; };
 		B7780C281FCFC92F0093A2C9 /* PlanDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7780C271FCFC92F0093A2C9 /* PlanDetailViewController.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B774C8381FCFF4AB009DFC76 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		B7780C211FCFB67A0093A2C9 /* PlansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansViewController.swift; sourceTree = "<group>"; };
 		B7780C251FCFBCDE0093A2C9 /* PlansTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansTableViewCell.swift; sourceTree = "<group>"; };
 		B7780C271FCFC92F0093A2C9 /* PlanDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanDetailViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				B7A264A61FBF996400893AFE /* ViewController.swift */,
 				B7E9B91E1FCF6E2300234840 /* TabBarViewController.swift */,
 				B7A264A81FBF996400893AFE /* Main.storyboard */,
+				B774C8381FCFF4AB009DFC76 /* SettingsViewController.swift */,
 				B7E9B92B1FCF77BD00234840 /* SignIn */,
 				B7E9B9281FCF750B00234840 /* Model */,
 				B7A264AE1FBF996400893AFE /* Assets.xcassets */,
@@ -215,6 +218,7 @@
 				B7E9B9211FCF6EF000234840 /* User.swift in Sources */,
 				B7E9B9271FCF711700234840 /* Loan.swift in Sources */,
 				B7A264A51FBF996400893AFE /* AppDelegate.swift in Sources */,
+				B774C8391FCFF4AB009DFC76 /* SettingsViewController.swift in Sources */,
 				E815D4F31FCFE1C1005CB34F /* RepaymentPlan.swift in Sources */,
 				B7E9B9251FCF710C00234840 /* LoanFinder.swift in Sources */,
 				E815D4F11FCFDFEC005CB34F /* SignUpViewController.swift in Sources */,
