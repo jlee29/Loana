@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Loana/New Group/SignUpInfo1ViewController.swift"
+            timestampString = "533728412.188656"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "SignUpInfo1ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Loana.SignUpInfo1ViewController.maritalStatusPickerData.getter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "Loana"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaimedeverall/Documents/Loana/Loana/New%20Group/SignUpInfo1ViewController.swift"
+                  timestampString = "533728413.31007"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "109">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Loana.SignUpInfo1ViewController.maritalStatusPickerData.setter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "Loana"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaimedeverall/Documents/Loana/Loana/New%20Group/SignUpInfo1ViewController.swift"
+                  timestampString = "533728413.314419"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Loana.SignUpInfo1ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Loana.SignUpInfo1ViewController"
+                  moduleName = "Loana"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaimedeverall/Documents/Loana/Loana/New%20Group/SignUpInfo1ViewController.swift"
+                  timestampString = "533728413.316772"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "202">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Loana.SignUpInfo1ViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;Loana.SignUpInfo1ViewController&gt;"
+                  moduleName = "Loana"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jaimedeverall/Documents/Loana/Loana/New%20Group/SignUpInfo1ViewController.swift"
+                  timestampString = "533728413.318577"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "118">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

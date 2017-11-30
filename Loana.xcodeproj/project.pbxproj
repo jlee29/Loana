@@ -25,6 +25,9 @@
 		B7E9B9271FCF711700234840 /* Loan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9B9261FCF711700234840 /* Loan.swift */; };
 		B7E9B92A1FCF773A00234840 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9B9291FCF773A00234840 /* LoginViewController.swift */; };
 		D34FAC5A1FCFF6F80008A8AF /* SignUpInfo1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34FAC591FCFF6F80008A8AF /* SignUpInfo1ViewController.swift */; };
+		D34FAC5E1FCFF91B0008A8AF /* wallet.png in Resources */ = {isa = PBXBuildFile; fileRef = D34FAC5B1FCFF91A0008A8AF /* wallet.png */; };
+		D34FAC5F1FCFF91B0008A8AF /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = D34FAC5C1FCFF91A0008A8AF /* calendar.png */; };
+		D34FAC601FCFF91B0008A8AF /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = D34FAC5D1FCFF91A0008A8AF /* home.png */; };
 		E815D4F11FCFDFEC005CB34F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E815D4F01FCFDFEC005CB34F /* SignUpViewController.swift */; };
 		E815D4F31FCFE1C1005CB34F /* RepaymentPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = E815D4F21FCFE1C1005CB34F /* RepaymentPlan.swift */; };
 /* End PBXBuildFile section */
@@ -50,6 +53,9 @@
 		B7E9B9261FCF711700234840 /* Loan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loan.swift; sourceTree = "<group>"; };
 		B7E9B9291FCF773A00234840 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D34FAC591FCFF6F80008A8AF /* SignUpInfo1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInfo1ViewController.swift; sourceTree = "<group>"; };
+		D34FAC5B1FCFF91A0008A8AF /* wallet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wallet.png; sourceTree = "<group>"; };
+		D34FAC5C1FCFF91A0008A8AF /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
+		D34FAC5D1FCFF91A0008A8AF /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
 		E815D4F01FCFDFEC005CB34F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E815D4F21FCFE1C1005CB34F /* RepaymentPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepaymentPlan.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -136,6 +142,9 @@
 		D34FAC4C1FCFECB60008A8AF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D34FAC5C1FCFF91A0008A8AF /* calendar.png */,
+				D34FAC5D1FCFF91A0008A8AF /* home.png */,
+				D34FAC5B1FCFF91A0008A8AF /* wallet.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -211,6 +220,9 @@
 			files = (
 				B7A264B21FBF996400893AFE /* LaunchScreen.storyboard in Resources */,
 				B7A264AF1FBF996400893AFE /* Assets.xcassets in Resources */,
+				D34FAC601FCFF91B0008A8AF /* home.png in Resources */,
+				D34FAC5F1FCFF91B0008A8AF /* calendar.png in Resources */,
+				D34FAC5E1FCFF91B0008A8AF /* wallet.png in Resources */,
 				B7A264AA1FBF996400893AFE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
