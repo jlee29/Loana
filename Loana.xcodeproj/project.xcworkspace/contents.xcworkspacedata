@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "absolute:/Users/miguelayala/Desktop/Work/Fall 2017/CS 147/Loana/Loana/Resources/hat30.png">
-   </FileRef>
-   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>

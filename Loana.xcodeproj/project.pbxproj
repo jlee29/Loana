@@ -62,7 +62,7 @@
 		E815D4F21FCFE1C1005CB34F /* RepaymentPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepaymentPlan.swift; sourceTree = "<group>"; };
 		E815D5031FD003B3005CB34F /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = house.png; sourceTree = "<group>"; };
 		E815D5041FD003B4005CB34F /* money.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = money.png; sourceTree = "<group>"; };
-		E815D50B1FD00E8C005CB34F /* hat30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hat30.png; path = "/Users/miguelayala/Desktop/Work/Fall 2017/CS 147/Loana/Loana/Resources/hat30.png"; sourceTree = "<absolute>"; };
+		E815D50B1FD00E8C005CB34F /* hat30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hat30.png; path = /Users/jiwoo/Desktop/Loana/Loana/Resources/hat30.png; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
