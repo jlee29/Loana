@@ -13,6 +13,13 @@
 		B7A264AD1FBF996400893AFE /* Loana.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B7A264AB1FBF996400893AFE /* Loana.xcdatamodeld */; };
 		B7A264AF1FBF996400893AFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7A264AE1FBF996400893AFE /* Assets.xcassets */; };
 		B7A264B21FBF996400893AFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A264B01FBF996400893AFE /* LaunchScreen.storyboard */; };
+		B7E9B91D1FCF65B000234840 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9B91C1FCF65B000234840 /* WelcomeViewController.swift */; };
+		B7E9B91F1FCF6E2300234840 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9B91E1FCF6E2300234840 /* TabBarViewController.swift */; };
+		B7E9B9211FCF6EF000234840 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9B9201FCF6EF000234840 /* User.swift */; };
+		B7E9B9231FCF6FF000234840 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9B9221FCF6FF000234840 /* Session.swift */; };
+		B7E9B9251FCF710C00234840 /* LoanFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9B9241FCF710C00234840 /* LoanFinder.swift */; };
+		B7E9B9271FCF711700234840 /* Loan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9B9261FCF711700234840 /* Loan.swift */; };
+		B7E9B92A1FCF773A00234840 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9B9291FCF773A00234840 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		B7A264AE1FBF996400893AFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7A264B11FBF996400893AFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7A264B31FBF996400893AFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7E9B91C1FCF65B000234840 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		B7E9B91E1FCF6E2300234840 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		B7E9B9201FCF6EF000234840 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B7E9B9221FCF6FF000234840 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		B7E9B9241FCF710C00234840 /* LoanFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanFinder.swift; sourceTree = "<group>"; };
+		B7E9B9261FCF711700234840 /* Loan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loan.swift; sourceTree = "<group>"; };
+		B7E9B9291FCF773A00234840 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +72,36 @@
 			children = (
 				B7A264A41FBF996400893AFE /* AppDelegate.swift */,
 				B7A264A61FBF996400893AFE /* ViewController.swift */,
+				B7E9B91E1FCF6E2300234840 /* TabBarViewController.swift */,
 				B7A264A81FBF996400893AFE /* Main.storyboard */,
+				B7E9B92B1FCF77BD00234840 /* SignIn */,
+				B7E9B9281FCF750B00234840 /* Model */,
 				B7A264AE1FBF996400893AFE /* Assets.xcassets */,
 				B7A264B01FBF996400893AFE /* LaunchScreen.storyboard */,
 				B7A264B31FBF996400893AFE /* Info.plist */,
 				B7A264AB1FBF996400893AFE /* Loana.xcdatamodeld */,
 			);
 			path = Loana;
+			sourceTree = "<group>";
+		};
+		B7E9B9281FCF750B00234840 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B7E9B9221FCF6FF000234840 /* Session.swift */,
+				B7E9B9241FCF710C00234840 /* LoanFinder.swift */,
+				B7E9B9261FCF711700234840 /* Loan.swift */,
+				B7E9B9201FCF6EF000234840 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B7E9B92B1FCF77BD00234840 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				B7E9B9291FCF773A00234840 /* LoginViewController.swift */,
+				B7E9B91C1FCF65B000234840 /* WelcomeViewController.swift */,
+			);
+			path = SignIn;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +176,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7E9B9231FCF6FF000234840 /* Session.swift in Sources */,
 				B7A264A71FBF996400893AFE /* ViewController.swift in Sources */,
+				B7E9B91D1FCF65B000234840 /* WelcomeViewController.swift in Sources */,
+				B7E9B9211FCF6EF000234840 /* User.swift in Sources */,
+				B7E9B9271FCF711700234840 /* Loan.swift in Sources */,
 				B7A264A51FBF996400893AFE /* AppDelegate.swift in Sources */,
+				B7E9B9251FCF710C00234840 /* LoanFinder.swift in Sources */,
+				B7E9B91F1FCF6E2300234840 /* TabBarViewController.swift in Sources */,
+				B7E9B92A1FCF773A00234840 /* LoginViewController.swift in Sources */,
 				B7A264AD1FBF996400893AFE /* Loana.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
