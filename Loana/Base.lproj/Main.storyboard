@@ -610,7 +610,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="e7j-1b-CgL"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="home.png" selectedImage="home.png" id="ghC-XH-fCQ"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house.png" id="ghC-XH-fCQ"/>
                     <navigationItem key="navigationItem" id="roR-HK-cqF"/>
                     <connections>
                         <outlet property="welcomeLabel" destination="jkq-eC-Ofo" id="RCL-Bi-gqi"/>
@@ -745,7 +745,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lFF-5q-weO"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Plans" image="calendar.png" selectedImage="calendar.png" id="JD6-jf-5LL"/>
+                    <tabBarItem key="tabBarItem" title="Plans" image="money.png" id="JD6-jf-5LL"/>
                     <connections>
                         <outlet property="currentPlanLabel" destination="q8o-dl-3Fq" id="oSW-E6-uOA"/>
                         <outlet property="plansTableView" destination="D40-nm-fPc" id="hQl-Nz-foP"/>
@@ -1021,7 +1021,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5lm-83-c1N"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Pay" image="wallet.png" selectedImage="wallet.png" id="f2r-cf-Cig"/>
+                    <tabBarItem key="tabBarItem" title="Pay" image="wallet.png" id="f2r-cf-Cig"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WXY-Pa-Vja" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1410,9 +1410,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="calendar.png" width="50" height="50"/>
-        <image name="home.png" width="50" height="50"/>
-        <image name="wallet.png" width="50" height="50"/>
+        <image name="house.png" width="30" height="30"/>
+        <image name="money.png" width="30" height="30"/>
+        <image name="wallet.png" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="PIR-kr-NNc"/>
