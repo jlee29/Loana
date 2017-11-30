@@ -18,8 +18,8 @@ class PlansViewController: UIViewController, UITableViewDelegate, UITableViewDat
         plansTableView.reloadData()
     }
     
-    var allPlans = ["IBR", "PAYE", "ICR", "Standard", "Graduated", "Extended"]
-    var plans = ["IBR", "PAYE", "ICR", "Standard", "Graduated", "Extended"]
+    var allPlans = ["IBR", "PAYE", "ICR", "Standard", "Graduated", "Extended", "A", "B", "C", "D", "E"]
+    var plans = ["IBR", "PAYE", "ICR", "Standard", "Graduated", "Extended", "A", "B", "C", "D", "E"]
     var currPlan: String?
 
     @IBOutlet weak var plansTableView: UITableView!
