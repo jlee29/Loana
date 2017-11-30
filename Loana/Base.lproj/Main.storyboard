@@ -199,6 +199,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="201"/>
                                                 <state key="normal" title="Sign Up"/>
                                                 <connections>
+                                                    <action selector="signUp:" destination="b2r-wm-C86" eventType="touchUpInside" id="djc-9g-CIC"/>
                                                     <segue destination="ni2-JA-Usg" kind="show" id="xfu-de-Wz8"/>
                                                 </connections>
                                             </button>
@@ -223,6 +224,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="klu-4O-5NT"/>
                     </view>
+                    <connections>
+                        <outlet property="passwordOne" destination="2sx-xz-8cX" id="X8P-Re-z7V"/>
+                        <outlet property="passwordTwo" destination="QUR-Bc-vsr" id="VLX-oS-ssi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n17-m2-cqN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

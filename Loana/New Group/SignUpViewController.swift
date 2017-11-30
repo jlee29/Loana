@@ -10,6 +10,20 @@ import UIKit
 
 class SignUpViewController: UIViewController {
     
+    //MARK: - Properties
+    
+    @IBOutlet weak var passwordOne: UITextField!
+    @IBOutlet weak var passwordTwo: UITextField!
+    
+    @IBAction func signUp(_ sender: UIButton) {
+        if(passwordOne.text != passwordTwo.text){
+            print("passwords not the same")
+        }else if( strlen(passwordOne.text) < 8){
+            print("password is too short")
+        }
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,6 +34,7 @@ class SignUpViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     
     /*
