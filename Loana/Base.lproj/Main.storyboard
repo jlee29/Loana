@@ -788,6 +788,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Plans" id="JD6-jf-5LL"/>
                     <connections>
+                        <outlet property="currentPlanLabel" destination="q8o-dl-3Fq" id="oSW-E6-uOA"/>
                         <outlet property="plansTableView" destination="D40-nm-fPc" id="hQl-Nz-foP"/>
                     </connections>
                 </viewController>
