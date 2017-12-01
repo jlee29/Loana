@@ -842,7 +842,7 @@
                                                             <outlet property="label3" destination="vud-zv-d8q" id="c2o-Qp-qFQ"/>
                                                             <outlet property="label4" destination="SQN-rm-do7" id="Zu4-gx-owd"/>
                                                             <outlet property="testLabel" destination="CuQ-VQ-g9R" id="HvV-4F-fQ5"/>
-                                                            <segue destination="WFL-Yq-Y6X" kind="show" id="oX3-N3-r04"/>
+                                                            <segue destination="WFL-Yq-Y6X" kind="show" identifier="showDetail" id="oX3-N3-r04"/>
                                                         </connections>
                                                     </collectionViewCell>
                                                 </cells>
