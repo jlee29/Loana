@@ -12,6 +12,9 @@ class SettingsViewController: UIViewController {
 
     @IBAction func logOut(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
+        if let topController = UIApplication.shared.keyWindow?.rootViewController as? UINavigationController {
+            topController.popToRootViewController(animated: true)
+        }
     }
     
     override func viewDidLoad() {

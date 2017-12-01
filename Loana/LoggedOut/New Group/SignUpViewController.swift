@@ -61,7 +61,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
-        return validLogin
+        return true
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
