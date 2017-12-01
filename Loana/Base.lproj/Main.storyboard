@@ -418,7 +418,7 @@
                                                                 <state key="normal" title="Login"/>
                                                                 <connections>
                                                                     <action selector="logIn:" destination="Sun-Xb-0kx" eventType="touchUpInside" id="ftF-L7-xA4"/>
-                                                                    <segue destination="m2T-PB-jvw" kind="presentation" identifier="login" id="PIR-kr-NNc"/>
+                                                                    <segue destination="m2T-PB-jvw" kind="presentation" identifier="login" modalTransitionStyle="flipHorizontal" id="PIR-kr-NNc"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2b-MT-zMz" userLabel="Sign Up">
