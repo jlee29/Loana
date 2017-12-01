@@ -24,6 +24,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         passwordField.delegate = self
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard (_:)))
         self.view.addGestureRecognizer(tapGesture)
+//        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+        backgroundImage.image = UIImage(named: "background.png")
+        self.view.insertSubview(backgroundImage, at: 0)
         // Do any additional setup after loading the view.
     }
     

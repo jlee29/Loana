@@ -442,11 +442,18 @@
                                     </view>
                                 </subviews>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="u7w-OD-5ga">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ku6-ul-yC9" firstAttribute="trailing" secondItem="nj2-DK-dvb" secondAttribute="trailing" id="6cY-P6-c7u"/>
+                            <constraint firstItem="ku6-ul-yC9" firstAttribute="trailing" secondItem="u7w-OD-5ga" secondAttribute="trailing" id="KBm-mw-AFt"/>
+                            <constraint firstItem="ku6-ul-yC9" firstAttribute="bottom" secondItem="u7w-OD-5ga" secondAttribute="bottom" id="M6G-Nk-VI8"/>
+                            <constraint firstItem="u7w-OD-5ga" firstAttribute="top" secondItem="ku6-ul-yC9" secondAttribute="top" id="fXB-hk-8ca"/>
                             <constraint firstItem="ku6-ul-yC9" firstAttribute="bottom" secondItem="nj2-DK-dvb" secondAttribute="bottom" id="jh1-EN-9Ot"/>
+                            <constraint firstItem="u7w-OD-5ga" firstAttribute="leading" secondItem="ku6-ul-yC9" secondAttribute="leading" id="lUW-Z7-vb1"/>
                             <constraint firstItem="nj2-DK-dvb" firstAttribute="leading" secondItem="ku6-ul-yC9" secondAttribute="leading" id="mDv-3w-gC2"/>
                             <constraint firstItem="nj2-DK-dvb" firstAttribute="top" secondItem="ku6-ul-yC9" secondAttribute="top" id="uhr-oN-Mep"/>
                         </constraints>
@@ -1491,6 +1498,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background.png" width="1125" height="2055"/>
         <image name="house.png" width="30" height="30"/>
         <image name="money.png" width="30" height="30"/>
         <image name="wallet.png" width="30" height="30"/>
