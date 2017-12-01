@@ -21,6 +21,13 @@ class TabBarViewController: UITabBarController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        
+        // needed to clear the text in the back navigation:
+        self.navigationItem.title = " "
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

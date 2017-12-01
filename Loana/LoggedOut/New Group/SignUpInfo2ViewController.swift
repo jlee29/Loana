@@ -27,6 +27,13 @@ class SignUpInfo2ViewController: UIViewController, UIPickerViewDelegate, UIPicke
         self.view.addGestureRecognizer(tapGesture)
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        
+        // needed to clear the text in the back navigation:
+        self.navigationItem.title = " "
+    }
+    
     @objc func dismissKeyboard (_ sender: UITapGestureRecognizer) {
         loanIDTextField.resignFirstResponder()
     }
