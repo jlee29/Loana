@@ -652,29 +652,27 @@
                                 <rect key="frame" x="0.0" y="-36" width="375" height="741"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7CZ-0V-Ucj">
-                                <rect key="frame" x="0.0" y="104" width="375" height="75"/>
+                                <rect key="frame" x="0.0" y="104" width="375" height="30.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="n6Z-y5-Xfv">
-                                        <rect key="frame" x="25" y="0.0" width="325" height="75"/>
+                                        <rect key="frame" x="25" y="0.0" width="325" height="30.5"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yHw-EQ-YwD">
-                                                <rect key="frame" x="0.0" y="0.0" width="76" height="75"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Back John!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkq-eC-Ofo">
+                                                <rect key="frame" x="0.0" y="0.0" width="325" height="30.5"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="22"/>
+                                                <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yHw-EQ-YwD">
+                                                <rect key="frame" x="-25" y="-22" width="76" height="75"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="yHw-EQ-YwD" secondAttribute="height" multiplier="1:1" constant="1" id="5QU-nl-A15"/>
                                                     <constraint firstAttribute="height" constant="75" id="mlD-T5-XX8"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Back John!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkq-eC-Ofo">
-                                                <rect key="frame" x="96" y="27.5" width="229" height="20.5"/>
-                                                <color key="backgroundColor" red="0.47450980392156861" green="0.81176470588235294" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.47450980392156861" green="0.81176470588235294" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="n6Z-y5-Xfv" firstAttribute="top" secondItem="7CZ-0V-Ucj" secondAttribute="top" id="5ho-Fy-kwg"/>
                                     <constraint firstAttribute="bottom" secondItem="n6Z-y5-Xfv" secondAttribute="bottom" id="7ZL-37-ABL"/>
@@ -703,7 +701,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fxJ-IR-jZu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5346" y="132"/>
+            <point key="canvasLocation" x="5344.8000000000002" y="131.78410794602701"/>
         </scene>
         <!--PlansViewController-->
         <scene sceneID="0ZF-sd-2Xr">
