@@ -12,9 +12,18 @@ class PlansViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     @IBOutlet weak var currentPlanLabel: UILabel!
     
+    var currentPlan: String = Session.shared.user.currPlan
+    
     func updatedPlan(_ plan: String) {
-        currentPlanLabel.text = "Current plan is: " + plan
-        plans = allPlans.filter {$0 != plan}
+        currentPlan = plan
+        Session.shared.user.currPlan = plan
+        reloadTable()
+
+    }
+    
+    func reloadTable() {
+        currentPlanLabel.text = "Current plan is: " + currentPlan
+        plans = allPlans.filter {$0 != currentPlan}
         plansTableView.reloadData()
     }
     
@@ -25,10 +34,12 @@ class PlansViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBOutlet weak var plansTableView: UITableView!
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         self.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
         plansTableView.delegate = self
         plansTableView.dataSource = self
+        reloadTable()
         // Do any additional setup after loading the view.
     }
 

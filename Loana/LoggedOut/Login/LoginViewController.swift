@@ -15,6 +15,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func logIn(_ sender: UIButton) {
         Session.shared.user.name = emailField.text!
+        Session.shared.loggedIn = true
     }
     @IBOutlet weak var loginButton: UIButton!
     
