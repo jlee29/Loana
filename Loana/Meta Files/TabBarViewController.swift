@@ -13,7 +13,7 @@ class TabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
-        
+//        self.tabBar.barTintColor = .black
         self.selectedIndex = 1;
 
         // Do any additional setup after loading the view.
