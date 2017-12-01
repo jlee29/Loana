@@ -141,7 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				E815D4EF1FCFDFC9005CB34F /* SignUp */,
-				B7E9B92B1FCF77BD00234840 /* SignIn */,
+				B7E9B92B1FCF77BD00234840 /* Login */,
 			);
 			path = LoggedOut;
 			sourceTree = "<group>";
@@ -201,12 +201,12 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		B7E9B92B1FCF77BD00234840 /* SignIn */ = {
+		B7E9B92B1FCF77BD00234840 /* Login */ = {
 			isa = PBXGroup;
 			children = (
 				B7E9B9291FCF773A00234840 /* LoginViewController.swift */,
 			);
-			path = SignIn;
+			path = Login;
 			sourceTree = "<group>";
 		};
 		D34FAC4C1FCFECB60008A8AF /* Resources */ = {

@@ -16,6 +16,8 @@ class PlanDetailViewController: UIViewController {
     
     var delegate: PlanDetailViewControllerDelegate?
 
+    @IBOutlet weak var principalOwedLabel: UILabel!
+    @IBOutlet weak var annualAdjustedGrossIncomeLabel: UILabel!
     @IBOutlet weak var testLabel: UILabel!
     
     func confirmationHandler(alert: UIAlertAction!) {
@@ -32,10 +34,19 @@ class PlanDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
-        
-        testLabel.text = testString
-
-        // Do any additional setup after loading the view.
+        if(testString == "IBR"){
+            testLabel.text = "Income-Based Repayment"
+        }else if(testString == "ICR"){
+            testLabel.text = "Income-Contingent Repayment"
+        }else if(testString == "PAYE"){
+            testLabel.text = "Pay As You Earn"
+        }else if(testString == "Standard"){
+            testLabel.text = "Standard"
+        }else if(testString == "Graduated"){
+            testLabel.text = "Graduated"
+        }else{
+            testLabel.text = "Extended"
+        }
     }
 
     override func didReceiveMemoryWarning() {
