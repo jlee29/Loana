@@ -16,7 +16,9 @@ class SignUpInfo2ViewController: UIViewController, UIPickerViewDelegate, UIPicke
     var loanProviderPickerData: [String] = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        loanProviderPickerData = ["Random", "Another one", "Back again"]
+        loanProviderPickerData = ["CornerStone", "FedLoan Servicing (PHEAA)", "Granite State – GSMR",
+        "Great Lakes Educational Loan Services, Inc.", "HESC/Edfinancial", "MOHELA", "Navient",
+        "Nelnet", "OSLA Servicing"]
         self.loanProviderPicker.delegate = self
         self.loanProviderPicker.dataSource = self
         loanIDTextField.delegate = self
