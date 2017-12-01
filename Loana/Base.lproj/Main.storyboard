@@ -245,7 +245,7 @@
                                                         <rect key="frame" x="0.0" y="181" width="355" height="60.5"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your state of residence" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmT-ME-5Lf">
                                                         <rect key="frame" x="0.0" y="241.5" width="355" height="60"/>
@@ -325,6 +325,8 @@
                     <connections>
                         <outlet property="incomeTextField" destination="fpz-uu-AZ3" id="f97-V5-ybf"/>
                         <outlet property="maritalStatusPicker" destination="Z1J-xW-hpH" id="ldh-k7-ghd"/>
+                        <outlet property="publicSectorPicker" destination="xWV-xQ-4Va" id="HCZ-dh-PN9"/>
+                        <outlet property="statePicker" destination="cCP-FI-DlH" id="CKc-1A-lSc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7kE-tu-FAw" userLabel="First Responder" sceneMemberID="firstResponder"/>

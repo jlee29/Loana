@@ -8,18 +8,38 @@
 
 import UIKit
 
-class SignUpInfo1ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class SignUpInfo1ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
     
     //MARK: - Properties
 
+    @IBOutlet weak var publicSectorPicker: UIPickerView!
+    @IBOutlet weak var statePicker: UIPickerView!
     @IBOutlet weak var incomeTextField: UITextField!
     @IBOutlet weak var maritalStatusPicker: UIPickerView!
     var maritalStatusPickerData: [String] = [String]()
+    var publicSectorPickerData: [String] = [String]()
+    var statePickerData: [String] = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
         maritalStatusPickerData = ["Married", "Single"]
+        publicSectorPickerData = ["Yes", "No"]
+        statePickerData = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana",
+            "Maine", "Maryland", "Massachusetts", "Michigan",
+            "Minnesota", "Mississippi", "Missouri", "Montana",
+            "Nebraska", "Nevada", "New Hampshire", "New Jersey",
+            "New Mexico", "New York", "North Carolina",
+            "North Dakota", "Ohio", "Oklahoma", "Oregon",
+            "Pennsylvania", "Rhode Island", "South Carolina",
+            "South Dakota", "Tennessee", "Texas", "Utah",
+            "Vermont", "Virginia", "Washington", "West Virginia",
+            "Wisconsin", "Wyoming"]
         self.maritalStatusPicker.delegate = self
         self.maritalStatusPicker.dataSource = self
+        self.publicSectorPicker.delegate = self
+        self.publicSectorPicker.dataSource = self
+        self.statePicker.delegate = self
+        self.statePicker.dataSource = self
+        self.incomeTextField.delegate = self
         // Do any additional setup after loading the view.
     }
     
@@ -29,9 +49,6 @@ class SignUpInfo1ViewController: UIViewController, UIPickerViewDelegate, UIPicke
     }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        if(pickerView == maritalStatusPicker){
-            return 1
-        }
         return 1
     }
     
@@ -39,16 +56,25 @@ class SignUpInfo1ViewController: UIViewController, UIPickerViewDelegate, UIPicke
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         if(pickerView == maritalStatusPicker){
             return maritalStatusPickerData.count
+        }else if(pickerView == publicSectorPicker){
+            return publicSectorPickerData.count
         }
-        return 1
+        return statePickerData.count
     }
     
     // The data to return for the row and component (column) that's being passed in
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         if(pickerView == maritalStatusPicker){
             return maritalStatusPickerData[row]
+        }else if(pickerView == publicSectorPicker){
+            return publicSectorPickerData[row]
         }
-        return "Hi"
+        return statePickerData[row]
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
     
