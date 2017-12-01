@@ -1,5 +1,5 @@
 //
-//  SettingsViewController.swift
+//  NavigationViewController.swift
 //  Loana
 //
 //  Created by Jiwoo Lee on 11/30/17.
@@ -8,11 +8,9 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
-
-    @IBAction func logOut(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
-    }
+class NavigationViewController: UINavigationController {
+    
+    @IBOutlet weak var navBar: NavigationBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +22,11 @@ class SettingsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+//    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
+//        super.pushViewController(viewController, animated: animated)
+//        viewController.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
+//    }
     
 
     /*

@@ -46,6 +46,15 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        let navTransition = CATransition()
+        navTransition.duration = 1
+        navTransition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        navTransition.type = kCATransitionPush
+        navTransition.subtype = kCATransitionPush
+        self.navigationController?.navigationBar.layer.add(navTransition, forKey: nil)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

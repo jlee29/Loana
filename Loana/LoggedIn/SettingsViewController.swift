@@ -1,5 +1,5 @@
 //
-//  NavigationViewController.swift
+//  SettingsViewController.swift
 //  Loana
 //
 //  Created by Jiwoo Lee on 11/30/17.
@@ -8,24 +8,30 @@
 
 import UIKit
 
-class NavigationViewController: UINavigationController {
-    
-    @IBOutlet weak var navBar: NavigationBar!
+class SettingsViewController: UIViewController {
+
+    @IBAction func logOut(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let navTransition = CATransition()
+        navTransition.duration = 1
+        navTransition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        navTransition.type = kCATransitionPush
+        navTransition.subtype = kCATransitionPush
+        self.navigationController?.navigationBar.layer.add(navTransition, forKey: nil)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    override func pushViewController(_ viewController: UIViewController, animated: Bool) {
-        super.pushViewController(viewController, animated: animated)
-        viewController.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
     }
     
 
