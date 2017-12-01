@@ -16,7 +16,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBAction func logIn(_ sender: UIButton) {
         Session.shared.user.name = emailField.text!
     }
+    @IBOutlet weak var loginButton: UIButton!
     
+    @IBOutlet weak var signUpButton: UIButton!
+    
+    @IBOutlet weak var mainView: UIView!
+    
+    @IBOutlet weak var mainStack: UIStackView!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
@@ -29,6 +35,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         backgroundImage.image = UIImage(named: "background.png")
         self.view.insertSubview(backgroundImage, at: 0)
         // Do any additional setup after loading the view.
+        let fontSize = loginButton.titleLabel?.font.pointSize
+        let avenirFont = UIFont(name: "Avenir", size: fontSize!)
+        loginButton.titleLabel?.font = avenirFont
+        signUpButton.titleLabel?.font = avenirFont
+        mainView.layer.cornerRadius = 10
     }
     
     @objc func dismissKeyboard (_ sender: UITapGestureRecognizer) {
