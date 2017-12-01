@@ -12,11 +12,14 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var welcomeLabel: UILabel!
     
+    @IBOutlet weak var proPic: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
         welcomeLabel.text = "Welcome Back " + Session.shared.user.name
 
+        proPic.layer.cornerRadius = 37
         // Do any additional setup after loading the view.
     }
 
