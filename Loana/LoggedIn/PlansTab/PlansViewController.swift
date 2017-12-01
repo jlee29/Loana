@@ -62,10 +62,51 @@ class PlansViewController: UIViewController, UICollectionViewDelegate, UICollect
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = plansCollectionView.dequeueReusableCell(withReuseIdentifier: "plan", for: indexPath) as! PlansCollectionViewCell
         cell.testLabel.text = plans[indexPath.row]
+        cell.label1.text = getTotalCost(plans[indexPath.row])
+        cell.label2.text = getMinMaxPayment(plans[indexPath.row])
+        cell.label3.text = getTotalMonths(plans[indexPath.row])
         cell.boxImg.layer.cornerRadius = 10
         cell.boxImg.clipsToBounds = true
         cell.backgroundColor = .clear
         return cell
+    }
+    
+    func getTotalCost(_ plan: String) -> String {
+        if(plan == "IBR"){
+            return "$20,000"
+        }else if(plan == "ICR"){
+            return "$25,000"
+        }else if(plan == "PAYE"){
+            return "$20,000"
+        }else{
+            return "$30,000"
+        }
+    }
+    
+    func getMinMaxPayment(_ plan: String) -> String {
+        if(plan == "IBR"){
+            return "$0-200/month"
+        }else if(plan == "ICR"){
+            return "$10-300/month"
+        }else if(plan == "PAYE"){
+            return "$0-200/month"
+        }else{
+            return "$100-500/month"
+        }
+    }
+    
+    func getTotalMonths(_ plan: String) -> String {
+        if(plan == "IBR"){
+            return "300 months"
+        }else if(plan == "ICR"){
+            return "240 months"
+        }else if(plan == "PAYE"){
+            return "300 months"
+        }else if(plan == "Extended"){
+            return "240 months"
+        }else{
+            return "120 months"
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
