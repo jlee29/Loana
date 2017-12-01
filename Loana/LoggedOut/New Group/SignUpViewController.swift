@@ -40,11 +40,17 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
-        
         emailTextField.delegate = self
         passwordOne.delegate = self
         passwordTwo.delegate = self
-        // Do any additional setup after loading the view.
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard (_:)))
+        self.view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func dismissKeyboard (_ sender: UITapGestureRecognizer) {
+        emailTextField.resignFirstResponder()
+        passwordOne.resignFirstResponder()
+        passwordTwo.resignFirstResponder()
     }
     
     override func viewWillAppear(_ animated: Bool) {

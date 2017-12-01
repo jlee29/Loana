@@ -21,7 +21,12 @@ class SignUpInfo2ViewController: UIViewController, UIPickerViewDelegate, UIPicke
         self.loanProviderPicker.dataSource = self
         loanIDTextField.delegate = self
         self.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
-        // Do any additional setup after loading the view.
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard (_:)))
+        self.view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func dismissKeyboard (_ sender: UITapGestureRecognizer) {
+        loanIDTextField.resignFirstResponder()
     }
     
     override func viewWillAppear(_ animated: Bool) {

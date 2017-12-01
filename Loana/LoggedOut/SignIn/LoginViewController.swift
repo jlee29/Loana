@@ -20,11 +20,16 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
-        
         emailField.delegate = self
         passwordField.delegate = self
-
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard (_:)))
+        self.view.addGestureRecognizer(tapGesture)
         // Do any additional setup after loading the view.
+    }
+    
+    @objc func dismissKeyboard (_ sender: UITapGestureRecognizer) {
+        emailField.resignFirstResponder()
+        passwordField.resignFirstResponder()
     }
     
     override func viewWillAppear(_ animated: Bool) {

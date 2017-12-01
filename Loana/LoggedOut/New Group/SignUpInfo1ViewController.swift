@@ -41,7 +41,12 @@ class SignUpInfo1ViewController: UIViewController, UIPickerViewDelegate, UIPicke
         self.statePicker.delegate = self
         self.statePicker.dataSource = self
         self.incomeTextField.delegate = self
-        // Do any additional setup after loading the view.
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard (_:)))
+        self.view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func dismissKeyboard (_ sender: UITapGestureRecognizer) {
+        incomeTextField.resignFirstResponder()
     }
     
     override func viewWillAppear(_ animated: Bool) {
