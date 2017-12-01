@@ -12,6 +12,8 @@ class PlansViewController: UIViewController, UICollectionViewDelegate, UICollect
     
     @IBOutlet weak var currentPlanLabel: UILabel!
     
+    @IBOutlet weak var currentPlanLabelOnCard: UILabel!
+    
     var currentPlan: String = Session.shared.user.currPlan
     
     func updatedPlan(_ plan: String) {
@@ -22,6 +24,7 @@ class PlansViewController: UIViewController, UICollectionViewDelegate, UICollect
     
     func reloadCollection() {
         currentPlanLabel.text = "Current plan is: " + currentPlan
+        currentPlanLabelOnCard.text = currentPlan
         plans = allPlans.filter {$0 != currentPlan}
         plansCollectionView.reloadData()
     }
