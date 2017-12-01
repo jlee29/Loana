@@ -21,6 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().titleTextAttributes = [
             NSAttributedStringKey.font: UIFont(name: "Avenir", size: 15)!
         ]
+        UIButton.appearance().titleLabel?.font = UIFont(name: "Avenir", size: 15)
+        UITabBarItem.appearance().setTitleTextAttributes([
+            NSAttributedStringKey.font: UIFont(name: "Avenir", size: 10)!
+            ], for: .normal)
         // Override point for customization after application launch.
         return true
     }
