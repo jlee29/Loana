@@ -14,6 +14,7 @@ class NavigationViewController: UINavigationController {
         super.viewDidLoad()
 //        self.navigationBar.barTintColor = .black
         // Do any additional setup after loading the view.
+        self.navigationBar.titleTextAttributes = [ NSAttributedStringKey.font: UIFont(name: "Avenir", size: 15)!]
     }
 
     override func didReceiveMemoryWarning() {

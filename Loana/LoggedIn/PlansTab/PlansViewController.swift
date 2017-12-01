@@ -23,7 +23,6 @@ class PlansViewController: UIViewController, UICollectionViewDelegate, UICollect
     }
     
     func reloadCollection() {
-        currentPlanLabel.text = "Current plan is: " + currentPlan
         currentPlanLabelOnCard.text = currentPlan
         plans = allPlans.filter {$0 != currentPlan}
         plansCollectionView.reloadData()
