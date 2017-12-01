@@ -36,6 +36,14 @@
 		E815D5071FD003B5005CB34F /* money.png in Resources */ = {isa = PBXBuildFile; fileRef = E815D5041FD003B4005CB34F /* money.png */; };
 		E815D50D1FD01136005CB34F /* hat30.png in Resources */ = {isa = PBXBuildFile; fileRef = E815D50C1FD01136005CB34F /* hat30.png */; };
 		E815D5111FD01366005CB34F /* icons in Resources */ = {isa = PBXBuildFile; fileRef = E815D5101FD01365005CB34F /* icons */; };
+		E823DB7B1FD14A6600A427D9 /* Group.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB731FD14A6500A427D9 /* Group.png */; };
+		E823DB7C1FD14A6600A427D9 /* iPhone SE.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB741FD14A6500A427D9 /* iPhone SE.png */; };
+		E823DB7D1FD14A6600A427D9 /* Rectangle 2.1 2.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB751FD14A6600A427D9 /* Rectangle 2.1 2.png */; };
+		E823DB7E1FD14A6600A427D9 /* noun_1098185_cc.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB761FD14A6600A427D9 /* noun_1098185_cc.png */; };
+		E823DB7F1FD14A6600A427D9 /* account-circle.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB771FD14A6600A427D9 /* account-circle.png */; };
+		E823DB801FD14A6600A427D9 /* first screen.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB781FD14A6600A427D9 /* first screen.png */; };
+		E823DB811FD14A6600A427D9 /* noun_125155_cc.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB791FD14A6600A427D9 /* noun_125155_cc.png */; };
+		E823DB821FD14A6600A427D9 /* lock-open.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB7A1FD14A6600A427D9 /* lock-open.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +78,14 @@
 		E815D5041FD003B4005CB34F /* money.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = money.png; sourceTree = "<group>"; };
 		E815D50C1FD01136005CB34F /* hat30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hat30.png; sourceTree = "<group>"; };
 		E815D5101FD01365005CB34F /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icons; sourceTree = "<group>"; };
+		E823DB731FD14A6500A427D9 /* Group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Group.png; sourceTree = "<group>"; };
+		E823DB741FD14A6500A427D9 /* iPhone SE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone SE.png"; sourceTree = "<group>"; };
+		E823DB751FD14A6600A427D9 /* Rectangle 2.1 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rectangle 2.1 2.png"; sourceTree = "<group>"; };
+		E823DB761FD14A6600A427D9 /* noun_1098185_cc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noun_1098185_cc.png; sourceTree = "<group>"; };
+		E823DB771FD14A6600A427D9 /* account-circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "account-circle.png"; sourceTree = "<group>"; };
+		E823DB781FD14A6600A427D9 /* first screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first screen.png"; sourceTree = "<group>"; };
+		E823DB791FD14A6600A427D9 /* noun_125155_cc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noun_125155_cc.png; sourceTree = "<group>"; };
+		E823DB7A1FD14A6600A427D9 /* lock-open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lock-open.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +205,14 @@
 		D34FAC4C1FCFECB60008A8AF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E823DB771FD14A6600A427D9 /* account-circle.png */,
+				E823DB781FD14A6600A427D9 /* first screen.png */,
+				E823DB731FD14A6500A427D9 /* Group.png */,
+				E823DB741FD14A6500A427D9 /* iPhone SE.png */,
+				E823DB7A1FD14A6600A427D9 /* lock-open.png */,
+				E823DB791FD14A6600A427D9 /* noun_125155_cc.png */,
+				E823DB761FD14A6600A427D9 /* noun_1098185_cc.png */,
+				E823DB751FD14A6600A427D9 /* Rectangle 2.1 2.png */,
 				E815D5101FD01365005CB34F /* icons */,
 				E815D50C1FD01136005CB34F /* hat30.png */,
 				B774C83B1FCFFA5E009DFC76 /* wallet.png */,
@@ -269,12 +293,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7A264B21FBF996400893AFE /* LaunchScreen.storyboard in Resources */,
+				E823DB801FD14A6600A427D9 /* first screen.png in Resources */,
+				E823DB7B1FD14A6600A427D9 /* Group.png in Resources */,
+				E823DB7D1FD14A6600A427D9 /* Rectangle 2.1 2.png in Resources */,
 				E815D5111FD01366005CB34F /* icons in Resources */,
 				B7A264AF1FBF996400893AFE /* Assets.xcassets in Resources */,
 				E815D50D1FD01136005CB34F /* hat30.png in Resources */,
 				B774C83E1FCFFA5E009DFC76 /* wallet.png in Resources */,
+				E823DB821FD14A6600A427D9 /* lock-open.png in Resources */,
 				E815D5071FD003B5005CB34F /* money.png in Resources */,
+				E823DB7C1FD14A6600A427D9 /* iPhone SE.png in Resources */,
+				E823DB811FD14A6600A427D9 /* noun_125155_cc.png in Resources */,
+				E823DB7F1FD14A6600A427D9 /* account-circle.png in Resources */,
 				E815D5061FD003B5005CB34F /* house.png in Resources */,
+				E823DB7E1FD14A6600A427D9 /* noun_1098185_cc.png in Resources */,
 				B7A264AA1FBF996400893AFE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
