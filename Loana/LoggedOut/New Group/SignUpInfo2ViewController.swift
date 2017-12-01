@@ -63,5 +63,9 @@ class SignUpInfo2ViewController: UIViewController, UIPickerViewDelegate, UIPicke
         textField.resignFirstResponder()
         return true
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+    }
 
 }

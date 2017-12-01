@@ -20,12 +20,15 @@ class PlanDetailViewController: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     
+    @IBOutlet weak var graphImage: UIImageView!
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var totalMonthLabel: UILabel!
     @IBOutlet weak var totalLoanCostLabel: UILabel!
     @IBOutlet weak var interestRateLabel: UILabel!
     @IBOutlet weak var principalOwedLabel: UILabel!
     @IBOutlet weak var adjustedGrossIncomeLabel: UILabel!
+    
     @IBAction func setPlan(_ sender: UIButton) {
         let alert = UIAlertController(title: "Confirmation", message: "You've selected this plan!", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: confirmationHandler))
@@ -58,6 +61,14 @@ class PlanDetailViewController: UIViewController {
         totalLoanCostLabel.text = "$35,431"
         totalMonthLabel.text = "195"
         titleLabel.text = short2Long(_: testString!)
+        
+        if(testString == "IBR" || testString == "PAYE" || testString == "ICR" ){
+            graphImage.image = UIImage(named: "IBR.png")
+        } else if(testString == "Graduated" || testString == "Extended") {
+            graphImage.image = UIImage(named: "graduated.png")
+        } else {
+            graphImage.image = UIImage(named: "standard.png")
+        }
     }
     
     func short2Long(_ testString: String) -> String {
