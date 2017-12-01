@@ -43,6 +43,11 @@
 		E823DB801FD14A6600A427D9 /* first screen.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB781FD14A6600A427D9 /* first screen.png */; };
 		E823DB811FD14A6600A427D9 /* noun_125155_cc.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB791FD14A6600A427D9 /* noun_125155_cc.png */; };
 		E823DB821FD14A6600A427D9 /* lock-open.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB7A1FD14A6600A427D9 /* lock-open.png */; };
+		E823DB881FD14D7800A427D9 /* box.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB831FD14D7800A427D9 /* box.png */; };
+		E823DB891FD14D7800A427D9 /* plans.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB841FD14D7800A427D9 /* plans.png */; };
+		E823DB8A1FD14D7800A427D9 /* new plan.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB851FD14D7800A427D9 /* new plan.png */; };
+		E823DB8B1FD14D7800A427D9 /* widebox.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB861FD14D7800A427D9 /* widebox.png */; };
+		E823DB8C1FD14D7800A427D9 /* backbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB871FD14D7800A427D9 /* backbutton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +89,11 @@
 		E823DB781FD14A6600A427D9 /* first screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first screen.png"; sourceTree = "<group>"; };
 		E823DB791FD14A6600A427D9 /* noun_125155_cc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noun_125155_cc.png; sourceTree = "<group>"; };
 		E823DB7A1FD14A6600A427D9 /* lock-open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lock-open.png"; sourceTree = "<group>"; };
+		E823DB831FD14D7800A427D9 /* box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box.png; sourceTree = "<group>"; };
+		E823DB841FD14D7800A427D9 /* plans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plans.png; sourceTree = "<group>"; };
+		E823DB851FD14D7800A427D9 /* new plan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "new plan.png"; sourceTree = "<group>"; };
+		E823DB861FD14D7800A427D9 /* widebox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = widebox.png; sourceTree = "<group>"; };
+		E823DB871FD14D7800A427D9 /* backbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backbutton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +212,11 @@
 		D34FAC4C1FCFECB60008A8AF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E823DB871FD14D7800A427D9 /* backbutton.png */,
+				E823DB831FD14D7800A427D9 /* box.png */,
+				E823DB851FD14D7800A427D9 /* new plan.png */,
+				E823DB841FD14D7800A427D9 /* plans.png */,
+				E823DB861FD14D7800A427D9 /* widebox.png */,
 				E823DB771FD14A6600A427D9 /* account-circle.png */,
 				E823DB781FD14A6600A427D9 /* first screen.png */,
 				E823DB731FD14A6500A427D9 /* Group.png */,
@@ -289,19 +304,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E823DB8A1FD14D7800A427D9 /* new plan.png in Resources */,
 				B7A264B21FBF996400893AFE /* LaunchScreen.storyboard in Resources */,
 				E823DB801FD14A6600A427D9 /* first screen.png in Resources */,
 				E823DB7B1FD14A6600A427D9 /* Group.png in Resources */,
 				E823DB7D1FD14A6600A427D9 /* background.png in Resources */,
 				E815D5111FD01366005CB34F /* icons in Resources */,
 				B7A264AF1FBF996400893AFE /* Assets.xcassets in Resources */,
+				E823DB881FD14D7800A427D9 /* box.png in Resources */,
 				E815D50D1FD01136005CB34F /* hat30.png in Resources */,
+				E823DB8C1FD14D7800A427D9 /* backbutton.png in Resources */,
 				B774C83E1FCFFA5E009DFC76 /* wallet.png in Resources */,
 				E823DB821FD14A6600A427D9 /* lock-open.png in Resources */,
 				E815D5071FD003B5005CB34F /* money.png in Resources */,
+				E823DB8B1FD14D7800A427D9 /* widebox.png in Resources */,
 				E823DB7C1FD14A6600A427D9 /* iPhone SE.png in Resources */,
 				E823DB811FD14A6600A427D9 /* noun_125155_cc.png in Resources */,
 				E823DB7F1FD14A6600A427D9 /* account-circle.png in Resources */,
+				E823DB891FD14D7800A427D9 /* plans.png in Resources */,
 				E815D5061FD003B5005CB34F /* house.png in Resources */,
 				E823DB7E1FD14A6600A427D9 /* noun_1098185_cc.png in Resources */,
 				B7A264AA1FBF996400893AFE /* Main.storyboard in Resources */,
