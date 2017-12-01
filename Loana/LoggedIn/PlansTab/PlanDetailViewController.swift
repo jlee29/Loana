@@ -15,47 +15,64 @@ protocol PlanDetailViewControllerDelegate {
 class PlanDetailViewController: UIViewController {
     
     var delegate: PlanDetailViewControllerDelegate?
-
-    @IBOutlet weak var principalOwedLabel: UILabel!
-    @IBOutlet weak var annualAdjustedGrossIncomeLabel: UILabel!
-    @IBOutlet weak var testLabel: UILabel!
     
-    @IBOutlet weak var interestRateLabel: UILabel!
-    @IBOutlet weak var totalLoanCostLabel: UILabel!
-    @IBOutlet weak var totalMonthsLabel: UILabel!
     func confirmationHandler(alert: UIAlertAction!) {
         navigationController?.popViewController(animated: true)
     }
     
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var totalMonthLabel: UILabel!
+    @IBOutlet weak var totalLoanCostLabel: UILabel!
+    @IBOutlet weak var interestRateLabel: UILabel!
+    @IBOutlet weak var principalOwedLabel: UILabel!
+    @IBOutlet weak var adjustedGrossIncomeLabel: UILabel!
     @IBAction func setPlan(_ sender: UIButton) {
         let alert = UIAlertController(title: "Confirmation", message: "You've selected this plan!", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: confirmationHandler))
         self.present(alert, animated: true, completion: nil)
-        delegate?.updatedPlan(testLabel.text!)
+        delegate?.updatedPlan(long2short(_: titleLabel.text!))
+    }
+    
+    func long2short(_ titleText:String) -> String {
+        if(titleText == "Income-Based Repayment"){
+            return "IBR"
+        }else if(titleText == "Income-Contingent Repayment"){
+            return "ICR"
+        }else if(titleText == "Pay As You Earn"){
+            return "PAYE"
+        }else if(titleText == "Standard"){
+            return "Standard"
+        }else if(titleText == "Graduated"){
+            return "Graduated"
+        }else{
+            return "Extended"
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
-        annualAdjustedGrossIncomeLabel.text = "Annual Adjusted Gross Income: $25,000"
-        principalOwedLabel.text = "Principal owed: $20,000"
-        interestRateLabel.text = "Interest rate: 6.8%"
-        totalLoanCostLabel.text = "Total cost of loan: $35,431"
-        totalMonthsLabel.text = "Total months: 195"
-        
+        adjustedGrossIncomeLabel.text = "$25,000"
+        principalOwedLabel.text = "$20,000"
+        interestRateLabel.text = "6.8%"
+        totalLoanCostLabel.text = "$35,431"
+        totalMonthLabel.text = "195"
+        titleLabel.text = short2Long(_: testString!)
+    }
+    
+    func short2Long(_ testString: String) -> String {
         if(testString == "IBR"){
-            testLabel.text = "Income-Based Repayment"
+            return "Income-Based Repayment"
         }else if(testString == "ICR"){
-            testLabel.text = "Income-Contingent Repayment"
+            return "Income-Contingent Repayment"
         }else if(testString == "PAYE"){
-            testLabel.text = "Pay As You Earn"
+            return "Pay As You Earn"
         }else if(testString == "Standard"){
-            testLabel.text = "Standard"
+            return "Standard"
         }else if(testString == "Graduated"){
-            testLabel.text = "Graduated"
-        }else{
-            testLabel.text = "Extended"
+            return "Graduated"
         }
+        return "Extended"
     }
 
     override func didReceiveMemoryWarning() {
