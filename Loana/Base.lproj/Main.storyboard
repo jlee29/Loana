@@ -453,7 +453,7 @@
         <!--SignUpInfo2ViewController-->
         <scene sceneID="bTL-6g-EOg">
             <objects>
-                <viewController id="8Zi-4T-eey" userLabel="SignUpInfo2ViewController" sceneMemberID="viewController">
+                <viewController id="8Zi-4T-eey" userLabel="SignUpInfo2ViewController" customClass="SignUpInfo2ViewController" customModule="Loana" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6zv-cd-H8R">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1424,7 +1424,7 @@
         <image name="wallet.png" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="PIR-kr-NNc"/>
+        <segue reference="sn7-c4-Rc5"/>
         <segue reference="5Sl-3b-kAp"/>
     </inferredMetricsTieBreakers>
 </document>

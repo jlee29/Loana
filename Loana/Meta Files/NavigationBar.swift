@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class NavigationBar: UINavigationBar {
 
     /*
@@ -17,5 +18,16 @@ class NavigationBar: UINavigationBar {
         // Drawing code
     }
     */
+    override func draw(_ rect: CGRect) {
+        self.topItem?.titleView = UIImageView(image: UIImage(named: "hat30.png"))
+    }
+    
+    override func popItem(animated: Bool) -> UINavigationItem? {
+        return super.popItem(animated: false)
+    }
+    
+    override func pushItem(_ item: UINavigationItem, animated: Bool) {
+        return super.pushItem(item, animated: false)
+    }
     
 }

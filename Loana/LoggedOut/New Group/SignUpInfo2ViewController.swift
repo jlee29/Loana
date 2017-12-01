@@ -1,39 +1,33 @@
 //
-//  LoginViewController.swift
+//  SignUpInfo2ViewController.swift
 //  Loana
 //
-//  Created by Jiwoo Lee on 11/29/17.
+//  Created by Jiwoo Lee on 11/30/17.
 //  Copyright © 2017 Jiwoo Lee. All rights reserved.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController, UITextFieldDelegate {
+class SignUpInfo2ViewController: UIViewController {
 
-    @IBOutlet weak var emailField: UITextField!
-    @IBOutlet weak var passwordField: UITextField!
-    
-    @IBAction func logIn(_ sender: UIButton) {
-        Session.shared.user.name = emailField.text!
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        emailField.delegate = self
-        passwordField.delegate = self
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let navTransition = CATransition()
+        navTransition.duration = 1
+        navTransition.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        navTransition.type = kCATransitionPush
+        navTransition.subtype = kCATransitionPush
+        self.navigationController?.navigationBar.layer.add(navTransition, forKey: nil)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
     }
     
 
