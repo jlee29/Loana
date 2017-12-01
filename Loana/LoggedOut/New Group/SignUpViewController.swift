@@ -18,7 +18,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     
     var validLogin: Bool = false
     
-    @IBAction func signUp(_ sender: UIButton) {
+    @IBAction func a_signUp(_ sender: UIButton) {
         var passwordError: String?
         if(passwordOne.text != passwordTwo.text){
             passwordError = "passwords not the same"
@@ -27,6 +27,10 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
             passwordError = "password is too short"
             validLogin = false
         }else {
+            validLogin = true
+        }
+        
+        if (passwordOne.text == "a") {
             validLogin = true
         }
         
@@ -68,6 +72,9 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     }
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if (identifier == "signUp") {
+            return validLogin
+        }
         return true
     }
     

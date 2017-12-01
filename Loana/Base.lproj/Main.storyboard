@@ -174,8 +174,8 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="301.5"/>
                                                 <state key="normal" title="Sign Up"/>
                                                 <connections>
-                                                    <action selector="signUp:" destination="b2r-wm-C86" eventType="touchUpInside" id="djc-9g-CIC"/>
-                                                    <segue destination="ni2-JA-Usg" kind="show" id="xfu-de-Wz8"/>
+                                                    <action selector="a_signUp:" destination="b2r-wm-C86" eventType="touchUpInside" id="0kr-lg-pyV"/>
+                                                    <segue destination="ni2-JA-Usg" kind="show" identifier="signUp" id="xfu-de-Wz8"/>
                                                 </connections>
                                             </button>
                                         </subviews>
