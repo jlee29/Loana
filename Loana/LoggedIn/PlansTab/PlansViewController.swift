@@ -62,8 +62,12 @@ class PlansViewController: UIViewController, UICollectionViewDelegate, UICollect
         let cell = plansCollectionView.dequeueReusableCell(withReuseIdentifier: "plan", for: indexPath) as! PlansCollectionViewCell
         cell.testLabel.text = plans[indexPath.row]
         cell.label1.text = getTotalCost(plans[indexPath.row])
+        cell.label1.font = UIFont(name: "Avenir", size: 12)
         cell.label2.text = getMinMaxPayment(plans[indexPath.row])
+        cell.label2.font = UIFont(name: "Avenir", size: 12)
         cell.label3.text = getTotalMonths(plans[indexPath.row])
+        cell.label3.font = UIFont(name: "Avenir", size: 12)
+        
         cell.boxImg.layer.cornerRadius = 10
         cell.boxImg.clipsToBounds = true
         cell.backgroundColor = .clear
@@ -84,13 +88,13 @@ class PlansViewController: UIViewController, UICollectionViewDelegate, UICollect
     
     func getMinMaxPayment(_ plan: String) -> String {
         if(plan == "IBR"){
-            return "$0-200/month"
+            return "$0-200/mo"
         }else if(plan == "ICR"){
-            return "$10-300/month"
+            return "$10-300/mo"
         }else if(plan == "PAYE"){
-            return "$0-200/month"
+            return "$0-200/mo"
         }else{
-            return "$100-500/month"
+            return "$100-500/mo"
         }
     }
     
