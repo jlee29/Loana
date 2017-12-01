@@ -21,6 +21,7 @@ class SignUpInfo1ViewController: UIViewController, UIPickerViewDelegate, UIPicke
     var statePickerData: [String] = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
         maritalStatusPickerData = ["Married", "Single"]
         publicSectorPickerData = ["Yes", "No"]
         statePickerData = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiana",

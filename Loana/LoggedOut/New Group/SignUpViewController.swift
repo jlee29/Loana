@@ -39,6 +39,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
         
         emailTextField.delegate = self
         passwordOne.delegate = self

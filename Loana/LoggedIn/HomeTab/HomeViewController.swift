@@ -14,6 +14,7 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
         welcomeLabel.text = "Welcome Back " + Session.shared.user.name
 
         // Do any additional setup after loading the view.

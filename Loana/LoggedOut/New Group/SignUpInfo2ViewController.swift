@@ -20,6 +20,7 @@ class SignUpInfo2ViewController: UIViewController, UIPickerViewDelegate, UIPicke
         self.loanProviderPicker.delegate = self
         self.loanProviderPicker.dataSource = self
         loanIDTextField.delegate = self
+        self.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
         // Do any additional setup after loading the view.
     }
     

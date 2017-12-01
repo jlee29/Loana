@@ -18,9 +18,9 @@ class NavigationBar: UINavigationBar {
         // Drawing code
     }
     */
-    override func draw(_ rect: CGRect) {
-        self.topItem?.titleView = UIImageView(image: UIImage(named: "hat30.png"))
-    }
+//    override func draw(_ rect: CGRect) {
+//        self.topItem?.titleView = UIImageView(image: UIImage(named: "hat30.png"))
+//    }
     
     override func popItem(animated: Bool) -> UINavigationItem? {
         return super.popItem(animated: false)
