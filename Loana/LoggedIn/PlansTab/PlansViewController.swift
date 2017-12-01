@@ -28,8 +28,8 @@ class PlansViewController: UIViewController, UICollectionViewDelegate, UICollect
         plansCollectionView.reloadData()
     }
     
-    var allPlans = ["IBR", "PAYE", "ICR", "Standard", "Graduated", "Extended", "A", "B", "C", "D", "E"]
-    var plans = ["IBR", "PAYE", "ICR", "Standard", "Graduated", "Extended", "A", "B", "C", "D", "E"]
+    var allPlans = ["IBR", "PAYE", "ICR", "Standard", "Graduated", "Extended"]
+    var plans = ["IBR", "PAYE", "ICR", "Standard", "Graduated", "Extended"]
     var currPlan: String?
     
     @IBOutlet weak var plansCollectionView: UICollectionView!

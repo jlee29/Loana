@@ -1044,21 +1044,19 @@
                                         <rect key="frame" x="0.0" y="452.5" width="375" height="150.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXE-wh-rqm">
-                                                <rect key="frame" x="0.0" y="-0.5" width="375" height="151"/>
+                                                <rect key="frame" x="50" y="20" width="275" height="110.5"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <state key="normal" title="Use This Plan"/>
                                                 <connections>
                                                     <action selector="setPlan:" destination="WFL-Yq-Y6X" eventType="touchUpInside" id="tO7-Ir-gY5"/>
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="pXE-wh-rqm" secondAttribute="trailing" id="28n-yQ-3RD"/>
-                                            <constraint firstAttribute="bottom" secondItem="pXE-wh-rqm" secondAttribute="bottom" id="VXb-eJ-efk"/>
-                                            <constraint firstItem="pXE-wh-rqm" firstAttribute="width" secondItem="etg-9P-Wtx" secondAttribute="width" id="Y8v-0v-6yK"/>
-                                            <constraint firstItem="pXE-wh-rqm" firstAttribute="leading" secondItem="etg-9P-Wtx" secondAttribute="leading" id="fqT-16-PUN"/>
-                                            <constraint firstItem="pXE-wh-rqm" firstAttribute="top" secondItem="etg-9P-Wtx" secondAttribute="top" id="krk-M7-wM0"/>
-                                            <constraint firstItem="pXE-wh-rqm" firstAttribute="width" secondItem="etg-9P-Wtx" secondAttribute="width" id="qN5-NY-Jd2"/>
+                                            <constraint firstAttribute="bottom" secondItem="pXE-wh-rqm" secondAttribute="bottom" constant="20" id="P6Y-Yc-oKF"/>
+                                            <constraint firstItem="pXE-wh-rqm" firstAttribute="top" secondItem="etg-9P-Wtx" secondAttribute="top" constant="20" id="fyP-Xm-Vj6"/>
+                                            <constraint firstAttribute="trailing" secondItem="pXE-wh-rqm" secondAttribute="trailing" constant="50" id="l3L-qv-hEB"/>
+                                            <constraint firstItem="pXE-wh-rqm" firstAttribute="leading" secondItem="etg-9P-Wtx" secondAttribute="leading" constant="50" id="zvr-my-1c0"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -1086,6 +1084,7 @@
                         <outlet property="titleLabel" destination="7YC-1F-rR9" id="RUb-6r-66x"/>
                         <outlet property="totalLoanCostLabel" destination="j12-6c-Y1R" id="Rn3-ZW-eBE"/>
                         <outlet property="totalMonthLabel" destination="h8Q-cx-uUC" id="gCS-ak-iRx"/>
+                        <outlet property="useButton" destination="pXE-wh-rqm" id="htC-Hp-wqp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O64-M0-jBv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1240,9 +1239,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQw-Iu-FNA">
-                                <rect key="frame" x="160" y="350" width="55" height="30"/>
+                                <rect key="frame" x="100" y="350" width="175" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Log Out">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="logOut:" destination="5bD-4b-05T" eventType="touchUpInside" id="b0E-pa-X8u"/>
@@ -1251,15 +1251,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="SeL-dO-7wy" firstAttribute="trailing" secondItem="HQw-Iu-FNA" secondAttribute="trailing" constant="100" id="5jU-Ih-GlP"/>
                             <constraint firstItem="HQw-Iu-FNA" firstAttribute="centerX" secondItem="SeL-dO-7wy" secondAttribute="centerX" id="Fan-WS-GTY"/>
+                            <constraint firstItem="HQw-Iu-FNA" firstAttribute="leading" secondItem="SeL-dO-7wy" secondAttribute="leading" constant="100" id="d6f-5v-QrJ"/>
                             <constraint firstItem="HQw-Iu-FNA" firstAttribute="centerY" secondItem="SeL-dO-7wy" secondAttribute="centerY" id="qX3-6L-NDa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SeL-dO-7wy"/>
                     </view>
+                    <connections>
+                        <outlet property="logOut" destination="HQw-Iu-FNA" id="vxI-5M-ywb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t77-qp-QQk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4432" y="-546"/>
+            <point key="canvasLocation" x="4431.1999999999998" y="-546.47676161919048"/>
         </scene>
         <!--AutoPayViewController-->
         <scene sceneID="7hl-PP-guE">

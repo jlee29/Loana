@@ -19,6 +19,7 @@ class PlanDetailViewController: UIViewController {
     func confirmationHandler(alert: UIAlertAction!) {
         navigationController?.popViewController(animated: true)
     }
+    @IBOutlet weak var useButton: UIButton!
     
     @IBOutlet weak var graphImage: UIImageView!
     
@@ -61,7 +62,7 @@ class PlanDetailViewController: UIViewController {
         totalLoanCostLabel.text = "$35,431"
         totalMonthLabel.text = "195"
         titleLabel.text = short2Long(_: testString!)
-        
+        useButton.layer.cornerRadius = 10
         if(testString == "IBR" || testString == "PAYE" || testString == "ICR" ){
             graphImage.image = UIImage(named: "IBR.png")
         } else if(testString == "Graduated" || testString == "Extended") {

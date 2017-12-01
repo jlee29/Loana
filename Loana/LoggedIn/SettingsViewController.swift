@@ -10,6 +10,8 @@ import UIKit
 
 class SettingsViewController: UIViewController {
 
+    @IBOutlet weak var logOut: UIButton!
+    
     @IBAction func logOut(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
         if let topController = UIApplication.shared.keyWindow?.rootViewController as? UINavigationController {
@@ -20,6 +22,7 @@ class SettingsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
+        logOut.layer.cornerRadius = 10
 
         // Do any additional setup after loading the view.
     }
