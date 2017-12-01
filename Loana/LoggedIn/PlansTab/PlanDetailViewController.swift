@@ -20,6 +20,9 @@ class PlanDetailViewController: UIViewController {
     @IBOutlet weak var annualAdjustedGrossIncomeLabel: UILabel!
     @IBOutlet weak var testLabel: UILabel!
     
+    @IBOutlet weak var interestRateLabel: UILabel!
+    @IBOutlet weak var totalLoanCostLabel: UILabel!
+    @IBOutlet weak var totalMonthsLabel: UILabel!
     func confirmationHandler(alert: UIAlertAction!) {
         navigationController?.popViewController(animated: true)
     }
@@ -34,6 +37,12 @@ class PlanDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
+        annualAdjustedGrossIncomeLabel.text = "Annual Adjusted Gross Income: $25,000"
+        principalOwedLabel.text = "Principal owed: $20,000"
+        interestRateLabel.text = "Interest rate: 6.8%"
+        totalLoanCostLabel.text = "Total cost of loan: $35,431"
+        totalMonthsLabel.text = "Total months: 195"
+        
         if(testString == "IBR"){
             testLabel.text = "Income-Based Repayment"
         }else if(testString == "ICR"){
