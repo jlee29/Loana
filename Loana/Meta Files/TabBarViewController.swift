@@ -10,11 +10,14 @@ import UIKit
 
 class TabBarViewController: UITabBarController {
 
+    @IBOutlet weak var settingsItem: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
 //        self.tabBar.barTintColor = .black
         self.selectedIndex = 1;
+        settingsItem.setTitleTextAttributes([ NSAttributedStringKey.font: UIFont(name: "Avenir", size: 15)!], for: .normal)
 
         // Do any additional setup after loading the view.
     }
