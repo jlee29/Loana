@@ -22,7 +22,6 @@
 		B7A264AD1FBF996400893AFE /* Loana.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B7A264AB1FBF996400893AFE /* Loana.xcdatamodeld */; };
 		B7A264AF1FBF996400893AFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7A264AE1FBF996400893AFE /* Assets.xcassets */; };
 		B7A264B21FBF996400893AFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A264B01FBF996400893AFE /* LaunchScreen.storyboard */; };
-		B7E9B91D1FCF65B000234840 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9B91C1FCF65B000234840 /* WelcomeViewController.swift */; };
 		B7E9B91F1FCF6E2300234840 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9B91E1FCF6E2300234840 /* TabBarViewController.swift */; };
 		B7E9B9211FCF6EF000234840 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9B9201FCF6EF000234840 /* User.swift */; };
 		B7E9B9231FCF6FF000234840 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9B9221FCF6FF000234840 /* Session.swift */; };
@@ -36,6 +35,19 @@
 		E815D5071FD003B5005CB34F /* money.png in Resources */ = {isa = PBXBuildFile; fileRef = E815D5041FD003B4005CB34F /* money.png */; };
 		E815D50D1FD01136005CB34F /* hat30.png in Resources */ = {isa = PBXBuildFile; fileRef = E815D50C1FD01136005CB34F /* hat30.png */; };
 		E815D5111FD01366005CB34F /* icons in Resources */ = {isa = PBXBuildFile; fileRef = E815D5101FD01365005CB34F /* icons */; };
+		E823DB7B1FD14A6600A427D9 /* Group.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB731FD14A6500A427D9 /* Group.png */; };
+		E823DB7C1FD14A6600A427D9 /* iPhone SE.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB741FD14A6500A427D9 /* iPhone SE.png */; };
+		E823DB7D1FD14A6600A427D9 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB751FD14A6600A427D9 /* background.png */; };
+		E823DB7E1FD14A6600A427D9 /* noun_1098185_cc.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB761FD14A6600A427D9 /* noun_1098185_cc.png */; };
+		E823DB7F1FD14A6600A427D9 /* account-circle.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB771FD14A6600A427D9 /* account-circle.png */; };
+		E823DB801FD14A6600A427D9 /* first screen.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB781FD14A6600A427D9 /* first screen.png */; };
+		E823DB811FD14A6600A427D9 /* noun_125155_cc.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB791FD14A6600A427D9 /* noun_125155_cc.png */; };
+		E823DB821FD14A6600A427D9 /* lock-open.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB7A1FD14A6600A427D9 /* lock-open.png */; };
+		E823DB881FD14D7800A427D9 /* box.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB831FD14D7800A427D9 /* box.png */; };
+		E823DB891FD14D7800A427D9 /* plans.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB841FD14D7800A427D9 /* plans.png */; };
+		E823DB8A1FD14D7800A427D9 /* new plan.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB851FD14D7800A427D9 /* new plan.png */; };
+		E823DB8B1FD14D7800A427D9 /* widebox.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB861FD14D7800A427D9 /* widebox.png */; };
+		E823DB8C1FD14D7800A427D9 /* backbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB871FD14D7800A427D9 /* backbutton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,7 +68,6 @@
 		B7A264AE1FBF996400893AFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7A264B11FBF996400893AFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7A264B31FBF996400893AFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B7E9B91C1FCF65B000234840 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		B7E9B91E1FCF6E2300234840 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		B7E9B9201FCF6EF000234840 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B7E9B9221FCF6FF000234840 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
@@ -70,6 +81,19 @@
 		E815D5041FD003B4005CB34F /* money.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = money.png; sourceTree = "<group>"; };
 		E815D50C1FD01136005CB34F /* hat30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hat30.png; sourceTree = "<group>"; };
 		E815D5101FD01365005CB34F /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = icons; sourceTree = "<group>"; };
+		E823DB731FD14A6500A427D9 /* Group.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Group.png; sourceTree = "<group>"; };
+		E823DB741FD14A6500A427D9 /* iPhone SE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iPhone SE.png"; sourceTree = "<group>"; };
+		E823DB751FD14A6600A427D9 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		E823DB761FD14A6600A427D9 /* noun_1098185_cc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noun_1098185_cc.png; sourceTree = "<group>"; };
+		E823DB771FD14A6600A427D9 /* account-circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "account-circle.png"; sourceTree = "<group>"; };
+		E823DB781FD14A6600A427D9 /* first screen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first screen.png"; sourceTree = "<group>"; };
+		E823DB791FD14A6600A427D9 /* noun_125155_cc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noun_125155_cc.png; sourceTree = "<group>"; };
+		E823DB7A1FD14A6600A427D9 /* lock-open.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lock-open.png"; sourceTree = "<group>"; };
+		E823DB831FD14D7800A427D9 /* box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = box.png; sourceTree = "<group>"; };
+		E823DB841FD14D7800A427D9 /* plans.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plans.png; sourceTree = "<group>"; };
+		E823DB851FD14D7800A427D9 /* new plan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "new plan.png"; sourceTree = "<group>"; };
+		E823DB861FD14D7800A427D9 /* widebox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = widebox.png; sourceTree = "<group>"; };
+		E823DB871FD14D7800A427D9 /* backbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backbutton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +140,6 @@
 		B766CC831FD0FCEE00495638 /* LoggedOut */ = {
 			isa = PBXGroup;
 			children = (
-				B7E9B91C1FCF65B000234840 /* WelcomeViewController.swift */,
 				E815D4EF1FCFDFC9005CB34F /* SignUp */,
 				B7E9B92B1FCF77BD00234840 /* SignIn */,
 			);
@@ -189,6 +212,19 @@
 		D34FAC4C1FCFECB60008A8AF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E823DB871FD14D7800A427D9 /* backbutton.png */,
+				E823DB831FD14D7800A427D9 /* box.png */,
+				E823DB851FD14D7800A427D9 /* new plan.png */,
+				E823DB841FD14D7800A427D9 /* plans.png */,
+				E823DB861FD14D7800A427D9 /* widebox.png */,
+				E823DB771FD14A6600A427D9 /* account-circle.png */,
+				E823DB781FD14A6600A427D9 /* first screen.png */,
+				E823DB731FD14A6500A427D9 /* Group.png */,
+				E823DB741FD14A6500A427D9 /* iPhone SE.png */,
+				E823DB7A1FD14A6600A427D9 /* lock-open.png */,
+				E823DB791FD14A6600A427D9 /* noun_125155_cc.png */,
+				E823DB761FD14A6600A427D9 /* noun_1098185_cc.png */,
+				E823DB751FD14A6600A427D9 /* background.png */,
 				E815D5101FD01365005CB34F /* icons */,
 				E815D50C1FD01136005CB34F /* hat30.png */,
 				B774C83B1FCFFA5E009DFC76 /* wallet.png */,
@@ -268,13 +304,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E823DB8A1FD14D7800A427D9 /* new plan.png in Resources */,
 				B7A264B21FBF996400893AFE /* LaunchScreen.storyboard in Resources */,
+				E823DB801FD14A6600A427D9 /* first screen.png in Resources */,
+				E823DB7B1FD14A6600A427D9 /* Group.png in Resources */,
+				E823DB7D1FD14A6600A427D9 /* background.png in Resources */,
 				E815D5111FD01366005CB34F /* icons in Resources */,
 				B7A264AF1FBF996400893AFE /* Assets.xcassets in Resources */,
+				E823DB881FD14D7800A427D9 /* box.png in Resources */,
 				E815D50D1FD01136005CB34F /* hat30.png in Resources */,
+				E823DB8C1FD14D7800A427D9 /* backbutton.png in Resources */,
 				B774C83E1FCFFA5E009DFC76 /* wallet.png in Resources */,
+				E823DB821FD14A6600A427D9 /* lock-open.png in Resources */,
 				E815D5071FD003B5005CB34F /* money.png in Resources */,
+				E823DB8B1FD14D7800A427D9 /* widebox.png in Resources */,
+				E823DB7C1FD14A6600A427D9 /* iPhone SE.png in Resources */,
+				E823DB811FD14A6600A427D9 /* noun_125155_cc.png in Resources */,
+				E823DB7F1FD14A6600A427D9 /* account-circle.png in Resources */,
+				E823DB891FD14D7800A427D9 /* plans.png in Resources */,
 				E815D5061FD003B5005CB34F /* house.png in Resources */,
+				E823DB7E1FD14A6600A427D9 /* noun_1098185_cc.png in Resources */,
 				B7A264AA1FBF996400893AFE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +338,6 @@
 				B7E9B9231FCF6FF000234840 /* Session.swift in Sources */,
 				B7780C281FCFC92F0093A2C9 /* PlanDetailViewController.swift in Sources */,
 				B7A264A71FBF996400893AFE /* ViewController.swift in Sources */,
-				B7E9B91D1FCF65B000234840 /* WelcomeViewController.swift in Sources */,
 				B766CC7F1FD0FC4300495638 /* SignUpInfo2ViewController.swift in Sources */,
 				B7E9B9211FCF6EF000234840 /* User.swift in Sources */,
 				B766CC791FCFFEA600495638 /* HomeViewController.swift in Sources */,
