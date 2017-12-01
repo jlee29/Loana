@@ -464,33 +464,69 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebq-DS-Xmw">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="502.5"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nHB-24-EZs">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nHB-24-EZs">
                                                 <rect key="frame" x="10" y="10" width="355" height="482.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your loan provider:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Evs-TQ-wE5">
-                                                        <rect key="frame" x="0.0" y="0.0" width="355" height="120.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lkr-9M-pOe">
-                                                        <rect key="frame" x="0.0" y="120.5" width="355" height="121"/>
-                                                    </pickerView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your loan ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avq-UP-yP4">
-                                                        <rect key="frame" x="0.0" y="241.5" width="355" height="120.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rVK-Zi-66z">
-                                                        <rect key="frame" x="0.0" y="362" width="355" height="120.5"/>
-                                                    </pickerView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ptZ-Ga-hQe">
+                                                        <rect key="frame" x="0.0" y="0.0" width="355" height="344.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="svX-45-Mfo">
+                                                                <rect key="frame" x="0.0" y="0.0" width="355" height="344.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your loan provider:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Evs-TQ-wE5">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="355" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lkr-9M-pOe">
+                                                                        <rect key="frame" x="0.0" y="20.5" width="355" height="324"/>
+                                                                    </pickerView>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstItem="svX-45-Mfo" firstAttribute="leading" secondItem="ptZ-Ga-hQe" secondAttribute="leading" id="Mb6-l9-GkZ"/>
+                                                            <constraint firstItem="svX-45-Mfo" firstAttribute="top" secondItem="ptZ-Ga-hQe" secondAttribute="top" id="MwX-qY-QXU"/>
+                                                            <constraint firstAttribute="trailing" secondItem="svX-45-Mfo" secondAttribute="trailing" id="R7i-es-flf"/>
+                                                            <constraint firstAttribute="bottom" secondItem="svX-45-Mfo" secondAttribute="bottom" id="oIi-ER-fGY"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="khV-fc-Vj7">
+                                                        <rect key="frame" x="0.0" y="344.5" width="355" height="138"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2VG-7l-OHm">
+                                                                <rect key="frame" x="0.0" y="0.0" width="355" height="138"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your loan ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avq-UP-yP4">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="355" height="69"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kgv-6j-YF6">
+                                                                        <rect key="frame" x="0.0" y="69" width="355" height="69"/>
+                                                                        <nil key="textColor"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                    </textField>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstItem="2VG-7l-OHm" firstAttribute="leading" secondItem="khV-fc-Vj7" secondAttribute="leading" id="3WX-Op-2zM"/>
+                                                            <constraint firstItem="2VG-7l-OHm" firstAttribute="top" secondItem="khV-fc-Vj7" secondAttribute="top" id="UWn-ZZ-2uE"/>
+                                                            <constraint firstAttribute="bottom" secondItem="2VG-7l-OHm" secondAttribute="bottom" id="gXp-ER-IAa"/>
+                                                            <constraint firstAttribute="trailing" secondItem="2VG-7l-OHm" secondAttribute="trailing" id="odh-7W-6GL"/>
+                                                        </constraints>
+                                                    </view>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstItem="Evs-TQ-wE5" firstAttribute="width" secondItem="nHB-24-EZs" secondAttribute="width" id="0vK-Wy-oyZ"/>
-                                                    <constraint firstItem="Lkr-9M-pOe" firstAttribute="width" secondItem="nHB-24-EZs" secondAttribute="width" id="UxT-72-Phg"/>
-                                                    <constraint firstItem="avq-UP-yP4" firstAttribute="width" secondItem="nHB-24-EZs" secondAttribute="width" id="jS1-J8-fg8"/>
-                                                    <constraint firstItem="rVK-Zi-66z" firstAttribute="width" secondItem="nHB-24-EZs" secondAttribute="width" id="p5F-uS-V06"/>
+                                                    <constraint firstItem="ptZ-Ga-hQe" firstAttribute="width" secondItem="nHB-24-EZs" secondAttribute="width" id="LXB-Eo-GA1"/>
+                                                    <constraint firstItem="ptZ-Ga-hQe" firstAttribute="height" secondItem="khV-fc-Vj7" secondAttribute="height" multiplier="2.5" id="U5J-Q2-1K0"/>
+                                                    <constraint firstItem="khV-fc-Vj7" firstAttribute="width" secondItem="ptZ-Ga-hQe" secondAttribute="width" id="cTE-lS-s0n"/>
                                                 </constraints>
                                             </stackView>
                                         </subviews>
@@ -538,6 +574,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RUA-h8-P4O"/>
                     </view>
+                    <connections>
+                        <outlet property="loanIDTextField" destination="kgv-6j-YF6" id="7l7-mR-Kdi"/>
+                        <outlet property="loanProviderPicker" destination="Lkr-9M-pOe" id="gQC-4I-hSZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2E8-Hn-YlV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

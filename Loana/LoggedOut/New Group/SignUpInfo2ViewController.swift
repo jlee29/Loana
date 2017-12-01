@@ -8,11 +8,18 @@
 
 import UIKit
 
-class SignUpInfo2ViewController: UIViewController {
-
+class SignUpInfo2ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
+    
+    @IBOutlet weak var loanProviderPicker: UIPickerView!
+    @IBOutlet weak var loanIDTextField: UITextField!
+    
+    var loanProviderPickerData: [String] = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        loanProviderPickerData = ["Random", "Another one", "Back again"]
+        self.loanProviderPicker.delegate = self
+        self.loanProviderPicker.dataSource = self
+        loanIDTextField.delegate = self
         // Do any additional setup after loading the view.
     }
     
@@ -30,15 +37,23 @@ class SignUpInfo2ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
     }
-    */
+    
+    // The number of rows of data
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return loanProviderPickerData.count
+    }
+    
+    // The data to return for the row and component (column) that's being passed in
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return loanProviderPickerData[row]
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 
 }
