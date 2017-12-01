@@ -143,10 +143,10 @@
                                                 <rect key="frame" x="10" y="10" width="355" height="516"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sRk-ie-B7I">
-                                                        <rect key="frame" x="0.0" y="0.0" width="355" height="133"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="355" height="132.5"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JkV-mP-dXx">
-                                                                <rect key="frame" x="0.0" y="0.0" width="355" height="133.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="355" height="133"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your marital status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXg-8D-sYk">
                                                                         <rect key="frame" x="0.0" y="0.0" width="355" height="16.5"/>
@@ -155,7 +155,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z1J-xW-hpH">
-                                                                        <rect key="frame" x="0.0" y="16.5" width="355" height="117"/>
+                                                                        <rect key="frame" x="0.0" y="16.5" width="355" height="116.5"/>
                                                                     </pickerView>
                                                                 </subviews>
                                                                 <constraints>
@@ -172,10 +172,10 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" verticalHuggingPriority="252" translatesAutoresizingMaskIntoConstraints="NO" id="2HQ-C3-LN1">
-                                                        <rect key="frame" x="0.0" y="143" width="355" height="88.5"/>
+                                                        <rect key="frame" x="0.0" y="142.5" width="355" height="88"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="891-AI-h3r">
-                                                                <rect key="frame" x="0.0" y="-0.5" width="355" height="89"/>
+                                                                <rect key="frame" x="0.0" y="-0.5" width="355" height="88.5"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your annual adjusted gross-income" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFC-QO-BXa">
                                                                         <rect key="frame" x="0.0" y="0.0" width="355" height="44.5"/>
@@ -184,7 +184,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fpz-uu-AZ3">
-                                                                        <rect key="frame" x="0.0" y="44.5" width="355" height="44.5"/>
+                                                                        <rect key="frame" x="0.0" y="44.5" width="355" height="44"/>
                                                                         <nil key="textColor"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -204,10 +204,10 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ked-0d-0lS">
-                                                        <rect key="frame" x="0.0" y="241.5" width="355" height="132"/>
+                                                        <rect key="frame" x="0.0" y="240.5" width="355" height="132.5"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XRi-K0-zFm">
-                                                                <rect key="frame" x="0.0" y="0.0" width="355" height="132"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="355" height="132.5"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your state of residence" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmT-ME-5Lf">
                                                                         <rect key="frame" x="0.0" y="0.0" width="355" height="16.5"/>
@@ -216,7 +216,7 @@
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cCP-FI-DlH">
-                                                                        <rect key="frame" x="0.0" y="16.5" width="355" height="115.5"/>
+                                                                        <rect key="frame" x="0.0" y="16.5" width="355" height="116"/>
                                                                     </pickerView>
                                                                 </subviews>
                                                                 <constraints>
@@ -233,19 +233,19 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Y9-YD-JaM">
-                                                        <rect key="frame" x="0.0" y="383.5" width="355" height="132.5"/>
+                                                        <rect key="frame" x="0.0" y="383" width="355" height="133"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rOZ-gR-kTP">
-                                                                <rect key="frame" x="0.0" y="-0.5" width="355" height="133"/>
+                                                                <rect key="frame" x="0.0" y="-0.5" width="355" height="133.5"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you work in the public sector?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdl-Kf-fvi">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="355" height="17"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="355" height="16.5"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <nil key="textColor"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xWV-xQ-4Va">
-                                                                        <rect key="frame" x="0.0" y="17" width="355" height="116"/>
+                                                                        <rect key="frame" x="0.0" y="16.5" width="355" height="117"/>
                                                                     </pickerView>
                                                                 </subviews>
                                                                 <constraints>
@@ -442,11 +442,18 @@
                                     </view>
                                 </subviews>
                             </stackView>
+                            <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="u7w-OD-5ga">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ku6-ul-yC9" firstAttribute="trailing" secondItem="nj2-DK-dvb" secondAttribute="trailing" id="6cY-P6-c7u"/>
+                            <constraint firstItem="ku6-ul-yC9" firstAttribute="trailing" secondItem="u7w-OD-5ga" secondAttribute="trailing" id="KBm-mw-AFt"/>
+                            <constraint firstItem="ku6-ul-yC9" firstAttribute="bottom" secondItem="u7w-OD-5ga" secondAttribute="bottom" id="M6G-Nk-VI8"/>
+                            <constraint firstItem="u7w-OD-5ga" firstAttribute="top" secondItem="ku6-ul-yC9" secondAttribute="top" id="fXB-hk-8ca"/>
                             <constraint firstItem="ku6-ul-yC9" firstAttribute="bottom" secondItem="nj2-DK-dvb" secondAttribute="bottom" id="jh1-EN-9Ot"/>
+                            <constraint firstItem="u7w-OD-5ga" firstAttribute="leading" secondItem="ku6-ul-yC9" secondAttribute="leading" id="lUW-Z7-vb1"/>
                             <constraint firstItem="nj2-DK-dvb" firstAttribute="leading" secondItem="ku6-ul-yC9" secondAttribute="leading" id="mDv-3w-gC2"/>
                             <constraint firstItem="nj2-DK-dvb" firstAttribute="top" secondItem="ku6-ul-yC9" secondAttribute="top" id="uhr-oN-Mep"/>
                         </constraints>
@@ -1487,6 +1494,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="background.png" width="1125" height="2055"/>
         <image name="house.png" width="30" height="30"/>
         <image name="money.png" width="30" height="30"/>
         <image name="wallet.png" width="30" height="30"/>
