@@ -40,6 +40,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let avenirFont = UIFont(name: "Avenir", size: fontSize!)
         loginButton.titleLabel?.font = avenirFont
         signUpButton.titleLabel?.font = avenirFont
+        
+        emailField.textContentType = UITextContentType.init(rawValue: "")
+        passwordField.textContentType = UITextContentType.init(rawValue: "")
         mainView.layer.cornerRadius = 10
     }
     

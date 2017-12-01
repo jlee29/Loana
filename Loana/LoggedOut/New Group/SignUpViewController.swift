@@ -47,6 +47,9 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         emailTextField.delegate = self
         passwordOne.delegate = self
         passwordTwo.delegate = self
+        emailTextField.textContentType = UITextContentType.init(rawValue: "")
+        passwordOne.textContentType = UITextContentType.init(rawValue: "")
+        passwordTwo.textContentType = UITextContentType.init(rawValue: "")
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard (_:)))
         self.view.addGestureRecognizer(tapGesture)
     }
