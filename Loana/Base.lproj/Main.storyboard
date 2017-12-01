@@ -904,17 +904,10 @@
                                                         <rect key="frame" x="0.0" y="226" width="375" height="226.5"/>
                                                     </imageView>
                                                 </subviews>
-                                                <constraints>
-                                                    <constraint firstItem="OWJ-6h-Zd3" firstAttribute="top" secondItem="ZMx-yD-4f7" secondAttribute="top" id="ATg-4v-Jja"/>
-                                                    <constraint firstItem="OWJ-6h-Zd3" firstAttribute="leading" secondItem="ZMx-yD-4f7" secondAttribute="leading" id="Cg4-5s-U5R"/>
-                                                    <constraint firstAttribute="trailing" secondItem="OWJ-6h-Zd3" secondAttribute="trailing" id="HR2-x0-eGG"/>
-                                                    <constraint firstAttribute="bottom" secondItem="OWJ-6h-Zd3" secondAttribute="bottom" id="n3t-7k-3ZD"/>
-                                                </constraints>
                                             </stackView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="ZMx-yD-4f7" firstAttribute="leading" secondItem="haf-RB-ima" secondAttribute="leading" id="Bfz-N9-8Z2"/>
                                             <constraint firstAttribute="bottom" secondItem="ZMx-yD-4f7" secondAttribute="bottom" id="MAs-4w-S8b"/>
                                             <constraint firstItem="ZMx-yD-4f7" firstAttribute="top" secondItem="haf-RB-ima" secondAttribute="top" id="Ngu-Hk-2hh"/>
                                             <constraint firstAttribute="trailing" secondItem="ZMx-yD-4f7" secondAttribute="trailing" id="aAO-lN-gw9"/>
