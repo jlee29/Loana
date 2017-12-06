@@ -16,11 +16,25 @@
 		B766CC7B1FD00C0400495638 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B766CC7A1FD00C0400495638 /* NavigationBar.swift */; };
 		B766CC7D1FD0131200495638 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B766CC7C1FD0131200495638 /* NavigationViewController.swift */; };
 		B766CC7F1FD0FC4300495638 /* SignUpInfo2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B766CC7E1FD0FC4200495638 /* SignUpInfo2ViewController.swift */; };
+		B76AF5731FD81F7400F51D7F /* icons8-plus-100.png in Resources */ = {isa = PBXBuildFile; fileRef = B76AF5711FD81F7000F51D7F /* icons8-plus-100.png */; };
+		B76AF5741FD81F7400F51D7F /* icons8-forward-100.png in Resources */ = {isa = PBXBuildFile; fileRef = B76AF5721FD81F7200F51D7F /* icons8-forward-100.png */; };
+		B76AF5761FD8261400F51D7F /* BankCompanyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76AF5751FD8261400F51D7F /* BankCompanyCollectionViewCell.swift */; };
+		B76AF5781FD8266B00F51D7F /* LinkAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76AF5771FD8266B00F51D7F /* LinkAccountViewController.swift */; };
 		B774C8391FCFF4AB009DFC76 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B774C8381FCFF4AB009DFC76 /* SettingsViewController.swift */; };
 		B774C83E1FCFFA5E009DFC76 /* wallet.png in Resources */ = {isa = PBXBuildFile; fileRef = B774C83B1FCFFA5E009DFC76 /* wallet.png */; };
 		B7780C221FCFB67A0093A2C9 /* PlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7780C211FCFB67A0093A2C9 /* PlansViewController.swift */; };
 		B7780C281FCFC92F0093A2C9 /* PlanDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7780C271FCFC92F0093A2C9 /* PlanDetailViewController.swift */; };
 		B78391571FD7F50C004FB5AB /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78391561FD7F50C004FB5AB /* MainPageViewController.swift */; };
+		B78391591FD80AED004FB5AB /* BankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78391581FD80AED004FB5AB /* BankViewController.swift */; };
+		B783915F1FD80CC0004FB5AB /* boa.png in Resources */ = {isa = PBXBuildFile; fileRef = B783915A1FD80CAF004FB5AB /* boa.png */; };
+		B78391601FD80CC0004FB5AB /* hsbc.png in Resources */ = {isa = PBXBuildFile; fileRef = B783915B1FD80CB2004FB5AB /* hsbc.png */; };
+		B78391611FD80CC0004FB5AB /* chase.png in Resources */ = {isa = PBXBuildFile; fileRef = B783915C1FD80CB6004FB5AB /* chase.png */; };
+		B78391621FD80CC0004FB5AB /* barclay.png in Resources */ = {isa = PBXBuildFile; fileRef = B783915D1FD80CB9004FB5AB /* barclay.png */; };
+		B78391631FD80CC0004FB5AB /* wellsFargo.png in Resources */ = {isa = PBXBuildFile; fileRef = B783915E1FD80CBC004FB5AB /* wellsFargo.png */; };
+		B78391651FD80EA1004FB5AB /* BankCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78391641FD80EA1004FB5AB /* BankCollectionViewCell.swift */; };
+		B78391671FD81087004FB5AB /* AddCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78391661FD81087004FB5AB /* AddCollectionViewCell.swift */; };
+		B783916A1FD81241004FB5AB /* forward.png in Resources */ = {isa = PBXBuildFile; fileRef = B78391681FD81241004FB5AB /* forward.png */; };
+		B783916B1FD81241004FB5AB /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = B78391691FD81241004FB5AB /* plus.png */; };
 		B7A264A51FBF996400893AFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A264A41FBF996400893AFE /* AppDelegate.swift */; };
 		B7A264A71FBF996400893AFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A264A61FBF996400893AFE /* ViewController.swift */; };
 		B7A264AA1FBF996400893AFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A264A81FBF996400893AFE /* Main.storyboard */; };
@@ -42,6 +56,13 @@
 		D35FED5E1FD808A4005C8606 /* AutopayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35FED5D1FD808A4005C8606 /* AutopayViewController.swift */; };
 		D64B813745412D65661C802B /* Pods_Loana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A876C0EE2993CA6739387610 /* Pods_Loana.framework */; };
 		E8064B3E1FD7FC8A003C83DA /* Graph1Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8064B3D1FD7FC8A003C83DA /* Graph1Controller.swift */; };
+		E8064B451FD8201F003C83DA /* progress_tree_6.png in Resources */ = {isa = PBXBuildFile; fileRef = E8064B3F1FD8201D003C83DA /* progress_tree_6.png */; };
+		E8064B461FD8201F003C83DA /* progress_tree_2.png in Resources */ = {isa = PBXBuildFile; fileRef = E8064B401FD8201E003C83DA /* progress_tree_2.png */; };
+		E8064B471FD8201F003C83DA /* progress_tree_4.png in Resources */ = {isa = PBXBuildFile; fileRef = E8064B411FD8201E003C83DA /* progress_tree_4.png */; };
+		E8064B481FD8201F003C83DA /* progress_tree_1.png in Resources */ = {isa = PBXBuildFile; fileRef = E8064B421FD8201E003C83DA /* progress_tree_1.png */; };
+		E8064B491FD8201F003C83DA /* progress_tree_3.png in Resources */ = {isa = PBXBuildFile; fileRef = E8064B431FD8201E003C83DA /* progress_tree_3.png */; };
+		E8064B4A1FD8201F003C83DA /* progress_tree_5.png in Resources */ = {isa = PBXBuildFile; fileRef = E8064B441FD8201F003C83DA /* progress_tree_5.png */; };
+		E8064B4C1FD82370003C83DA /* TreeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8064B4B1FD82370003C83DA /* TreeController.swift */; };
 		E815D4F11FCFDFEC005CB34F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E815D4F01FCFDFEC005CB34F /* SignUpViewController.swift */; };
 		E815D4F31FCFE1C1005CB34F /* RepaymentPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = E815D4F21FCFE1C1005CB34F /* RepaymentPlan.swift */; };
 		E815D5061FD003B5005CB34F /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = E815D5031FD003B3005CB34F /* house.png */; };
@@ -76,11 +97,25 @@
 		B766CC7A1FD00C0400495638 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		B766CC7C1FD0131200495638 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		B766CC7E1FD0FC4200495638 /* SignUpInfo2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInfo2ViewController.swift; sourceTree = "<group>"; };
+		B76AF5711FD81F7000F51D7F /* icons8-plus-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-plus-100.png"; sourceTree = "<group>"; };
+		B76AF5721FD81F7200F51D7F /* icons8-forward-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-forward-100.png"; sourceTree = "<group>"; };
+		B76AF5751FD8261400F51D7F /* BankCompanyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankCompanyCollectionViewCell.swift; sourceTree = "<group>"; };
+		B76AF5771FD8266B00F51D7F /* LinkAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkAccountViewController.swift; sourceTree = "<group>"; };
 		B774C8381FCFF4AB009DFC76 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		B774C83B1FCFFA5E009DFC76 /* wallet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wallet.png; sourceTree = "<group>"; };
 		B7780C211FCFB67A0093A2C9 /* PlansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansViewController.swift; sourceTree = "<group>"; };
 		B7780C271FCFC92F0093A2C9 /* PlanDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanDetailViewController.swift; sourceTree = "<group>"; };
 		B78391561FD7F50C004FB5AB /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		B78391581FD80AED004FB5AB /* BankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankViewController.swift; sourceTree = "<group>"; };
+		B783915A1FD80CAF004FB5AB /* boa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boa.png; sourceTree = "<group>"; };
+		B783915B1FD80CB2004FB5AB /* hsbc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hsbc.png; sourceTree = "<group>"; };
+		B783915C1FD80CB6004FB5AB /* chase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chase.png; sourceTree = "<group>"; };
+		B783915D1FD80CB9004FB5AB /* barclay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = barclay.png; sourceTree = "<group>"; };
+		B783915E1FD80CBC004FB5AB /* wellsFargo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wellsFargo.png; sourceTree = "<group>"; };
+		B78391641FD80EA1004FB5AB /* BankCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankCollectionViewCell.swift; sourceTree = "<group>"; };
+		B78391661FD81087004FB5AB /* AddCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCollectionViewCell.swift; sourceTree = "<group>"; };
+		B78391681FD81241004FB5AB /* forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forward.png; sourceTree = "<group>"; };
+		B78391691FD81241004FB5AB /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
 		B7A264A11FBF996400893AFE /* Loana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A264A41FBF996400893AFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7A264A61FBF996400893AFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,9 +135,16 @@
 		B7F62D551FD7E91B0010CC7B /* icons8-settings-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-settings-30.png"; sourceTree = "<group>"; };
 		B7F62D561FD7E91D0010CC7B /* icons8-menu-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-menu-30.png"; sourceTree = "<group>"; };
 		D34FAC591FCFF6F80008A8AF /* SignUpInfo1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInfo1ViewController.swift; sourceTree = "<group>"; };
-		E8064B3D1FD7FC8A003C83DA /* Graph1Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Graph1Controller.swift; path = "Meta Files/Graph1Controller.swift"; sourceTree = "<group>"; };
 		D35FED5B1FD7FE78005C8606 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = LoggedIn/ProfileViewController.swift; sourceTree = "<group>"; };
 		D35FED5D1FD808A4005C8606 /* AutopayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AutopayViewController.swift; path = LoggedIn/AutopayViewController.swift; sourceTree = "<group>"; };
+		E8064B3D1FD7FC8A003C83DA /* Graph1Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Graph1Controller.swift; path = "Meta Files/Graph1Controller.swift"; sourceTree = "<group>"; };
+		E8064B3F1FD8201D003C83DA /* progress_tree_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress_tree_6.png; sourceTree = "<group>"; };
+		E8064B401FD8201E003C83DA /* progress_tree_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress_tree_2.png; sourceTree = "<group>"; };
+		E8064B411FD8201E003C83DA /* progress_tree_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress_tree_4.png; sourceTree = "<group>"; };
+		E8064B421FD8201E003C83DA /* progress_tree_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress_tree_1.png; sourceTree = "<group>"; };
+		E8064B431FD8201E003C83DA /* progress_tree_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress_tree_3.png; sourceTree = "<group>"; };
+		E8064B441FD8201F003C83DA /* progress_tree_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress_tree_5.png; sourceTree = "<group>"; };
+		E8064B4B1FD82370003C83DA /* TreeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeController.swift; sourceTree = "<group>"; };
 		E815D4F01FCFDFEC005CB34F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E815D4F21FCFE1C1005CB34F /* RepaymentPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepaymentPlan.swift; sourceTree = "<group>"; };
 		E815D5031FD003B3005CB34F /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = house.png; sourceTree = "<group>"; };
@@ -228,6 +270,11 @@
 				B766CC831FD0FCEE00495638 /* LoggedOut */,
 				B766CC801FD0FC9100495638 /* Meta Files */,
 				B7A264A81FBF996400893AFE /* Main.storyboard */,
+				B76AF5751FD8261400F51D7F /* BankCompanyCollectionViewCell.swift */,
+				B76AF5771FD8266B00F51D7F /* LinkAccountViewController.swift */,
+				B78391661FD81087004FB5AB /* AddCollectionViewCell.swift */,
+				B78391641FD80EA1004FB5AB /* BankCollectionViewCell.swift */,
+				B78391581FD80AED004FB5AB /* BankViewController.swift */,
 				D35FED5D1FD808A4005C8606 /* AutopayViewController.swift */,
 				B766CC811FD0FCBA00495638 /* LoggedIn */,
 				B7E9B9281FCF750B00234840 /* Model */,
@@ -237,6 +284,7 @@
 				B7A264AB1FBF996400893AFE /* Loana.xcdatamodeld */,
 				E8064B3D1FD7FC8A003C83DA /* Graph1Controller.swift */,
 				D35FED5B1FD7FE78005C8606 /* ProfileViewController.swift */,
+				E8064B4B1FD82370003C83DA /* TreeController.swift */,
 			);
 			path = Loana;
 			sourceTree = "<group>";
@@ -264,6 +312,19 @@
 		D34FAC4C1FCFECB60008A8AF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E8064B421FD8201E003C83DA /* progress_tree_1.png */,
+				E8064B401FD8201E003C83DA /* progress_tree_2.png */,
+				E8064B431FD8201E003C83DA /* progress_tree_3.png */,
+				E8064B411FD8201E003C83DA /* progress_tree_4.png */,
+				E8064B441FD8201F003C83DA /* progress_tree_5.png */,
+				E8064B3F1FD8201D003C83DA /* progress_tree_6.png */,
+				B76AF5721FD81F7200F51D7F /* icons8-forward-100.png */,
+				B76AF5711FD81F7000F51D7F /* icons8-plus-100.png */,
+				B783915D1FD80CB9004FB5AB /* barclay.png */,
+				B783915A1FD80CAF004FB5AB /* boa.png */,
+				B783915C1FD80CB6004FB5AB /* chase.png */,
+				B783915B1FD80CB2004FB5AB /* hsbc.png */,
+				B783915E1FD80CBC004FB5AB /* wellsFargo.png */,
 				B7F62D561FD7E91D0010CC7B /* icons8-menu-30.png */,
 				B7F62D551FD7E91B0010CC7B /* icons8-settings-30.png */,
 				B7F62D531FD7E8C40010CC7B /* icons8-settings-50.png */,
@@ -282,6 +343,8 @@
 				E823DB731FD14A6500A427D9 /* Group.png */,
 				E823DB741FD14A6500A427D9 /* iPhone SE.png */,
 				E823DB7A1FD14A6600A427D9 /* lock-open.png */,
+				B78391681FD81241004FB5AB /* forward.png */,
+				B78391691FD81241004FB5AB /* plus.png */,
 				E823DB791FD14A6600A427D9 /* noun_125155_cc.png */,
 				E823DB761FD14A6600A427D9 /* noun_1098185_cc.png */,
 				E823DB751FD14A6600A427D9 /* background.png */,
@@ -367,33 +430,48 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B78391611FD80CC0004FB5AB /* chase.png in Resources */,
+				B783915F1FD80CC0004FB5AB /* boa.png in Resources */,
 				E823DB8A1FD14D7800A427D9 /* new plan.png in Resources */,
+				E8064B451FD8201F003C83DA /* progress_tree_6.png in Resources */,
 				B73530161FD15FC8007FF4B4 /* loana.png in Resources */,
+				B76AF5731FD81F7400F51D7F /* icons8-plus-100.png in Resources */,
 				B735301C1FD18999007FF4B4 /* standard.png in Resources */,
 				B7A264B21FBF996400893AFE /* LaunchScreen.storyboard in Resources */,
 				E823DB801FD14A6600A427D9 /* first screen.png in Resources */,
 				E823DB7B1FD14A6600A427D9 /* Group.png in Resources */,
 				E823DB7D1FD14A6600A427D9 /* background.png in Resources */,
+				B78391621FD80CC0004FB5AB /* barclay.png in Resources */,
 				B7F62D571FD7E91F0010CC7B /* icons8-settings-30.png in Resources */,
+				B783916B1FD81241004FB5AB /* plus.png in Resources */,
 				E815D5111FD01366005CB34F /* icons in Resources */,
+				E8064B461FD8201F003C83DA /* progress_tree_2.png in Resources */,
 				B7A264AF1FBF996400893AFE /* Assets.xcassets in Resources */,
+				E8064B4A1FD8201F003C83DA /* progress_tree_5.png in Resources */,
 				E823DB881FD14D7800A427D9 /* box.png in Resources */,
+				B783916A1FD81241004FB5AB /* forward.png in Resources */,
 				B7F62D581FD7E91F0010CC7B /* icons8-menu-30.png in Resources */,
+				E8064B491FD8201F003C83DA /* progress_tree_3.png in Resources */,
 				B735301E1FD18999007FF4B4 /* IBR.png in Resources */,
 				E815D50D1FD01136005CB34F /* hat30.png in Resources */,
+				E8064B481FD8201F003C83DA /* progress_tree_1.png in Resources */,
+				B78391601FD80CC0004FB5AB /* hsbc.png in Resources */,
 				E823DB8C1FD14D7800A427D9 /* backbutton.png in Resources */,
 				B774C83E1FCFFA5E009DFC76 /* wallet.png in Resources */,
 				E823DB821FD14A6600A427D9 /* lock-open.png in Resources */,
 				B7F62D521FD7E8180010CC7B /* hamburger.png in Resources */,
 				E815D5071FD003B5005CB34F /* money.png in Resources */,
 				E823DB8B1FD14D7800A427D9 /* widebox.png in Resources */,
+				B76AF5741FD81F7400F51D7F /* icons8-forward-100.png in Resources */,
 				E823DB7C1FD14A6600A427D9 /* iPhone SE.png in Resources */,
 				B735301D1FD18999007FF4B4 /* graduated.png in Resources */,
 				E823DB811FD14A6600A427D9 /* noun_125155_cc.png in Resources */,
+				B78391631FD80CC0004FB5AB /* wellsFargo.png in Resources */,
 				E823DB7F1FD14A6600A427D9 /* account-circle.png in Resources */,
 				E823DB891FD14D7800A427D9 /* plans.png in Resources */,
 				B7F62D541FD7E8C50010CC7B /* icons8-settings-50.png in Resources */,
 				E815D5061FD003B5005CB34F /* house.png in Resources */,
+				E8064B471FD8201F003C83DA /* progress_tree_4.png in Resources */,
 				E823DB7E1FD14A6600A427D9 /* noun_1098185_cc.png in Resources */,
 				B7A264AA1FBF996400893AFE /* Main.storyboard in Resources */,
 			);
@@ -463,10 +541,14 @@
 				B7E9B9231FCF6FF000234840 /* Session.swift in Sources */,
 				D35FED5E1FD808A4005C8606 /* AutopayViewController.swift in Sources */,
 				B78391571FD7F50C004FB5AB /* MainPageViewController.swift in Sources */,
+				B78391591FD80AED004FB5AB /* BankViewController.swift in Sources */,
 				B7780C281FCFC92F0093A2C9 /* PlanDetailViewController.swift in Sources */,
 				B7A264A71FBF996400893AFE /* ViewController.swift in Sources */,
+				B76AF5781FD8266B00F51D7F /* LinkAccountViewController.swift in Sources */,
+				B78391671FD81087004FB5AB /* AddCollectionViewCell.swift in Sources */,
 				B766CC7F1FD0FC4300495638 /* SignUpInfo2ViewController.swift in Sources */,
 				B7E9B9211FCF6EF000234840 /* User.swift in Sources */,
+				B78391651FD80EA1004FB5AB /* BankCollectionViewCell.swift in Sources */,
 				D35FED5C1FD7FE78005C8606 /* ProfileViewController.swift in Sources */,
 				B73530181FD176C8007FF4B4 /* PlansCollectionViewCell.swift in Sources */,
 				B766CC791FCFFEA600495638 /* HomeViewController.swift in Sources */,
@@ -476,11 +558,13 @@
 				B774C8391FCFF4AB009DFC76 /* SettingsViewController.swift in Sources */,
 				E815D4F31FCFE1C1005CB34F /* RepaymentPlan.swift in Sources */,
 				B7E9B9251FCF710C00234840 /* LoanFinder.swift in Sources */,
+				E8064B4C1FD82370003C83DA /* TreeController.swift in Sources */,
 				E8064B3E1FD7FC8A003C83DA /* Graph1Controller.swift in Sources */,
 				E815D4F11FCFDFEC005CB34F /* SignUpViewController.swift in Sources */,
 				B7E9B91F1FCF6E2300234840 /* TabBarViewController.swift in Sources */,
 				B7E9B92A1FCF773A00234840 /* LoginViewController.swift in Sources */,
 				D34FAC5A1FCFF6F80008A8AF /* SignUpInfo1ViewController.swift in Sources */,
+				B76AF5761FD8261400F51D7F /* BankCompanyCollectionViewCell.swift in Sources */,
 				B7A264AD1FBF996400893AFE /* Loana.xcdatamodeld in Sources */,
 				B7780C221FCFB67A0093A2C9 /* PlansViewController.swift in Sources */,
 				B766CC7B1FD00C0400495638 /* NavigationBar.swift in Sources */,

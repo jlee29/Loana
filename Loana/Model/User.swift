@@ -19,5 +19,8 @@ struct User {
     var loanID: String
     var id: String
     var intervalPlan: String
+    var repayment_balance: [[Double]] //
+    var repayment_schedule: [Double] //
+    var auto_pay_schedule: [[Double]] //
     var currPlan: String
 }
