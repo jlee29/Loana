@@ -57,6 +57,13 @@
 		D35FED5E1FD808A4005C8606 /* AutopayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35FED5D1FD808A4005C8606 /* AutopayViewController.swift */; };
 		D64B813745412D65661C802B /* Pods_Loana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A876C0EE2993CA6739387610 /* Pods_Loana.framework */; };
 		E8064B3E1FD7FC8A003C83DA /* Graph1Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8064B3D1FD7FC8A003C83DA /* Graph1Controller.swift */; };
+		E8064B451FD8201F003C83DA /* progress_tree_6.png in Resources */ = {isa = PBXBuildFile; fileRef = E8064B3F1FD8201D003C83DA /* progress_tree_6.png */; };
+		E8064B461FD8201F003C83DA /* progress_tree_2.png in Resources */ = {isa = PBXBuildFile; fileRef = E8064B401FD8201E003C83DA /* progress_tree_2.png */; };
+		E8064B471FD8201F003C83DA /* progress_tree_4.png in Resources */ = {isa = PBXBuildFile; fileRef = E8064B411FD8201E003C83DA /* progress_tree_4.png */; };
+		E8064B481FD8201F003C83DA /* progress_tree_1.png in Resources */ = {isa = PBXBuildFile; fileRef = E8064B421FD8201E003C83DA /* progress_tree_1.png */; };
+		E8064B491FD8201F003C83DA /* progress_tree_3.png in Resources */ = {isa = PBXBuildFile; fileRef = E8064B431FD8201E003C83DA /* progress_tree_3.png */; };
+		E8064B4A1FD8201F003C83DA /* progress_tree_5.png in Resources */ = {isa = PBXBuildFile; fileRef = E8064B441FD8201F003C83DA /* progress_tree_5.png */; };
+		E8064B4C1FD82370003C83DA /* TreeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8064B4B1FD82370003C83DA /* TreeController.swift */; };
 		E815D4F11FCFDFEC005CB34F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E815D4F01FCFDFEC005CB34F /* SignUpViewController.swift */; };
 		E815D4F31FCFE1C1005CB34F /* RepaymentPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = E815D4F21FCFE1C1005CB34F /* RepaymentPlan.swift */; };
 		E815D5061FD003B5005CB34F /* house.png in Resources */ = {isa = PBXBuildFile; fileRef = E815D5031FD003B3005CB34F /* house.png */; };
@@ -133,6 +140,13 @@
 		D35FED5B1FD7FE78005C8606 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = LoggedIn/ProfileViewController.swift; sourceTree = "<group>"; };
 		D35FED5D1FD808A4005C8606 /* AutopayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AutopayViewController.swift; path = LoggedIn/AutopayViewController.swift; sourceTree = "<group>"; };
 		E8064B3D1FD7FC8A003C83DA /* Graph1Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Graph1Controller.swift; path = "Meta Files/Graph1Controller.swift"; sourceTree = "<group>"; };
+		E8064B3F1FD8201D003C83DA /* progress_tree_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress_tree_6.png; sourceTree = "<group>"; };
+		E8064B401FD8201E003C83DA /* progress_tree_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress_tree_2.png; sourceTree = "<group>"; };
+		E8064B411FD8201E003C83DA /* progress_tree_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress_tree_4.png; sourceTree = "<group>"; };
+		E8064B421FD8201E003C83DA /* progress_tree_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress_tree_1.png; sourceTree = "<group>"; };
+		E8064B431FD8201E003C83DA /* progress_tree_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress_tree_3.png; sourceTree = "<group>"; };
+		E8064B441FD8201F003C83DA /* progress_tree_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress_tree_5.png; sourceTree = "<group>"; };
+		E8064B4B1FD82370003C83DA /* TreeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeController.swift; sourceTree = "<group>"; };
 		E815D4F01FCFDFEC005CB34F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E815D4F21FCFE1C1005CB34F /* RepaymentPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepaymentPlan.swift; sourceTree = "<group>"; };
 		E815D5031FD003B3005CB34F /* house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = house.png; sourceTree = "<group>"; };
@@ -281,6 +295,7 @@
 				B7A264AB1FBF996400893AFE /* Loana.xcdatamodeld */,
 				E8064B3D1FD7FC8A003C83DA /* Graph1Controller.swift */,
 				D35FED5B1FD7FE78005C8606 /* ProfileViewController.swift */,
+				E8064B4B1FD82370003C83DA /* TreeController.swift */,
 			);
 			path = Loana;
 			sourceTree = "<group>";
@@ -308,6 +323,12 @@
 		D34FAC4C1FCFECB60008A8AF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E8064B421FD8201E003C83DA /* progress_tree_1.png */,
+				E8064B401FD8201E003C83DA /* progress_tree_2.png */,
+				E8064B431FD8201E003C83DA /* progress_tree_3.png */,
+				E8064B411FD8201E003C83DA /* progress_tree_4.png */,
+				E8064B441FD8201F003C83DA /* progress_tree_5.png */,
+				E8064B3F1FD8201D003C83DA /* progress_tree_6.png */,
 				B76AF5721FD81F7200F51D7F /* icons8-forward-100.png */,
 				B76AF5711FD81F7000F51D7F /* icons8-plus-100.png */,
 				B783915D1FD80CB9004FB5AB /* barclay.png */,
@@ -423,6 +444,7 @@
 				B78391611FD80CC0004FB5AB /* chase.png in Resources */,
 				B783915F1FD80CC0004FB5AB /* boa.png in Resources */,
 				E823DB8A1FD14D7800A427D9 /* new plan.png in Resources */,
+				E8064B451FD8201F003C83DA /* progress_tree_6.png in Resources */,
 				B73530161FD15FC8007FF4B4 /* loana.png in Resources */,
 				B76AF5731FD81F7400F51D7F /* icons8-plus-100.png in Resources */,
 				B735301C1FD18999007FF4B4 /* standard.png in Resources */,
@@ -434,12 +456,16 @@
 				B7F62D571FD7E91F0010CC7B /* icons8-settings-30.png in Resources */,
 				B783916B1FD81241004FB5AB /* plus.png in Resources */,
 				E815D5111FD01366005CB34F /* icons in Resources */,
+				E8064B461FD8201F003C83DA /* progress_tree_2.png in Resources */,
 				B7A264AF1FBF996400893AFE /* Assets.xcassets in Resources */,
+				E8064B4A1FD8201F003C83DA /* progress_tree_5.png in Resources */,
 				E823DB881FD14D7800A427D9 /* box.png in Resources */,
 				B783916A1FD81241004FB5AB /* forward.png in Resources */,
 				B7F62D581FD7E91F0010CC7B /* icons8-menu-30.png in Resources */,
+				E8064B491FD8201F003C83DA /* progress_tree_3.png in Resources */,
 				B735301E1FD18999007FF4B4 /* IBR.png in Resources */,
 				E815D50D1FD01136005CB34F /* hat30.png in Resources */,
+				E8064B481FD8201F003C83DA /* progress_tree_1.png in Resources */,
 				B78391601FD80CC0004FB5AB /* hsbc.png in Resources */,
 				E823DB8C1FD14D7800A427D9 /* backbutton.png in Resources */,
 				B774C83E1FCFFA5E009DFC76 /* wallet.png in Resources */,
@@ -456,6 +482,7 @@
 				E823DB891FD14D7800A427D9 /* plans.png in Resources */,
 				B7F62D541FD7E8C50010CC7B /* icons8-settings-50.png in Resources */,
 				E815D5061FD003B5005CB34F /* house.png in Resources */,
+				E8064B471FD8201F003C83DA /* progress_tree_4.png in Resources */,
 				E823DB7E1FD14A6600A427D9 /* noun_1098185_cc.png in Resources */,
 				B7A264AA1FBF996400893AFE /* Main.storyboard in Resources */,
 			);
@@ -543,6 +570,7 @@
 				B774C8391FCFF4AB009DFC76 /* SettingsViewController.swift in Sources */,
 				E815D4F31FCFE1C1005CB34F /* RepaymentPlan.swift in Sources */,
 				B7E9B9251FCF710C00234840 /* LoanFinder.swift in Sources */,
+				E8064B4C1FD82370003C83DA /* TreeController.swift in Sources */,
 				E8064B3E1FD7FC8A003C83DA /* Graph1Controller.swift in Sources */,
 				E815D4F11FCFDFEC005CB34F /* SignUpViewController.swift in Sources */,
 				B7E9B91F1FCF6E2300234840 /* TabBarViewController.swift in Sources */,
