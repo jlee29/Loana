@@ -685,7 +685,7 @@
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gBL-zI-lfO">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="274"/>
                                                 <connections>
-                                                    <segue destination="U5v-1q-c1Z" kind="embed" id="XT8-hr-uT3"/>
+                                                    <segue destination="Vkj-hV-NRc" kind="embed" id="fWT-9l-PWY"/>
                                                 </connections>
                                             </containerView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="du7-JE-eVF">
@@ -764,6 +764,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fxJ-IR-jZu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4429.6000000000004" y="132.68365817091455"/>
+        </scene>
+        <!--Main Page View Controller-->
+        <scene sceneID="YFb-Pv-Aln">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Vkj-hV-NRc" customClass="MainPageViewController" customModule="Loana" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vmc-Sc-fHI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4431" y="926"/>
         </scene>
         <!--PlansViewController-->
         <scene sceneID="0ZF-sd-2Xr">
@@ -1713,23 +1721,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gRb-xT-QlW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3660" y="133"/>
-        </scene>
-        <!--Main Page View Controller-->
-        <scene sceneID="Ois-hl-3Kf">
-            <objects>
-                <viewController id="U5v-1q-c1Z" customClass="MainPageViewController" customModule="Loana" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="VBU-EN-z8e">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="274"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="transitionStyle" value="scroll"/>
-                    </userDefinedRuntimeAttributes>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="peS-f2-Y5a" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4401" y="784"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="JKO-B2-MzA">

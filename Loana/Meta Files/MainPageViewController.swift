@@ -33,9 +33,13 @@ class MainPageViewController: UIPageViewController, UIPageViewControllerDataSour
         let cur = pages.index(of: viewController)!
         
         // if you prefer to NOT scroll circularly, simply add here:
-        // if cur == 0 { return nil }
-        
-        let prev = abs((cur - 1) % pages.count)
+//        if cur == 0 { return nil }
+        var prev = 0
+        if cur == 0 {
+            prev = 2
+        } else {
+            prev = prev - 1
+        }
         return pages[prev]
         
     }
