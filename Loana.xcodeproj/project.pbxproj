@@ -20,6 +20,7 @@
 		B774C83E1FCFFA5E009DFC76 /* wallet.png in Resources */ = {isa = PBXBuildFile; fileRef = B774C83B1FCFFA5E009DFC76 /* wallet.png */; };
 		B7780C221FCFB67A0093A2C9 /* PlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7780C211FCFB67A0093A2C9 /* PlansViewController.swift */; };
 		B7780C281FCFC92F0093A2C9 /* PlanDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7780C271FCFC92F0093A2C9 /* PlanDetailViewController.swift */; };
+		B78391571FD7F50C004FB5AB /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78391561FD7F50C004FB5AB /* MainPageViewController.swift */; };
 		B7A264A51FBF996400893AFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A264A41FBF996400893AFE /* AppDelegate.swift */; };
 		B7A264A71FBF996400893AFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A264A61FBF996400893AFE /* ViewController.swift */; };
 		B7A264AA1FBF996400893AFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A264A81FBF996400893AFE /* Main.storyboard */; };
@@ -76,6 +77,7 @@
 		B774C83B1FCFFA5E009DFC76 /* wallet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wallet.png; sourceTree = "<group>"; };
 		B7780C211FCFB67A0093A2C9 /* PlansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansViewController.swift; sourceTree = "<group>"; };
 		B7780C271FCFC92F0093A2C9 /* PlanDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanDetailViewController.swift; sourceTree = "<group>"; };
+		B78391561FD7F50C004FB5AB /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		B7A264A11FBF996400893AFE /* Loana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Loana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7A264A41FBF996400893AFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B7A264A61FBF996400893AFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 		B766CC801FD0FC9100495638 /* Meta Files */ = {
 			isa = PBXGroup;
 			children = (
+				B78391561FD7F50C004FB5AB /* MainPageViewController.swift */,
 				B7A264A41FBF996400893AFE /* AppDelegate.swift */,
 				B7A264A61FBF996400893AFE /* ViewController.swift */,
 				B7E9B91E1FCF6E2300234840 /* TabBarViewController.swift */,
@@ -449,6 +452,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B7E9B9231FCF6FF000234840 /* Session.swift in Sources */,
+				B78391571FD7F50C004FB5AB /* MainPageViewController.swift in Sources */,
 				B7780C281FCFC92F0093A2C9 /* PlanDetailViewController.swift in Sources */,
 				B7A264A71FBF996400893AFE /* ViewController.swift in Sources */,
 				B766CC7F1FD0FC4300495638 /* SignUpInfo2ViewController.swift in Sources */,
