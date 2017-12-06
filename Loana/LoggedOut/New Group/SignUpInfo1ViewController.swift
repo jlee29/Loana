@@ -10,6 +10,7 @@ import UIKit
 
 class SignUpInfo1ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
     
+    @IBOutlet weak var nameTextField: UITextField!
     //MARK: - Properties
 
     @IBOutlet weak var publicSectorPicker: UIPickerView!
@@ -41,6 +42,7 @@ class SignUpInfo1ViewController: UIViewController, UIPickerViewDelegate, UIPicke
         self.statePicker.delegate = self
         self.statePicker.dataSource = self
         self.incomeTextField.delegate = self
+        self.nameTextField.delegate = self
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard (_:)))
         self.view.addGestureRecognizer(tapGesture)
     }
@@ -54,6 +56,7 @@ class SignUpInfo1ViewController: UIViewController, UIPickerViewDelegate, UIPicke
     
     @objc func dismissKeyboard (_ sender: UITapGestureRecognizer) {
         incomeTextField.resignFirstResponder()
+        nameTextField.resignFirstResponder()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -100,7 +103,19 @@ class SignUpInfo1ViewController: UIViewController, UIPickerViewDelegate, UIPicke
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        Session.shared.user.name = nameTextField.text!
+        Session.shared.user.income = Int(incomeTextField.text!)!
+        Session.shared.user.maritalStatus = maritalStatusPickerData[maritalStatusPicker.selectedRow(inComponent: 0)]
+        Session.shared.user.publicSector = Bool(responseToBool(in: publicSectorPickerData[publicSectorPicker.selectedRow(inComponent: 0)]))
+        Session.shared.user.stateOfResidence = statePickerData[statePicker.selectedRow(inComponent: 0)]
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+    }
+    
+    func responseToBool(in response: String) -> Bool {
+        if response == "Yes"{
+            return true
+        }
+        return false
     }
     
     

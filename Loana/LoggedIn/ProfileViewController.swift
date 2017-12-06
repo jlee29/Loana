@@ -9,11 +9,32 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
-
+    @IBOutlet weak var loanIDLabel: UILabel!
+    @IBOutlet weak var loanProviderLabel: UILabel!
+    @IBOutlet weak var publicSectorLabel: UILabel!
+    @IBOutlet weak var stateOfResidenceLabel: UILabel!
+    @IBOutlet weak var grossIncomeLabel: UILabel!
+    @IBOutlet weak var maritalStatusLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        loanIDLabel.text = Session.shared.user.loanID
+        loanProviderLabel.text = Session.shared.user.loanProvider
+        publicSectorLabel.text = StringToResponse(str: BoolToString(b: Session.shared.user.publicSector))
+        stateOfResidenceLabel.text = Session.shared.user.stateOfResidence
+        grossIncomeLabel.text = String(Session.shared.user.income)
+        maritalStatusLabel.text = Session.shared.user.maritalStatus
+        nameLabel.text = Session.shared.user.name
         // Do any additional setup after loading the view.
+    }
+    
+    func BoolToString(b: Bool?)->String { return b?.description ?? "<None>"}
+    
+    func StringToResponse(str: String?) -> String{
+        if str == "True"{
+            return "Yes"
+        }
+        return "No"
     }
 
     override func didReceiveMemoryWarning() {

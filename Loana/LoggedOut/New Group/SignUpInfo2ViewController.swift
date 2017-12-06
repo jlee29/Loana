@@ -72,6 +72,8 @@ class SignUpInfo2ViewController: UIViewController, UIPickerViewDelegate, UIPicke
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        Session.shared.user.loanID = loanIDTextField.text!
+        Session.shared.user.loanProvider = loanProviderPickerData[loanProviderPicker.selectedRow(inComponent: 0)]
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
     }
 
