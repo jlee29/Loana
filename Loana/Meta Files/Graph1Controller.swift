@@ -15,6 +15,11 @@ class Graph1Controller: UIViewController {
     
     var numbers = [13,14,15,25,28,33,44]
     
+    var user = Session.shared.user
+    
+    var month = Session.shared.currMonth
+    var day = Session.shared.currDay
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
@@ -28,22 +33,41 @@ class Graph1Controller: UIViewController {
     }
     
     func updateGraph(){
-        var chartEntry = [ChartDataEntry]()
-        for i in 0..<numbers.count {
-            let val = ChartDataEntry(x: Double(i),y: Double(numbers[i]))
-            chartEntry.append(val)
+        
+        var paidEntry = [ChartDataEntry]()
+        for index in 0...day {
+            let val = ChartDataEntry(x: Double(index),y: user.repayment_balance[month][index])
+            
+            paidEntry.append(val)
         }
         
-        let line = LineChartDataSet(values: chartEntry,label: "Repayment")
-        line.colors = [NSUIColor.black]
+        var projectedEntry = [ChartDataEntry]()
+        for index in (day + 1)...(user.repayment_balance[month].count-1){
+            
+            let val = ChartDataEntry(x: Double(index),y: user.repayment_balance[month][index])
+            
+            projectedEntry.append(val)
+            
+        }
+        
+        let line1 = LineChartDataSet(values: paidEntry,label: "Paid")
+        line1.colors = [NSUIColor.black]
+        line1.circleRadius = 0
+        line1.lineWidth = 2
+        
+        let line2 = LineChartDataSet(values: projectedEntry,label: "Projected")
         
         let data = LineChartData()
-        
-        data.addDataSet(line)
+        line2.colors = [NSUIColor.white]
+        line2.circleRadius = 0
+        line2.lineDashLengths = [2,3]
+    
+        data.addDataSet(line1)
+        data.addDataSet(line2)
         
         chart.data = data
         
-        chart.chartDescription?.text = "FUC 147"
+        chart.chartDescription?.text = "This Month's Balance"
     }
     
 }

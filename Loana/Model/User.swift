@@ -14,8 +14,12 @@ struct User {
     var age: Int
     var income: Int
     var publicSector: Bool
-//    var loanIdArr:
+
     var id: String
+    
+    var repayment_balance: [[Double]] //
+    var repayment_schedule: [Double] //
+    var auto_pay_schedule: [[Double]] //
     
     var currPlan: String
 }
