@@ -32,6 +32,10 @@
 		B7E9B9251FCF710C00234840 /* LoanFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9B9241FCF710C00234840 /* LoanFinder.swift */; };
 		B7E9B9271FCF711700234840 /* Loan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9B9261FCF711700234840 /* Loan.swift */; };
 		B7E9B92A1FCF773A00234840 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9B9291FCF773A00234840 /* LoginViewController.swift */; };
+		B7F62D521FD7E8180010CC7B /* hamburger.png in Resources */ = {isa = PBXBuildFile; fileRef = B7F62D511FD7E8160010CC7B /* hamburger.png */; };
+		B7F62D541FD7E8C50010CC7B /* icons8-settings-50.png in Resources */ = {isa = PBXBuildFile; fileRef = B7F62D531FD7E8C40010CC7B /* icons8-settings-50.png */; };
+		B7F62D571FD7E91F0010CC7B /* icons8-settings-30.png in Resources */ = {isa = PBXBuildFile; fileRef = B7F62D551FD7E91B0010CC7B /* icons8-settings-30.png */; };
+		B7F62D581FD7E91F0010CC7B /* icons8-menu-30.png in Resources */ = {isa = PBXBuildFile; fileRef = B7F62D561FD7E91D0010CC7B /* icons8-menu-30.png */; };
 		D34FAC5A1FCFF6F80008A8AF /* SignUpInfo1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34FAC591FCFF6F80008A8AF /* SignUpInfo1ViewController.swift */; };
 		D64B813745412D65661C802B /* Pods_Loana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A876C0EE2993CA6739387610 /* Pods_Loana.framework */; };
 		E815D4F11FCFDFEC005CB34F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E815D4F01FCFDFEC005CB34F /* SignUpViewController.swift */; };
@@ -86,6 +90,10 @@
 		B7E9B9241FCF710C00234840 /* LoanFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanFinder.swift; sourceTree = "<group>"; };
 		B7E9B9261FCF711700234840 /* Loan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loan.swift; sourceTree = "<group>"; };
 		B7E9B9291FCF773A00234840 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B7F62D511FD7E8160010CC7B /* hamburger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hamburger.png; sourceTree = "<group>"; };
+		B7F62D531FD7E8C40010CC7B /* icons8-settings-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-settings-50.png"; sourceTree = "<group>"; };
+		B7F62D551FD7E91B0010CC7B /* icons8-settings-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-settings-30.png"; sourceTree = "<group>"; };
+		B7F62D561FD7E91D0010CC7B /* icons8-menu-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-menu-30.png"; sourceTree = "<group>"; };
 		D34FAC591FCFF6F80008A8AF /* SignUpInfo1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInfo1ViewController.swift; sourceTree = "<group>"; };
 		E815D4F01FCFDFEC005CB34F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		E815D4F21FCFE1C1005CB34F /* RepaymentPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepaymentPlan.swift; sourceTree = "<group>"; };
@@ -244,6 +252,10 @@
 		D34FAC4C1FCFECB60008A8AF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B7F62D561FD7E91D0010CC7B /* icons8-menu-30.png */,
+				B7F62D551FD7E91B0010CC7B /* icons8-settings-30.png */,
+				B7F62D531FD7E8C40010CC7B /* icons8-settings-50.png */,
+				B7F62D511FD7E8160010CC7B /* hamburger.png */,
 				B735301A1FD18998007FF4B4 /* graduated.png */,
 				B735301B1FD18999007FF4B4 /* IBR.png */,
 				B73530191FD18998007FF4B4 /* standard.png */,
@@ -350,14 +362,17 @@
 				E823DB801FD14A6600A427D9 /* first screen.png in Resources */,
 				E823DB7B1FD14A6600A427D9 /* Group.png in Resources */,
 				E823DB7D1FD14A6600A427D9 /* background.png in Resources */,
+				B7F62D571FD7E91F0010CC7B /* icons8-settings-30.png in Resources */,
 				E815D5111FD01366005CB34F /* icons in Resources */,
 				B7A264AF1FBF996400893AFE /* Assets.xcassets in Resources */,
 				E823DB881FD14D7800A427D9 /* box.png in Resources */,
+				B7F62D581FD7E91F0010CC7B /* icons8-menu-30.png in Resources */,
 				B735301E1FD18999007FF4B4 /* IBR.png in Resources */,
 				E815D50D1FD01136005CB34F /* hat30.png in Resources */,
 				E823DB8C1FD14D7800A427D9 /* backbutton.png in Resources */,
 				B774C83E1FCFFA5E009DFC76 /* wallet.png in Resources */,
 				E823DB821FD14A6600A427D9 /* lock-open.png in Resources */,
+				B7F62D521FD7E8180010CC7B /* hamburger.png in Resources */,
 				E815D5071FD003B5005CB34F /* money.png in Resources */,
 				E823DB8B1FD14D7800A427D9 /* widebox.png in Resources */,
 				E823DB7C1FD14A6600A427D9 /* iPhone SE.png in Resources */,
@@ -365,6 +380,7 @@
 				E823DB811FD14A6600A427D9 /* noun_125155_cc.png in Resources */,
 				E823DB7F1FD14A6600A427D9 /* account-circle.png in Resources */,
 				E823DB891FD14D7800A427D9 /* plans.png in Resources */,
+				B7F62D541FD7E8C50010CC7B /* icons8-settings-50.png in Resources */,
 				E815D5061FD003B5005CB34F /* house.png in Resources */,
 				E823DB7E1FD14A6600A427D9 /* noun_1098185_cc.png in Resources */,
 				B7A264AA1FBF996400893AFE /* Main.storyboard in Resources */,
