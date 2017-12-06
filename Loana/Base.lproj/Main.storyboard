@@ -1783,7 +1783,6 @@
             </objects>
             <point key="canvasLocation" x="3660" y="133"/>
         </scene>
-<<<<<<< HEAD
         <!--Main Page View Controller-->
         <scene sceneID="Ois-hl-3Kf">
             <objects>
@@ -1799,8 +1798,6 @@
             </objects>
             <point key="canvasLocation" x="4401" y="784"/>
         </scene>
-=======
->>>>>>> 8e6d399a112e9c4bfdcbaebc628a861152974eb8
         <!--View Controller-->
         <scene sceneID="JKO-B2-MzA">
             <objects>
