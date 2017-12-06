@@ -1783,21 +1783,6 @@
             </objects>
             <point key="canvasLocation" x="3660" y="133"/>
         </scene>
-        <!--Main Page View Controller-->
-        <scene sceneID="Ois-hl-3Kf">
-            <objects>
-                <viewController id="U5v-1q-c1Z" customClass="MainPageViewController" customModule="Loana" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="VBU-EN-z8e">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="274"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="Lof-pb-GmZ"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="peS-f2-Y5a" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4401" y="784"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="JKO-B2-MzA">
             <objects>
