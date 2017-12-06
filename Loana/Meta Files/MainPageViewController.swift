@@ -38,7 +38,7 @@ class MainPageViewController: UIPageViewController, UIPageViewControllerDataSour
         if cur == 0 {
             prev = 2
         } else {
-            prev = prev - 1
+            prev = cur - 1
         }
         return pages[prev]
         
