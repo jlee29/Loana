@@ -9,10 +9,14 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    
+    var slideMenuHidden = true
 
     @IBOutlet weak var welcomeLabel: UILabel!
     
     @IBOutlet weak var proPic: UIImageView!
+    
+    @IBOutlet weak var sideMenuConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +25,7 @@ class HomeViewController: UIViewController {
         welcomeLabel.font = UIFont(name: "Avenir", size: 25)
 
         proPic.layer.cornerRadius = 37
+        sideMenuConstraint.constant = -140
         // Do any additional setup after loading the view.
     }
 
@@ -30,6 +35,22 @@ class HomeViewController: UIViewController {
     }
     
 
+    @IBAction func showMenu(_ sender: UIBarButtonItem) {
+        if slideMenuHidden {
+            sideMenuConstraint.constant = 0
+            
+            UIView.animate(withDuration: 0.3, animations: {
+                self.view.layoutIfNeeded()
+            })
+        } else {
+            sideMenuConstraint.constant = -140
+            
+            UIView.animate(withDuration: 0.3, animations: {
+                self.view.layoutIfNeeded()
+            })
+        }
+        slideMenuHidden = !slideMenuHidden
+    }
     /*
     // MARK: - Navigation
 
