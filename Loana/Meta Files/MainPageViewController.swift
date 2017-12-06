@@ -40,6 +40,8 @@ class MainPageViewController: UIPageViewController, UIPageViewControllerDataSour
         
     }
     
+    
+    
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController)-> UIViewController? {
         
         let cur = pages.index(of: viewController)!
