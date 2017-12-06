@@ -647,28 +647,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="GH1-9L-I6Y">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="flI-kb-pZP" userLabel="MenuView">
-                                <rect key="frame" x="0.0" y="64" width="140" height="603"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLj-YJ-Yxn">
-                                        <rect key="frame" x="8" y="8" width="124" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="zOZ-Lg-79y"/>
-                                        </constraints>
-                                        <state key="normal" title="Repayment Plans"/>
-                                        <connections>
-                                            <segue destination="MWr-Se-IxW" kind="show" id="bTn-mx-cff"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="140" id="0tg-nz-0yr"/>
-                                    <constraint firstAttribute="trailing" secondItem="fLj-YJ-Yxn" secondAttribute="trailing" constant="8" id="A1i-CF-lnW"/>
-                                    <constraint firstItem="fLj-YJ-Yxn" firstAttribute="top" secondItem="flI-kb-pZP" secondAttribute="top" constant="8" id="N6p-e9-ufx"/>
-                                    <constraint firstItem="fLj-YJ-Yxn" firstAttribute="leading" secondItem="flI-kb-pZP" secondAttribute="leading" constant="8" id="t5B-QM-Kmf"/>
-                                </constraints>
-                            </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4LA-Wo-b31">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
@@ -725,6 +703,28 @@
                                     <constraint firstItem="Xo9-pI-GhD" firstAttribute="top" secondItem="7CZ-0V-Ucj" secondAttribute="bottom" id="qXw-vZ-4mG"/>
                                 </constraints>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="flI-kb-pZP" userLabel="MenuView">
+                                <rect key="frame" x="0.0" y="64" width="140" height="603"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLj-YJ-Yxn">
+                                        <rect key="frame" x="8" y="8" width="124" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="zOZ-Lg-79y"/>
+                                        </constraints>
+                                        <state key="normal" title="Repayment Plans"/>
+                                        <connections>
+                                            <segue destination="MWr-Se-IxW" kind="show" id="bTn-mx-cff"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="0tg-nz-0yr"/>
+                                    <constraint firstAttribute="trailing" secondItem="fLj-YJ-Yxn" secondAttribute="trailing" constant="8" id="A1i-CF-lnW"/>
+                                    <constraint firstItem="fLj-YJ-Yxn" firstAttribute="top" secondItem="flI-kb-pZP" secondAttribute="top" constant="8" id="N6p-e9-ufx"/>
+                                    <constraint firstItem="fLj-YJ-Yxn" firstAttribute="leading" secondItem="flI-kb-pZP" secondAttribute="leading" constant="8" id="t5B-QM-Kmf"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1299,7 +1299,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQw-Iu-FNA">
-                                <rect key="frame" x="100" y="350.5" width="175" height="30"/>
+                                <rect key="frame" x="160" y="350.5" width="55" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Log Out">
                                     <color key="titleColor" red="0.0" green="0.47843137254901957" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1311,9 +1311,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="SeL-dO-7wy" firstAttribute="trailing" secondItem="HQw-Iu-FNA" secondAttribute="trailing" constant="100" id="5jU-Ih-GlP"/>
                             <constraint firstItem="HQw-Iu-FNA" firstAttribute="centerX" secondItem="SeL-dO-7wy" secondAttribute="centerX" id="Fan-WS-GTY"/>
-                            <constraint firstItem="HQw-Iu-FNA" firstAttribute="leading" secondItem="SeL-dO-7wy" secondAttribute="leading" constant="100" id="d6f-5v-QrJ"/>
                             <constraint firstItem="HQw-Iu-FNA" firstAttribute="centerY" secondItem="SeL-dO-7wy" secondAttribute="centerY" id="qX3-6L-NDa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SeL-dO-7wy"/>
@@ -1733,7 +1731,7 @@
         <!--View Controller-->
         <scene sceneID="JKO-B2-MzA">
             <objects>
-                <viewController storyboardIdentifier="p2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FE5-Qc-6GL" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="id2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FE5-Qc-6GL" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hmy-Eb-G7Y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1748,7 +1746,7 @@
         <!--View Controller-->
         <scene sceneID="Has-zp-HuM">
             <objects>
-                <viewController storyboardIdentifier="p1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3Ua-9f-Vb2" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="id1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3Ua-9f-Vb2" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uFg-cK-VYc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1763,7 +1761,7 @@
         <!--View Controller-->
         <scene sceneID="8t1-dh-2bQ">
             <objects>
-                <viewController storyboardIdentifier="p3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EXS-xH-ck1" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="id3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EXS-xH-ck1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pJc-gG-ZwH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
