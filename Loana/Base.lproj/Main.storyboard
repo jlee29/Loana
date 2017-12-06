@@ -644,9 +644,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="GH1-9L-I6Y">
-                                <rect key="frame" x="0.0" y="32" width="375" height="603"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="GH1-9L-I6Y">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group.png" translatesAutoresizingMaskIntoConstraints="NO" id="md8-MU-oic">
                                 <rect key="frame" x="0.0" y="-36" width="375" height="741"/>
@@ -680,21 +679,36 @@
                                     <constraint firstAttribute="trailing" secondItem="n6Z-y5-Xfv" secondAttribute="trailing" constant="25" id="Sxb-e1-iVh"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="flI-kb-pZP">
+                                <rect key="frame" x="0.0" y="64" width="140" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="0tg-nz-0yr"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="7CZ-0V-Ucj" firstAttribute="leading" secondItem="e7j-1b-CgL" secondAttribute="leading" id="1Th-ti-IUY"/>
+                            <constraint firstItem="GH1-9L-I6Y" firstAttribute="top" secondItem="6HF-3b-9y7" secondAttribute="top" id="8n3-TF-Inw"/>
+                            <constraint firstItem="e7j-1b-CgL" firstAttribute="bottom" secondItem="GH1-9L-I6Y" secondAttribute="bottom" id="9C3-BY-hev"/>
                             <constraint firstItem="e7j-1b-CgL" firstAttribute="trailing" secondItem="md8-MU-oic" secondAttribute="trailing" id="AHH-xW-Lj4"/>
+                            <constraint firstItem="GH1-9L-I6Y" firstAttribute="trailing" secondItem="e7j-1b-CgL" secondAttribute="trailing" id="CfD-oh-vxT"/>
                             <constraint firstItem="7CZ-0V-Ucj" firstAttribute="top" secondItem="e7j-1b-CgL" secondAttribute="top" constant="40" id="Xpx-Zj-diN"/>
                             <constraint firstItem="md8-MU-oic" firstAttribute="leading" secondItem="e7j-1b-CgL" secondAttribute="leading" id="bNm-vL-F4l"/>
+                            <constraint firstItem="flI-kb-pZP" firstAttribute="top" secondItem="e7j-1b-CgL" secondAttribute="top" id="beW-3B-xe3"/>
                             <constraint firstItem="e7j-1b-CgL" firstAttribute="trailing" secondItem="7CZ-0V-Ucj" secondAttribute="trailing" id="enW-GM-zqK"/>
+                            <constraint firstItem="flI-kb-pZP" firstAttribute="leading" secondItem="e7j-1b-CgL" secondAttribute="leading" id="f9P-1C-UHY"/>
                             <constraint firstItem="md8-MU-oic" firstAttribute="top" secondItem="e7j-1b-CgL" secondAttribute="top" constant="-100" id="uVg-pl-bZv"/>
+                            <constraint firstItem="GH1-9L-I6Y" firstAttribute="leading" secondItem="e7j-1b-CgL" secondAttribute="leading" id="vcR-dE-9L9"/>
+                            <constraint firstItem="flI-kb-pZP" firstAttribute="bottom" secondItem="e7j-1b-CgL" secondAttribute="bottom" id="yzc-h6-eng"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="e7j-1b-CgL"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="house.png" id="ghC-XH-fCQ"/>
                     <navigationItem key="navigationItem" id="roR-HK-cqF">
-                        <barButtonItem key="rightBarButtonItem" title="Settings" id="XqX-4z-d2g">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="icons8-menu-30.png" id="Qj8-a9-T9m"/>
+                        <barButtonItem key="rightBarButtonItem" title="Settings" image="icons8-settings-30.png" id="XqX-4z-d2g">
                             <connections>
                                 <segue destination="5bD-4b-05T" kind="show" id="8qu-Ur-yjS"/>
                             </connections>
@@ -707,7 +721,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fxJ-IR-jZu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4431" y="133"/>
+            <point key="canvasLocation" x="4429.6000000000004" y="132.68365817091455"/>
         </scene>
         <!--PlansViewController-->
         <scene sceneID="0ZF-sd-2Xr">
@@ -1667,6 +1681,8 @@
         <image name="background.png" width="1125" height="2055"/>
         <image name="box.png" width="1041" height="522"/>
         <image name="house.png" width="30" height="30"/>
+        <image name="icons8-menu-30.png" width="30" height="30"/>
+        <image name="icons8-settings-30.png" width="30" height="30"/>
         <image name="loana.png" width="554" height="246"/>
         <image name="money.png" width="30" height="30"/>
         <image name="wallet.png" width="30" height="30"/>
