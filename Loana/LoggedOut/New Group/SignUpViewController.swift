@@ -26,7 +26,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         } else if( strlen(passwordOne.text) < 8){
             passwordError = "password is too short"
             validLogin = false
-        }else {
+        } else {
             validLogin = true
         }
         
