@@ -1489,7 +1489,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ZUQ-J2-kAI" firstAttribute="height" secondItem="I0M-F9-wdr" secondAttribute="height" id="Cdj-SZ-Xlt"/>
                             <constraint firstItem="Nk9-3K-k1b" firstAttribute="trailing" secondItem="ZUQ-J2-kAI" secondAttribute="trailing" id="FlM-Bo-QI9"/>
                             <constraint firstItem="ZUQ-J2-kAI" firstAttribute="leading" secondItem="Nk9-3K-k1b" secondAttribute="leading" id="MGm-4w-KJH"/>
                             <constraint firstItem="ZUQ-J2-kAI" firstAttribute="top" secondItem="Nk9-3K-k1b" secondAttribute="top" id="Uj2-IP-JbC"/>
@@ -1925,6 +1924,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="PcE-Bg-IhD"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="peS-f2-Y5a" userLabel="First Responder" sceneMemberID="firstResponder"/>
