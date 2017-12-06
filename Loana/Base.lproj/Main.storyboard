@@ -1489,7 +1489,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ZUQ-J2-kAI" firstAttribute="height" secondItem="I0M-F9-wdr" secondAttribute="height" id="Cdj-SZ-Xlt"/>
                             <constraint firstItem="Nk9-3K-k1b" firstAttribute="trailing" secondItem="ZUQ-J2-kAI" secondAttribute="trailing" id="FlM-Bo-QI9"/>
                             <constraint firstItem="ZUQ-J2-kAI" firstAttribute="leading" secondItem="Nk9-3K-k1b" secondAttribute="leading" id="MGm-4w-KJH"/>
                             <constraint firstItem="ZUQ-J2-kAI" firstAttribute="top" secondItem="Nk9-3K-k1b" secondAttribute="top" id="Uj2-IP-JbC"/>
@@ -1544,25 +1543,58 @@
         <!--AutoPayViewController-->
         <scene sceneID="7hl-PP-guE">
             <objects>
-                <viewController id="ung-tl-hT2" userLabel="AutoPayViewController" sceneMemberID="viewController">
+                <viewController id="ung-tl-hT2" userLabel="AutoPayViewController" customClass="AutopayViewController" customModule="Loana" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mXc-gJ-5Ag">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="1EP-vd-U4d">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8bu-tQ-bbh">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="YU9-EW-9qS">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="464"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anE-dO-jLl">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="232"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ANh-GF-Kps">
+                                                <rect key="frame" x="0.0" y="232" width="375" height="232"/>
+                                            </pickerView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M1w-FO-s9k">
+                                        <rect key="frame" x="0.0" y="464" width="375" height="139"/>
+                                        <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="onSaveButtonClick:" destination="ung-tl-hT2" eventType="touchUpInside" id="p7p-Hd-bbq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="YU9-EW-9qS" firstAttribute="width" secondItem="8bu-tQ-bbh" secondAttribute="width" id="Hhq-gf-ggD"/>
+                                    <constraint firstItem="M1w-FO-s9k" firstAttribute="height" secondItem="YU9-EW-9qS" secondAttribute="height" multiplier="0.3" id="Vgx-r7-nf3"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1EP-vd-U4d" firstAttribute="top" secondItem="5lm-83-c1N" secondAttribute="top" id="8PP-Rk-x41"/>
-                            <constraint firstItem="1EP-vd-U4d" firstAttribute="leading" secondItem="5lm-83-c1N" secondAttribute="leading" id="CtF-We-aDh"/>
-                            <constraint firstItem="5lm-83-c1N" firstAttribute="bottom" secondItem="1EP-vd-U4d" secondAttribute="bottom" id="RcP-N3-pwb"/>
-                            <constraint firstItem="5lm-83-c1N" firstAttribute="trailing" secondItem="1EP-vd-U4d" secondAttribute="trailing" id="niS-O3-d36"/>
+                            <constraint firstItem="5lm-83-c1N" firstAttribute="bottom" secondItem="8bu-tQ-bbh" secondAttribute="bottom" id="4XX-Wu-5nN"/>
+                            <constraint firstItem="5lm-83-c1N" firstAttribute="trailing" secondItem="8bu-tQ-bbh" secondAttribute="trailing" id="ScM-wk-1iW"/>
+                            <constraint firstItem="8bu-tQ-bbh" firstAttribute="width" secondItem="mXc-gJ-5Ag" secondAttribute="width" id="qRb-aD-qTp"/>
+                            <constraint firstItem="8bu-tQ-bbh" firstAttribute="leading" secondItem="5lm-83-c1N" secondAttribute="leading" id="sba-sJ-YV3"/>
+                            <constraint firstItem="8bu-tQ-bbh" firstAttribute="top" secondItem="5lm-83-c1N" secondAttribute="top" id="vdE-BZ-GDc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5lm-83-c1N"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Pay" image="wallet.png" id="f2r-cf-Cig"/>
+                    <connections>
+                        <outlet property="currentPlanLabel" destination="anE-dO-jLl" id="hU4-wv-RHC"/>
+                        <outlet property="planPicker" destination="ANh-GF-Kps" id="eD0-Em-kiT"/>
+                        <outlet property="saveButton" destination="M1w-FO-s9k" id="0cs-Zo-o6j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WXY-Pa-Vja" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1925,6 +1957,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="gD2-4v-oGh"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="peS-f2-Y5a" userLabel="First Responder" sceneMemberID="firstResponder"/>
