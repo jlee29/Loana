@@ -685,7 +685,7 @@
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gBL-zI-lfO">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="274"/>
                                                 <connections>
-                                                    <segue destination="U5v-1q-c1Z" kind="embed" id="XT8-hr-uT3"/>
+                                                    <segue destination="Vkj-hV-NRc" kind="embed" id="fWT-9l-PWY"/>
                                                 </connections>
                                             </containerView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="du7-JE-eVF">
@@ -804,6 +804,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fxJ-IR-jZu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4429.6000000000004" y="132.68365817091455"/>
+        </scene>
+        <!--Main Page View Controller-->
+        <scene sceneID="YFb-Pv-Aln">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Vkj-hV-NRc" customClass="MainPageViewController" customModule="Loana" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vmc-Sc-fHI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4431" y="926"/>
         </scene>
         <!--PlansViewController-->
         <scene sceneID="0ZF-sd-2Xr">
@@ -1360,7 +1368,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQw-Iu-FNA">
-                                <rect key="frame" x="100" y="350.5" width="175" height="30"/>
+                                <rect key="frame" x="160" y="350.5" width="55" height="30"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Log Out">
                                     <color key="titleColor" red="0.0" green="0.47843137254901957" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -1372,9 +1380,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="SeL-dO-7wy" firstAttribute="trailing" secondItem="HQw-Iu-FNA" secondAttribute="trailing" constant="100" id="5jU-Ih-GlP"/>
                             <constraint firstItem="HQw-Iu-FNA" firstAttribute="centerX" secondItem="SeL-dO-7wy" secondAttribute="centerX" id="Fan-WS-GTY"/>
-                            <constraint firstItem="HQw-Iu-FNA" firstAttribute="leading" secondItem="SeL-dO-7wy" secondAttribute="leading" constant="100" id="d6f-5v-QrJ"/>
                             <constraint firstItem="HQw-Iu-FNA" firstAttribute="centerY" secondItem="SeL-dO-7wy" secondAttribute="centerY" id="qX3-6L-NDa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SeL-dO-7wy"/>
@@ -1777,6 +1783,7 @@
             </objects>
             <point key="canvasLocation" x="3660" y="133"/>
         </scene>
+<<<<<<< HEAD
         <!--Main Page View Controller-->
         <scene sceneID="Ois-hl-3Kf">
             <objects>
@@ -1792,14 +1799,16 @@
             </objects>
             <point key="canvasLocation" x="4401" y="784"/>
         </scene>
+=======
+>>>>>>> 8e6d399a112e9c4bfdcbaebc628a861152974eb8
         <!--View Controller-->
         <scene sceneID="JKO-B2-MzA">
             <objects>
-                <viewController storyboardIdentifier="p2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FE5-Qc-6GL" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="id2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FE5-Qc-6GL" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hmy-Eb-G7Y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.95233648579999997" blue="0.31892155389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="EGH-IF-ZF0"/>
                     </view>
                 </viewController>
@@ -1810,11 +1819,11 @@
         <!--View Controller-->
         <scene sceneID="Has-zp-HuM">
             <objects>
-                <viewController storyboardIdentifier="p1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3Ua-9f-Vb2" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="id1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3Ua-9f-Vb2" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uFg-cK-VYc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="Ssl-gk-Ym0"/>
                     </view>
                 </viewController>
@@ -1825,11 +1834,11 @@
         <!--View Controller-->
         <scene sceneID="8t1-dh-2bQ">
             <objects>
-                <viewController storyboardIdentifier="p3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EXS-xH-ck1" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="id3" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EXS-xH-ck1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pJc-gG-ZwH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="YEJ-JC-NoR"/>
                     </view>
                 </viewController>
