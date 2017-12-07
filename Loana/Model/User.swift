@@ -23,5 +23,7 @@ struct User {
     var repayment_schedule: [Double] //
     var auto_pay_schedule: [[Double]] //
     var manual_pay_schedule: [[(Int,Double)]] //
+    var auto_pay_installment: Double
+    var remaining_amount: Double
     var currPlan: String
 }

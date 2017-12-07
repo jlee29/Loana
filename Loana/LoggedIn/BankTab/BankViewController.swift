@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BankViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class BankViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, LinkAccount3ViewControllerDelegate {
     
     var linkedAccounts = ["Isabella's Checking", "Isabella's Savings"]
     var linkedAccountTexts = ["Checking xxx5067", "Savings xxx5067"]
@@ -52,4 +52,18 @@ class BankViewController: UIViewController, UICollectionViewDelegate, UICollecti
             return cell
         }
     }
+    
+    func addedBank(_ acc: BankAccount) {
+        linkedAccounts.insert(acc.accountName, at: 0)
+        linkedAccountTexts.insert(acc.number, at: 0)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "linkAcc1", let destination = segue.destination as? LinkAccountViewController {
+            if let cell = sender as? AddCollectionViewCell, let indexPath = bankCollection.indexPath(for: cell) {
+                destination.delegate = self
+            }
+        }
+    }
+    
 }

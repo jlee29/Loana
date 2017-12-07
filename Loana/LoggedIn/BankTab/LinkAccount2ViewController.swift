@@ -10,8 +10,15 @@ import UIKit
 
 class LinkAccount2ViewController: UIViewController {
     
+    @IBOutlet weak var accNameField: UITextField!
+    @IBOutlet weak var routingNumberField: UITextField!
     var bankName: String?
-
+    var delegate: LinkAccount3ViewControllerDelegate?
+    
+    @IBAction func linkAccount(_ sender: UIButton) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,4 +41,9 @@ class LinkAccount2ViewController: UIViewController {
     }
     */
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "linkAcc3", let destination = segue.destination as? LinkAccount3ViewController {
+            destination.delegate = delegate
+        }
+    }
 }
