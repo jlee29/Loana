@@ -35,6 +35,7 @@ class PlanDetailViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: confirmationHandler))
         self.present(alert, animated: true, completion: nil)
         delegate?.updatedPlan(long2short(_: titleLabel.text!))
+        //Change the amount owed at the end of the month
     }
     
     func long2short(_ titleText:String) -> String {
