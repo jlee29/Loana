@@ -688,17 +688,17 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7CZ-0V-Ucj">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="100.5"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="n6Z-y5-Xfv">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="n6Z-y5-Xfv">
                                                 <rect key="frame" x="25" y="0.0" width="325" height="100.5"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Back John!" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="jkq-eC-Ofo">
-                                                        <rect key="frame" x="0.0" y="0.0" width="325" height="60.5"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome Back John!" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="20" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jkq-eC-Ofo">
+                                                        <rect key="frame" x="0.0" y="0.0" width="325" height="75.5"/>
                                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="40"/>
                                                         <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7O9-h7-pG1">
-                                                        <rect key="frame" x="0.0" y="80.5" width="325" height="20"/>
+                                                        <rect key="frame" x="0.0" y="75.5" width="325" height="25"/>
                                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -770,121 +770,181 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="cDy-cz-QzS">
                                         <rect key="frame" x="15" y="5" width="125" height="320"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oRU-BT-gea">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PAQ-gz-3lI">
                                                 <rect key="frame" x="0.0" y="0.0" width="125" height="52"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile.png" translatesAutoresizingMaskIntoConstraints="NO" id="gLn-yI-rIY">
-                                                        <rect key="frame" x="0.0" y="0.0" width="52" height="52"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oRU-BT-gea">
+                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="52"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile.png" translatesAutoresizingMaskIntoConstraints="NO" id="gLn-yI-rIY">
+                                                                <rect key="frame" x="0.0" y="0.0" width="52.5" height="52"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="gLn-yI-rIY" secondAttribute="height" multiplier="1:1" id="L3I-tL-k4c"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLj-YJ-Yxn">
+                                                                <rect key="frame" x="52.5" y="0.0" width="72.5" height="52"/>
+                                                                <state key="normal" title="Profile">
+                                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <segue destination="Waz-cq-55Y" kind="show" identifier="profile" id="Dg0-KZ-ygY"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" secondItem="gLn-yI-rIY" secondAttribute="height" multiplier="1:1" id="L3I-tL-k4c"/>
+                                                            <constraint firstItem="gLn-yI-rIY" firstAttribute="width" secondItem="gLn-yI-rIY" secondAttribute="height" multiplier="1:1" id="FMH-AZ-PDO"/>
+                                                            <constraint firstItem="gLn-yI-rIY" firstAttribute="width" secondItem="gLn-yI-rIY" secondAttribute="height" multiplier="1:1" id="Vwd-kj-LiN"/>
                                                         </constraints>
-                                                    </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fLj-YJ-Yxn">
-                                                        <rect key="frame" x="52" y="0.0" width="73" height="52"/>
-                                                        <state key="normal" title="Profile">
-                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <segue destination="Waz-cq-55Y" kind="show" id="Dg0-KZ-ygY"/>
-                                                        </connections>
-                                                    </button>
+                                                    </stackView>
                                                 </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstItem="gLn-yI-rIY" firstAttribute="width" secondItem="gLn-yI-rIY" secondAttribute="height" multiplier="1:1" id="FMH-AZ-PDO"/>
-                                                    <constraint firstItem="gLn-yI-rIY" firstAttribute="width" secondItem="gLn-yI-rIY" secondAttribute="height" multiplier="1:1" id="Vwd-kj-LiN"/>
+                                                    <constraint firstAttribute="bottom" secondItem="oRU-BT-gea" secondAttribute="bottom" id="DVb-2G-zsK"/>
+                                                    <constraint firstItem="oRU-BT-gea" firstAttribute="leading" secondItem="PAQ-gz-3lI" secondAttribute="leading" id="GKL-ON-ga6"/>
+                                                    <constraint firstAttribute="trailing" secondItem="oRU-BT-gea" secondAttribute="trailing" id="NoC-2q-eXg"/>
+                                                    <constraint firstItem="oRU-BT-gea" firstAttribute="top" secondItem="PAQ-gz-3lI" secondAttribute="top" id="Q7S-Ue-ujc"/>
                                                 </constraints>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t3f-Fk-5bL">
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ide-L8-s0B">
                                                 <rect key="frame" x="0.0" y="67" width="125" height="52"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bankPic.png" translatesAutoresizingMaskIntoConstraints="NO" id="bzf-Pv-tHm">
-                                                        <rect key="frame" x="0.0" y="0.0" width="52" height="52"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t3f-Fk-5bL">
+                                                        <rect key="frame" x="0.0" y="0.0" width="125" height="52"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bankPic.png" translatesAutoresizingMaskIntoConstraints="NO" id="bzf-Pv-tHm">
+                                                                <rect key="frame" x="0.0" y="0.0" width="52.5" height="52"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="bzf-Pv-tHm" secondAttribute="height" multiplier="1:1" id="444-n8-DTv"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3h-JC-aVj">
+                                                                <rect key="frame" x="52.5" y="0.0" width="72.5" height="52"/>
+                                                                <state key="normal" title="Bank">
+                                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <segue destination="9D2-Ho-QuD" kind="show" identifier="bank" id="pml-3n-Xlf"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" secondItem="bzf-Pv-tHm" secondAttribute="height" multiplier="1:1" id="444-n8-DTv"/>
+                                                            <constraint firstItem="bzf-Pv-tHm" firstAttribute="width" secondItem="bzf-Pv-tHm" secondAttribute="height" multiplier="1:1" id="b5w-ej-IPg"/>
+                                                            <constraint firstItem="bzf-Pv-tHm" firstAttribute="width" secondItem="bzf-Pv-tHm" secondAttribute="height" multiplier="1:1" id="wrq-44-2sR"/>
                                                         </constraints>
-                                                    </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3h-JC-aVj">
-                                                        <rect key="frame" x="52" y="0.0" width="73" height="52"/>
-                                                        <state key="normal" title="Bank">
-                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <segue destination="9D2-Ho-QuD" kind="show" id="pml-3n-Xlf"/>
-                                                        </connections>
-                                                    </button>
+                                                    </stackView>
                                                 </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstItem="bzf-Pv-tHm" firstAttribute="width" secondItem="bzf-Pv-tHm" secondAttribute="height" multiplier="1:1" id="b5w-ej-IPg"/>
-                                                    <constraint firstItem="bzf-Pv-tHm" firstAttribute="width" secondItem="bzf-Pv-tHm" secondAttribute="height" multiplier="1:1" id="wrq-44-2sR"/>
+                                                    <constraint firstItem="t3f-Fk-5bL" firstAttribute="leading" secondItem="Ide-L8-s0B" secondAttribute="leading" id="94l-gr-WQO"/>
+                                                    <constraint firstAttribute="trailing" secondItem="t3f-Fk-5bL" secondAttribute="trailing" id="eME-SX-aqw"/>
+                                                    <constraint firstItem="t3f-Fk-5bL" firstAttribute="top" secondItem="Ide-L8-s0B" secondAttribute="top" id="eSZ-Vm-e0Y"/>
+                                                    <constraint firstAttribute="bottom" secondItem="t3f-Fk-5bL" secondAttribute="bottom" id="jgU-yo-R2N"/>
                                                 </constraints>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9gA-vz-07R">
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cSe-15-OGs">
                                                 <rect key="frame" x="0.0" y="134" width="125" height="52"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="autopay.png" translatesAutoresizingMaskIntoConstraints="NO" id="Uby-Np-TX4">
-                                                        <rect key="frame" x="0.0" y="0.0" width="52" height="52"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9gA-vz-07R">
+                                                        <rect key="frame" x="0.0" y="-0.5" width="125" height="52.5"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="autopay.png" translatesAutoresizingMaskIntoConstraints="NO" id="Uby-Np-TX4">
+                                                                <rect key="frame" x="0.0" y="0.0" width="52.5" height="52.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="Uby-Np-TX4" secondAttribute="height" multiplier="1:1" id="Tiu-2F-elD"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v6p-AT-VvU">
+                                                                <rect key="frame" x="52.5" y="0.0" width="72.5" height="52.5"/>
+                                                                <state key="normal" title="Autopay">
+                                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <segue destination="ung-tl-hT2" kind="show" identifier="autoPay" id="66Q-yD-JZF"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" secondItem="Uby-Np-TX4" secondAttribute="height" multiplier="1:1" id="Tiu-2F-elD"/>
+                                                            <constraint firstItem="Uby-Np-TX4" firstAttribute="width" secondItem="Uby-Np-TX4" secondAttribute="height" multiplier="1:1" id="C1h-bj-Ko9"/>
+                                                            <constraint firstItem="Uby-Np-TX4" firstAttribute="width" secondItem="Uby-Np-TX4" secondAttribute="height" multiplier="1:1" id="DtU-5U-iM8"/>
                                                         </constraints>
-                                                    </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v6p-AT-VvU">
-                                                        <rect key="frame" x="52" y="0.0" width="73" height="52"/>
-                                                        <state key="normal" title="Autopay">
-                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <segue destination="ung-tl-hT2" kind="show" id="66Q-yD-JZF"/>
-                                                        </connections>
-                                                    </button>
+                                                    </stackView>
                                                 </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstItem="Uby-Np-TX4" firstAttribute="width" secondItem="Uby-Np-TX4" secondAttribute="height" multiplier="1:1" id="C1h-bj-Ko9"/>
-                                                    <constraint firstItem="Uby-Np-TX4" firstAttribute="width" secondItem="Uby-Np-TX4" secondAttribute="height" multiplier="1:1" id="DtU-5U-iM8"/>
+                                                    <constraint firstItem="9gA-vz-07R" firstAttribute="leading" secondItem="cSe-15-OGs" secondAttribute="leading" id="5QL-Hc-QCt"/>
+                                                    <constraint firstItem="9gA-vz-07R" firstAttribute="top" secondItem="cSe-15-OGs" secondAttribute="top" id="K0v-Mx-V5r"/>
+                                                    <constraint firstAttribute="trailing" secondItem="9gA-vz-07R" secondAttribute="trailing" id="ZG6-rk-smP"/>
+                                                    <constraint firstAttribute="bottom" secondItem="9gA-vz-07R" secondAttribute="bottom" id="yGd-k5-tuF"/>
                                                 </constraints>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Jw-GT-yWO">
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G6x-V0-mrL">
                                                 <rect key="frame" x="0.0" y="201" width="125" height="52"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plansList.png" translatesAutoresizingMaskIntoConstraints="NO" id="5oG-V5-DuM">
-                                                        <rect key="frame" x="0.0" y="0.0" width="52" height="52"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Jw-GT-yWO">
+                                                        <rect key="frame" x="0.0" y="-0.5" width="125" height="52.5"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plansList.png" translatesAutoresizingMaskIntoConstraints="NO" id="5oG-V5-DuM">
+                                                                <rect key="frame" x="0.0" y="0.0" width="52.5" height="52.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="5oG-V5-DuM" secondAttribute="height" multiplier="1:1" id="FGY-iE-v8Q"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3L-sb-F6f">
+                                                                <rect key="frame" x="52.5" y="0.0" width="72.5" height="52.5"/>
+                                                                <state key="normal" title="Plans">
+                                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <segue destination="MWr-Se-IxW" kind="show" identifier="plans" id="WxC-po-mRn"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" secondItem="5oG-V5-DuM" secondAttribute="height" multiplier="1:1" id="FGY-iE-v8Q"/>
+                                                            <constraint firstItem="5oG-V5-DuM" firstAttribute="width" secondItem="5oG-V5-DuM" secondAttribute="height" multiplier="1:1" id="uac-yV-kW6"/>
                                                         </constraints>
-                                                    </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3L-sb-F6f">
-                                                        <rect key="frame" x="52" y="0.0" width="73" height="52"/>
-                                                        <state key="normal" title="Plans">
-                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <segue destination="MWr-Se-IxW" kind="show" id="WxC-po-mRn"/>
-                                                        </connections>
-                                                    </button>
+                                                    </stackView>
                                                 </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <constraints>
-                                                    <constraint firstItem="5oG-V5-DuM" firstAttribute="width" secondItem="5oG-V5-DuM" secondAttribute="height" multiplier="1:1" id="uac-yV-kW6"/>
+                                                    <constraint firstItem="3Jw-GT-yWO" firstAttribute="top" secondItem="G6x-V0-mrL" secondAttribute="top" id="4as-tX-fgq"/>
+                                                    <constraint firstAttribute="trailing" secondItem="3Jw-GT-yWO" secondAttribute="trailing" id="V43-JH-HOb"/>
+                                                    <constraint firstAttribute="bottom" secondItem="3Jw-GT-yWO" secondAttribute="bottom" id="gQ7-Jc-Znj"/>
+                                                    <constraint firstItem="3Jw-GT-yWO" firstAttribute="leading" secondItem="G6x-V0-mrL" secondAttribute="leading" id="lWU-xh-mhB"/>
                                                 </constraints>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ICr-Cl-Yna">
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Imo-Jw-Day">
                                                 <rect key="frame" x="0.0" y="268" width="125" height="52"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signOut.png" translatesAutoresizingMaskIntoConstraints="NO" id="oU2-6P-iUV">
-                                                        <rect key="frame" x="0.0" y="0.0" width="52" height="52"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" secondItem="oU2-6P-iUV" secondAttribute="height" multiplier="1:1" id="fG2-ZU-1kX"/>
-                                                        </constraints>
-                                                    </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3j-dP-GaB">
-                                                        <rect key="frame" x="52" y="0.0" width="73" height="52"/>
-                                                        <state key="normal" title="Logout">
-                                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        </state>
-                                                        <connections>
-                                                            <segue destination="Sun-Xb-0kx" kind="show" id="br9-iZ-glr"/>
-                                                        </connections>
-                                                    </button>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ICr-Cl-Yna">
+                                                        <rect key="frame" x="0.0" y="-0.5" width="125" height="52.5"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signOut.png" translatesAutoresizingMaskIntoConstraints="NO" id="oU2-6P-iUV">
+                                                                <rect key="frame" x="0.0" y="0.0" width="52.5" height="52.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="oU2-6P-iUV" secondAttribute="height" multiplier="1:1" id="fG2-ZU-1kX"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3j-dP-GaB">
+                                                                <rect key="frame" x="52.5" y="0.0" width="72.5" height="52.5"/>
+                                                                <state key="normal" title="Logout">
+                                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <segue destination="Sun-Xb-0kx" kind="show" id="br9-iZ-glr"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
                                                 </subviews>
-                                            </stackView>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="ICr-Cl-Yna" firstAttribute="top" secondItem="Imo-Jw-Day" secondAttribute="top" id="53z-xx-83a"/>
+                                                    <constraint firstItem="ICr-Cl-Yna" firstAttribute="leading" secondItem="Imo-Jw-Day" secondAttribute="leading" id="HPY-lb-C9H"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ICr-Cl-Yna" secondAttribute="trailing" id="ctg-xx-xbO"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ICr-Cl-Yna" secondAttribute="bottom" id="ocu-e0-7vf"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                     </stackView>
                                 </subviews>
@@ -932,8 +992,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="autoPayView" destination="cSe-15-OGs" id="Mlm-pR-vIX"/>
+                        <outlet property="bankView" destination="Ide-L8-s0B" id="0NA-Fk-aZU"/>
                         <outlet property="darkenView" destination="dTe-E5-9a3" id="Svr-vF-JBE"/>
                         <outlet property="intervalText" destination="7O9-h7-pG1" id="AHs-a3-IpC"/>
+                        <outlet property="logoutView" destination="Imo-Jw-Day" id="0dl-BU-73O"/>
+                        <outlet property="plansView" destination="G6x-V0-mrL" id="0Ji-rc-dP8"/>
+                        <outlet property="profileView" destination="PAQ-gz-3lI" id="ET0-IL-vSE"/>
                         <outlet property="sideMenuConstraint" destination="f9P-1C-UHY" id="XfH-XK-tMH"/>
                         <outlet property="welcomeLabel" destination="jkq-eC-Ofo" id="RCL-Bi-gqi"/>
                     </connections>
@@ -2740,13 +2805,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rnf-iY-fdE">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="667"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GU1-61-rqo">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="222.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="222.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vqn-BE-OPz">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="222.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="222.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2754,16 +2819,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="S2z-Px-y24">
-                                        <rect key="frame" x="0.0" y="222.5" width="375" height="444.5"/>
+                                        <rect key="frame" x="0.0" y="222.5" width="0.0" height="444.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Heu-2V-up1">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="148"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="148"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r0Q-kX-EBw">
-                                                <rect key="frame" x="0.0" y="148" width="375" height="296.5"/>
+                                                <rect key="frame" x="0.0" y="148" width="0.0" height="296.5"/>
                                             </imageView>
                                         </subviews>
                                         <constraints>
