@@ -57,6 +57,11 @@
 		D34FAC5A1FCFF6F80008A8AF /* SignUpInfo1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34FAC591FCFF6F80008A8AF /* SignUpInfo1ViewController.swift */; };
 		D35FED5C1FD7FE78005C8606 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35FED5B1FD7FE78005C8606 /* ProfileViewController.swift */; };
 		D35FED5E1FD808A4005C8606 /* AutopayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35FED5D1FD808A4005C8606 /* AutopayViewController.swift */; };
+		D3E8CC841FD9620400D9BDC7 /* CoffeeVisualisationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E8CC831FD9620400D9BDC7 /* CoffeeVisualisationController.swift */; };
+		D3E8CC891FD969DE00D9BDC7 /* tickets.png in Resources */ = {isa = PBXBuildFile; fileRef = D3E8CC851FD969DD00D9BDC7 /* tickets.png */; };
+		D3E8CC8A1FD969DE00D9BDC7 /* shoes.png in Resources */ = {isa = PBXBuildFile; fileRef = D3E8CC861FD969DD00D9BDC7 /* shoes.png */; };
+		D3E8CC8B1FD969DE00D9BDC7 /* coffee.png in Resources */ = {isa = PBXBuildFile; fileRef = D3E8CC871FD969DD00D9BDC7 /* coffee.png */; };
+		D3E8CC8C1FD969DE00D9BDC7 /* headphones.png in Resources */ = {isa = PBXBuildFile; fileRef = D3E8CC881FD969DD00D9BDC7 /* headphones.png */; };
 		D64B813745412D65661C802B /* Pods_Loana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A876C0EE2993CA6739387610 /* Pods_Loana.framework */; };
 		E8064B3E1FD7FC8A003C83DA /* Graph1Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8064B3D1FD7FC8A003C83DA /* Graph1Controller.swift */; };
 		E8064B451FD8201F003C83DA /* progress_tree_6.png in Resources */ = {isa = PBXBuildFile; fileRef = E8064B3F1FD8201D003C83DA /* progress_tree_6.png */; };
@@ -143,6 +148,11 @@
 		D34FAC591FCFF6F80008A8AF /* SignUpInfo1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInfo1ViewController.swift; sourceTree = "<group>"; };
 		D35FED5B1FD7FE78005C8606 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = LoggedIn/ProfileViewController.swift; sourceTree = "<group>"; };
 		D35FED5D1FD808A4005C8606 /* AutopayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AutopayViewController.swift; path = LoggedIn/AutopayViewController.swift; sourceTree = "<group>"; };
+		D3E8CC831FD9620400D9BDC7 /* CoffeeVisualisationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoffeeVisualisationController.swift; path = LoggedIn/CoffeeVisualisationController.swift; sourceTree = "<group>"; };
+		D3E8CC851FD969DD00D9BDC7 /* tickets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tickets.png; sourceTree = "<group>"; };
+		D3E8CC861FD969DD00D9BDC7 /* shoes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shoes.png; sourceTree = "<group>"; };
+		D3E8CC871FD969DD00D9BDC7 /* coffee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coffee.png; sourceTree = "<group>"; };
+		D3E8CC881FD969DD00D9BDC7 /* headphones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = headphones.png; sourceTree = "<group>"; };
 		E8064B3D1FD7FC8A003C83DA /* Graph1Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph1Controller.swift; sourceTree = "<group>"; };
 		E8064B3F1FD8201D003C83DA /* progress_tree_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress_tree_6.png; sourceTree = "<group>"; };
 		E8064B401FD8201E003C83DA /* progress_tree_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress_tree_2.png; sourceTree = "<group>"; };
@@ -292,6 +302,7 @@
 				B766CC831FD0FCEE00495638 /* LoggedOut */,
 				B766CC801FD0FC9100495638 /* Meta Files */,
 				B7A264A81FBF996400893AFE /* Main.storyboard */,
+				D3E8CC831FD9620400D9BDC7 /* CoffeeVisualisationController.swift */,
 				D35FED5D1FD808A4005C8606 /* AutopayViewController.swift */,
 				B766CC811FD0FCBA00495638 /* LoggedIn */,
 				B7E9B9281FCF750B00234840 /* Model */,
@@ -329,6 +340,10 @@
 		D34FAC4C1FCFECB60008A8AF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D3E8CC871FD969DD00D9BDC7 /* coffee.png */,
+				D3E8CC881FD969DD00D9BDC7 /* headphones.png */,
+				D3E8CC861FD969DD00D9BDC7 /* shoes.png */,
+				D3E8CC851FD969DD00D9BDC7 /* tickets.png */,
 				E8064B421FD8201E003C83DA /* progress_tree_1.png */,
 				E8064B401FD8201E003C83DA /* progress_tree_2.png */,
 				E8064B431FD8201E003C83DA /* progress_tree_3.png */,
@@ -456,6 +471,7 @@
 				B735301C1FD18999007FF4B4 /* standard.png in Resources */,
 				B7A264B21FBF996400893AFE /* LaunchScreen.storyboard in Resources */,
 				E823DB801FD14A6600A427D9 /* first screen.png in Resources */,
+				D3E8CC891FD969DE00D9BDC7 /* tickets.png in Resources */,
 				E823DB7B1FD14A6600A427D9 /* Group.png in Resources */,
 				E823DB7D1FD14A6600A427D9 /* background.png in Resources */,
 				B78391621FD80CC0004FB5AB /* barclay.png in Resources */,
@@ -474,9 +490,11 @@
 				E8064B481FD8201F003C83DA /* progress_tree_1.png in Resources */,
 				B78391601FD80CC0004FB5AB /* hsbc.png in Resources */,
 				E823DB8C1FD14D7800A427D9 /* backbutton.png in Resources */,
+				D3E8CC8A1FD969DE00D9BDC7 /* shoes.png in Resources */,
 				B774C83E1FCFFA5E009DFC76 /* wallet.png in Resources */,
 				E823DB821FD14A6600A427D9 /* lock-open.png in Resources */,
 				B7F62D521FD7E8180010CC7B /* hamburger.png in Resources */,
+				D3E8CC8C1FD969DE00D9BDC7 /* headphones.png in Resources */,
 				E815D5071FD003B5005CB34F /* money.png in Resources */,
 				E823DB8B1FD14D7800A427D9 /* widebox.png in Resources */,
 				B76AF5741FD81F7400F51D7F /* icons8-forward-100.png in Resources */,
@@ -485,6 +503,7 @@
 				E823DB811FD14A6600A427D9 /* noun_125155_cc.png in Resources */,
 				B78391631FD80CC0004FB5AB /* wellsFargo.png in Resources */,
 				E823DB7F1FD14A6600A427D9 /* account-circle.png in Resources */,
+				D3E8CC8B1FD969DE00D9BDC7 /* coffee.png in Resources */,
 				E823DB891FD14D7800A427D9 /* plans.png in Resources */,
 				B7F62D541FD7E8C50010CC7B /* icons8-settings-50.png in Resources */,
 				E815D5061FD003B5005CB34F /* house.png in Resources */,
@@ -568,6 +587,7 @@
 				B7E9B9211FCF6EF000234840 /* User.swift in Sources */,
 				B78391651FD80EA1004FB5AB /* BankCollectionViewCell.swift in Sources */,
 				D35FED5C1FD7FE78005C8606 /* ProfileViewController.swift in Sources */,
+				D3E8CC841FD9620400D9BDC7 /* CoffeeVisualisationController.swift in Sources */,
 				B73530181FD176C8007FF4B4 /* PlansCollectionViewCell.swift in Sources */,
 				B766CC791FCFFEA600495638 /* HomeViewController.swift in Sources */,
 				B76AF57B1FD82AFA00F51D7F /* LinkAccount2ViewController.swift in Sources */,
