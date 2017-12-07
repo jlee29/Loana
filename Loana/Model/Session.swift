@@ -31,6 +31,8 @@ class Session {
             auto_pay_schedule: [Array(repeating: 0.0,count:31),[0.0,125.0,0.0,0.0,0.0,0.0,0.0,125.0,0.0,0.0,0.0,0.0,0.0,0.0,125.0,0.0,0.0,0.0,0.0,0.0,0.0,125.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],
                                 Array(repeating:0.0,count: 31)],
             manual_pay_schedule:[[(0,350.0)],[(1,25)],[]],
+            auto_pay_installment: 125,
+            remaining_amount: 0.0,
             currPlan: "Standard")
     }
     var loggedIn: Bool
