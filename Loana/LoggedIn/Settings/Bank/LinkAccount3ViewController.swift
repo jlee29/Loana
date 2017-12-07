@@ -23,6 +23,8 @@ class LinkAccount3ViewController: UIViewController {
     var label1text: String?
     var label2text: String?
     
+    @IBOutlet weak var questionLabel: UILabel!
+    
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var label2: UILabel!
     
@@ -74,6 +76,7 @@ class LinkAccount3ViewController: UIViewController {
         label1.text = label1text
         label2.text = label2text
         image.image = UIImage(named: bankTitle!)
+        questionLabel.font = UIFont(name: "Avenir", size: 30)
         let gesture = UITapGestureRecognizer(target: self, action:  #selector (checkAction(sender:)))
         account.addGestureRecognizer(gesture)
 

@@ -16,9 +16,7 @@ class HomeViewController: UIViewController {
     let currDay = Session.shared.currDay
 
     @IBOutlet weak var welcomeLabel: UILabel!
-    
-    @IBOutlet weak var proPic: UIImageView!
-    
+    @IBOutlet weak var intervalText: UILabel!
     @IBOutlet weak var sideMenuConstraint: NSLayoutConstraint!
     
     @IBOutlet weak var darkenView: UIView!
@@ -27,8 +25,8 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
         darkenView.alpha = 0
+        welcomeLabel.baselineAdjustment = .alignCenters
 
-        proPic.layer.cornerRadius = 37
         sideMenuConstraint.constant = -140
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissMenu (_:)))
         self.view.addGestureRecognizer(tapGesture)
@@ -46,8 +44,10 @@ class HomeViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        welcomeLabel.text = String(Session.shared.user.auto_pay_installment) + " - " + Session.shared.user.intervalPlan
-        welcomeLabel.font = UIFont(name: "Avenir", size: 40)
+        welcomeLabel.text = "$" + String(Session.shared.user.auto_pay_installment)
+        welcomeLabel.font = UIFont(name: "Avenir", size: 60)
+        intervalText.text = "/" + Session.shared.user.intervalPlan
+        intervalText.font = UIFont(name: "Avenir", size: 15)
         util.remaining_month()
         
         if (!slideMenuHidden) {

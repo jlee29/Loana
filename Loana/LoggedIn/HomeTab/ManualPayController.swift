@@ -16,6 +16,19 @@ class ManualPayController: UIViewController{
     
     @IBOutlet weak var manualPayAmount: UITextField!
     
+    func addedCorrectly() {
+        let dialogMessage = UIAlertController(title: "Confirm", message: "Deposited Successfully!", preferredStyle: .alert)
+        
+        // Create OK button with action handler
+        let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
+            self.navigationController?.dismiss(animated: true, completion: nil)
+        })
+        
+        dialogMessage.addAction(ok)
+        
+        self.present(dialogMessage, animated: true, completion: nil)
+    }
+    
     func printError() {
         let inputAlert = UIAlertController(title: "Input Error", message: "Enter a valid amount", preferredStyle:.alert)
         let okAction = UIAlertAction(title: "OK", style: .default)
