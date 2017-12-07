@@ -41,11 +41,16 @@ class Graph1Controller: UIViewController {
             
             paidEntry.append(val)
         }
-        
+        var repayment_balance_copy = Session.shared.user.repayment_balance
         var projectedEntry = [ChartDataEntry]()
         for index in (day + 1)...(Session.shared.user.repayment_balance[month].count-1){
             
-            let val = ChartDataEntry(x: Double(index),y: Session.shared.user.repayment_balance[month][index])
+            //update copy
+            if index != 0{
+                repayment_balance_copy[month][index] = repayment_balance_copy[month][index-1] + Session.shared.user.auto_pay_schedule[month][index]
+            }
+            
+            let val = ChartDataEntry(x: Double(index),y: repayment_balance_copy[month][index])
             
             projectedEntry.append(val)
             
