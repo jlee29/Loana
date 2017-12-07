@@ -21,6 +21,8 @@
 		B76AF5761FD8261400F51D7F /* BankCompanyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76AF5751FD8261400F51D7F /* BankCompanyCollectionViewCell.swift */; };
 		B76AF5781FD8266B00F51D7F /* LinkAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76AF5771FD8266B00F51D7F /* LinkAccountViewController.swift */; };
 		B76AF57B1FD82AFA00F51D7F /* LinkAccount2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76AF57A1FD82AFA00F51D7F /* LinkAccount2ViewController.swift */; };
+		B76AF57D1FD927E200F51D7F /* LinkAccount3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76AF57C1FD927E200F51D7F /* LinkAccount3ViewController.swift */; };
+		B76AF57F1FD92A2800F51D7F /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76AF57E1FD92A2800F51D7F /* BankAccount.swift */; };
 		B774C8391FCFF4AB009DFC76 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B774C8381FCFF4AB009DFC76 /* SettingsViewController.swift */; };
 		B774C83E1FCFFA5E009DFC76 /* wallet.png in Resources */ = {isa = PBXBuildFile; fileRef = B774C83B1FCFFA5E009DFC76 /* wallet.png */; };
 		B7780C221FCFB67A0093A2C9 /* PlansViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7780C211FCFB67A0093A2C9 /* PlansViewController.swift */; };
@@ -103,6 +105,8 @@
 		B76AF5751FD8261400F51D7F /* BankCompanyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankCompanyCollectionViewCell.swift; sourceTree = "<group>"; };
 		B76AF5771FD8266B00F51D7F /* LinkAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkAccountViewController.swift; sourceTree = "<group>"; };
 		B76AF57A1FD82AFA00F51D7F /* LinkAccount2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkAccount2ViewController.swift; sourceTree = "<group>"; };
+		B76AF57C1FD927E200F51D7F /* LinkAccount3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkAccount3ViewController.swift; sourceTree = "<group>"; };
+		B76AF57E1FD92A2800F51D7F /* BankAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccount.swift; sourceTree = "<group>"; };
 		B774C8381FCFF4AB009DFC76 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		B774C83B1FCFFA5E009DFC76 /* wallet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wallet.png; sourceTree = "<group>"; };
 		B7780C211FCFB67A0093A2C9 /* PlansViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlansViewController.swift; sourceTree = "<group>"; };
@@ -244,6 +248,7 @@
 				B76AF5751FD8261400F51D7F /* BankCompanyCollectionViewCell.swift */,
 				B76AF5771FD8266B00F51D7F /* LinkAccountViewController.swift */,
 				B76AF57A1FD82AFA00F51D7F /* LinkAccount2ViewController.swift */,
+				B76AF57C1FD927E200F51D7F /* LinkAccount3ViewController.swift */,
 				B78391661FD81087004FB5AB /* AddCollectionViewCell.swift */,
 				B78391641FD80EA1004FB5AB /* BankCollectionViewCell.swift */,
 				B78391581FD80AED004FB5AB /* BankViewController.swift */,
@@ -308,6 +313,7 @@
 				B7E9B9261FCF711700234840 /* Loan.swift */,
 				B7E9B9201FCF6EF000234840 /* User.swift */,
 				E815D4F21FCFE1C1005CB34F /* RepaymentPlan.swift */,
+				B76AF57E1FD92A2800F51D7F /* BankAccount.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -553,6 +559,7 @@
 				D35FED5E1FD808A4005C8606 /* AutopayViewController.swift in Sources */,
 				B78391571FD7F50C004FB5AB /* MainPageViewController.swift in Sources */,
 				B78391591FD80AED004FB5AB /* BankViewController.swift in Sources */,
+				B76AF57F1FD92A2800F51D7F /* BankAccount.swift in Sources */,
 				B7780C281FCFC92F0093A2C9 /* PlanDetailViewController.swift in Sources */,
 				B7A264A71FBF996400893AFE /* ViewController.swift in Sources */,
 				B76AF5781FD8266B00F51D7F /* LinkAccountViewController.swift in Sources */,
@@ -565,6 +572,7 @@
 				B766CC791FCFFEA600495638 /* HomeViewController.swift in Sources */,
 				B76AF57B1FD82AFA00F51D7F /* LinkAccount2ViewController.swift in Sources */,
 				B7E9B9271FCF711700234840 /* Loan.swift in Sources */,
+				B76AF57D1FD927E200F51D7F /* LinkAccount3ViewController.swift in Sources */,
 				B7A264A51FBF996400893AFE /* AppDelegate.swift in Sources */,
 				B766CC7D1FD0131200495638 /* NavigationViewController.swift in Sources */,
 				B774C8391FCFF4AB009DFC76 /* SettingsViewController.swift in Sources */,
