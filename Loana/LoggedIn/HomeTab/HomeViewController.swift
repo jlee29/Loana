@@ -21,13 +21,28 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var sideMenuConstraint: NSLayoutConstraint!
     
+    @IBOutlet weak var darkenView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
+        darkenView.alpha = 0
 
         proPic.layer.cornerRadius = 37
         sideMenuConstraint.constant = -140
-        // Do any additional setup after loading the view.
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissMenu (_:)))
+        self.view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func dismissMenu (_ sender: UITapGestureRecognizer) {
+        if !slideMenuHidden {
+            sideMenuConstraint.constant = -140
+            UIView.animate(withDuration: 0.3, animations: {
+                self.view.layoutIfNeeded()
+                self.darkenView.alpha = 0
+            })
+            slideMenuHidden = !slideMenuHidden
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -38,6 +53,7 @@ class HomeViewController: UIViewController {
         if (!slideMenuHidden) {
             sideMenuConstraint.constant = -140
             slideMenuHidden = true
+            darkenView.alpha = 0
         }
     }
     
@@ -61,12 +77,14 @@ class HomeViewController: UIViewController {
             
             UIView.animate(withDuration: 0.3, animations: {
                 self.view.layoutIfNeeded()
+                self.darkenView.alpha = 1
             })
         } else {
             sideMenuConstraint.constant = -140
             
             UIView.animate(withDuration: 0.3, animations: {
                 self.view.layoutIfNeeded()
+                self.darkenView.alpha = 0
             })
         }
         slideMenuHidden = !slideMenuHidden
