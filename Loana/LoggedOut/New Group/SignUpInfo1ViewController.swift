@@ -97,18 +97,39 @@ class SignUpInfo1ViewController: UIViewController, UIPickerViewDelegate, UIPicke
         return statePickerData[row]
     }
     
+    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+        if pickerView == publicSectorPicker {
+            return NSAttributedString(string: publicSectorPickerData[row], attributes: [NSAttributedStringKey.foregroundColor:UIColor.white])
+        } else if pickerView == statePicker {
+            return NSAttributedString(string: statePickerData[row], attributes: [NSAttributedStringKey.foregroundColor:UIColor.white])
+        } else {
+            return NSAttributedString(string: maritalStatusPickerData[row], attributes: [NSAttributedStringKey.foregroundColor:UIColor.white])
+        }
+    }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }
     
+    func printError() {
+        let inputAlert = UIAlertController(title: "Input Error", message: "Enter a valid income!", preferredStyle:.alert)
+        let okAction = UIAlertAction(title: "OK", style: .default)
+        inputAlert.addAction(okAction)
+        self.present(inputAlert, animated: true, completion:nil)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         Session.shared.user.name = nameTextField.text!
-        Session.shared.user.income = Int(incomeTextField.text!)!
-        Session.shared.user.maritalStatus = maritalStatusPickerData[maritalStatusPicker.selectedRow(inComponent: 0)]
-        Session.shared.user.publicSector = Bool(responseToBool(in: publicSectorPickerData[publicSectorPicker.selectedRow(inComponent: 0)]))
-        Session.shared.user.stateOfResidence = statePickerData[statePicker.selectedRow(inComponent: 0)]
-        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+        if let income = incomeTextField.text {
+            Session.shared.user.income = Int(income)!
+            Session.shared.user.maritalStatus = maritalStatusPickerData[maritalStatusPicker.selectedRow(inComponent: 0)]
+            Session.shared.user.publicSector = Bool(responseToBool(in: publicSectorPickerData[publicSectorPicker.selectedRow(inComponent: 0)]))
+            Session.shared.user.stateOfResidence = statePickerData[statePicker.selectedRow(inComponent: 0)]
+            self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+        } else {
+            printError()
+        }
     }
     
     func responseToBool(in response: String) -> Bool {
