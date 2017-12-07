@@ -36,6 +36,67 @@ class PlanDetailViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
         delegate?.updatedPlan(long2short(_: titleLabel.text!))
         //Change the amount owed at the end of the month
+        var loan = totalLoanCostLabel.text!
+        loan.remove(at: loan.startIndex)
+        let newMonthPayment = Double(plan2AmountOwedPerMonth(plan: titleLabel.text!))
+        var amountOwed = newMonthPayment - Session.shared.user.repayment_balance[Session.shared.currMonth][Session.shared.currMonth]
+        if amountOwed < 0.0{
+            amountOwed = 0.0
+        }
+        Session.shared.user.remaining_amount = amountOwed
+        update_installment()
+        update_repayment_balance()
+    }
+    
+    func update_repayment_balance(){
+        let interval = get_interval_in_days()
+        let last_index = Session.shared.user.auto_pay_schedule[Session.shared.currMonth].count - 1
+        
+        if Session.shared.user.intervalPlan == "Monthly"{
+            for i in Session.shared.currDay...last_index{
+                Session.shared.user.auto_pay_schedule[Session.shared.currMonth][i] = 0
+                if i == last_index{
+                    Session.shared.user.auto_pay_schedule[Session.shared.currMonth][i] = Session.shared.user.auto_pay_installment
+                }
+            }
+            return
+        }
+        for i in stride(from: last_index, to: Session.shared.currDay, by: -1){
+            Session.shared.user.auto_pay_schedule[Session.shared.currMonth][i] = 0
+            if (last_index - i) % interval != 0{
+                continue
+            }
+            Session.shared.user.auto_pay_schedule[Session.shared.currMonth][i] = Session.shared.user.auto_pay_installment
+        }
+    }
+    
+    func update_installment(){
+        if Session.shared.user.intervalPlan == "Monthly"{
+            Session.shared.user.auto_pay_installment = Session.shared.user.remaining_amount
+            return
+        }
+        let interval = get_interval_in_days()
+        let payment_days = get_num_payment_days(interval:interval)
+        print(Session.shared.user.remaining_amount)
+        print(payment_days)
+        Session.shared.user.auto_pay_installment = Session.shared.user.remaining_amount / Double (payment_days)
+        print(Session.shared.user.auto_pay_installment)
+    }
+    
+    func get_interval_in_days()->Int{
+        if Session.shared.user.intervalPlan == "Daily"{
+            return 1
+        } else if Session.shared.user.intervalPlan == "Weekly"{
+            return 7
+        } else if Session.shared.user.intervalPlan == "Biweekly"{
+            return 14
+        }
+        return -1
+    }
+    
+    func get_num_payment_days(interval: Int)->Int{
+        let differences = Session.shared.user.auto_pay_schedule[Session.shared.currMonth].count - Session.shared.currDay - 1
+        return differences / interval + 1
     }
     
     func long2short(_ titleText:String) -> String {
@@ -51,6 +112,22 @@ class PlanDetailViewController: UIViewController {
             return "Graduated"
         }else{
             return "Extended"
+        }
+    }
+    
+    func plan2AmountOwedPerMonth(plan: String)->Int{
+        if(plan == "Income-Based Repayment"){
+            return 160
+        }else if(plan == "Income-Contingent Repayment"){
+            return 160
+        }else if(plan == "Pay As You Earn"){
+            return 170
+        }else if(plan == "Standard"){
+            return 250
+        }else if(plan == "Graduated"){
+            return 200
+        }else{
+            return 190
         }
     }
     
