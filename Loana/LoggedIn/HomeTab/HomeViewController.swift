@@ -47,7 +47,7 @@ class HomeViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         welcomeLabel.text = String(Session.shared.user.auto_pay_installment) + " - " + Session.shared.user.intervalPlan
-        welcomeLabel.font = UIFont(name: "Avenir", size: 25)
+        welcomeLabel.font = UIFont(name: "Avenir", size: 40)
         util.remaining_month()
         
         if (!slideMenuHidden) {
@@ -56,14 +56,6 @@ class HomeViewController: UIViewController {
             darkenView.alpha = 0
         }
     }
-    
-
-    
-//    func remaining_month(){
-//        print(Session.shared.user.repayment_schedule[currMonth])
-//        print(Session.shared.user.repayment_balance[currMonth][currDay])
-//        Session.shared.user.remaining_amount =  Session.shared.user.repayment_schedule[currMonth] - Session.shared.user.repayment_balance[currMonth][currDay]
-//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
