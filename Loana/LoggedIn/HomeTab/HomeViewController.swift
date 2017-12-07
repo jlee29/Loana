@@ -35,6 +35,10 @@ class HomeViewController: UIViewController {
         welcomeLabel.font = UIFont(name: "Avenir", size: 25)
         remaining_month()
         
+        if (!slideMenuHidden) {
+            sideMenuConstraint.constant = -140
+            slideMenuHidden = true
+        }
     }
     
 
