@@ -51,7 +51,7 @@ class LinkAccountViewController: UIViewController, UICollectionViewDelegate, UIC
             if let cell = sender as? BankCompanyCollectionViewCell, let indexPath = bankCollection.indexPath(for: cell) {
                 let bankName = names[indexPath.row]
                 destination.bankName = bankName
-                destination.delegate = self
+                destination.delegate = delegate
             }
         }
     }

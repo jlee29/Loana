@@ -14,7 +14,7 @@ protocol LinkAccount3ViewControllerDelegate {
 
 class LinkAccount3ViewController: UIViewController {
 
-    var delegate: LinkAccount3ViewControllerDelegate
+    var delegate: LinkAccount3ViewControllerDelegate?
     
     @IBOutlet weak var image: UIImageView!
     var bankTitle: String?
@@ -25,7 +25,7 @@ class LinkAccount3ViewController: UIViewController {
     @IBAction func selected(_ sender: UIButton) {
         let alertController = UIAlertController(title: "Alert title", message: "Link this account?", preferredStyle: .alert)
         let OKAction = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction!) in
-            delegate.addedBank(BankAccount(bankName: bankTitle!, accountName: label1.text!, number: label2.text!))
+            self.delegate?.addedBank(BankAccount(bankName: self.bankTitle!, accountName: self.label1.text!, number: self.label2.text!))
         }
         alertController.addAction(OKAction)
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (action:UIAlertAction!) in
