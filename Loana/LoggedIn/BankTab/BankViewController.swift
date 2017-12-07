@@ -13,23 +13,6 @@ class BankViewController: UIViewController, UICollectionViewDelegate, UICollecti
     var bankNames = ["Wells Fargo", "Wells Fargo"]
     var linkedAccounts = ["Isabella's Checking", "Isabella's Savings"]
     var linkedAccountTexts = ["Checking xxx5067", "Savings xxx5067"]
-    
-//    let gesture = UITapGestureRecognizer(target: self, action: #selector(BankViewController.checkAction(sender:)))
-//
-//    @objc func checkAction(sender: AnyObject) {
-//        let bankCell = sender.superview as! BankCollectionViewCell
-//        let alertController = UIAlertController(title: "Alert title", message: "Use this account?", preferredStyle: .alert)
-//        let OKAction = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction!) in
-//            let index = self.linkedAccounts.index(of: bankCell.label1.text!)!
-//            Session.shared.user.bankAccount = BankAccount(bankName: self.bankNames[index], accountName: self.linkedAccounts[index], number: self.linkedAccountTexts[index])
-//        }
-//        alertController.addAction(OKAction)
-//        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (action:UIAlertAction!) in
-//            print("Cancel button tapped")
-//        }
-//        alertController.addAction(cancelAction)
-//        self.present(alertController, animated: true, completion:nil)
-//    }
 
     @IBOutlet weak var bankCollection: UICollectionView!
     

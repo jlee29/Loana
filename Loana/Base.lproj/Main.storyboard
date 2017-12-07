@@ -725,7 +725,19 @@
                                             </containerView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="du7-JE-eVF">
                                                 <rect key="frame" x="0.0" y="274" width="375" height="274"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVK-BF-9DD">
+                                                        <rect key="frame" x="0.0" y="-0.5" width="375" height="274.5"/>
+                                                        <state key="normal" title="Pay"/>
+                                                    </button>
+                                                </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="LVK-BF-9DD" firstAttribute="top" secondItem="du7-JE-eVF" secondAttribute="top" id="Ceb-2X-K70"/>
+                                                    <constraint firstItem="LVK-BF-9DD" firstAttribute="leading" secondItem="du7-JE-eVF" secondAttribute="leading" id="jaf-nl-loC"/>
+                                                    <constraint firstAttribute="trailing" secondItem="LVK-BF-9DD" secondAttribute="trailing" id="jbT-tj-xBT"/>
+                                                    <constraint firstAttribute="bottom" secondItem="LVK-BF-9DD" secondAttribute="bottom" id="kWD-oP-aOb"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
                                     </stackView>
