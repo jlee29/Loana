@@ -12,8 +12,6 @@ class HomeViewController: UIViewController {
     
     var slideMenuHidden = true
     
-    var user = Session.shared.user
-    
     let currMonth = Session.shared.currMonth
     let currDay = Session.shared.currDay
 
@@ -26,18 +24,25 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
-        welcomeLabel.text = "Welcome Back " + Session.shared.user.name + "!"
-        welcomeLabel.font = UIFont(name: "Avenir", size: 25)
 
         proPic.layer.cornerRadius = 37
         sideMenuConstraint.constant = -140
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        welcomeLabel.text = String(Session.shared.user.auto_pay_installment) + " - " + Session.shared.user.intervalPlan
+        welcomeLabel.font = UIFont(name: "Avenir", size: 25)
+        remaining_month()
+        
+    }
+    
 
     
     func remaining_month(){
-        user.remaining_amount =  user.repayment_schedule[currMonth] - user.repayment_balance[currMonth][currDay]
+        print(Session.shared.user.repayment_schedule[currMonth])
+        print(Session.shared.user.repayment_balance[currMonth][currDay])
+        Session.shared.user.remaining_amount =  Session.shared.user.repayment_schedule[currMonth] - Session.shared.user.repayment_balance[currMonth][currDay]
     }
 
     override func didReceiveMemoryWarning() {
