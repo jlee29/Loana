@@ -25,6 +25,7 @@ class AutopayViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     @IBAction func onSaveButtonClick(_ sender: UIButton) {
         Session.shared.user.intervalPlan = planPickerData[planPicker.selectedRow(inComponent: 0)]
         currentPlanLabel.text = "Your current plan is: " + planPickerData[planPicker.selectedRow(inComponent: 0)]
+        update_installment()
     }
     
     @IBOutlet weak var saveButton: UIButton!
@@ -52,6 +53,34 @@ class AutopayViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     
     func update_repayment_balance(){
         return
+    }
+    
+    func update_installment(){
+        if user.intervalPlan == "Monthly"{
+            user.auto_pay_installment = user.remaining_amount
+        }
+        
+        var interval = get_interval_in_days()
+        
+        
+        
+        
+        
+    }
+    
+    func get_interval_in_days()->Int{
+        if user.intervalPlan == "Daily"{
+            return 1
+        } else if user.intervalPlan == "Weekly"{
+            return 7
+        } else if user.intervalPlan == "Biweekly"{
+            return 14
+        }
+        return -1
+    }
+    
+    func get_num_payment_days(interval: Int)->Int{
+        return 5
     }
     
 
