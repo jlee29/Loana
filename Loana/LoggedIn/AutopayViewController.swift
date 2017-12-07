@@ -52,7 +52,14 @@ class AutopayViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     }
     
     func update_repayment_balance(){
-        return
+        let interval = get_interval_in_days()
+        let last_index = user.auto_pay_schedule[Session.shared.currMonth].count - 1
+        for i in Session.shared.currDay...last_index{
+            if (i - Session.shared.currDay) % interval != 0{
+                continue
+            }
+            user.auto_pay_schedule[Session.shared.currMonth][i] = user.auto_pay_installment
+        }
     }
     
     func update_installment(){
@@ -61,11 +68,9 @@ class AutopayViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         }
         
         var interval = get_interval_in_days()
+        var payment_days = get_num_payment_days(interval:interval)
         
-        
-        
-        
-        
+        user.auto_pay_installment = user.remaining_amount / Double (payment_days)
     }
     
     func get_interval_in_days()->Int{
@@ -80,7 +85,8 @@ class AutopayViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     }
     
     func get_num_payment_days(interval: Int)->Int{
-        return 5
+        var differences = user.auto_pay_schedule[Session.shared.currMonth].count - Session.shared.currDay - 1
+        return differences / interval + 1
     }
     
 
