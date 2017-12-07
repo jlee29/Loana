@@ -28,11 +28,13 @@ class ManualPayController: UIViewController{
                 
                 let excess = user_amount - Session.shared.user.remaining_amount
                 
-                if excess < 0.0 {
-                    user_amount -= excess
+                print(Session.shared.user.remaining_amount)
+                
+                if excess > 0.0 {
+                    user_amount = user_amount - excess
                     Session.shared.user.manual_pay_schedule[Session.shared.currMonth + 1].append((0,excess))
                 }
-                
+
                 Session.shared.user.repayment_balance[Session.shared.currMonth][Session.shared.currDay] += user_amount
                 
                 self.util.remaining_month()
