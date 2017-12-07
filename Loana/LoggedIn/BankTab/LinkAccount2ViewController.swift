@@ -13,12 +13,10 @@ class LinkAccount2ViewController: UIViewController {
     @IBOutlet weak var accNameField: UITextField!
     @IBOutlet weak var routingNumberField: UITextField!
     var bankName: String?
+    var delegate: LinkAccount3ViewControllerDelegate?
     
     @IBAction func linkAccount(_ sender: UIButton) {
-        let alert = UIAlertController(title: "Confirmation", message: "You've selected this plan!", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: confirmationHandler))
-        self.present(alert, animated: true, completion: nil)
-        delegate?.updatedPlan(long2short(_: titleLabel.text!))
+        
     }
     
     override func viewDidLoad() {
@@ -43,4 +41,6 @@ class LinkAccount2ViewController: UIViewController {
     }
     */
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    }
 }
