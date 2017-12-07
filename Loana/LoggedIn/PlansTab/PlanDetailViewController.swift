@@ -39,11 +39,15 @@ class PlanDetailViewController: UIViewController {
         var loan = totalLoanCostLabel.text!
         loan.remove(at: loan.startIndex)
         let newMonthPayment = Double(plan2AmountOwedPerMonth(plan: titleLabel.text!))
-        var amountOwed = newMonthPayment - Session.shared.user.repayment_balance[Session.shared.currMonth][Session.shared.currMonth]
+        var amountOwed = newMonthPayment - Session.shared.user.repayment_balance[Session.shared.currMonth][Session.shared.currDay]
         if amountOwed < 0.0{
+            Session.shared.user.manual_pay_schedule[Session.shared.currMonth + 1].append((0,-1*amountOwed))
             amountOwed = 0.0
         }
         Session.shared.user.remaining_amount = amountOwed
+        for i in Session.shared.currMonth...Session.shared.user.repayment_schedule.count-1{
+            Session.shared.user.repayment_schedule[i] = newMonthPayment
+        }
         update_installment()
         update_repayment_balance()
     }
@@ -115,19 +119,21 @@ class PlanDetailViewController: UIViewController {
         }
     }
     
+    //These numbers are conveniently hard-coded to avoid edge cases.
+    //Change these numbers when you change the actual plan numbers.
     func plan2AmountOwedPerMonth(plan: String)->Int{
         if(plan == "Income-Based Repayment"){
-            return 160
+            return 500
         }else if(plan == "Income-Contingent Repayment"){
-            return 160
+            return 500
         }else if(plan == "Pay As You Earn"){
-            return 170
+            return 520
         }else if(plan == "Standard"){
-            return 250
+            return 550
         }else if(plan == "Graduated"){
-            return 200
+            return 550
         }else{
-            return 190
+            return 550
         }
     }
     
