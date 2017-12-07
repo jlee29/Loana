@@ -1807,7 +1807,7 @@
                                                 <connections>
                                                     <outlet property="button" destination="hit-aY-pdT" id="Y22-Fd-F7G"/>
                                                     <outlet property="label1" destination="8Uw-8t-mQw" id="NvD-yC-CBb"/>
-                                                    <segue destination="K4C-jp-9rY" kind="show" id="GQh-3A-Xm9"/>
+                                                    <segue destination="K4C-jp-9rY" kind="show" identifier="linkAcc1" id="GQh-3A-Xm9"/>
                                                 </connections>
                                             </collectionViewCell>
                                         </cells>
@@ -2050,7 +2050,8 @@
                                         <rect key="frame" x="0.0" y="201" width="355" height="100.5"/>
                                         <state key="normal" title="Log In"/>
                                         <connections>
-                                            <segue destination="SRO-hz-hPa" kind="show" id="p3t-Lg-cH5"/>
+                                            <action selector="linkAccount:" destination="ufe-0T-Nmo" eventType="touchUpInside" id="0o5-XS-rJR"/>
+                                            <segue destination="SRO-hz-hPa" kind="show" identifier="linkAcc3" id="p3t-Lg-cH5"/>
                                         </connections>
                                     </button>
                                 </subviews>
