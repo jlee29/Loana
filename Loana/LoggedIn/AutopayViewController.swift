@@ -11,6 +11,8 @@ import UIKit
 class AutopayViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
     var planPickerData: [String] = [String]()
     
+    var user = Session.shared.user
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         planPickerData = ["Daily", "Weekly", "Biweekly", "Monthly"]
@@ -46,6 +48,10 @@ class AutopayViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     // The data to return for the row and component (column) that's being passed in
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return planPickerData[row]
+    }
+    
+    func update_repayment_balance(){
+        return
     }
     
 
