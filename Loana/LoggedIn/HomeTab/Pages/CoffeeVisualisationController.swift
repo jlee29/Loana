@@ -9,7 +9,6 @@
 import UIKit
 
 class CoffeeVisualisationController: UIViewController {
-    @IBOutlet weak var timesLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var intervalLabel: UILabel!
     
@@ -21,9 +20,14 @@ class CoffeeVisualisationController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         intervalLabel.numberOfLines = 0
-        intervalLabel.text = getIntervalText()
+        intervalLabel.text = getIntervalText() + "\(getTimes())"
+//        let range = (intervalLabel.text! as NSString).range(of: " \(getTimes())..")
+//        let attributedString = NSMutableAttributedString(string: intervalLabel.text!)
+//        attributedString.addAttribute(NSAttributedStringKey.underlineStyle, value: NSNumber(value: 1), range: range)
+//        attributedString.addAttribute(NSAttributedStringKey.foregroundColor, value: UIColor.white, range: NSMakeRange(0,intervalLabel.text!.count-1))
+//        attributedString.addAttribute(NSAttributedStringKey.foregroundColor, value: UIColor.clear, range: NSMakeRange(intervalLabel.text!.count-1,1))
+//        intervalLabel.attributedText = attributedString
         imageView.image = UIImage(named: getImageName())
-        timesLabel.text = String(getTimes())
     }
     
     func getObjectName()->String{
@@ -76,24 +80,12 @@ class CoffeeVisualisationController: UIViewController {
     func getIntervalText()->String{
         var base = "Your \(util.intervalEnumToString(interval: Session.shared.user.intervalPlan).lowercased())"
         base = base + " payment of\n" + "$" + String(format: "%.2f", Session.shared.user.auto_pay_installment) + "\n"
-        base = base + " is equivalent to"
+        base = base + " is equivalent to "
         return base
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
