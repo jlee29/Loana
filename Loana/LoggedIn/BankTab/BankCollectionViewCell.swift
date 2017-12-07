@@ -14,4 +14,5 @@ class BankCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var label2: UILabel!
     
     @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var cellView: UIView!
 }

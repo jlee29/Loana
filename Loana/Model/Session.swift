@@ -33,7 +33,8 @@ class Session {
             manual_pay_schedule:[[(0,600.0)],[(1,25)],[]],
             auto_pay_installment: 200.0,
             remaining_amount: 200.0,
-            currPlan: "Standard")
+            currPlan: "Standard",
+            bankAccount: BankAccount(bankName: "Wells Fargo", accountName: "Ex", number: "Ex"))
     }
     var loggedIn: Bool
     var user: User

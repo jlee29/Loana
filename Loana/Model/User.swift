@@ -26,4 +26,5 @@ struct User {
     var auto_pay_installment: Double
     var remaining_amount: Double
     var currPlan: String
+    var bankAccount: BankAccount
 }
