@@ -125,9 +125,9 @@ class PlanDetailViewController: UIViewController {
         if(plan == "Income-Based Repayment"){
             return 150
         }else if(plan == "Income-Contingent Repayment"){
-            return 150
+            return 160
         }else if(plan == "Pay As You Earn"){
-            return 150
+            return 170
         }else if(plan == "Standard"){
             return 200
         }else if(plan == "Graduated"){

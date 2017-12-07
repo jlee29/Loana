@@ -10,6 +10,7 @@ import UIKit
 
 class BankViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, LinkAccount3ViewControllerDelegate {
     
+    var bankNames = ["Wells Fargo", "Wells Fargo"]
     var linkedAccounts = ["Isabella's Checking", "Isabella's Savings"]
     var linkedAccountTexts = ["Checking xxx5067", "Savings xxx5067"]
 
@@ -49,11 +50,30 @@ class BankViewController: UIViewController, UICollectionViewDelegate, UICollecti
             cell.label1.text = linkedAccounts[indexPath.row]
             cell.label2.text = linkedAccountTexts[indexPath.row]
             cell.button.setImage(UIImage(named: "icons8-forward-100.png"), for: .normal)
+//            cell.cellView.addGestureRecognizer(gesture)
             return cell
         }
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if (indexPath.row != bankNames.count) {
+            let bankCell = bankCollection.cellForItem(at: indexPath) as! BankCollectionViewCell
+            let alertController = UIAlertController(title: "Selecting Account", message: "Use this account?", preferredStyle: .alert)
+            let OKAction = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction!) in
+                let index = self.linkedAccounts.index(of: bankCell.label1.text!)!
+                Session.shared.user.bankAccount = BankAccount(bankName: self.bankNames[index], accountName: self.linkedAccounts[index], number: self.linkedAccountTexts[index])
+            }
+            alertController.addAction(OKAction)
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (action:UIAlertAction!) in
+                print("Cancel button tapped")
+            }
+            alertController.addAction(cancelAction)
+            self.present(alertController, animated: true, completion:nil)
+        }
+    }
+    
     func addedBank(_ acc: BankAccount) {
+        bankNames.insert(acc.bankName, at: 0)
         linkedAccounts.insert(acc.accountName, at: 0)
         linkedAccountTexts.insert(acc.number, at: 0)
         bankCollection.reloadData()

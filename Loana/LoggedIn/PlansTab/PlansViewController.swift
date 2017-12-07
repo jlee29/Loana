@@ -61,9 +61,7 @@ class PlansViewController: UIViewController, UICollectionViewDelegate, UICollect
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = plansCollectionView.dequeueReusableCell(withReuseIdentifier: "plan", for: indexPath) as! PlansCollectionViewCell
         cell.testLabel.text = plans[indexPath.row]
-        //cell.label1.text = getTotalCost(plans[indexPath.row])
-        //cell.label1.font = UIFont(name: "Avenir", size: 12)
-        cell.label2.text = getMinMaxPayment(plans[indexPath.row])
+        cell.label2.text = getMonthlyPayment(plans[indexPath.row])
         cell.label2.font = UIFont(name: "Avenir", size: 12)
         cell.label3.text = getTotalMonths(plans[indexPath.row])
         cell.label3.font = UIFont(name: "Avenir", size: 12)
@@ -74,27 +72,19 @@ class PlansViewController: UIViewController, UICollectionViewDelegate, UICollect
         return cell
     }
     
-    func getTotalCost(_ plan: String) -> String {
+    func getMonthlyPayment(_ plan: String) -> String {
         if(plan == "IBR"){
-            return "$20,000"
+            return "$150/mo"
         }else if(plan == "ICR"){
-            return "$25,000"
+            return "$160/mo"
         }else if(plan == "PAYE"){
-            return "$20,000"
+            return "$170/mo"
+        }else if(plan == "Standard"){
+            return "$200/mo"
+        }else if(plan == "Graduated"){
+            return "$220/mo"
         }else{
-            return "$30,000"
-        }
-    }
-    
-    func getMinMaxPayment(_ plan: String) -> String {
-        if(plan == "IBR"){
-            return "$0-200/mo"
-        }else if(plan == "ICR"){
-            return "$10-300/mo"
-        }else if(plan == "PAYE"){
-            return "$0-200/mo"
-        }else{
-            return "$100-500/mo"
+            return "$230/mo"
         }
     }
     

@@ -34,6 +34,7 @@ class Graph1Controller: UIViewController {
     }
     
     func updateGraph(){
+        chart.noDataText = ""
         
         var paidEntry = [ChartDataEntry]()
         for index in 0...day {

@@ -25,15 +25,16 @@ class Session {
             loanID:"randomID",
             id: "a1",
             intervalPlan: "Weekly",
-            repayment_balance: [Array(repeating: 250.0,count: 31),[0.0,0.0,0.0,0.0,0.0,0.0,50.0,50.0,50.0,50.0,50.0,50.0,50.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,150.0,150.0,15.0,150.0,150.0,150.0,150.0,200.0,200.0,200.0],
+            repayment_balance: [Array(repeating: 200.0,count: 31),[0.0,0.0,0.0,0.0,0.0,0.0,50.0,50.0,50.0,50.0,50.0,50.0,50.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,150.0,150.0,15.0,150.0,150.0,150.0,150.0,200.0,200.0,200.0],
                                 Array(repeating: 0.0,count: 31)],
             repayment_schedule: [200,200,200],
             auto_pay_schedule: [Array(repeating: 0.0,count:31),[0.0,0.0,0.0,0.0,0.0,0.0,50.0,0.0,0.0,0.0,0.0,0.0,0.0,50.0,0.0,0.0,0.0,0.0,0.0,0.0,50.0,0.0,0.0,0.0,0.0,0.0,0.0,50.0,0.0,0.0],
                                 Array(repeating:0.0,count: 31)],
-            manual_pay_schedule:[[(0,250.0)],[(1,25)],[]],
+            manual_pay_schedule:[[(0,200.0)],[(1,25)],[]],
             auto_pay_installment: 50.0,
             remaining_amount: 150.0,
-            currPlan: "Standard")
+            currPlan: "Standard",
+            bankAccount: BankAccount(bankName: "Wells Fargo", accountName: "Ex", number: "Ex"))
     }
     var loggedIn: Bool
     var user: User
