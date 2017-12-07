@@ -14,6 +14,7 @@ class LinkAccount2ViewController: UIViewController {
     @IBOutlet weak var routingNumberField: UITextField!
     var bankName: String?
     var delegate: LinkAccount3ViewControllerDelegate?
+    @IBOutlet weak var image: UIImageView!
     
     @IBAction func linkAccount(_ sender: UIButton) {
         
@@ -21,7 +22,7 @@ class LinkAccount2ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        image.image = UIImage(named: bankName!)
         // Do any additional setup after loading the view.
     }
 
@@ -43,6 +44,9 @@ class LinkAccount2ViewController: UIViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "linkAcc3", let destination = segue.destination as? LinkAccount3ViewController {
+            destination.label1text = "Peter Lu's Checking"
+            destination.label2text = "xxxxxx0623"
+            destination.bankTitle = bankName
             destination.delegate = delegate
         }
     }

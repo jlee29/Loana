@@ -56,11 +56,18 @@ class BankViewController: UIViewController, UICollectionViewDelegate, UICollecti
     func addedBank(_ acc: BankAccount) {
         linkedAccounts.insert(acc.accountName, at: 0)
         linkedAccountTexts.insert(acc.number, at: 0)
+        bankCollection.reloadData()
+    }
+    
+    func kickBack() {
+        self.navigationController?.popViewController(animated: false)
+        self.navigationController?.popViewController(animated: false)
+        self.navigationController?.popViewController(animated: false)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "linkAcc1", let destination = segue.destination as? LinkAccountViewController {
-            if let cell = sender as? AddCollectionViewCell, let indexPath = bankCollection.indexPath(for: cell) {
+            if let cell = sender as? AddCollectionViewCell, let _ = bankCollection.indexPath(for: cell) {
                 destination.delegate = self
             }
         }
