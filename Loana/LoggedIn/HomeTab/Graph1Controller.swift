@@ -21,6 +21,7 @@ class Graph1Controller: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
+        updateGraph()
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -35,7 +36,6 @@ class Graph1Controller: UIViewController {
     
     func updateGraph(){
         chart.noDataText = ""
-        
         var paidEntry = [ChartDataEntry]()
         for index in 0...day {
             let val = ChartDataEntry(x: Double(index),y: Session.shared.user.repayment_balance[month][index])
@@ -54,15 +54,14 @@ class Graph1Controller: UIViewController {
             let val = ChartDataEntry(x: Double(index),y: repayment_balance_copy[month][index])
             
             projectedEntry.append(val)
-            
         }
         
-        let line1 = LineChartDataSet(values: paidEntry,label: "Paid")
+        let line1 = LineChartDataSet(values: paidEntry, label: "Paid")
         line1.colors = [NSUIColor.white]
         line1.circleRadius = 0
         line1.lineWidth = 5
         
-        let line2 = LineChartDataSet(values: projectedEntry,label: "Projected")
+        let line2 = LineChartDataSet(values: projectedEntry, label: "Projected")
         line2.drawValuesEnabled=false
         line1.drawValuesEnabled=false
         
@@ -75,7 +74,6 @@ class Graph1Controller: UIViewController {
     
         data.addDataSet(line1)
         data.addDataSet(line2)
-        
         chart.data = data
         
         chart.chartDescription?.text = "This Month's Balance"
