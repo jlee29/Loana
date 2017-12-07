@@ -10,8 +10,7 @@ import UIKit
 
 class AutopayViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource{
     var planPickerData: [String] = [String]()
-    
-    var user = Session.shared.user
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +25,9 @@ class AutopayViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         Session.shared.user.intervalPlan = planPickerData[planPicker.selectedRow(inComponent: 0)]
         currentPlanLabel.text = "Your current plan is: " + planPickerData[planPicker.selectedRow(inComponent: 0)]
         update_installment()
+        update_repayment_balance()
+        
+        print(Session.shared.user.auto_pay_schedule[Session.shared.currMonth])
     }
     
     @IBOutlet weak var saveButton: UIButton!
@@ -52,40 +54,56 @@ class AutopayViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     }
     
     func update_repayment_balance(){
+        
         let interval = get_interval_in_days()
-        let last_index = user.auto_pay_schedule[Session.shared.currMonth].count - 1
-        for i in Session.shared.currDay...last_index{
-            if (i - Session.shared.currDay) % interval != 0{
+        let last_index = Session.shared.user.auto_pay_schedule[Session.shared.currMonth].count - 1
+        
+        if Session.shared.user.intervalPlan == "Monthly"{
+            for i in Session.shared.currDay...last_index{
+                Session.shared.user.auto_pay_schedule[Session.shared.currMonth][i] = 0
+                if i == last_index{
+                    Session.shared.user.auto_pay_schedule[Session.shared.currMonth][i] = Session.shared.user.auto_pay_installment
+                }
+            }
+            return
+        }
+        for i in stride(from: last_index, to: Session.shared.currDay, by: -1){
+            Session.shared.user.auto_pay_schedule[Session.shared.currMonth][i] = 0
+            if (last_index - i) % interval != 0{
                 continue
             }
-            user.auto_pay_schedule[Session.shared.currMonth][i] = user.auto_pay_installment
+            Session.shared.user.auto_pay_schedule[Session.shared.currMonth][i] = Session.shared.user.auto_pay_installment
         }
     }
     
     func update_installment(){
-        if user.intervalPlan == "Monthly"{
-            user.auto_pay_installment = user.remaining_amount
+        if Session.shared.user.intervalPlan == "Monthly"{
+            Session.shared.user.auto_pay_installment = Session.shared.user.remaining_amount
         }
         
-        var interval = get_interval_in_days()
-        var payment_days = get_num_payment_days(interval:interval)
+        let interval = get_interval_in_days()
+        let payment_days = get_num_payment_days(interval:interval)
         
-        user.auto_pay_installment = user.remaining_amount / Double (payment_days)
+        print(Session.shared.user.remaining_amount)
+        print(payment_days)
+        
+        Session.shared.user.auto_pay_installment = Session.shared.user.remaining_amount / Double (payment_days)
+        print(Session.shared.user.auto_pay_installment)
     }
     
     func get_interval_in_days()->Int{
-        if user.intervalPlan == "Daily"{
+        if Session.shared.user.intervalPlan == "Daily"{
             return 1
-        } else if user.intervalPlan == "Weekly"{
+        } else if Session.shared.user.intervalPlan == "Weekly"{
             return 7
-        } else if user.intervalPlan == "Biweekly"{
+        } else if Session.shared.user.intervalPlan == "Biweekly"{
             return 14
         }
         return -1
     }
     
     func get_num_payment_days(interval: Int)->Int{
-        var differences = user.auto_pay_schedule[Session.shared.currMonth].count - Session.shared.currDay - 1
+        let differences = Session.shared.user.auto_pay_schedule[Session.shared.currMonth].count - Session.shared.currDay - 1
         return differences / interval + 1
     }
     

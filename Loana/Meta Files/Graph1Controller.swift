@@ -15,8 +15,6 @@ class Graph1Controller: UIViewController {
     
     var numbers = [13,14,15,25,28,33,44]
     
-    var user = Session.shared.user
-    
     var month = Session.shared.currMonth
     var day = Session.shared.currDay
     
@@ -39,15 +37,15 @@ class Graph1Controller: UIViewController {
         
         var paidEntry = [ChartDataEntry]()
         for index in 0...day {
-            let val = ChartDataEntry(x: Double(index),y: user.repayment_balance[month][index])
+            let val = ChartDataEntry(x: Double(index),y: Session.shared.user.repayment_balance[month][index])
             
             paidEntry.append(val)
         }
         
         var projectedEntry = [ChartDataEntry]()
-        for index in (day + 1)...(user.repayment_balance[month].count-1){
+        for index in (day + 1)...(Session.shared.user.repayment_balance[month].count-1){
             
-            let val = ChartDataEntry(x: Double(index),y: user.repayment_balance[month][index])
+            let val = ChartDataEntry(x: Double(index),y: Session.shared.user.repayment_balance[month][index])
             
             projectedEntry.append(val)
             
