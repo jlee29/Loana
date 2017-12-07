@@ -18,6 +18,12 @@ class AutopayViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         self.planPicker.delegate = self
         self.planPicker.dataSource = self
         currentPlanLabel.text = "Your current plan is: " + Session.shared.user.intervalPlan
+        for (index, element) in planPickerData.enumerated() {
+            if element == Session.shared.user.intervalPlan{
+                planPicker.selectRow(index, inComponent: 0, animated: false)
+                break
+            }
+        }
         // Do any additional setup after loading the view.
     }
 
