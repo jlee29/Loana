@@ -2595,19 +2595,6 @@
                     <view key="view" contentMode="scaleToFill" id="uFg-cK-VYc" customClass="LineChartView" customModule="Charts">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jlx-BJ-9sX" customClass="LineChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstItem="jlx-BJ-9sX" firstAttribute="top" secondItem="uFg-cK-VYc" secondAttribute="top" id="5OZ-lH-OAs"/>
-                            <constraint firstAttribute="trailing" secondItem="jlx-BJ-9sX" secondAttribute="trailing" id="fVG-3n-XBv"/>
-                            <constraint firstItem="jlx-BJ-9sX" firstAttribute="bottom" secondItem="Ssl-gk-Ym0" secondAttribute="bottom" id="iD3-AJ-qJn"/>
-                            <constraint firstItem="jlx-BJ-9sX" firstAttribute="leading" secondItem="uFg-cK-VYc" secondAttribute="leading" id="zRR-ah-tp3"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Ssl-gk-Ym0"/>
                     </view>
                     <connections>
