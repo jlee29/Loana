@@ -234,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				D35FED5D1FD808A4005C8606 /* AutopayViewController.swift */,
+				E825CC6A1FD9572800A256F9 /* ManualPayController.swift */,
 				B774C8381FCFF4AB009DFC76 /* SettingsViewController.swift */,
 				B76AF5791FD82A0E00F51D7F /* BankTab */,
 				B7780C291FCFEFA40093A2C9 /* PlansTab */,
@@ -317,7 +318,6 @@
 				B7A264AB1FBF996400893AFE /* Loana.xcdatamodeld */,
 				D35FED5B1FD7FE78005C8606 /* ProfileViewController.swift */,
 				E8064B4B1FD82370003C83DA /* TreeController.swift */,
-				E825CC6A1FD9572800A256F9 /* ManualPayController.swift */,
 				E825CC6C1FD960A700A256F9 /* Util.swift */,
 			);
 			path = Loana;
