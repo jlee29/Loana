@@ -25,7 +25,13 @@ class Session {
             loanID:"randomID",
             id: "a1",
             intervalPlan: "Monthly",
-            repayment_balance: [Array(repeating: 350.0,count: 31),[0.0,150.0,150.0,150.0,150.0,150.0,150.0,275.0,275.0,275.0,275.0,275.0,275.0,275.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0],Array(repeating: 0.0,count: 31)],repayment_schedule: [425,425,425],auto_pay_schedule: [Array(repeating: 0.0,count:31),[0.0,150.0,0.0,0.0,0.0,0.0,0.0,125.0,0.0,0.0,0.0,0.0,0.0,0.0,125.0,0.0,0.0,0.0,0.0,0.0,0.0,125.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],Array(repeating:0.0,count: 31)],currPlan: "Standard")
+            repayment_balance: [Array(repeating: 350.0,count: 31),[0.0,150.0,150.0,150.0,150.0,150.0,150.0,275.0,275.0,275.0,275.0,275.0,275.0,275.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0],
+                                Array(repeating: 0.0,count: 31)],
+            repayment_schedule: [400,400,400],
+            auto_pay_schedule: [Array(repeating: 0.0,count:31),[0.0,125.0,0.0,0.0,0.0,0.0,0.0,125.0,0.0,0.0,0.0,0.0,0.0,0.0,125.0,0.0,0.0,0.0,0.0,0.0,0.0,125.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0],
+                                Array(repeating:0.0,count: 31)],
+            manual_pay_schedule:[[(0,350.0)],[(1,25)],[]],
+            currPlan: "Standard")
     }
     var loggedIn: Bool
     var user: User

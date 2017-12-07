@@ -11,6 +11,8 @@ import UIKit
 class HomeViewController: UIViewController {
     
     var slideMenuHidden = true
+    
+    var user = Session.shared.user
 
     @IBOutlet weak var welcomeLabel: UILabel!
     
@@ -27,6 +29,10 @@ class HomeViewController: UIViewController {
         proPic.layer.cornerRadius = 37
         sideMenuConstraint.constant = -140
         // Do any additional setup after loading the view.
+    }
+    
+    func calculate_(){
+        
     }
 
     override func didReceiveMemoryWarning() {
