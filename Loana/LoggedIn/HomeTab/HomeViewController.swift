@@ -26,7 +26,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
-        welcomeLabel.text = "Welcome Back " + Session.shared.user.name + "!"
+        welcomeLabel.text = String(user.auto_pay_installment)
         welcomeLabel.font = UIFont(name: "Avenir", size: 25)
 
         proPic.layer.cornerRadius = 37
