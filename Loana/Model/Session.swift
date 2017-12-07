@@ -12,7 +12,7 @@ class Session {
     static let shared = Session(loggedIn:true)
     init(loggedIn: Bool){
         self.currMonth = 1
-        self.currDay = 20
+        self.currDay = 7
         self.loggedIn = loggedIn
         
         self.user = User(name: "test name",
@@ -24,15 +24,15 @@ class Session {
             loanProvider: "Random",
             loanID:"randomID",
             id: "a1",
-            intervalPlan: "Monthly",
-            repayment_balance: [Array(repeating: 600.0,count: 31),[0.0,150.0,150.0,150.0,150.0,150.0,150.0,275.0,275.0,275.0,275.0,275.0,275.0,275.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0,400.0],
+            intervalPlan: "Weekly",
+            repayment_balance: [Array(repeating: 200.0,count: 31),[0.0,0.0,0.0,0.0,0.0,0.0,50.0,50.0,50.0,50.0,50.0,50.0,50.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,150.0,150.0,15.0,150.0,150.0,150.0,150.0,200.0,200.0,200.0],
                                 Array(repeating: 0.0,count: 31)],
-            repayment_schedule: [600,600,600],
-            auto_pay_schedule: [Array(repeating: 0.0,count:31),[0.0,125.0,0.0,0.0,0.0,0.0,0.0,125.0,0.0,0.0,0.0,0.0,0.0,0.0,125.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,200.00],
+            repayment_schedule: [200,200,200],
+            auto_pay_schedule: [Array(repeating: 0.0,count:31),[0.0,0.0,0.0,0.0,0.0,0.0,50.0,0.0,0.0,0.0,0.0,0.0,0.0,50.0,0.0,0.0,0.0,0.0,0.0,0.0,50.0,0.0,0.0,0.0,0.0,0.0,0.0,50.0,0.0,0.0],
                                 Array(repeating:0.0,count: 31)],
-            manual_pay_schedule:[[(0,600.0)],[(1,25)],[]],
-            auto_pay_installment: 200.0,
-            remaining_amount: 200.0,
+            manual_pay_schedule:[[(0,200.0)],[(1,25)],[]],
+            auto_pay_installment: 50.0,
+            remaining_amount: 150.0,
             currPlan: "Standard",
             bankAccount: BankAccount(bankName: "Wells Fargo", accountName: "Ex", number: "Ex"))
     }
