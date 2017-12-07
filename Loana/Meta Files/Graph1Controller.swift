@@ -57,16 +57,20 @@ class Graph1Controller: UIViewController {
         }
         
         let line1 = LineChartDataSet(values: paidEntry,label: "Paid")
-        line1.colors = [NSUIColor.black]
+        line1.colors = [NSUIColor.white]
         line1.circleRadius = 0
-        line1.lineWidth = 2
+        line1.lineWidth = 5
         
         let line2 = LineChartDataSet(values: projectedEntry,label: "Projected")
+        line2.drawValuesEnabled=false
+        line1.drawValuesEnabled=false
         
         let data = LineChartData()
+        data.setDrawValues(false)
         line2.colors = [NSUIColor.white]
         line2.circleRadius = 0
-        line2.lineDashLengths = [2,3]
+        line2.lineDashLengths = [5,3]
+        line2.lineWidth = 5
     
         data.addDataSet(line1)
         data.addDataSet(line2)
