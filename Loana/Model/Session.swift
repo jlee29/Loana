@@ -15,7 +15,8 @@ class Session {
         self.currDay = 7
         self.loggedIn = loggedIn
         
-        self.user = User(name: "test name",
+        self.user = User(
+            name: "Peter Lu",
             age: 35,
             maritalStatus: "Single",
             income: 1,

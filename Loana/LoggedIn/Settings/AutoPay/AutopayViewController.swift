@@ -60,6 +60,10 @@ class AutopayViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return planPickerData[row]
     }
+    
+    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+        return NSAttributedString(string: planPickerData[row], attributes: [NSAttributedStringKey.foregroundColor:UIColor.white])
+    }
 
     /*
     // MARK: - Navigation

@@ -44,6 +44,17 @@ class HomeViewController: UIViewController {
         autoPayView.addGestureRecognizer(autoPayTapGesture)
         let plansTapGesture = UITapGestureRecognizer(target: self, action: #selector(self.showPlans(_:)))
         plansView.addGestureRecognizer(plansTapGesture)
+        
+        let logOutTapGesture = UITapGestureRecognizer(target: self, action: #selector(self.logOut(_:)))
+        logoutView.addGestureRecognizer(logOutTapGesture)
+        
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissMenu(_:)))
+        self.view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func logOut(_ sender: UITapGestureRecognizer) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     @objc func showProfile(_ sender: UITapGestureRecognizer) {

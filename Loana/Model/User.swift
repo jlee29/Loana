@@ -15,7 +15,6 @@ struct User {
         case biweekly
         case monthly
     }
-    
     var name: String
     var age: Int
     var maritalStatus: String
