@@ -50,6 +50,11 @@
 		B7E9B9251FCF710C00234840 /* LoanFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9B9241FCF710C00234840 /* LoanFinder.swift */; };
 		B7E9B9271FCF711700234840 /* Loan.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9B9261FCF711700234840 /* Loan.swift */; };
 		B7E9B92A1FCF773A00234840 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9B9291FCF773A00234840 /* LoginViewController.swift */; };
+		B7F1181E1FD9695C008E5340 /* plansList.png in Resources */ = {isa = PBXBuildFile; fileRef = B7F118191FD96950008E5340 /* plansList.png */; };
+		B7F1181F1FD9695C008E5340 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = B7F1181A1FD96953008E5340 /* profile.png */; };
+		B7F118201FD9695C008E5340 /* autopay.png in Resources */ = {isa = PBXBuildFile; fileRef = B7F1181B1FD96958008E5340 /* autopay.png */; };
+		B7F118261FD96DD1008E5340 /* signOut.png in Resources */ = {isa = PBXBuildFile; fileRef = B7F118241FD96DD1008E5340 /* signOut.png */; };
+		B7F118271FD96DD1008E5340 /* bankPic.png in Resources */ = {isa = PBXBuildFile; fileRef = B7F118251FD96DD1008E5340 /* bankPic.png */; };
 		B7F62D521FD7E8180010CC7B /* hamburger.png in Resources */ = {isa = PBXBuildFile; fileRef = B7F62D511FD7E8160010CC7B /* hamburger.png */; };
 		B7F62D541FD7E8C50010CC7B /* icons8-settings-50.png in Resources */ = {isa = PBXBuildFile; fileRef = B7F62D531FD7E8C40010CC7B /* icons8-settings-50.png */; };
 		B7F62D571FD7E91F0010CC7B /* icons8-settings-30.png in Resources */ = {isa = PBXBuildFile; fileRef = B7F62D551FD7E91B0010CC7B /* icons8-settings-30.png */; };
@@ -90,6 +95,8 @@
 		E823DB8A1FD14D7800A427D9 /* new plan.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB851FD14D7800A427D9 /* new plan.png */; };
 		E823DB8B1FD14D7800A427D9 /* widebox.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB861FD14D7800A427D9 /* widebox.png */; };
 		E823DB8C1FD14D7800A427D9 /* backbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB871FD14D7800A427D9 /* backbutton.png */; };
+		E825CC6B1FD9572800A256F9 /* ManualPayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E825CC6A1FD9572800A256F9 /* ManualPayController.swift */; };
+		E825CC6D1FD960A700A256F9 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = E825CC6C1FD960A700A256F9 /* Util.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -141,6 +148,13 @@
 		B7E9B9241FCF710C00234840 /* LoanFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanFinder.swift; sourceTree = "<group>"; };
 		B7E9B9261FCF711700234840 /* Loan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loan.swift; sourceTree = "<group>"; };
 		B7E9B9291FCF773A00234840 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B7F118191FD96950008E5340 /* plansList.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plansList.png; sourceTree = "<group>"; };
+		B7F1181A1FD96953008E5340 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		B7F1181B1FD96958008E5340 /* autopay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = autopay.png; sourceTree = "<group>"; };
+		B7F118211FD969DC008E5340 /* bankBuilding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bankBuilding.png; path = /Users/jiwoo/Desktop/Loana/Loana/Resources/bankBuilding.png; sourceTree = "<absolute>"; };
+		B7F118231FD96AA7008E5340 /* logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logout.png; path = /Users/jiwoo/Desktop/Loana/Loana/Resources/logout.png; sourceTree = "<absolute>"; };
+		B7F118241FD96DD1008E5340 /* signOut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signOut.png; sourceTree = "<group>"; };
+		B7F118251FD96DD1008E5340 /* bankPic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bankPic.png; sourceTree = "<group>"; };
 		B7F62D511FD7E8160010CC7B /* hamburger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hamburger.png; sourceTree = "<group>"; };
 		B7F62D531FD7E8C40010CC7B /* icons8-settings-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-settings-50.png"; sourceTree = "<group>"; };
 		B7F62D551FD7E91B0010CC7B /* icons8-settings-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-settings-30.png"; sourceTree = "<group>"; };
@@ -153,6 +167,7 @@
 		D3E8CC861FD969DD00D9BDC7 /* shoes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shoes.png; sourceTree = "<group>"; };
 		D3E8CC871FD969DD00D9BDC7 /* coffee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coffee.png; sourceTree = "<group>"; };
 		D3E8CC881FD969DD00D9BDC7 /* headphones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = headphones.png; sourceTree = "<group>"; };
+		D35FED5D1FD808A4005C8606 /* AutopayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutopayViewController.swift; sourceTree = "<group>"; };
 		E8064B3D1FD7FC8A003C83DA /* Graph1Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph1Controller.swift; sourceTree = "<group>"; };
 		E8064B3F1FD8201D003C83DA /* progress_tree_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress_tree_6.png; sourceTree = "<group>"; };
 		E8064B401FD8201E003C83DA /* progress_tree_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress_tree_2.png; sourceTree = "<group>"; };
@@ -180,6 +195,8 @@
 		E823DB851FD14D7800A427D9 /* new plan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "new plan.png"; sourceTree = "<group>"; };
 		E823DB861FD14D7800A427D9 /* widebox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = widebox.png; sourceTree = "<group>"; };
 		E823DB871FD14D7800A427D9 /* backbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backbutton.png; sourceTree = "<group>"; };
+		E825CC6A1FD9572800A256F9 /* ManualPayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualPayController.swift; sourceTree = "<group>"; };
+		E825CC6C1FD960A700A256F9 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +244,8 @@
 		B766CC811FD0FCBA00495638 /* LoggedIn */ = {
 			isa = PBXGroup;
 			children = (
+				D35FED5D1FD808A4005C8606 /* AutopayViewController.swift */,
+				E825CC6A1FD9572800A256F9 /* ManualPayController.swift */,
 				B774C8381FCFF4AB009DFC76 /* SettingsViewController.swift */,
 				B76AF5791FD82A0E00F51D7F /* BankTab */,
 				B7780C291FCFEFA40093A2C9 /* PlansTab */,
@@ -312,6 +331,7 @@
 				B7A264AB1FBF996400893AFE /* Loana.xcdatamodeld */,
 				D35FED5B1FD7FE78005C8606 /* ProfileViewController.swift */,
 				E8064B4B1FD82370003C83DA /* TreeController.swift */,
+				E825CC6C1FD960A700A256F9 /* Util.swift */,
 			);
 			path = Loana;
 			sourceTree = "<group>";
@@ -352,39 +372,54 @@
 				E8064B3F1FD8201D003C83DA /* progress_tree_6.png */,
 				B76AF5721FD81F7200F51D7F /* icons8-forward-100.png */,
 				B76AF5711FD81F7000F51D7F /* icons8-plus-100.png */,
+				B7F118251FD96DD1008E5340 /* bankPic.png */,
+				B7F118241FD96DD1008E5340 /* signOut.png */,
+				E823DB771FD14A6600A427D9 /* account-circle.png */,
+				B7F1181B1FD96958008E5340 /* autopay.png */,
+				E823DB871FD14D7800A427D9 /* backbutton.png */,
+				E823DB751FD14A6600A427D9 /* background.png */,
+				B7F118211FD969DC008E5340 /* bankBuilding.png */,
 				B783915D1FD80CB9004FB5AB /* barclay.png */,
 				B783915A1FD80CAF004FB5AB /* boa.png */,
+				E823DB831FD14D7800A427D9 /* box.png */,
 				B783915C1FD80CB6004FB5AB /* chase.png */,
+				E823DB781FD14A6600A427D9 /* first screen.png */,
+				B78391681FD81241004FB5AB /* forward.png */,
+				B735301A1FD18998007FF4B4 /* graduated.png */,
+				E823DB731FD14A6500A427D9 /* Group.png */,
+				B7F62D511FD7E8160010CC7B /* hamburger.png */,
+				E815D50C1FD01136005CB34F /* hat30.png */,
+				E815D5031FD003B3005CB34F /* house.png */,
 				B783915B1FD80CB2004FB5AB /* hsbc.png */,
-				B783915E1FD80CBC004FB5AB /* wellsFargo.png */,
+				B735301B1FD18999007FF4B4 /* IBR.png */,
+				E815D5101FD01365005CB34F /* icons */,
+				B76AF5721FD81F7200F51D7F /* icons8-forward-100.png */,
 				B7F62D561FD7E91D0010CC7B /* icons8-menu-30.png */,
+				B76AF5711FD81F7000F51D7F /* icons8-plus-100.png */,
 				B7F62D551FD7E91B0010CC7B /* icons8-settings-30.png */,
 				B7F62D531FD7E8C40010CC7B /* icons8-settings-50.png */,
-				B7F62D511FD7E8160010CC7B /* hamburger.png */,
-				B735301A1FD18998007FF4B4 /* graduated.png */,
-				B735301B1FD18999007FF4B4 /* IBR.png */,
-				B73530191FD18998007FF4B4 /* standard.png */,
-				B73530151FD15FC7007FF4B4 /* loana.png */,
-				E823DB871FD14D7800A427D9 /* backbutton.png */,
-				E823DB831FD14D7800A427D9 /* box.png */,
-				E823DB851FD14D7800A427D9 /* new plan.png */,
-				E823DB841FD14D7800A427D9 /* plans.png */,
-				E823DB861FD14D7800A427D9 /* widebox.png */,
-				E823DB771FD14A6600A427D9 /* account-circle.png */,
-				E823DB781FD14A6600A427D9 /* first screen.png */,
-				E823DB731FD14A6500A427D9 /* Group.png */,
 				E823DB741FD14A6500A427D9 /* iPhone SE.png */,
+				B73530151FD15FC7007FF4B4 /* loana.png */,
 				E823DB7A1FD14A6600A427D9 /* lock-open.png */,
-				B78391681FD81241004FB5AB /* forward.png */,
-				B78391691FD81241004FB5AB /* plus.png */,
+				B7F118231FD96AA7008E5340 /* logout.png */,
+				E815D5041FD003B4005CB34F /* money.png */,
+				E823DB851FD14D7800A427D9 /* new plan.png */,
 				E823DB791FD14A6600A427D9 /* noun_125155_cc.png */,
 				E823DB761FD14A6600A427D9 /* noun_1098185_cc.png */,
-				E823DB751FD14A6600A427D9 /* background.png */,
-				E815D5101FD01365005CB34F /* icons */,
-				E815D50C1FD01136005CB34F /* hat30.png */,
+				E823DB841FD14D7800A427D9 /* plans.png */,
+				B7F118191FD96950008E5340 /* plansList.png */,
+				B78391691FD81241004FB5AB /* plus.png */,
+				B7F1181A1FD96953008E5340 /* profile.png */,
+				E8064B421FD8201E003C83DA /* progress_tree_1.png */,
+				E8064B401FD8201E003C83DA /* progress_tree_2.png */,
+				E8064B431FD8201E003C83DA /* progress_tree_3.png */,
+				E8064B411FD8201E003C83DA /* progress_tree_4.png */,
+				E8064B441FD8201F003C83DA /* progress_tree_5.png */,
+				E8064B3F1FD8201D003C83DA /* progress_tree_6.png */,
+				B73530191FD18998007FF4B4 /* standard.png */,
 				B774C83B1FCFFA5E009DFC76 /* wallet.png */,
-				E815D5031FD003B3005CB34F /* house.png */,
-				E815D5041FD003B4005CB34F /* money.png */,
+				B783915E1FD80CBC004FB5AB /* wellsFargo.png */,
+				E823DB861FD14D7800A427D9 /* widebox.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -469,7 +504,9 @@
 				B73530161FD15FC8007FF4B4 /* loana.png in Resources */,
 				B76AF5731FD81F7400F51D7F /* icons8-plus-100.png in Resources */,
 				B735301C1FD18999007FF4B4 /* standard.png in Resources */,
+				B7F118261FD96DD1008E5340 /* signOut.png in Resources */,
 				B7A264B21FBF996400893AFE /* LaunchScreen.storyboard in Resources */,
+				B7F1181E1FD9695C008E5340 /* plansList.png in Resources */,
 				E823DB801FD14A6600A427D9 /* first screen.png in Resources */,
 				D3E8CC891FD969DE00D9BDC7 /* tickets.png in Resources */,
 				E823DB7B1FD14A6600A427D9 /* Group.png in Resources */,
@@ -478,6 +515,7 @@
 				B7F62D571FD7E91F0010CC7B /* icons8-settings-30.png in Resources */,
 				B783916B1FD81241004FB5AB /* plus.png in Resources */,
 				E815D5111FD01366005CB34F /* icons in Resources */,
+				B7F118271FD96DD1008E5340 /* bankPic.png in Resources */,
 				E8064B461FD8201F003C83DA /* progress_tree_2.png in Resources */,
 				B7A264AF1FBF996400893AFE /* Assets.xcassets in Resources */,
 				E8064B4A1FD8201F003C83DA /* progress_tree_5.png in Resources */,
@@ -487,12 +525,14 @@
 				E8064B491FD8201F003C83DA /* progress_tree_3.png in Resources */,
 				B735301E1FD18999007FF4B4 /* IBR.png in Resources */,
 				E815D50D1FD01136005CB34F /* hat30.png in Resources */,
+				B7F118201FD9695C008E5340 /* autopay.png in Resources */,
 				E8064B481FD8201F003C83DA /* progress_tree_1.png in Resources */,
 				B78391601FD80CC0004FB5AB /* hsbc.png in Resources */,
 				E823DB8C1FD14D7800A427D9 /* backbutton.png in Resources */,
 				D3E8CC8A1FD969DE00D9BDC7 /* shoes.png in Resources */,
 				B774C83E1FCFFA5E009DFC76 /* wallet.png in Resources */,
 				E823DB821FD14A6600A427D9 /* lock-open.png in Resources */,
+				B7F1181F1FD9695C008E5340 /* profile.png in Resources */,
 				B7F62D521FD7E8180010CC7B /* hamburger.png in Resources */,
 				D3E8CC8C1FD969DE00D9BDC7 /* headphones.png in Resources */,
 				E815D5071FD003B5005CB34F /* money.png in Resources */,
@@ -591,6 +631,7 @@
 				B73530181FD176C8007FF4B4 /* PlansCollectionViewCell.swift in Sources */,
 				B766CC791FCFFEA600495638 /* HomeViewController.swift in Sources */,
 				B76AF57B1FD82AFA00F51D7F /* LinkAccount2ViewController.swift in Sources */,
+				E825CC6B1FD9572800A256F9 /* ManualPayController.swift in Sources */,
 				B7E9B9271FCF711700234840 /* Loan.swift in Sources */,
 				B76AF57D1FD927E200F51D7F /* LinkAccount3ViewController.swift in Sources */,
 				B7A264A51FBF996400893AFE /* AppDelegate.swift in Sources */,
@@ -606,6 +647,7 @@
 				D34FAC5A1FCFF6F80008A8AF /* SignUpInfo1ViewController.swift in Sources */,
 				B76AF5761FD8261400F51D7F /* BankCompanyCollectionViewCell.swift in Sources */,
 				B7A264AD1FBF996400893AFE /* Loana.xcdatamodeld in Sources */,
+				E825CC6D1FD960A700A256F9 /* Util.swift in Sources */,
 				B7780C221FCFB67A0093A2C9 /* PlansViewController.swift in Sources */,
 				B766CC7B1FD00C0400495638 /* NavigationBar.swift in Sources */,
 			);

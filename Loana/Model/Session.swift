@@ -34,7 +34,7 @@ class Session {
             auto_pay_installment: 50.0,
             remaining_amount: 150.0,
             currPlan: "Standard",
-            bankAccount: BankAccount(bankName: "Wells Fargo", accountName: "Ex", number: "Ex"))
+            bankAccount: BankAccount(bankName: "Wells Fargo", accountName: "Peter Lu", number: "4578"))
     }
     var loggedIn: Bool
     var user: User

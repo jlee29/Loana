@@ -9,7 +9,7 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-    
+    var util = Util()
     var slideMenuHidden = true
     
     let currMonth = Session.shared.currMonth
@@ -21,33 +21,49 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var sideMenuConstraint: NSLayoutConstraint!
     
+    @IBOutlet weak var darkenView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
+        darkenView.alpha = 0
 
         proPic.layer.cornerRadius = 37
         sideMenuConstraint.constant = -140
-        // Do any additional setup after loading the view.
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissMenu (_:)))
+        self.view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func dismissMenu (_ sender: UITapGestureRecognizer) {
+        if !slideMenuHidden {
+            sideMenuConstraint.constant = -140
+            UIView.animate(withDuration: 0.3, animations: {
+                self.view.layoutIfNeeded()
+                self.darkenView.alpha = 0
+            })
+            slideMenuHidden = !slideMenuHidden
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
         welcomeLabel.text = String(Session.shared.user.auto_pay_installment) + " - " + Session.shared.user.intervalPlan
         welcomeLabel.font = UIFont(name: "Avenir", size: 25)
-        remaining_month()
+        util.remaining_month()
         
         if (!slideMenuHidden) {
             sideMenuConstraint.constant = -140
             slideMenuHidden = true
+            darkenView.alpha = 0
         }
     }
     
 
     
-    func remaining_month(){
-        print(Session.shared.user.repayment_schedule[currMonth])
-        print(Session.shared.user.repayment_balance[currMonth][currDay])
-        Session.shared.user.remaining_amount =  Session.shared.user.repayment_schedule[currMonth] - Session.shared.user.repayment_balance[currMonth][currDay]
-    }
+//    func remaining_month(){
+//        print(Session.shared.user.repayment_schedule[currMonth])
+//        print(Session.shared.user.repayment_balance[currMonth][currDay])
+//        Session.shared.user.remaining_amount =  Session.shared.user.repayment_schedule[currMonth] - Session.shared.user.repayment_balance[currMonth][currDay]
+//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -61,12 +77,14 @@ class HomeViewController: UIViewController {
             
             UIView.animate(withDuration: 0.3, animations: {
                 self.view.layoutIfNeeded()
+                self.darkenView.alpha = 1
             })
         } else {
             sideMenuConstraint.constant = -140
             
             UIView.animate(withDuration: 0.3, animations: {
                 self.view.layoutIfNeeded()
+                self.darkenView.alpha = 0
             })
         }
         slideMenuHidden = !slideMenuHidden
