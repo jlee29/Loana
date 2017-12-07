@@ -85,6 +85,8 @@
 		E823DB8A1FD14D7800A427D9 /* new plan.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB851FD14D7800A427D9 /* new plan.png */; };
 		E823DB8B1FD14D7800A427D9 /* widebox.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB861FD14D7800A427D9 /* widebox.png */; };
 		E823DB8C1FD14D7800A427D9 /* backbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB871FD14D7800A427D9 /* backbutton.png */; };
+		E825CC6B1FD9572800A256F9 /* ManualPayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E825CC6A1FD9572800A256F9 /* ManualPayController.swift */; };
+		E825CC6D1FD960A700A256F9 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = E825CC6C1FD960A700A256F9 /* Util.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -170,6 +172,8 @@
 		E823DB851FD14D7800A427D9 /* new plan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "new plan.png"; sourceTree = "<group>"; };
 		E823DB861FD14D7800A427D9 /* widebox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = widebox.png; sourceTree = "<group>"; };
 		E823DB871FD14D7800A427D9 /* backbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backbutton.png; sourceTree = "<group>"; };
+		E825CC6A1FD9572800A256F9 /* ManualPayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualPayController.swift; sourceTree = "<group>"; };
+		E825CC6C1FD960A700A256F9 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,6 +305,8 @@
 				E8064B3D1FD7FC8A003C83DA /* Graph1Controller.swift */,
 				D35FED5B1FD7FE78005C8606 /* ProfileViewController.swift */,
 				E8064B4B1FD82370003C83DA /* TreeController.swift */,
+				E825CC6A1FD9572800A256F9 /* ManualPayController.swift */,
+				E825CC6C1FD960A700A256F9 /* Util.swift */,
 			);
 			path = Loana;
 			sourceTree = "<group>";
@@ -571,6 +577,7 @@
 				B73530181FD176C8007FF4B4 /* PlansCollectionViewCell.swift in Sources */,
 				B766CC791FCFFEA600495638 /* HomeViewController.swift in Sources */,
 				B76AF57B1FD82AFA00F51D7F /* LinkAccount2ViewController.swift in Sources */,
+				E825CC6B1FD9572800A256F9 /* ManualPayController.swift in Sources */,
 				B7E9B9271FCF711700234840 /* Loan.swift in Sources */,
 				B76AF57D1FD927E200F51D7F /* LinkAccount3ViewController.swift in Sources */,
 				B7A264A51FBF996400893AFE /* AppDelegate.swift in Sources */,
@@ -586,6 +593,7 @@
 				D34FAC5A1FCFF6F80008A8AF /* SignUpInfo1ViewController.swift in Sources */,
 				B76AF5761FD8261400F51D7F /* BankCompanyCollectionViewCell.swift in Sources */,
 				B7A264AD1FBF996400893AFE /* Loana.xcdatamodeld in Sources */,
+				E825CC6D1FD960A700A256F9 /* Util.swift in Sources */,
 				B7780C221FCFB67A0093A2C9 /* PlansViewController.swift in Sources */,
 				B766CC7B1FD00C0400495638 /* NavigationBar.swift in Sources */,
 			);
