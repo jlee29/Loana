@@ -30,7 +30,7 @@ class Session {
             repayment_schedule: [200,200,200],
             auto_pay_schedule: [Array(repeating: 0.0,count:31),[0.0,0.0,0.0,0.0,0.0,0.0,50.0,0.0,0.0,0.0,0.0,0.0,0.0,50.0,0.0,0.0,0.0,0.0,0.0,0.0,50.0,0.0,0.0,0.0,0.0,0.0,0.0,50.0,0.0,0.0],
                                 Array(repeating:0.0,count: 31)],
-            manual_pay_schedule:[[(0,200.0)],[(1,25)],[]],
+            manual_pay_schedule:[[(0,200.0)],[]],
             auto_pay_installment: 50.0,
             remaining_amount: 150.0,
             currPlan: "Standard",
