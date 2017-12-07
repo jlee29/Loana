@@ -9,7 +9,7 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-    
+    var util = Util()
     var slideMenuHidden = true
     
     let currMonth = Session.shared.currMonth
@@ -48,7 +48,7 @@ class HomeViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         welcomeLabel.text = String(Session.shared.user.auto_pay_installment) + " - " + Session.shared.user.intervalPlan
         welcomeLabel.font = UIFont(name: "Avenir", size: 25)
-        remaining_month()
+        util.remaining_month()
         
         if (!slideMenuHidden) {
             sideMenuConstraint.constant = -140
@@ -59,11 +59,11 @@ class HomeViewController: UIViewController {
     
 
     
-    func remaining_month(){
-        print(Session.shared.user.repayment_schedule[currMonth])
-        print(Session.shared.user.repayment_balance[currMonth][currDay])
-        Session.shared.user.remaining_amount =  Session.shared.user.repayment_schedule[currMonth] - Session.shared.user.repayment_balance[currMonth][currDay]
-    }
+//    func remaining_month(){
+//        print(Session.shared.user.repayment_schedule[currMonth])
+//        print(Session.shared.user.repayment_balance[currMonth][currDay])
+//        Session.shared.user.remaining_amount =  Session.shared.user.repayment_schedule[currMonth] - Session.shared.user.repayment_balance[currMonth][currDay]
+//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
