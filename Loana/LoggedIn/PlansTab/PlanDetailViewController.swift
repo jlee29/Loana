@@ -123,17 +123,17 @@ class PlanDetailViewController: UIViewController {
     //Change these numbers when you change the actual plan numbers.
     func plan2AmountOwedPerMonth(plan: String)->Int{
         if(plan == "Income-Based Repayment"){
-            return 500
+            return 150
         }else if(plan == "Income-Contingent Repayment"){
-            return 500
+            return 150
         }else if(plan == "Pay As You Earn"){
-            return 520
+            return 150
         }else if(plan == "Standard"){
-            return 550
+            return 200
         }else if(plan == "Graduated"){
-            return 550
+            return 220
         }else{
-            return 550
+            return 230
         }
     }
     

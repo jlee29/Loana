@@ -85,6 +85,7 @@ class AutopayViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     func update_installment(){
         if Session.shared.user.intervalPlan == "Monthly"{
             Session.shared.user.auto_pay_installment = Session.shared.user.remaining_amount
+            return
         }
         
         let interval = get_interval_in_days()
