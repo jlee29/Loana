@@ -1128,7 +1128,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifn-0A-djv">
                                 <rect key="frame" x="164" y="264" width="46" height="30"/>
@@ -1144,7 +1144,6 @@
                     </view>
                     <connections>
                         <outlet property="manualPayAmount" destination="DFb-UM-TlZ" id="coJ-Ot-b3C"/>
-                        <outlet property="manualPayButton" destination="ifn-0A-djv" id="Cjz-IS-63M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0uk-9F-qHe" userLabel="First Responder" sceneMemberID="firstResponder"/>
