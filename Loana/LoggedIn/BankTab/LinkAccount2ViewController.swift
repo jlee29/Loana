@@ -42,5 +42,8 @@ class LinkAccount2ViewController: UIViewController {
     */
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "linkAcc3", let destination = segue.destination as? LinkAccount3ViewController {
+            destination.delegate = delegate
+        }
     }
 }
