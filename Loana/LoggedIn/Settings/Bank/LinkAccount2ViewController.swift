@@ -19,6 +19,7 @@ class LinkAccount2ViewController: UIViewController {
     @IBAction func linkAccount(_ sender: UIButton) {
         
     }
+    @IBOutlet weak var loginButton: UIButton!
     
     @IBOutlet weak var logInLabel: UILabel!
     
@@ -26,6 +27,10 @@ class LinkAccount2ViewController: UIViewController {
         super.viewDidLoad()
         image.image = UIImage(named: bankName!)
         logInLabel.font = UIFont(name: "Avenir", size: 30)
+        
+        loginButton.layer.cornerRadius = 22
+        loginButton.layer.borderWidth = 1
+        loginButton.layer.borderColor = UIColor.darkGray.cgColor
         // Do any additional setup after loading the view.
     }
 
