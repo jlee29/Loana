@@ -25,7 +25,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var mainStack: UIStackView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
+        let titleImg = UIImageView(image: UIImage(named: "hatnoloana.png"))
+        titleImg.contentMode = .scaleAspectFit
+        self.navigationItem.titleView = titleImg
         self.navigationController?.navigationBar.isTranslucent = false
         
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)

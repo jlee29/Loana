@@ -45,6 +45,7 @@
 		B7A264B21FBF996400893AFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A264B01FBF996400893AFE /* LaunchScreen.storyboard */; };
 		B7C2FCD01FDA8F1A0088DDAE /* loginProfile.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C2FCCE1FDA8EFD0088DDAE /* loginProfile.png */; };
 		B7C2FCD11FDA8F1A0088DDAE /* loginLock.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C2FCCF1FDA8F080088DDAE /* loginLock.png */; };
+		B7C2FCD31FDAB3EE0088DDAE /* bigBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C2FCD21FDAB3800088DDAE /* bigBackground.png */; };
 		B7E9B91F1FCF6E2300234840 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9B91E1FCF6E2300234840 /* TabBarViewController.swift */; };
 		B7E9B9211FCF6EF000234840 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9B9201FCF6EF000234840 /* User.swift */; };
 		B7E9B9231FCF6FF000234840 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9B9221FCF6FF000234840 /* Session.swift */; };
@@ -147,6 +148,7 @@
 		B7A264B31FBF996400893AFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7C2FCCE1FDA8EFD0088DDAE /* loginProfile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginProfile.png; sourceTree = "<group>"; };
 		B7C2FCCF1FDA8F080088DDAE /* loginLock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginLock.png; sourceTree = "<group>"; };
+		B7C2FCD21FDAB3800088DDAE /* bigBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bigBackground.png; sourceTree = "<group>"; };
 		B7E9B91E1FCF6E2300234840 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		B7E9B9201FCF6EF000234840 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B7E9B9221FCF6FF000234840 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
@@ -397,6 +399,7 @@
 		D34FAC4C1FCFECB60008A8AF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B7C2FCD21FDAB3800088DDAE /* bigBackground.png */,
 				E89E9A3A1FDAAD9900962646 /* hatnoloana.png */,
 				E89E9A371FDAA9BD00962646 /* button.png */,
 				E89E9A361FDAA9BC00962646 /* hatnew.png */,
@@ -544,6 +547,7 @@
 				E823DB801FD14A6600A427D9 /* first screen.png in Resources */,
 				D3E8CC891FD969DE00D9BDC7 /* tickets.png in Resources */,
 				E823DB7B1FD14A6600A427D9 /* Group.png in Resources */,
+				B7C2FCD31FDAB3EE0088DDAE /* bigBackground.png in Resources */,
 				E823DB7D1FD14A6600A427D9 /* background.png in Resources */,
 				B78391621FD80CC0004FB5AB /* barclay.png in Resources */,
 				B7F62D571FD7E91F0010CC7B /* icons8-settings-30.png in Resources */,
