@@ -1146,9 +1146,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="enW-ha-WG7">
-                                <rect key="frame" x="0.0" y="32" width="375" height="603"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="enW-ha-WG7">
+                                <rect key="frame" x="0.0" y="64" width="1245" height="504"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="W7m-1a-wlL">
                                 <rect key="frame" x="50" y="64" width="1145" height="504"/>
@@ -1174,7 +1173,7 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="PfZ-I9-MXl" firstAttribute="leading" secondItem="6wi-cK-lXk" secondAttribute="leading" constant="10" id="Hg8-4Z-ysL"/>
                                             <constraint firstItem="PfZ-I9-MXl" firstAttribute="top" secondItem="6wi-cK-lXk" secondAttribute="top" constant="10" id="Mid-od-MMN"/>
@@ -1288,9 +1287,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="enW-ha-WG7" firstAttribute="bottom" secondItem="lFF-5q-weO" secondAttribute="bottom" id="4cc-JD-FJd"/>
+                            <constraint firstItem="lFF-5q-weO" firstAttribute="top" secondItem="enW-ha-WG7" secondAttribute="top" id="5Fa-td-txR"/>
                             <constraint firstItem="lFF-5q-weO" firstAttribute="trailing" secondItem="W7m-1a-wlL" secondAttribute="trailing" constant="50" id="800-Cv-gle"/>
+                            <constraint firstItem="enW-ha-WG7" firstAttribute="leading" secondItem="lFF-5q-weO" secondAttribute="leading" id="CrU-NY-wJt"/>
                             <constraint firstItem="Ses-3K-dZK" firstAttribute="centerX" secondItem="Fmm-eM-D1Y" secondAttribute="centerX" id="E52-7G-BjG"/>
                             <constraint firstItem="lFF-5q-weO" firstAttribute="bottom" secondItem="W7m-1a-wlL" secondAttribute="bottom" id="SNY-1a-bMV"/>
+                            <constraint firstItem="lFF-5q-weO" firstAttribute="trailing" secondItem="enW-ha-WG7" secondAttribute="trailing" id="TCx-XK-qC0"/>
                             <constraint firstItem="W7m-1a-wlL" firstAttribute="leading" secondItem="lFF-5q-weO" secondAttribute="leading" constant="50" id="fZR-ps-rt2"/>
                             <constraint firstItem="W7m-1a-wlL" firstAttribute="top" secondItem="lFF-5q-weO" secondAttribute="top" id="uUI-WL-7NE"/>
                             <constraint firstItem="Ses-3K-dZK" firstAttribute="centerY" secondItem="Fmm-eM-D1Y" secondAttribute="centerY" id="yil-ty-XGa"/>
