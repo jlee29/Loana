@@ -32,6 +32,13 @@ class BankViewController: UIViewController, UICollectionViewDelegate, UICollecti
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        currBankLabel1.text = Session.shared.user.bankAccount.accountName
+        currBankLabel2.text = Session.shared.user.bankAccount.number
+    }
+    
     @objc func tap(sender: UITapGestureRecognizer){
         
         if let indexPath = self.bankCollection.indexPathForItem(at: sender.location(in: self.bankCollection)) {
