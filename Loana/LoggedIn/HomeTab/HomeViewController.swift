@@ -8,15 +8,13 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UIScrollViewDelegate {
     var util = Util()
     var slideMenuHidden = true
     
     let currMonth = Session.shared.currMonth
     let currDay = Session.shared.currDay
 
-    @IBOutlet weak var welcomeLabel: UILabel!
-    @IBOutlet weak var intervalText: UILabel!
     @IBOutlet weak var sideMenuConstraint: NSLayoutConstraint!
     
     @IBOutlet weak var darkenView: UIView!
@@ -29,16 +27,15 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
+        let topImg = UIImageView(image: UIImage(named: "hatnew.png"))
+        topImg.contentMode = .scaleAspectFit
+        self.navigationItem.titleView = topImg
         self.navigationController?.navigationBar.isTranslucent = false
         
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         
         self.navigationController?.navigationBar.shadowImage = UIImage()
         darkenView.alpha = 0
-        welcomeLabel.baselineAdjustment = .alignCenters
-        welcomeLabel.font = UIFont(name: "Avenir", size: 60)
-        intervalText.font = UIFont(name: "Avenir", size: 15)
 
         sideMenuConstraint.constant = -140
         let profileTapGesture = UITapGestureRecognizer(target: self, action: #selector(self.showProfile(_:)))
@@ -90,17 +87,6 @@ class HomeViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        welcomeLabel.text = String(format: "$%.02f", Session.shared.user.auto_pay_installment)
-        switch Session.shared.user.intervalPlan {
-        case .daily:
-            intervalText.text = "For Today"
-        case .weekly:
-            intervalText.text = "For This Week"
-        case .biweekly:
-            intervalText.text = "For These Two Weeks"
-        default:
-            intervalText.text = "For This Month"
-        }
         util.remaining_month()
         
         if (!slideMenuHidden) {
