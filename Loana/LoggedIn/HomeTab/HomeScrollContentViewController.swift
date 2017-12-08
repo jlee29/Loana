@@ -101,6 +101,11 @@ class HomeContentViewController: UIViewController, UICollectionViewDelegate, UIC
         } else {
             let cell = mainView.dequeueReusableCell(withReuseIdentifier: "graph", for: indexPath) as! GraphCollectionViewCell
             if indexPath.row == 2 {
+                let homeChart2 = cell.mainView
+                
+                util.updateGraph2(chart: homeChart2 as! LineChartView)
+            } else {
+
                 let homeChart1 = cell.mainView
                 
                 let plans = ["Standard","Pay As You Earn","Graduated"]
@@ -116,11 +121,6 @@ class HomeContentViewController: UIViewController, UICollectionViewDelegate, UIC
                 }
                 
                 util.update_graph(chart: homeChart1 as! LineChartView, curr_plan: past, alt_plans: planArr)
-                
-            } else {
-                let homeChart2 = cell.mainView
-                
-                util.updateGraph2(chart: homeChart2 as! LineChartView)
             }
             return cell
         }
