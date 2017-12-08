@@ -21,30 +21,31 @@ class Util {
                     Session.shared.user.auto_pay_schedule[Session.shared.currMonth][i] = Session.shared.user.auto_pay_installment
                 }
             }
-            return
-        }
-        for i in stride(from: last_index, to: Session.shared.currDay, by: -1){
-            Session.shared.user.auto_pay_schedule[Session.shared.currMonth][i] = 0
-            if (last_index - i) % interval != 0{
-                continue
+        } else {
+            for i in stride(from: last_index, to: Session.shared.currDay, by: -1){
+                Session.shared.user.auto_pay_schedule[Session.shared.currMonth][i] = 0
+                if (last_index - i) % interval != 0{
+                    continue
+                }
+                Session.shared.user.auto_pay_schedule[Session.shared.currMonth][i] = Session.shared.user.auto_pay_installment
             }
-            Session.shared.user.auto_pay_schedule[Session.shared.currMonth][i] = Session.shared.user.auto_pay_installment
         }
     }
     
     func update_installment(){
         if Session.shared.user.intervalPlan == .monthly {
             Session.shared.user.auto_pay_installment = Session.shared.user.remaining_amount
+        } else {
+            let interval = get_interval_in_days()
+            let payment_days = get_num_payment_days(interval:interval)
+            
+            print(Session.shared.user.remaining_amount)
+            print(payment_days)
+            
+            Session.shared.user.auto_pay_installment = Session.shared.user.remaining_amount / Double (payment_days)
+            print(Session.shared.user.auto_pay_installment)
         }
         
-        let interval = get_interval_in_days()
-        let payment_days = get_num_payment_days(interval:interval)
-        
-        print(Session.shared.user.remaining_amount)
-        print(payment_days)
-        
-        Session.shared.user.auto_pay_installment = Session.shared.user.remaining_amount / Double (payment_days)
-        print(Session.shared.user.auto_pay_installment)
     }
     
     func get_interval_in_days()->Int{
@@ -70,23 +71,23 @@ class Util {
     func intervalEnumToString(interval: User.IntervalPlan) -> String {
         switch interval {
         case .daily:
-            return "daily"
+            return "Daily"
         case .weekly:
-            return "weekly"
+            return "Weekly"
         case .biweekly:
-            return "biweekly"
+            return "Biweekly"
         default:
-            return "monthly"
+            return "Monthly"
         }
     }
     
     func intervalStringToEnum(interval: String) -> User.IntervalPlan {
         switch interval {
-        case "daily":
+        case "Daily":
             return .daily
-        case "weekly":
+        case "Weekly":
             return .weekly
-        case "biweekly":
+        case "Biweekly":
             return .biweekly
         default:
             return .monthly
