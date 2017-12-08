@@ -10,6 +10,9 @@ import UIKit
 
 class BankViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, LinkAccount3ViewControllerDelegate {
     
+    @IBOutlet weak var currBankLabel1: UILabel!
+    @IBOutlet weak var currBankLabel2: UILabel!
+    
     var bankNames = ["Wells Fargo", "Wells Fargo"]
     var linkedAccounts = ["Isabella's Checking", "Isabella's Savings"]
     var linkedAccountTexts = ["Checking xxx5067", "Savings xxx5067"]

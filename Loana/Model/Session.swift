@@ -18,13 +18,13 @@ class Session {
         
         self.user = User(
             name: "Peter Lu",
-            age: 35,
+            age: 25,
             maritalStatus: "Single",
             income: 15000,
             publicSector: true,
             stateOfResidence: "California",
-            loanProvider: "Random",
-            loanID:"randomID",
+            loanProvider: "Cornerstone",
+            loanID:"0172314",
             id: "a1",
             intervalPlan: .weekly,
             repayment_balance: [Array(repeating: 200.0,count: 31),[0.0,0.0,0.0,0.0,0.0,0.0,50.0,50.0,50.0,50.0,50.0,50.0,50.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,150.0,150.0,15.0,150.0,150.0,150.0,150.0,200.0,200.0,200.0],
