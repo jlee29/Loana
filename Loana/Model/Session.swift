@@ -63,11 +63,9 @@ class Session {
         }else if(plan == "Standard"){
             self.user.projectedRepaymentPlan = getStandardRepayment()
         }else if(plan == "Graduated"){
-            //return getGraduatedRepayment()
-            self.user.projectedRepaymentPlan = getStandardRepayment()
+            self.user.projectedRepaymentPlan = getGraduatedRepayment()
         }else{
-            //return getExtendedRepayment()
-            self.user.projectedRepaymentPlan = getStandardRepayment()
+            self.user.projectedRepaymentPlan = getGraduatedRepayment()
         }
     }
     var loggedIn: Bool
@@ -75,6 +73,27 @@ class Session {
     var currMonth: Int
     var currDay: Int
     var currMonthLongTerm: Int
+    
+    func getGraduatedRepayment()->[Double]{
+        var result = Array(repeating: 0.0,count: 240)
+        let finalAmount = 31000.0
+        let loanIncreasePercentage = 1.01
+        let base = 12000.0
+        var monthlyPayment = 100.0
+        for i in 0...result.count - 1{
+            monthlyPayment = monthlyPayment * loanIncreasePercentage
+            if i==0{
+                result[i] = base + monthlyPayment
+            }else{
+                if result[i-1] >= finalAmount{
+                    result[i] = result[i-1]
+                }else{
+                    result[i] = result[i-1] + monthlyPayment
+                }
+            }
+        }
+        return result
+    }
     
     func getStandardRepayment()->[Double]{
         var result = Array(repeating: 0.0,count: 240)
