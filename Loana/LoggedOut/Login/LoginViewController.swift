@@ -9,12 +9,12 @@
 import UIKit
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
-
+    
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
     @IBAction func logIn(_ sender: UIButton) {
-        Session.shared.loggedIn = true
+        
     }
     @IBOutlet weak var loginButton: UIButton!
     
@@ -46,13 +46,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         emailField.textContentType = UITextContentType.init(rawValue: "")
         passwordField.textContentType = UITextContentType.init(rawValue: "")
         mainView.layer.cornerRadius = 10
-        
         if let attributedTitle = loginButton.attributedTitle(for: .normal) {
             let formattedString = NSMutableAttributedString()
             formattedString.bold(
                 attributedTitle.string)
             loginButton.setAttributedTitle(formattedString, for: .normal)
         }
+//        errorMessageLabel.text = ""
     }
     
     @objc func dismissKeyboard (_ sender: UITapGestureRecognizer) {
@@ -79,6 +79,18 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         // needed to clear the text in the back navigation:
         self.navigationItem.title = " "
+    }
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if identifier == "login"{
+            if emailField.text == "jaime1deverall@gmail.com" && passwordField.text == "iloveCS147" || emailField.text == "a" {
+                Session.shared.loggedIn = true
+                return true
+            }
+//            errorMessageLabel.text = "Email or password incorrect"
+            return false
+        }
+        return false
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
