@@ -9,6 +9,8 @@
 import UIKit
 
 class StatsCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var outerView: UIView!
+    
     @IBOutlet weak var totalMonthsLabel: UILabel!
     @IBOutlet weak var totalMonthsFixedLabel: UILabel!
     @IBOutlet weak var remainingLoanCostLabel: UILabel!
