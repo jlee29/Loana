@@ -66,6 +66,11 @@ class SignUpInfo2ViewController: UIViewController, UIPickerViewDelegate, UIPicke
         return loanProviderPickerData[row]
     }
     
+    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+        return NSAttributedString(string: loanProviderPickerData[row], attributes: [NSAttributedStringKey.foregroundColor:UIColor.white])
+    
+    }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true

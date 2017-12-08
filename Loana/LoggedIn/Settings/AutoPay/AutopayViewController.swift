@@ -18,9 +18,10 @@ class AutopayViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         planPickerData = ["Daily", "Weekly", "Biweekly", "Monthly"]
         self.planPicker.delegate = self
         self.planPicker.dataSource = self
-        currentPlanLabel.text = "Your current plan is: " + Session.shared.user.intervalPlan
+        let enumStr = util.intervalEnumToString(interval: Session.shared.user.intervalPlan)
+        currentPlanLabel.text = "Your current plan is: \(enumStr)"
         for (index, element) in planPickerData.enumerated() {
-            if element == Session.shared.user.intervalPlan{
+            if element == enumStr {
                 planPicker.selectRow(index, inComponent: 0, animated: false)
                 break
             }
@@ -29,7 +30,7 @@ class AutopayViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     }
 
     @IBAction func onSaveButtonClick(_ sender: UIButton) {
-        Session.shared.user.intervalPlan = planPickerData[planPicker.selectedRow(inComponent: 0)]
+        Session.shared.user.intervalPlan = util.intervalStringToEnum(interval: planPickerData[planPicker.selectedRow(inComponent: 0)]) 
         currentPlanLabel.text = "Your current plan is: " + planPickerData[planPicker.selectedRow(inComponent: 0)]
         util.update_installment()
         util.update_repayment_balance()
@@ -58,6 +59,10 @@ class AutopayViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     // The data to return for the row and component (column) that's being passed in
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return planPickerData[row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, attributedTitleForRow row: Int, forComponent component: Int) -> NSAttributedString? {
+        return NSAttributedString(string: planPickerData[row], attributes: [NSAttributedStringKey.foregroundColor:UIColor.white])
     }
 
     /*

@@ -14,7 +14,7 @@ class Util {
         let interval = get_interval_in_days()
         let last_index = Session.shared.user.auto_pay_schedule[Session.shared.currMonth].count - 1
         
-        if Session.shared.user.intervalPlan == "Monthly"{
+        if Session.shared.user.intervalPlan == .monthly {
             for i in Session.shared.currDay...last_index{
                 Session.shared.user.auto_pay_schedule[Session.shared.currMonth][i] = 0
                 if i == last_index{
@@ -33,7 +33,7 @@ class Util {
     }
     
     func update_installment(){
-        if Session.shared.user.intervalPlan == "Monthly"{
+        if Session.shared.user.intervalPlan == .monthly {
             Session.shared.user.auto_pay_installment = Session.shared.user.remaining_amount
         }
         
@@ -48,11 +48,11 @@ class Util {
     }
     
     func get_interval_in_days()->Int{
-        if Session.shared.user.intervalPlan == "Daily"{
+        if Session.shared.user.intervalPlan == .daily {
             return 1
-        } else if Session.shared.user.intervalPlan == "Weekly"{
+        } else if Session.shared.user.intervalPlan == .weekly {
             return 7
-        } else if Session.shared.user.intervalPlan == "Biweekly"{
+        } else if Session.shared.user.intervalPlan == .biweekly {
             return 14
         }
         return -1
@@ -65,5 +65,31 @@ class Util {
     
     func remaining_month(){
         Session.shared.user.remaining_amount =  Session.shared.user.repayment_schedule[Session.shared.currMonth] - Session.shared.user.repayment_balance[Session.shared.currMonth][Session.shared.currDay]
+    }
+    
+    func intervalEnumToString(interval: User.IntervalPlan) -> String {
+        switch interval {
+        case .daily:
+            return "daily"
+        case .weekly:
+            return "weekly"
+        case .biweekly:
+            return "biweekly"
+        default:
+            return "monthly"
+        }
+    }
+    
+    func intervalStringToEnum(interval: String) -> User.IntervalPlan {
+        switch interval {
+        case "daily":
+            return .daily
+        case "weekly":
+            return .weekly
+        case "biweekly":
+            return .biweekly
+        default:
+            return .monthly
+        }
     }
 }

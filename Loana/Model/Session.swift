@@ -15,7 +15,8 @@ class Session {
         self.currDay = 7
         self.loggedIn = loggedIn
         
-        self.user = User(name: "test name",
+        self.user = User(
+            name: "Peter Lu",
             age: 35,
             maritalStatus: "Single",
             income: 1,
@@ -24,7 +25,7 @@ class Session {
             loanProvider: "Random",
             loanID:"randomID",
             id: "a1",
-            intervalPlan: "Weekly",
+            intervalPlan: .weekly,
             repayment_balance: [Array(repeating: 200.0,count: 31),[0.0,0.0,0.0,0.0,0.0,0.0,50.0,50.0,50.0,50.0,50.0,50.0,50.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,150.0,150.0,15.0,150.0,150.0,150.0,150.0,200.0,200.0,200.0],
                                 Array(repeating: 0.0,count: 31)],
             repayment_schedule: [200,200,200],

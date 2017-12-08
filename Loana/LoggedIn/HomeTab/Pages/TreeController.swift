@@ -7,13 +7,17 @@ class TreeController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+
+        
+        // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         let treeId = findTreeId()
         print(treeId)
         
         let treeString = "progress_tree_" + String(treeId + 1)
         tree.image = UIImage(named: treeString)
-        
-        // Do any additional setup after loading the view.
     }
     
     func findTreeId() -> Int {

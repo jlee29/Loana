@@ -55,23 +55,6 @@ class BankViewController: UIViewController, UICollectionViewDelegate, UICollecti
         }
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if (indexPath.row != bankNames.count) {
-            let bankCell = bankCollection.cellForItem(at: indexPath) as! BankCollectionViewCell
-            let alertController = UIAlertController(title: "Selecting Account", message: "Use this account?", preferredStyle: .alert)
-            let OKAction = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction!) in
-                let index = self.linkedAccounts.index(of: bankCell.label1.text!)!
-                Session.shared.user.bankAccount = BankAccount(bankName: self.bankNames[index], accountName: self.linkedAccounts[index], number: self.linkedAccountTexts[index])
-            }
-            alertController.addAction(OKAction)
-            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (action:UIAlertAction!) in
-                print("Cancel button tapped")
-            }
-            alertController.addAction(cancelAction)
-            self.present(alertController, animated: true, completion:nil)
-        }
-    }
-    
     func addedBank(_ acc: BankAccount) {
         bankNames.insert(acc.bankName, at: 0)
         linkedAccounts.insert(acc.accountName, at: 0)

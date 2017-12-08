@@ -10,6 +10,8 @@ import UIKit
 
 class LinkAccountViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
+    @IBOutlet weak var mainLabel: UILabel!
+    
     var delegate: LinkAccount3ViewControllerDelegate?
 
     @IBOutlet weak var bankCollection: UICollectionView!
@@ -18,6 +20,7 @@ class LinkAccountViewController: UIViewController, UICollectionViewDelegate, UIC
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        mainLabel.font = UIFont(name: "Avenir", size: 30)
 
         bankCollection.delegate = self
         bankCollection.dataSource = self
