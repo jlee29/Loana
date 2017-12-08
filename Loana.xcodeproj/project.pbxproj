@@ -64,11 +64,15 @@
 		B7F62D581FD7E91F0010CC7B /* icons8-menu-30.png in Resources */ = {isa = PBXBuildFile; fileRef = B7F62D561FD7E91D0010CC7B /* icons8-menu-30.png */; };
 		D34FAC5A1FCFF6F80008A8AF /* SignUpInfo1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34FAC591FCFF6F80008A8AF /* SignUpInfo1ViewController.swift */; };
 		D35FED5C1FD7FE78005C8606 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35FED5B1FD7FE78005C8606 /* ProfileViewController.swift */; };
+		D384E5761FDAC7A50070DBDC /* HomeScrollContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D384E5751FDAC7A50070DBDC /* HomeScrollContentViewController.swift */; };
 		D3E8CC841FD9620400D9BDC7 /* CoffeeVisualisationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3E8CC831FD9620400D9BDC7 /* CoffeeVisualisationController.swift */; };
 		D3E8CC891FD969DE00D9BDC7 /* tickets.png in Resources */ = {isa = PBXBuildFile; fileRef = D3E8CC851FD969DD00D9BDC7 /* tickets.png */; };
 		D3E8CC8A1FD969DE00D9BDC7 /* shoes.png in Resources */ = {isa = PBXBuildFile; fileRef = D3E8CC861FD969DD00D9BDC7 /* shoes.png */; };
 		D3E8CC8B1FD969DE00D9BDC7 /* coffee.png in Resources */ = {isa = PBXBuildFile; fileRef = D3E8CC871FD969DD00D9BDC7 /* coffee.png */; };
 		D3E8CC8C1FD969DE00D9BDC7 /* headphones.png in Resources */ = {isa = PBXBuildFile; fileRef = D3E8CC881FD969DD00D9BDC7 /* headphones.png */; };
+		D3F665051FDADA1C00782CA7 /* WelcomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F665041FDADA1C00782CA7 /* WelcomeCollectionViewCell.swift */; };
+		D3F665071FDADA8F00782CA7 /* GraphCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F665061FDADA8F00782CA7 /* GraphCollectionViewCell.swift */; };
+		D3F6650D1FDADB3A00782CA7 /* CoffeeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F6650C1FDADB3A00782CA7 /* CoffeeCollectionViewCell.swift */; };
 		D64B813745412D65661C802B /* Pods_Loana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A876C0EE2993CA6739387610 /* Pods_Loana.framework */; };
 		E8064B3E1FD7FC8A003C83DA /* Graph1Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8064B3D1FD7FC8A003C83DA /* Graph1Controller.swift */; };
 		E8064B451FD8201F003C83DA /* progress_tree_6.png in Resources */ = {isa = PBXBuildFile; fileRef = E8064B3F1FD8201D003C83DA /* progress_tree_6.png */; };
@@ -169,11 +173,15 @@
 		B7F62D561FD7E91D0010CC7B /* icons8-menu-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-menu-30.png"; sourceTree = "<group>"; };
 		D34FAC591FCFF6F80008A8AF /* SignUpInfo1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpInfo1ViewController.swift; sourceTree = "<group>"; };
 		D35FED5B1FD7FE78005C8606 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D384E5751FDAC7A50070DBDC /* HomeScrollContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScrollContentViewController.swift; sourceTree = "<group>"; };
 		D3E8CC831FD9620400D9BDC7 /* CoffeeVisualisationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeVisualisationController.swift; sourceTree = "<group>"; };
 		D3E8CC851FD969DD00D9BDC7 /* tickets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tickets.png; sourceTree = "<group>"; };
 		D3E8CC861FD969DD00D9BDC7 /* shoes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shoes.png; sourceTree = "<group>"; };
 		D3E8CC871FD969DD00D9BDC7 /* coffee.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coffee.png; sourceTree = "<group>"; };
 		D3E8CC881FD969DD00D9BDC7 /* headphones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = headphones.png; sourceTree = "<group>"; };
+		D3F665041FDADA1C00782CA7 /* WelcomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		D3F665061FDADA8F00782CA7 /* GraphCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphCollectionViewCell.swift; sourceTree = "<group>"; };
+		D3F6650C1FDADB3A00782CA7 /* CoffeeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeCollectionViewCell.swift; sourceTree = "<group>"; };
 		E8064B3D1FD7FC8A003C83DA /* Graph1Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph1Controller.swift; sourceTree = "<group>"; };
 		E8064B3F1FD8201D003C83DA /* progress_tree_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress_tree_6.png; sourceTree = "<group>"; };
 		E8064B401FD8201E003C83DA /* progress_tree_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress_tree_2.png; sourceTree = "<group>"; };
@@ -264,7 +272,11 @@
 			children = (
 				B7F1182B1FD97A5D008E5340 /* Pages */,
 				B766CC781FCFFEA600495638 /* HomeViewController.swift */,
+				D3F665041FDADA1C00782CA7 /* WelcomeCollectionViewCell.swift */,
+				D3F665061FDADA8F00782CA7 /* GraphCollectionViewCell.swift */,
+				D384E5751FDAC7A50070DBDC /* HomeScrollContentViewController.swift */,
 				E825CC6A1FD9572800A256F9 /* ManualPayController.swift */,
+				D3F6650C1FDADB3A00782CA7 /* CoffeeCollectionViewCell.swift */,
 			);
 			path = HomeTab;
 			sourceTree = "<group>";
@@ -659,6 +671,7 @@
 			files = (
 				B7E9B9231FCF6FF000234840 /* Session.swift in Sources */,
 				B78391571FD7F50C004FB5AB /* MainPageViewController.swift in Sources */,
+				D384E5761FDAC7A50070DBDC /* HomeScrollContentViewController.swift in Sources */,
 				B7F118291FD9786E008E5340 /* AutopayViewController.swift in Sources */,
 				B78391591FD80AED004FB5AB /* BankViewController.swift in Sources */,
 				B76AF57F1FD92A2800F51D7F /* BankAccount.swift in Sources */,
@@ -670,6 +683,7 @@
 				B7E9B9211FCF6EF000234840 /* User.swift in Sources */,
 				B78391651FD80EA1004FB5AB /* BankCollectionViewCell.swift in Sources */,
 				D35FED5C1FD7FE78005C8606 /* ProfileViewController.swift in Sources */,
+				D3F665051FDADA1C00782CA7 /* WelcomeCollectionViewCell.swift in Sources */,
 				D3E8CC841FD9620400D9BDC7 /* CoffeeVisualisationController.swift in Sources */,
 				B73530181FD176C8007FF4B4 /* PlansCollectionViewCell.swift in Sources */,
 				B766CC791FCFFEA600495638 /* HomeViewController.swift in Sources */,
@@ -680,6 +694,7 @@
 				B7A264A51FBF996400893AFE /* AppDelegate.swift in Sources */,
 				B766CC7D1FD0131200495638 /* NavigationViewController.swift in Sources */,
 				E815D4F31FCFE1C1005CB34F /* RepaymentPlan.swift in Sources */,
+				D3F665071FDADA8F00782CA7 /* GraphCollectionViewCell.swift in Sources */,
 				B7E9B9251FCF710C00234840 /* LoanFinder.swift in Sources */,
 				E8064B4C1FD82370003C83DA /* TreeController.swift in Sources */,
 				E8064B3E1FD7FC8A003C83DA /* Graph1Controller.swift in Sources */,
@@ -691,6 +706,7 @@
 				B7A264AD1FBF996400893AFE /* Loana.xcdatamodeld in Sources */,
 				E825CC6D1FD960A700A256F9 /* Util.swift in Sources */,
 				B7780C221FCFB67A0093A2C9 /* PlansViewController.swift in Sources */,
+				D3F6650D1FDADB3A00782CA7 /* CoffeeCollectionViewCell.swift in Sources */,
 				B766CC7B1FD00C0400495638 /* NavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
