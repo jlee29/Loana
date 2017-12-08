@@ -8,6 +8,7 @@
 
 import UIKit
 import Charts
+import Foundation
 
 class HomeContentViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     @IBOutlet weak var totalMonthsLabel: UILabel!
@@ -96,7 +97,47 @@ class HomeContentViewController: UIViewController, UICollectionViewDelegate, UIC
         }
         if (indexPath.row == 1) {
             let cell = mainView.dequeueReusableCell(withReuseIdentifier: "coffee", for: indexPath) as! ShoesCollectionViewCell
-            cell.imageView.image = UIImage(named: "shoes.png")
+            var imageFileName = ""
+            var singleObject = ""
+            var multiObject = ""
+            var price = 0.0
+            var interval = ""
+            if Session.shared.user.intervalPlan == .daily{
+                imageFileName = "coffee.png"
+                singleObject = "coffee"
+                multiObject = "coffees"
+                price = 7.0
+                interval = "daily"
+            }else if Session.shared.user.intervalPlan == .weekly{
+                imageFileName = "shoes.png"
+                singleObject = "pair of shoes"
+                multiObject = "pairs of shoes"
+                price = 50.0
+                interval = "weekly"
+            }else if Session.shared.user.intervalPlan == .biweekly{
+                imageFileName = "tickets.png"
+                singleObject = "concert ticket"
+                multiObject = "concert tickets"
+                price = 100.0
+                interval = "biweekly"
+            }else{
+                imageFileName = "headphones.png"
+                singleObject = "pair of headphones"
+                multiObject = "pairs of headphones"
+                price = 200.0
+                interval = "monthly"
+            }
+            let times = Int(round(Session.shared.user.auto_pay_installment / price))
+            var object = singleObject
+            if times > 1{
+                object = multiObject
+            }
+            var text = "Your " + interval
+            text = text + " payment is equivalent to \n"
+            text = text + String(times) + object
+            cell.timesLabel.numberOfLines = 0
+            cell.timesLabel.text = text
+            cell.imageView.image = UIImage(named: imageFileName)
             return cell
         }
         if (indexPath.row == 4) {

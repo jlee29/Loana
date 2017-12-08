@@ -12,4 +12,5 @@ class ShoesCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var imageView: UIImageView!
     
+    @IBOutlet weak var timesLabel: UILabel!
 }
