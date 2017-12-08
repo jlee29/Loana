@@ -1002,35 +1002,47 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="qOo-84-NgR">
                                                     <rect key="frame" x="0.0" y="0.0" width="374" height="258"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Laj-ed-Gag">
-                                                            <rect key="frame" x="0.0" y="0.0" width="300" height="94"/>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ezV-8v-6mD">
+                                                            <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
                                                             <subviews>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AAO-xP-9mx">
-                                                                    <rect key="frame" x="0.0" y="27" width="40" height="40"/>
-                                                                    <constraints>
-                                                                        <constraint firstAttribute="height" constant="40" id="ali-2R-5ea"/>
-                                                                        <constraint firstAttribute="width" secondItem="AAO-xP-9mx" secondAttribute="height" multiplier="1:1" id="yY4-bQ-E4C"/>
-                                                                    </constraints>
-                                                                </imageView>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="soP-cq-9g2">
-                                                                    <rect key="frame" x="40" y="13" width="260" height="68.5"/>
-                                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="50"/>
-                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Laj-ed-Gag">
+                                                                    <rect key="frame" x="30" y="0.0" width="260" height="104"/>
+                                                                    <subviews>
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AAO-xP-9mx">
+                                                                            <rect key="frame" x="0.0" y="32" width="40" height="40"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="40" id="ali-2R-5ea"/>
+                                                                                <constraint firstAttribute="width" secondItem="AAO-xP-9mx" secondAttribute="height" multiplier="1:1" id="yY4-bQ-E4C"/>
+                                                                            </constraints>
+                                                                        </imageView>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="soP-cq-9g2">
+                                                                            <rect key="frame" x="50" y="18" width="210" height="68.5"/>
+                                                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="50"/>
+                                                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
                                                             </subviews>
-                                                        </stackView>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="bottom" secondItem="Laj-ed-Gag" secondAttribute="bottom" id="HHQ-JG-vhw"/>
+                                                                <constraint firstItem="Laj-ed-Gag" firstAttribute="leading" secondItem="ezV-8v-6mD" secondAttribute="leading" constant="30" id="JfU-dR-fXE"/>
+                                                                <constraint firstAttribute="trailing" secondItem="Laj-ed-Gag" secondAttribute="trailing" constant="30" id="iz9-nH-eeX"/>
+                                                                <constraint firstItem="Laj-ed-Gag" firstAttribute="top" secondItem="ezV-8v-6mD" secondAttribute="top" id="q8o-qU-Tp1"/>
+                                                            </constraints>
+                                                        </view>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="9Y9-d9-aLY">
-                                                            <rect key="frame" x="0.0" y="94" width="300" height="94"/>
+                                                            <rect key="frame" x="0.0" y="104" width="320" height="104"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXO-cV-RoE">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="70.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="80.5"/>
                                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfU-NQ-zV1">
-                                                                    <rect key="frame" x="0.0" y="70.5" width="300" height="23.5"/>
+                                                                    <rect key="frame" x="0.0" y="80.5" width="320" height="23.5"/>
                                                                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
@@ -1043,19 +1055,18 @@
                                                         </stackView>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstItem="9Y9-d9-aLY" firstAttribute="width" secondItem="qOo-84-NgR" secondAttribute="width" id="4Fk-oY-tHf"/>
-                                                        <constraint firstItem="Laj-ed-Gag" firstAttribute="centerX" secondItem="qOo-84-NgR" secondAttribute="centerX" id="7II-8W-QPK"/>
-                                                        <constraint firstItem="Laj-ed-Gag" firstAttribute="width" secondItem="qOo-84-NgR" secondAttribute="width" id="kRj-2I-N0r"/>
+                                                        <constraint firstItem="ezV-8v-6mD" firstAttribute="width" secondItem="qOo-84-NgR" secondAttribute="width" id="KPi-7A-3R1"/>
+                                                        <constraint firstItem="9Y9-d9-aLY" firstAttribute="width" secondItem="qOo-84-NgR" secondAttribute="width" id="iHd-e5-pKw"/>
                                                     </constraints>
                                                 </stackView>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="qOo-84-NgR" firstAttribute="top" secondItem="8eN-zD-Pvc" secondAttribute="top" constant="10" id="0Ax-Gd-Ksf"/>
-                                            <constraint firstAttribute="bottom" secondItem="qOo-84-NgR" secondAttribute="bottom" constant="10" id="9hk-Px-79D"/>
-                                            <constraint firstItem="qOo-84-NgR" firstAttribute="leading" secondItem="8eN-zD-Pvc" secondAttribute="leading" constant="10" id="ffw-P7-Ih6"/>
-                                            <constraint firstAttribute="trailing" secondItem="qOo-84-NgR" secondAttribute="trailing" constant="10" id="lpP-nA-znB"/>
+                                            <constraint firstItem="qOo-84-NgR" firstAttribute="leading" secondItem="8eN-zD-Pvc" secondAttribute="leading" id="3ta-np-6zf"/>
+                                            <constraint firstAttribute="bottom" secondItem="qOo-84-NgR" secondAttribute="bottom" id="NP7-ic-YMs"/>
+                                            <constraint firstItem="qOo-84-NgR" firstAttribute="top" secondItem="8eN-zD-Pvc" secondAttribute="top" id="NSL-Zs-Gzd"/>
+                                            <constraint firstAttribute="trailing" secondItem="qOo-84-NgR" secondAttribute="trailing" id="xOg-k5-993"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="intervalText" destination="mfU-NQ-zV1" id="z6k-sq-Agq"/>
