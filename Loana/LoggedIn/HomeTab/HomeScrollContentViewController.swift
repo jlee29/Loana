@@ -70,17 +70,20 @@ class HomeContentViewController: UIViewController, UICollectionViewDelegate, UIC
             cell.welcomeText.adjustsFontSizeToFitWidth = true
             cell.welcomeText.textAlignment = .center
             cell.moneyText.text = String(format: "$%.02f", Session.shared.user.auto_pay_installment)
-            cell.moneyText.font = UIFont(name: "Avenir", size: 20)
-            cell.intervalText.font = UIFont(name: "Avenir", size: 15)
+            cell.moneyText.font = UIFont(name: "Avenir", size: 60)
+            cell.moneyText.textAlignment = .center
+            cell.intervalText.textColor = UIColor.gray
+            cell.intervalText.font = UIFont(name: "Avenir", size: 12)
+            cell.intervalText.textAlignment = .center
             switch Session.shared.user.intervalPlan {
             case .daily:
-                cell.intervalText.text = "For Today"
+                cell.intervalText.text = "Today"
             case .weekly:
-                cell.intervalText.text = "For This Week"
+                cell.intervalText.text = "This Week"
             case .biweekly:
-                cell.intervalText.text = "For These Two Weeks"
+                cell.intervalText.text = "These Two Weeks"
             default:
-                cell.intervalText.text = "For This Month"
+                cell.intervalText.text = "This Month"
             }
             let proPicImage = UIImage(named: "peterprofile.png")
             cell.propic.contentMode = .scaleAspectFit
