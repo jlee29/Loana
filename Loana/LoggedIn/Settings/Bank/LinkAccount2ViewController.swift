@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LinkAccount2ViewController: UIViewController {
+class LinkAccount2ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var accNameField: UITextField!
     @IBOutlet weak var routingNumberField: UITextField!
@@ -27,11 +27,20 @@ class LinkAccount2ViewController: UIViewController {
         super.viewDidLoad()
         image.image = UIImage(named: bankName!)
         logInLabel.font = UIFont(name: "Avenir", size: 30)
+        accNameField.delegate = self
+        routingNumberField.delegate = self
         
         loginButton.layer.cornerRadius = 22
         loginButton.layer.borderWidth = 1
         loginButton.layer.borderColor = UIColor.darkGray.cgColor
         // Do any additional setup after loading the view.
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard (_:)))
+        self.view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func dismissKeyboard (_ sender: UITapGestureRecognizer) {
+        accNameField.resignFirstResponder()
+        routingNumberField.resignFirstResponder()
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,6 +48,10 @@ class LinkAccount2ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 
     /*
     // MARK: - Navigation
