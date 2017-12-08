@@ -65,7 +65,13 @@ class HomeContentViewController: UIViewController, UICollectionViewDelegate, UIC
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if (indexPath.row == 0) {
             let cell = mainView.dequeueReusableCell(withReuseIdentifier: "welcome", for: indexPath) as! WelcomeCollectionViewCell
-            cell.welcomeText.text = String(format: "$%.02f", Session.shared.user.auto_pay_installment)
+            cell.welcomeText.text = "Welcome back \(Session.shared.user.name)!"
+            cell.welcomeText.font = UIFont(name: "Avenir", size: 30)
+            cell.welcomeText.adjustsFontSizeToFitWidth = true
+            cell.welcomeText.textAlignment = .center
+            cell.moneyText.text = String(format: "$%.02f", Session.shared.user.auto_pay_installment)
+            cell.moneyText.font = UIFont(name: "Avenir", size: 20)
+            cell.intervalText.font = UIFont(name: "Avenir", size: 15)
             switch Session.shared.user.intervalPlan {
             case .daily:
                 cell.intervalText.text = "For Today"
