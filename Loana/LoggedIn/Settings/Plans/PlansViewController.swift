@@ -63,9 +63,9 @@ class PlansViewController: UIViewController, UICollectionViewDelegate, UICollect
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = plansCollectionView.dequeueReusableCell(withReuseIdentifier: "plan", for: indexPath) as! PlansCollectionViewCell
         cell.testLabel.text = plans[indexPath.row]
-        cell.label2.text = util.doubleToDollar(num1: plan2AmountOwedPerMonth(plan: short2Long(plans[indexPath.row])))
+        cell.label2.text = util.doubleToDollar(num1: plan2AmountOwedPerMonth(plan: short2Long(plans[indexPath.row]))) + " /mo"
         cell.label2.font = UIFont(name: "Avenir", size: 12)
-        cell.label3.text = String(Session.shared.getMonthsLeft(plan:  short2Long(plans[indexPath.row])))
+        cell.label3.text = String(Session.shared.getMonthsLeft(plan:  short2Long(plans[indexPath.row]))) + " months"
         cell.label3.font = UIFont(name: "Avenir", size: 12)
         
         cell.boxImg.layer.cornerRadius = 10

@@ -32,9 +32,9 @@ class PlanDetailViewController: UIViewController {
     @IBOutlet weak var totalMonthLabel: UILabel!
     @IBOutlet weak var totalLoanCostLabel: UILabel!
     @IBOutlet weak var interestRateLabel: UILabel!
-    @IBOutlet weak var principalOwedLabel: UILabel!
     @IBOutlet weak var adjustedGrossIncomeLabel: UILabel!
     
+    @IBOutlet weak var amountPaidLabel: UILabel!
     @IBAction func setPlan(_ sender: UIButton) {
         let alert = UIAlertController(title: "Confirmation", message: "You've selected this plan!", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: confirmationHandler))
@@ -88,7 +88,7 @@ class PlanDetailViewController: UIViewController {
         }else if(plan == "Graduated" || plan == "Extended"){
             return Session.shared.getGraduatedRepayment()[0] - last_payment
         }else{
-            return 230
+            return Session.shared.getGraduatedRepayment()[0] - last_payment
         }
     }
     
@@ -99,9 +99,9 @@ class PlanDetailViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         adjustedGrossIncomeLabel.text = util.doubleToDollar(num1: Double(Session.shared.user.income))
-        principalOwedLabel.text = "20,000" //hardcoded
+        amountPaidLabel.text = util.doubleToDollar(num1: Session.shared.user.repaymentHistory[Session.shared.user.repaymentHistory.count - 1])
         interestRateLabel.text = util.doubleToDollar(num1: plan2AmountOwedPerMonth(plan: short2Long(testString!))) //actually next contribition
-        totalLoanCostLabel.text = util.doubleToDollar(num1: Session.shared.getTotalLoanCost(plan:  short2Long(testString!)))
+        totalLoanCostLabel.text = util.doubleToDollar(num1: Session.shared.getTotalLoanCost(plan:  short2Long(testString!)) - Session.shared.user.repaymentHistory[Session.shared.user.repaymentHistory.count - 1])
         totalMonthLabel.text = String(Session.shared.getMonthsLeft(plan:  short2Long(testString!)))
         titleLabel.text = short2Long(_:  testString!)
         useButton.layer.cornerRadius = 10
@@ -116,7 +116,6 @@ class PlanDetailViewController: UIViewController {
         var planTitle = ""
         if testString == "IBR"{
             planTitle = short2Long("IBR")
-            
         } else if testString == "ICR"{
             planTitle = short2Long("ICR")
         } else if testString == "PAYE"{
