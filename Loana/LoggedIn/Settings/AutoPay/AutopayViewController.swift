@@ -22,6 +22,7 @@ class AutopayViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         
         saveButton.layer.cornerRadius = 22
         saveButton.layer.borderWidth = 1
+        saveButton.layer.borderColor = UIColor.darkGray.cgColor
         
         currentPlanLabel.font = UIFont(name: "Avenir", size: 30)
         currentPlanLabel.text = "Your current plan is: \(enumStr)"

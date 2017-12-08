@@ -40,6 +40,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         passwordField.layer.cornerRadius = 20
         loginButton.layer.cornerRadius = 22
         passwordField.layer.borderWidth = 1
+        loginButton.layer.borderColor = UIColor.darkGray.cgColor
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard (_:)))
         self.view.addGestureRecognizer(tapGesture)
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
