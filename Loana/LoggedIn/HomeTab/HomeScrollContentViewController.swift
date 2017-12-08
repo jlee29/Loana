@@ -58,10 +58,21 @@ class HomeContentViewController: UIViewController, UICollectionViewDelegate, UIC
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if (indexPath.row == 0) {
             let cell = mainView.dequeueReusableCell(withReuseIdentifier: "welcome", for: indexPath) as! WelcomeCollectionViewCell
+            cell.welcomeText.text = String(format: "$%.02f", Session.shared.user.auto_pay_installment)
+            switch Session.shared.user.intervalPlan {
+            case .daily:
+                cell.intervalText.text = "For Today"
+            case .weekly:
+                cell.intervalText.text = "For This Week"
+            case .biweekly:
+                cell.intervalText.text = "For These Two Weeks"
+            default:
+                cell.intervalText.text = "For This Month"
+            }
             return cell
         }
         if (indexPath.row == 1) {
-            let cell = mainView.dequeueReusableCell(withReuseIdentifier: "coffee", for: indexPath) 
+            let cell = mainView.dequeueReusableCell(withReuseIdentifier: "coffee", for: indexPath)
             return cell
         }
         if (indexPath.row == 4) {
