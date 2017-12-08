@@ -30,6 +30,10 @@ class HomeContentViewController: UIViewController, UICollectionViewDelegate, UIC
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        mainView.reloadData()
+    }
+    
 //    override func viewWillAppear(_ animated: Bool) {
 //        welcomeLabel.text = String(format: "$%.02f", Session.shared.user.auto_pay_installment)
 //        switch Session.shared.user.intervalPlan {
