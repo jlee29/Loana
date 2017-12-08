@@ -10,8 +10,11 @@ import UIKit
 
 class BankViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, LinkAccount3ViewControllerDelegate {
     
+    @IBOutlet weak var currBankLabel1: UILabel!
+    @IBOutlet weak var currBankLabel2: UILabel!
+    
     var bankNames = ["Wells Fargo", "Wells Fargo"]
-    var linkedAccounts = ["Isabella's Checking", "Isabella's Savings"]
+    var linkedAccounts = ["Peter Lu's Checking", "Peter Lu's Savings"]
     var linkedAccountTexts = ["Checking xxx5067", "Savings xxx5067"]
 
     @IBOutlet weak var bankCollection: UICollectionView!
@@ -19,11 +22,57 @@ class BankViewController: UIViewController, UICollectionViewDelegate, UICollecti
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        currBankLabel1.text = Session.shared.user.bankAccount.accountName
+        currBankLabel2.text = Session.shared.user.bankAccount.number
+        
         bankCollection.delegate = self
         bankCollection.dataSource = self
         bankCollection.backgroundColor = .clear
         bankCollection.reloadData()
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        currBankLabel1.text = Session.shared.user.bankAccount.accountName
+        currBankLabel2.text = Session.shared.user.bankAccount.number
+    }
+    
+    @objc func tap(sender: UITapGestureRecognizer){
+        
+        if let indexPath = self.bankCollection.indexPathForItem(at: sender.location(in: self.bankCollection)) {
+            if indexPath.row < 2 {
+                let cell = self.bankCollection.cellForItem(at: indexPath) as! BankCollectionViewCell
+                let dialogMessage = UIAlertController(title: "Confirm", message: "Are you sure you want to switch accounts?", preferredStyle: .alert)
+                
+                // Create OK button with action handler
+                let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
+                    let newAccName = cell.label1.text!
+                    let newAccNum = cell.label2.text!
+                    cell.label1.text = Session.shared.user.bankAccount.accountName
+                    cell.label2.text = Session.shared.user.bankAccount.number
+                    self.currBankLabel1.text = newAccName
+                    self.currBankLabel2.text = newAccNum
+                    Session.shared.user.bankAccount.accountName = newAccName
+                    Session.shared.user.bankAccount.number = newAccNum
+                })
+                
+                // Create Cancel button with action handlder
+                let cancel = UIAlertAction(title: "Cancel", style: .cancel) { (action) -> Void in
+                    print("Cancel button tapped")
+                }
+                
+                //Add OK and Cancel button to dialog message
+                dialogMessage.addAction(ok)
+                dialogMessage.addAction(cancel)
+                
+                // Present dialog message to user
+                self.present(dialogMessage, animated: true, completion: nil)
+            }
+        } else {
+            print("collection view was tapped")
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,7 +99,7 @@ class BankViewController: UIViewController, UICollectionViewDelegate, UICollecti
             cell.label1.text = linkedAccounts[indexPath.row]
             cell.label2.text = linkedAccountTexts[indexPath.row]
             cell.button.setImage(UIImage(named: "icons8-forward-100.png"), for: .normal)
-//            cell.cellView.addGestureRecognizer(gesture)
+            cell.cellView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tap)))
             return cell
         }
     }

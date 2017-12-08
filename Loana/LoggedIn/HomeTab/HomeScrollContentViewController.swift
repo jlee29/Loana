@@ -10,6 +10,10 @@ import UIKit
 import Charts
 
 class HomeContentViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    @IBOutlet weak var totalMonthsLabel: UILabel!
+    @IBOutlet weak var totalMonthsFixedLabel: UILabel!
+    @IBOutlet weak var remainingLoanCostLabel: UILabel!
+    @IBOutlet weak var remainingLoanCostFixedLabel: UILabel!
     let currMonth = Session.shared.currMonth
     let currDay = Session.shared.currDay
     
@@ -97,6 +101,14 @@ class HomeContentViewController: UIViewController, UICollectionViewDelegate, UIC
         }
         if (indexPath.row == 4) {
             let cell = mainView.dequeueReusableCell(withReuseIdentifier: "stats", for: indexPath) as! StatsCollectionViewCell
+            cell.adjustedIncomeFixedLabel.text = "Adjusted Income:"
+            cell.adjustedIncomeLabel.text = String(Session.shared.user.age)
+            cell.interestRateFixedLabel.text = "Interest Rate:"
+            cell.interestRateLabel.text = "6.8%"
+            cell.remainingLoanCostFixedLabel.text = "Remaining Loan Cost:"
+            cell.remainingLoanCostLabel.text = util.doubleToDollar(num1:(Session.shared.getTotalLoanCost(plan: Session.shared.user.currPlan) - Session.shared.user.repaymentHistory[Session.shared.user.repaymentHistory.count - 1]))
+            cell.totalMonthsFixedLabel.text = "Months Left:"
+            cell.totalMonthsLabel.text = String(Session.shared.getMonthsLeft(plan: Session.shared.user.currPlan))
             return cell
         } else {
             let cell = mainView.dequeueReusableCell(withReuseIdentifier: "graph", for: indexPath) as! GraphCollectionViewCell

@@ -18,13 +18,13 @@ class Session {
         
         self.user = User(
             name: "Peter Lu",
-            age: 35,
+            age: 25,
             maritalStatus: "Single",
             income: 15000,
             publicSector: true,
             stateOfResidence: "California",
-            loanProvider: "Random",
-            loanID:"randomID",
+            loanProvider: "Cornerstone",
+            loanID:"0172314",
             id: "a1",
             intervalPlan: .weekly,
             repayment_balance: [Array(repeating: 200.0,count: 31),[0.0,0.0,0.0,0.0,0.0,0.0,50.0,50.0,50.0,50.0,50.0,50.0,50.0,100.0,100.0,100.0,100.0,100.0,100.0,100.0,150.0,150.0,15.0,150.0,150.0,150.0,150.0,200.0,200.0,200.0],
@@ -38,7 +38,7 @@ class Session {
             currPlan: "Standard",
             repaymentHistory: Array(repeating: 0.0,count: 60),
             projectedRepaymentPlan: Array(repeating: 0.0,count: 240),
-            bankAccount: BankAccount(bankName: "Wells Fargo", accountName: "Peter Lu", number: "4578"))
+            bankAccount: BankAccount(bankName: "Wells Fargo", accountName: "Peter Lu's Checking", number: "xxx4578"))
         setPaidHistory()
         self.user.projectedRepaymentPlan = getProjectedRepaymentPlan(plan: self.user.currPlan)
     }
@@ -166,11 +166,11 @@ class Session {
     
     //hard coded amounts courtesy of Jaime
     func getTotalLoanCost(plan: String)->Double{
-        if(plan == "Income-Based Repayment"){
+        if(plan == "Income-Based Repayment" || plan == "IBR"){
             return 22877.0
-        }else if(plan == "Income-Contingent Repayment"){
+        }else if(plan == "Income-Contingent Repayment" || plan == "ICR"){
             return 22877.0
-        }else if(plan == "Pay As You Earn"){
+        }else if(plan == "Pay As You Earn" || plan=="PAYE"){
             return 27414.0
         }else if(plan == "Standard"){
             return 27619.0
