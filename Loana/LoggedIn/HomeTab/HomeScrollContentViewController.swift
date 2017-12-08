@@ -69,6 +69,9 @@ class HomeContentViewController: UIViewController, UICollectionViewDelegate, UIC
             default:
                 cell.intervalText.text = "For This Month"
             }
+            let proPicImage = UIImage(named: "shoes.png")
+            cell.propic.contentMode = .scaleAspectFit
+            cell.propic.image = proPicImage
             return cell
         }
         if (indexPath.row == 1) {
@@ -80,6 +83,11 @@ class HomeContentViewController: UIViewController, UICollectionViewDelegate, UIC
             return cell
         } else {
             let cell = mainView.dequeueReusableCell(withReuseIdentifier: "graph", for: indexPath) as! GraphCollectionViewCell
+//            if indexPath.row == 2 {
+//                cell.mainView =
+//            } else {
+//
+//            }
             return cell
         }
     }
