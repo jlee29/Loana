@@ -1,5 +1,5 @@
 //
-//  CoffeeCollectionViewCell.swift
+//  StatsCollectionViewCell.swift
 //  Loana
 //
 //  Created by Jaime Deverall on 08/12/2017.
@@ -8,5 +8,6 @@
 
 import UIKit
 
-class CoffeeCollectionViewCell: UICollectionViewCell {
+class StatsCollectionViewCell: UICollectionViewCell {
+    
 }

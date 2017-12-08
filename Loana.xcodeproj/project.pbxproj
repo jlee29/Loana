@@ -73,6 +73,7 @@
 		D3F665051FDADA1C00782CA7 /* WelcomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F665041FDADA1C00782CA7 /* WelcomeCollectionViewCell.swift */; };
 		D3F665071FDADA8F00782CA7 /* GraphCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F665061FDADA8F00782CA7 /* GraphCollectionViewCell.swift */; };
 		D3F6650D1FDADB3A00782CA7 /* CoffeeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F6650C1FDADB3A00782CA7 /* CoffeeCollectionViewCell.swift */; };
+		D3F6650F1FDAE02D00782CA7 /* StatsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F6650E1FDAE02D00782CA7 /* StatsCollectionViewCell.swift */; };
 		D64B813745412D65661C802B /* Pods_Loana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A876C0EE2993CA6739387610 /* Pods_Loana.framework */; };
 		E8064B3E1FD7FC8A003C83DA /* Graph1Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8064B3D1FD7FC8A003C83DA /* Graph1Controller.swift */; };
 		E8064B451FD8201F003C83DA /* progress_tree_6.png in Resources */ = {isa = PBXBuildFile; fileRef = E8064B3F1FD8201D003C83DA /* progress_tree_6.png */; };
@@ -182,6 +183,7 @@
 		D3F665041FDADA1C00782CA7 /* WelcomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		D3F665061FDADA8F00782CA7 /* GraphCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphCollectionViewCell.swift; sourceTree = "<group>"; };
 		D3F6650C1FDADB3A00782CA7 /* CoffeeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeCollectionViewCell.swift; sourceTree = "<group>"; };
+		D3F6650E1FDAE02D00782CA7 /* StatsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StatsCollectionViewCell.swift; path = LoggedIn/HomeTab/StatsCollectionViewCell.swift; sourceTree = "<group>"; };
 		E8064B3D1FD7FC8A003C83DA /* Graph1Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph1Controller.swift; sourceTree = "<group>"; };
 		E8064B3F1FD8201D003C83DA /* progress_tree_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress_tree_6.png; sourceTree = "<group>"; };
 		E8064B401FD8201E003C83DA /* progress_tree_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress_tree_2.png; sourceTree = "<group>"; };
@@ -339,6 +341,7 @@
 				B766CC831FD0FCEE00495638 /* LoggedOut */,
 				B766CC801FD0FC9100495638 /* Meta Files */,
 				B7A264A81FBF996400893AFE /* Main.storyboard */,
+				D3F6650E1FDAE02D00782CA7 /* StatsCollectionViewCell.swift */,
 				B766CC811FD0FCBA00495638 /* LoggedIn */,
 				B7E9B9281FCF750B00234840 /* Model */,
 				B7A264AE1FBF996400893AFE /* Assets.xcassets */,
@@ -707,6 +710,7 @@
 				E825CC6D1FD960A700A256F9 /* Util.swift in Sources */,
 				B7780C221FCFB67A0093A2C9 /* PlansViewController.swift in Sources */,
 				D3F6650D1FDADB3A00782CA7 /* CoffeeCollectionViewCell.swift in Sources */,
+				D3F6650F1FDAE02D00782CA7 /* StatsCollectionViewCell.swift in Sources */,
 				B766CC7B1FD00C0400495638 /* NavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

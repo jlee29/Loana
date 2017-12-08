@@ -65,7 +65,7 @@ class HomeContentViewController: UIViewController, UICollectionViewDelegate, UIC
             return cell
         }
         if (indexPath.row == 4) {
-            let cell = mainView.dequeueReusableCell(withReuseIdentifier: "stats", for: indexPath)
+            let cell = mainView.dequeueReusableCell(withReuseIdentifier: "stats", for: indexPath) as! StatsCollectionViewCell
             return cell
         } else {
             let cell = mainView.dequeueReusableCell(withReuseIdentifier: "graph", for: indexPath) as! GraphCollectionViewCell
