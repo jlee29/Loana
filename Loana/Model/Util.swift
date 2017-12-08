@@ -156,6 +156,8 @@ class Util {
         }
         
         chart.data = data
+        chart.isUserInteractionEnabled = false
+        chart.chartDescription?.text = "Repayment Plan Comparison"
         
     }
     
@@ -247,6 +249,7 @@ class Util {
         data.addDataSet(midLine)
         chart.data = data
         
-        chart.chartDescription?.text = "This Month's Balance"
+        chart.chartDescription?.text = "Your Payments This Month"
+        chart.isUserInteractionEnabled = false
     }
 }
