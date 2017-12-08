@@ -216,6 +216,7 @@
 		E89E9A361FDAA9BC00962646 /* hatnew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hatnew.png; sourceTree = "<group>"; };
 		E89E9A371FDAA9BD00962646 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 		E89E9A3A1FDAAD9900962646 /* hatnoloana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hatnoloana.png; sourceTree = "<group>"; };
+		E89E9A3C1FDAE45700962646 /* peterprofile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = peterprofile.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -414,6 +415,7 @@
 		D34FAC4C1FCFECB60008A8AF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E89E9A3C1FDAE45700962646 /* peterprofile.png */,
 				B7C2FCD21FDAB3800088DDAE /* bigBackground.png */,
 				E89E9A3A1FDAAD9900962646 /* hatnoloana.png */,
 				E89E9A371FDAA9BD00962646 /* button.png */,

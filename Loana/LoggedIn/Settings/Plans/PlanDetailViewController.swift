@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import Charts
 
 protocol PlanDetailViewControllerDelegate {
     func updatedPlan(_ plan: String)
 }
 
 class PlanDetailViewController: UIViewController {
+    
+    @IBOutlet weak var planDetailChart: LineChartView!
     
     var util = Util()
     
@@ -40,7 +43,7 @@ class PlanDetailViewController: UIViewController {
         //Change the amount owed at the end of the month
         var loan = totalLoanCostLabel.text!
         loan.remove(at: loan.startIndex)
-        let newMonthPayment = Double(plan2AmountOwedPerMonth(plan: titleLabel.text!))
+        let newMonthPayment = plan2AmountOwedPerMonth(plan: titleLabel.text!)
         var amountOwed = newMonthPayment - Session.shared.user.repayment_balance[Session.shared.currMonth][Session.shared.currDay]
         if amountOwed < 0.0{
             Session.shared.user.manual_pay_schedule[Session.shared.currMonth + 1].append((0,-1*amountOwed))
@@ -70,19 +73,20 @@ class PlanDetailViewController: UIViewController {
         }
     }
     
-    //These numbers are conveniently hard-coded to avoid edge cases.
-    //Change these numbers when you change the actual plan numbers.
-    func plan2AmountOwedPerMonth(plan: String)->Int{
+    //These numbers are conveniently hard-coded to avoid edge cases. - not anymore u fucker
+    //Change these numbers when you change the actual plan numbers. - idid
+    func plan2AmountOwedPerMonth(plan: String)->Double{
+        let last_payment = Session.shared.user.repaymentHistory[Session.shared.user.repaymentHistory.count - 1]
         if(plan == "Income-Based Repayment"){
-            return 150
+            return Session.shared.getIncomeBasedRepayment()[0] - last_payment
         }else if(plan == "Income-Contingent Repayment"){
-            return 160
+            return Session.shared.getIncomeBasedRepayment()[0] - last_payment
         }else if(plan == "Pay As You Earn"){
-            return 170
+            return Session.shared.getPayAsYouEarnRepayment()[0] - last_payment
         }else if(plan == "Standard"){
-            return 200
-        }else if(plan == "Graduated"){
-            return 220
+            return Session.shared.getStandardRepayment()[0] - last_payment
+        }else if(plan == "Graduated" || plan == "Extended"){
+            return Session.shared.getGraduatedRepayment()[0] - last_payment
         }else{
             return 230
         }
@@ -91,20 +95,45 @@ class PlanDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
-        adjustedGrossIncomeLabel.text = "$25,000"
-        principalOwedLabel.text = "$20,000"
-        interestRateLabel.text = "6.8%"
-        totalLoanCostLabel.text = "$35,431"
-        totalMonthLabel.text = "195"
-        titleLabel.text = short2Long(_: testString!)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        adjustedGrossIncomeLabel.text = util.doubleToDollar(num1: Double(Session.shared.user.income))
+        principalOwedLabel.text = "20,000" //hardcoded
+        interestRateLabel.text = util.doubleToDollar(num1: plan2AmountOwedPerMonth(plan: short2Long(testString!))) //actually next contribition
+        totalLoanCostLabel.text = util.doubleToDollar(num1: Session.shared.getTotalLoanCost(plan:  short2Long(testString!)))
+        totalMonthLabel.text = String(Session.shared.getMonthsLeft(plan:  short2Long(testString!)))
+        titleLabel.text = short2Long(_:  testString!)
         useButton.layer.cornerRadius = 10
-        if(testString == "IBR" || testString == "PAYE" || testString == "ICR" ){
-            graphImage.image = UIImage(named: "IBR.png")
-        } else if(testString == "Graduated" || testString == "Extended") {
-            graphImage.image = UIImage(named: "graduated.png")
-        } else {
-            graphImage.image = UIImage(named: "standard.png")
+        //        if(testString == "IBR" || testString == "PAYE" || testString == "ICR" ){
+        //            graphImage.image = UIImage(named: "IBR.png")
+        //        } else if(testString == "Graduated" || testString == "Extended") {
+        //            graphImage.image = UIImage(named: "graduated.png")
+        //        } else {
+        //            graphImage.image = UIImage(named: "standard.png")
+        //        }
+        
+        var planTitle = ""
+        if testString == "IBR"{
+            planTitle = short2Long("IBR")
+            
+        } else if testString == "ICR"{
+            planTitle = short2Long("ICR")
+        } else if testString == "PAYE"{
+            planTitle = short2Long("PAYE")
+        }else if testString == "Standard"{
+            planTitle = short2Long("Standard")
+        }else if testString == "Graduated"{
+            planTitle = short2Long("Graduated")
         }
+        
+        let pastSchedule = Session.shared.user.repaymentHistory
+        let past = RepaymentPlan(title: "Repayment History",schedule: pastSchedule)
+        
+        let longTermSchedule = Session.shared.getProjectedRepaymentPlan(plan: planTitle)
+        let planArr = [RepaymentPlan(title: planTitle, schedule:longTermSchedule)]
+        
+        util.update_graph(chart: planDetailChart, curr_plan: past, alt_plans: planArr)
     }
     
     func short2Long(_ testString: String) -> String {

@@ -20,7 +20,7 @@ class Session {
             name: "Peter Lu",
             age: 35,
             maritalStatus: "Single",
-            income: 25000,
+            income: 15000,
             publicSector: true,
             stateOfResidence: "California",
             loanProvider: "Random",
@@ -122,8 +122,10 @@ class Session {
         let base = 12000.0
         var result = Array(repeating: 0.0,count: 240)
         for i in 0...result.count - 1{
-            income = annualIncomeIncrease*income
-            let monthlyPayment = percentageOfIncomePaid * income
+            if i % 12 == 0{
+                income = annualIncomeIncrease*income
+            }
+            let monthlyPayment = (percentageOfIncomePaid * income)/12.0
             if i==0{
                 result[i] = base + monthlyPayment
             }else{
@@ -145,8 +147,10 @@ class Session {
         let base = 12000.0
         var result = Array(repeating: 0.0,count: 240)
         for i in 0...result.count - 1{
-            income = annualIncomeIncrease*income
-            let monthlyPayment = percentageOfIncomePaid * income
+            if i % 12 == 0{
+                income = annualIncomeIncrease*income
+            }
+            let monthlyPayment = (percentageOfIncomePaid * income)/12.0
             if i==0{
                 result[i] = base + monthlyPayment
             }else{
@@ -158,6 +162,35 @@ class Session {
             }
         }
         return result
+    }
+    
+    //hard coded amounts courtesy of Jaime
+    func getTotalLoanCost(plan: String)->Double{
+        if(plan == "Income-Based Repayment"){
+            return 22877.0
+        }else if(plan == "Income-Contingent Repayment"){
+            return 22877.0
+        }else if(plan == "Pay As You Earn"){
+            return 27414.0
+        }else if(plan == "Standard"){
+            return 27619.0
+        }else if(plan == "Graduated"){
+            return 31000
+        }else{
+            return 31000
+        }
+    }
+    
+    func getMonthsLeft(plan: String)->Int{
+        let total = getTotalLoanCost(plan: plan)
+        let arr = getProjectedRepaymentPlan(plan: plan)
+        
+        for i in 0...arr.count - 1{
+            if arr[i] >= total{
+                return i
+            }
+        }
+        return -1
     }
 
 }

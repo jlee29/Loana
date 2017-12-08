@@ -97,22 +97,49 @@ class Util {
     
     func update_graph(chart: LineChartView, curr_plan: RepaymentPlan, alt_plans: [RepaymentPlan]){
         
+        let line_width = CGFloat(3.0)
         
         let data = LineChartData()
         data.setDrawValues(false)
         
         chart.noDataText = ""
 
-        let currLine = load_entries(plan: curr_plan,start:0)
+        let currLine = load_entries(plan: curr_plan,start:0, offset: 0)
+        currLine.circleRadius = 0
+        currLine.colors = [NSUIColor.black]
+        currLine.lineWidth = line_width
+        currLine.drawValuesEnabled = false
         //do curr entry styling
         data.addDataSet(currLine)
         
+        let month = Session.shared.currMonthLongTerm
+
+        let continuationPlan = Session.shared.getProjectedRepaymentPlan(plan: Session.shared.user.currPlan)
+        let continuationLine = load_entries(plan: RepaymentPlan(title: "Current Plan Projected",schedule: continuationPlan),start:0,offset:month)
+        continuationLine.circleRadius = 0
+        continuationLine.colors = [NSUIColor.black]
+        continuationLine.lineWidth = line_width
+        continuationLine.drawValuesEnabled = false
+        continuationLine.lineDashLengths = [5,2]
+        data.addDataSet(continuationLine)
         
-        let month = Session.shared.currMonth
-        for var plan in alt_plans{
+//        let midLine = LineChartDataSet(values: middleLine, label:"Today")
+//        midLine.colors = [NSUIColor.green]
+//        midLine.circleRadius = 0
+//        midLine.lineWidth = 2
+//        midLine.drawValuesEnabled = false
+//        data.addDataSet(midline)
+        
+        
+        
+                for var plan in alt_plans{
             let last = plan.schedule.count - 1
             if last > month{
-                let line = load_entries(plan: plan,start: last)
+                let line = load_entries(plan: plan,start: 0, offset: month)
+                line.circleRadius = 0
+                line.colors = [NSUIColor.white]
+                line.lineWidth = line_width
+                line.drawValuesEnabled = false
                 // do line styling
                 data.addDataSet(line)
             }
@@ -122,16 +149,23 @@ class Util {
         
     }
     
-    func load_entries(plan: RepaymentPlan, start: Int) -> LineChartDataSet{
+    func load_entries(plan: RepaymentPlan, start: Int, offset: Int) -> LineChartDataSet{
         let arr = plan.schedule
         var entries = [ChartDataEntry]()
         let length = arr.count
         
         for i in start...(length-1){
-            let val = ChartDataEntry(x: Double(i),y: arr[i])
+            let val = ChartDataEntry(x: Double(i + offset),y: arr[i])
             entries.append(val)
         }
         let line = LineChartDataSet(values:entries, label: plan.title)
         return line
+    }
+    
+    func doubleToDollar(num1: Double)->String{
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = NumberFormatter.Style.decimal
+        let num = numberFormatter.string(from: NSNumber(value:num1))
+        return "$" + num!
     }
 }

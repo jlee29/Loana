@@ -16,6 +16,8 @@ class PlansViewController: UIViewController, UICollectionViewDelegate, UICollect
     
     var currentPlan: String = Session.shared.user.currPlan
     
+    var util = Util()
+    
     func updatedPlan(_ plan: String) {
         currentPlan = plan
         Session.shared.user.currPlan = plan
@@ -61,9 +63,9 @@ class PlansViewController: UIViewController, UICollectionViewDelegate, UICollect
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = plansCollectionView.dequeueReusableCell(withReuseIdentifier: "plan", for: indexPath) as! PlansCollectionViewCell
         cell.testLabel.text = plans[indexPath.row]
-        cell.label2.text = getMonthlyPayment(plans[indexPath.row])
+        cell.label2.text = util.doubleToDollar(num1: plan2AmountOwedPerMonth(plan: short2Long(plans[indexPath.row])))
         cell.label2.font = UIFont(name: "Avenir", size: 12)
-        cell.label3.text = getTotalMonths(plans[indexPath.row])
+        cell.label3.text = String(Session.shared.getMonthsLeft(plan:  short2Long(plans[indexPath.row])))
         cell.label3.font = UIFont(name: "Avenir", size: 12)
         
         cell.boxImg.layer.cornerRadius = 10
@@ -88,6 +90,21 @@ class PlansViewController: UIViewController, UICollectionViewDelegate, UICollect
         }
     }
     
+    func short2Long(_ testString: String) -> String {
+        if(testString == "IBR"){
+            return "Income-Based Repayment"
+        }else if(testString == "ICR"){
+            return "Income-Contingent Repayment"
+        }else if(testString == "PAYE"){
+            return "Pay As You Earn"
+        }else if(testString == "Standard"){
+            return "Standard"
+        }else if(testString == "Graduated"){
+            return "Graduated"
+        }
+        return "Extended"
+    }
+    
     func getTotalMonths(_ plan: String) -> String {
         if(plan == "IBR"){
             return "300 months"
@@ -109,6 +126,23 @@ class PlansViewController: UIViewController, UICollectionViewDelegate, UICollect
                 destination.testString = planName
                 destination.delegate = self
             }
+        }
+    }
+    
+    func plan2AmountOwedPerMonth(plan: String)->Double{
+        let last_payment = Session.shared.user.repaymentHistory[Session.shared.user.repaymentHistory.count - 1]
+        if(plan == "Income-Based Repayment"){
+            return Session.shared.getIncomeBasedRepayment()[0] - last_payment
+        }else if(plan == "Income-Contingent Repayment"){
+            return Session.shared.getIncomeBasedRepayment()[0] - last_payment
+        }else if(plan == "Pay As You Earn"){
+            return Session.shared.getPayAsYouEarnRepayment()[0] - last_payment
+        }else if(plan == "Standard"){
+            return Session.shared.getStandardRepayment()[0] - last_payment
+        }else if(plan == "Graduated" || plan == "Extended"){
+            return Session.shared.getGraduatedRepayment()[0] - last_payment
+        }else{
+            return 230
         }
     }
 }
