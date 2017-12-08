@@ -40,7 +40,7 @@ class Session {
             projectedRepaymentPlan: Array(repeating: 0.0,count: 240),
             bankAccount: BankAccount(bankName: "Wells Fargo", accountName: "Peter Lu", number: "4578"))
         setPaidHistory()
-        changeProjectedRepaymentPlan(plan: self.user.currPlan)
+        self.user.projectedRepaymentPlan = getProjectedRepaymentPlan(plan: self.user.currPlan)
     }
     
     func setPaidHistory(){
@@ -53,19 +53,19 @@ class Session {
         self.user.repaymentHistory = result
     }
     
-    func changeProjectedRepaymentPlan(plan: String){
+    func getProjectedRepaymentPlan(plan: String)->[Double]{
         if(plan == "Income-Based Repayment"){
-            self.user.projectedRepaymentPlan = getIncomeBasedRepayment()
+            return getIncomeBasedRepayment()
         }else if(plan == "Income-Contingent Repayment"){
-            self.user.projectedRepaymentPlan = getIncomeBasedRepayment()
+            return getIncomeBasedRepayment()
         }else if(plan == "Pay As You Earn"){
-            self.user.projectedRepaymentPlan = getPayAsYouEarnRepayment()
+            return getPayAsYouEarnRepayment()
         }else if(plan == "Standard"){
-            self.user.projectedRepaymentPlan = getStandardRepayment()
+            return getStandardRepayment()
         }else if(plan == "Graduated"){
-            self.user.projectedRepaymentPlan = getGraduatedRepayment()
+            return getGraduatedRepayment()
         }else{
-            self.user.projectedRepaymentPlan = getGraduatedRepayment()
+            return getGraduatedRepayment()
         }
     }
     var loggedIn: Bool
