@@ -158,6 +158,7 @@ class Util {
         chart.data = data
         chart.isUserInteractionEnabled = false
         chart.chartDescription?.text = "Repayment Plan Comparison"
+        chart.chartDescription?.textColor = NSUIColor.white
         
     }
     
@@ -251,5 +252,6 @@ class Util {
         
         chart.chartDescription?.text = "Your Payments This Month"
         chart.isUserInteractionEnabled = false
+        chart.chartDescription?.textColor = NSUIColor.white
     }
 }
