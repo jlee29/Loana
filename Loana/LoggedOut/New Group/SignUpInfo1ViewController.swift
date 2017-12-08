@@ -17,11 +17,17 @@ class SignUpInfo1ViewController: UIViewController, UIPickerViewDelegate, UIPicke
     @IBOutlet weak var statePicker: UIPickerView!
     @IBOutlet weak var incomeTextField: UITextField!
     @IBOutlet weak var maritalStatusPicker: UIPickerView!
+    
+    @IBOutlet weak var nextButton: UIButton!
+    
     var maritalStatusPickerData: [String] = [String]()
     var publicSectorPickerData: [String] = [String]()
     var statePickerData: [String] = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        nextButton.layer.cornerRadius = 22
+        nextButton.layer.borderWidth = 1
+        nextButton.layer.borderColor = UIColor.darkGray.cgColor
         self.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
         maritalStatusPickerData = ["Married", "Single"]
         publicSectorPickerData = ["Yes", "No"]
@@ -121,7 +127,7 @@ class SignUpInfo1ViewController: UIViewController, UIPickerViewDelegate, UIPicke
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         Session.shared.user.name = nameTextField.text!
-        if let income = incomeTextField.text {
+        if let income = incomeTextField.text, income != "" {
             Session.shared.user.income = Int(income)!
             Session.shared.user.maritalStatus = maritalStatusPickerData[maritalStatusPicker.selectedRow(inComponent: 0)]
             Session.shared.user.publicSector = Bool(responseToBool(in: publicSectorPickerData[publicSectorPicker.selectedRow(inComponent: 0)]))

@@ -36,12 +36,29 @@ class AutopayViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
     }
 
     @IBAction func onSaveButtonClick(_ sender: UIButton) {
-        Session.shared.user.intervalPlan = util.intervalStringToEnum(interval: planPickerData[planPicker.selectedRow(inComponent: 0)]) 
-        currentPlanLabel.text = "Your current plan is: " + planPickerData[planPicker.selectedRow(inComponent: 0)]
-        util.update_installment()
-        util.update_repayment_balance()
+        let alertController = UIAlertController(title: "Confirmation", message: "Change Pay Interval to \(self.planPickerData[self.planPicker.selectedRow(inComponent: 0)])?", preferredStyle: .alert)
         
-        print(Session.shared.user.auto_pay_schedule[Session.shared.currMonth])
+        // Create OK button
+        let OKAction = UIAlertAction(title: "OK", style: .default) { (action:UIAlertAction!) in
+            Session.shared.user.intervalPlan = self.util.intervalStringToEnum(interval: self.planPickerData[self.planPicker.selectedRow(inComponent: 0)])
+            self.currentPlanLabel.text = "Your current plan is: " + self.planPickerData[self.planPicker.selectedRow(inComponent: 0)]
+            self.util.update_installment()
+            self.util.update_repayment_balance()
+            
+            print(Session.shared.user.auto_pay_schedule[Session.shared.currMonth])
+            
+        }
+        alertController.addAction(OKAction)
+        
+        // Create Cancel button
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (action:UIAlertAction!) in
+            print("Cancel button tapped");
+        }
+        alertController.addAction(cancelAction)
+        
+        // Present Dialog message
+        self.present(alertController, animated: true, completion:nil)
+        
     }
     
     @IBOutlet weak var saveButton: UIButton!

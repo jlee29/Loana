@@ -13,6 +13,8 @@ class SignUpInfo2ViewController: UIViewController, UIPickerViewDelegate, UIPicke
     @IBOutlet weak var loanProviderPicker: UIPickerView!
     @IBOutlet weak var loanIDTextField: UITextField!
     
+    @IBOutlet weak var connectLoanButton: UIButton!
+    
     var loanProviderPickerData: [String] = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +27,9 @@ class SignUpInfo2ViewController: UIViewController, UIPickerViewDelegate, UIPicke
         self.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard (_:)))
         self.view.addGestureRecognizer(tapGesture)
+        connectLoanButton.layer.cornerRadius = 22
+        connectLoanButton.layer.borderWidth = 1
+        connectLoanButton.layer.borderColor = UIColor.darkGray.cgColor
     }
     
     override func viewWillDisappear(_ animated: Bool) {

@@ -9,6 +9,7 @@
 import UIKit
 
 class SignUpViewController: UIViewController, UITextFieldDelegate {
+    @IBOutlet weak var signUpButton: UIButton!
     
     @IBOutlet weak var emailTextField: UITextField!
     //MARK: - Properties
@@ -47,6 +48,9 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         emailTextField.delegate = self
         passwordOne.delegate = self
         passwordTwo.delegate = self
+        signUpButton.layer.cornerRadius = 22
+        signUpButton.layer.borderWidth = 1
+        signUpButton.layer.borderColor = UIColor.darkGray.cgColor
         emailTextField.textContentType = UITextContentType.init(rawValue: "")
         passwordOne.textContentType = UITextContentType.init(rawValue: "")
         passwordTwo.textContentType = UITextContentType.init(rawValue: "")
