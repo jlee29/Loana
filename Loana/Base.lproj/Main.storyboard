@@ -455,8 +455,14 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Oyl-a1-OqZ">
                                                         <rect key="frame" x="0.0" y="215.5" width="275" height="97.5"/>
                                                         <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1oQ-Xn-THZ">
+                                                                <rect key="frame" x="116.5" y="0.0" width="42" height="25.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" red="1" green="0.13182058469846847" blue="0.0003364656780094899" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RS4-yz-6Cm">
-                                                                <rect key="frame" x="0.0" y="0.0" width="275" height="43.5"/>
+                                                                <rect key="frame" x="0.0" y="35.5" width="275" height="26"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                                                 <state key="normal" title="Login"/>
                                                                 <connections>
@@ -465,7 +471,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2b-MT-zMz" userLabel="Sign Up">
-                                                                <rect key="frame" x="0.0" y="53.5" width="275" height="44"/>
+                                                                <rect key="frame" x="0.0" y="71.5" width="275" height="26"/>
                                                                 <state key="normal" title="Don't have an account? Join"/>
                                                                 <connections>
                                                                     <segue destination="b2r-wm-C86" kind="show" id="iWf-Uo-fN5"/>
@@ -519,6 +525,7 @@
                     <navigationItem key="navigationItem" id="lvR-Bi-FCe"/>
                     <connections>
                         <outlet property="emailField" destination="Bfa-Ey-SxN" id="1X7-SN-Ffc"/>
+                        <outlet property="errorMessageLabel" destination="1oQ-Xn-THZ" id="C0J-K7-2hw"/>
                         <outlet property="loginButton" destination="RS4-yz-6Cm" id="kb9-F9-GDe"/>
                         <outlet property="mainStack" destination="nj2-DK-dvb" id="2Fb-cs-r6K"/>
                         <outlet property="mainView" destination="b4F-MZ-nDk" id="Znc-3B-llb"/>
@@ -2294,13 +2301,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="rnf-iY-fdE">
-                                <rect key="frame" x="0.0" y="-10" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="-10" width="0.0" height="667"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GU1-61-rqo">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="333.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vqn-BE-OPz">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="333.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -2308,7 +2315,7 @@
                                         </subviews>
                                     </stackView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r0Q-kX-EBw">
-                                        <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
+                                        <rect key="frame" x="0.0" y="333.5" width="0.0" height="333.5"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -2354,7 +2361,7 @@
         <image name="widebox.png" width="1125" height="744"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sn7-c4-Rc5"/>
+        <segue reference="PIR-kr-NNc"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.46856498718261719" green="0.81075203418731689" blue="0.91996705532073975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
