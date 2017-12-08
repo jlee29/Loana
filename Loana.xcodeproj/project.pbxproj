@@ -100,6 +100,7 @@
 		E825CC6D1FD960A700A256F9 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = E825CC6C1FD960A700A256F9 /* Util.swift */; };
 		E89E9A381FDAA9BD00962646 /* hatnew.png in Resources */ = {isa = PBXBuildFile; fileRef = E89E9A361FDAA9BC00962646 /* hatnew.png */; };
 		E89E9A391FDAA9BD00962646 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = E89E9A371FDAA9BD00962646 /* button.png */; };
+		E89E9A3B1FDAADA800962646 /* hatnoloana.png in Resources */ = {isa = PBXBuildFile; fileRef = E89E9A3A1FDAAD9900962646 /* hatnoloana.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -202,6 +203,7 @@
 		E825CC6C1FD960A700A256F9 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		E89E9A361FDAA9BC00962646 /* hatnew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hatnew.png; sourceTree = "<group>"; };
 		E89E9A371FDAA9BD00962646 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		E89E9A3A1FDAAD9900962646 /* hatnoloana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hatnoloana.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -395,6 +397,7 @@
 		D34FAC4C1FCFECB60008A8AF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E89E9A3A1FDAAD9900962646 /* hatnoloana.png */,
 				E89E9A371FDAA9BD00962646 /* button.png */,
 				E89E9A361FDAA9BC00962646 /* hatnew.png */,
 				D3E8CC871FD969DD00D9BDC7 /* coffee.png */,
@@ -558,6 +561,7 @@
 				E8064B491FD8201F003C83DA /* progress_tree_3.png in Resources */,
 				B735301E1FD18999007FF4B4 /* IBR.png in Resources */,
 				E815D50D1FD01136005CB34F /* hat30.png in Resources */,
+				E89E9A3B1FDAADA800962646 /* hatnoloana.png in Resources */,
 				B7F118201FD9695C008E5340 /* autopay.png in Resources */,
 				E8064B481FD8201F003C83DA /* progress_tree_1.png in Resources */,
 				B78391601FD80CC0004FB5AB /* hsbc.png in Resources */,
