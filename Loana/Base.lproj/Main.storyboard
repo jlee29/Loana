@@ -1583,11 +1583,6 @@
                                         <rect key="frame" x="0.0" y="378" width="1350" height="126"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXE-wh-rqm">
-                                                <rect key="frame" x="50" y="20" width="1250" height="86"/>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <state key="normal" title="Use This Plan">
-                                                    <color key="titleColor" red="0.4685649872" green="0.81075203419999997" blue="0.9199670553" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
                                                 <connections>
                                                     <action selector="setPlan:" destination="WFL-Yq-Y6X" eventType="touchUpInside" id="tO7-Ir-gY5"/>
                                                 </connections>
