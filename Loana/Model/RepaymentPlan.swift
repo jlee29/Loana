@@ -10,5 +10,5 @@ import Foundation
 
 struct RepaymentPlan {
     var title:String
-    var description:String
+    var schedule: [Double]
 }

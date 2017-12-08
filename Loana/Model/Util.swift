@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Charts
 
 class Util {
     func update_repayment_balance(){
@@ -92,5 +93,45 @@ class Util {
         default:
             return .monthly
         }
+    }
+    
+    func update_graph(chart: LineChartView, curr_plan: RepaymentPlan, alt_plans: [RepaymentPlan]){
+        
+        
+        let data = LineChartData()
+        data.setDrawValues(false)
+        
+        chart.noDataText = ""
+
+        let currLine = load_entries(plan: curr_plan,start:0)
+        //do curr entry styling
+        data.addDataSet(currLine)
+        
+        
+        let month = Session.shared.currMonth
+        for var plan in alt_plans{
+            let last = plan.schedule.count - 1
+            if last > month{
+                let line = load_entries(plan: plan,start: last)
+                // do line styling
+                data.addDataSet(line)
+            }
+        }
+        
+        chart.data = data
+        
+    }
+    
+    func load_entries(plan: RepaymentPlan, start: Int) -> LineChartDataSet{
+        let arr = plan.schedule
+        var entries = [ChartDataEntry]()
+        let length = arr.count
+        
+        for i in start...(length-1){
+            let val = ChartDataEntry(x: Double(i),y: arr[i])
+            entries.append(val)
+        }
+        let line = LineChartDataSet(values:entries, label: plan.title)
+        return line
     }
 }
