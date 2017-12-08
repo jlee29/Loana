@@ -54,11 +54,11 @@ class Session {
     }
     
     func getProjectedRepaymentPlan(plan: String)->[Double]{
-        if(plan == "Income-Based Repayment"){
+        if(plan == "Income-Based Repayment" || plan == "IBR"){
             return getIncomeBasedRepayment()
-        }else if(plan == "Income-Contingent Repayment"){
+        }else if(plan == "Income-Contingent Repayment" || plan == "ICR"){
             return getIncomeBasedRepayment()
-        }else if(plan == "Pay As You Earn"){
+        }else if(plan == "Pay As You Earn" || plan == "PAYE"){
             return getPayAsYouEarnRepayment()
         }else if(plan == "Standard"){
             return getStandardRepayment()
