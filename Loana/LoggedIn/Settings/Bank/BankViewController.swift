@@ -17,7 +17,7 @@ class BankViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     var bankNames = ["Wells Fargo", "Wells Fargo"]
     var linkedAccounts = ["Peter Lu's Checking", "Peter Lu's Savings"]
-    var linkedAccountTexts = ["Checking xxx5067", "Savings xxx5067"]
+    var linkedAccountTexts = ["xxx5067", "xxx5067"]
 
     @IBOutlet weak var bankCollection: UICollectionView!
     
