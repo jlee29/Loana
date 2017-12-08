@@ -142,8 +142,8 @@
 		B7A264AE1FBF996400893AFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7A264B11FBF996400893AFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7A264B31FBF996400893AFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B7C2FCCE1FDA8EFD0088DDAE /* loginProfile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loginProfile.png; path = Resources/loginProfile.png; sourceTree = "<group>"; };
-		B7C2FCCF1FDA8F080088DDAE /* loginLock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loginLock.png; path = Resources/loginLock.png; sourceTree = "<group>"; };
+		B7C2FCCE1FDA8EFD0088DDAE /* loginProfile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginProfile.png; sourceTree = "<group>"; };
+		B7C2FCCF1FDA8F080088DDAE /* loginLock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginLock.png; sourceTree = "<group>"; };
 		B7E9B91E1FCF6E2300234840 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		B7E9B9201FCF6EF000234840 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B7E9B9221FCF6FF000234840 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
@@ -319,8 +319,6 @@
 				B766CC831FD0FCEE00495638 /* LoggedOut */,
 				B766CC801FD0FC9100495638 /* Meta Files */,
 				B7A264A81FBF996400893AFE /* Main.storyboard */,
-				B7C2FCCF1FDA8F080088DDAE /* loginLock.png */,
-				B7C2FCCE1FDA8EFD0088DDAE /* loginProfile.png */,
 				B766CC811FD0FCBA00495638 /* LoggedIn */,
 				B7E9B9281FCF750B00234840 /* Model */,
 				B7A264AE1FBF996400893AFE /* Assets.xcassets */,
@@ -443,6 +441,8 @@
 				E8064B3F1FD8201D003C83DA /* progress_tree_6.png */,
 				B73530191FD18998007FF4B4 /* standard.png */,
 				B774C83B1FCFFA5E009DFC76 /* wallet.png */,
+				B7C2FCCF1FDA8F080088DDAE /* loginLock.png */,
+				B7C2FCCE1FDA8EFD0088DDAE /* loginProfile.png */,
 				B783915E1FD80CBC004FB5AB /* wellsFargo.png */,
 				E823DB861FD14D7800A427D9 /* widebox.png */,
 			);
