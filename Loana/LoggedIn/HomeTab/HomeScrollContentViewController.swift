@@ -61,7 +61,7 @@ class HomeContentViewController: UIViewController, UICollectionViewDelegate, UIC
             return cell
         }
         if (indexPath.row == 1) {
-            let cell = mainView.dequeueReusableCell(withReuseIdentifier: "coffee", for: indexPath) as! CoffeeCollectionViewCell
+            let cell = mainView.dequeueReusableCell(withReuseIdentifier: "coffee", for: indexPath) 
             return cell
         }
         if (indexPath.row == 4) {
