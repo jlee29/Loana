@@ -38,7 +38,8 @@ class Session {
             currPlan: "Standard",
             repaymentHistory: Array(repeating: 0.0,count: 60),
             projectedRepaymentPlan: Array(repeating: 0.0,count: 240),
-            bankAccount: BankAccount(bankName: "Wells Fargo", accountName: "Peter Lu's Checking", number: "xxx4578"))
+            bankAccount: BankAccount(bankName: "Wells Fargo", accountName: "Peter Lu's Checking", number: "xxx4578"),
+            bankAccIndex: 0)
         setPaidHistory()
         self.user.projectedRepaymentPlan = getProjectedRepaymentPlan(plan: self.user.currPlan)
     }
