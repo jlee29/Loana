@@ -26,6 +26,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
+        self.navigationController?.navigationBar.isTranslucent = false
+        
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        
+        self.navigationController?.navigationBar.shadowImage = UIImage()
         emailField.delegate = self
         passwordField.delegate = self
         emailField.layer.cornerRadius = 20
@@ -90,7 +95,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 //            errorMessageLabel.text = "Email or password incorrect"
             return false
         }
-        return false
+        return true
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
