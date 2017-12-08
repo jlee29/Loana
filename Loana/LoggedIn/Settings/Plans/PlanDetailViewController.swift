@@ -105,16 +105,8 @@ class PlanDetailViewController: UIViewController {
         totalMonthLabel.text = String(Session.shared.getMonthsLeft(plan:  short2Long(testString!)))
         titleLabel.text = short2Long(_:  testString!)
         useButton.layer.cornerRadius = 10
-        //        if(testString == "IBR" || testString == "PAYE" || testString == "ICR" ){
-        //            graphImage.image = UIImage(named: "IBR.png")
-        //        } else if(testString == "Graduated" || testString == "Extended") {
-        //            graphImage.image = UIImage(named: "graduated.png")
-        //        } else {
-        //            graphImage.image = UIImage(named: "standard.png")
-        //        }
         
         var planTitle = ""
-        print(testString)
         if testString == "IBR"{
             planTitle = short2Long("IBR")
         } else if testString == "ICR"{

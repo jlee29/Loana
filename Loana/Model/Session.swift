@@ -166,11 +166,11 @@ class Session {
     
     //hard coded amounts courtesy of Jaime
     func getTotalLoanCost(plan: String)->Double{
-        if(plan == "Income-Based Repayment"){
+        if(plan == "Income-Based Repayment" || plan == "IBR"){
             return 22877.0
-        }else if(plan == "Income-Contingent Repayment"){
+        }else if(plan == "Income-Contingent Repayment" || plan == "ICR"){
             return 22877.0
-        }else if(plan == "Pay As You Earn"){
+        }else if(plan == "Pay As You Earn" || plan=="PAYE"){
             return 27414.0
         }else if(plan == "Standard"){
             return 27619.0
