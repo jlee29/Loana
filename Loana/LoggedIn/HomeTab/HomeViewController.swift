@@ -29,7 +29,9 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
+        let topImg = UIImageView(image: UIImage(named: "hatnew.png"))
+        topImg.contentMode = .scaleAspectFit
+        self.navigationItem.titleView = topImg
         self.navigationController?.navigationBar.isTranslucent = false
         
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)

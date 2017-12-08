@@ -1017,7 +1017,7 @@
                     <tabBarItem key="tabBarItem" title="Home" image="house.png" id="ghC-XH-fCQ"/>
                     <navigationItem key="navigationItem" id="roR-HK-cqF">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="icons8-menu-30.png" id="Qj8-a9-T9m">
-                            <color key="tintColor" red="0.47450980390000003" green="0.81176470590000005" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="showMenu:" destination="0HL-Bm-obR" id="5SR-dq-K2Q"/>
                             </connections>
@@ -1045,7 +1045,7 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Vkj-hV-NRc" customClass="MainPageViewController" customModule="Loana" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vmc-Sc-fHI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4431" y="926"/>
+            <point key="canvasLocation" x="4429" y="854"/>
         </scene>
         <!--PlansViewController-->
         <scene sceneID="0ZF-sd-2Xr">

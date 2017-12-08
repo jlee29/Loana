@@ -92,6 +92,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 Session.shared.loggedIn = true
                 return true
             }
+            let alert = UIAlertController(title: "Invalid Credentials", message: "Couldn't find an account with that info.", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
 //            errorMessageLabel.text = "Email or password incorrect"
             return false
         }
