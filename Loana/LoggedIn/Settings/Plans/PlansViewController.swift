@@ -37,7 +37,8 @@ class PlansViewController: UIViewController, UICollectionViewDelegate, UICollect
     @IBOutlet weak var plansCollectionView: UICollectionView!
     
     override func viewDidLoad() {
-        
+        currentPlanLabel.font = UIFont(name: "Avenir", size: 25)
+        currentPlanLabelOnCard.font = UIFont(name: "Avenir", size: 15)
         super.viewDidLoad()
         self.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
         plansCollectionView.delegate = self

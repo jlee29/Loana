@@ -20,12 +20,13 @@ class LinkAccountViewController: UIViewController, UICollectionViewDelegate, UIC
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        mainLabel.font = UIFont(name: "Avenir", size: 30)
 
         bankCollection.delegate = self
         bankCollection.dataSource = self
         bankCollection.backgroundColor = .clear
         bankCollection.reloadData()
+        
+        mainLabel.font = UIFont(name: "Avenir", size: 25)
         // Do any additional setup after loading the view.
     }
 

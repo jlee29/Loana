@@ -27,7 +27,7 @@ class HomeViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let topImg = UIImageView(image: UIImage(named: "hatnew.png"))
+        let topImg = UIImageView(image: UIImage(named: "hatnew2.png"))
         topImg.contentMode = .scaleAspectFit
         self.navigationItem.titleView = topImg
         self.navigationController?.navigationBar.isTranslucent = false
