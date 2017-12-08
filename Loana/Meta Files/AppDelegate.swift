@@ -25,6 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITabBarItem.appearance().setTitleTextAttributes([
             NSAttributedStringKey.font: UIFont(name: "Avenir", size: 10)!
             ], for: .normal)
+        UINavigationBar.appearance().barTintColor = UIColor(red: 121.0/255.0, green: 207.0/255.0, blue: 234.0/255.0, alpha: 1.0)
         // Override point for customization after application launch.
         return true
     }

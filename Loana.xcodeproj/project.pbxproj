@@ -43,6 +43,8 @@
 		B7A264AD1FBF996400893AFE /* Loana.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B7A264AB1FBF996400893AFE /* Loana.xcdatamodeld */; };
 		B7A264AF1FBF996400893AFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7A264AE1FBF996400893AFE /* Assets.xcassets */; };
 		B7A264B21FBF996400893AFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7A264B01FBF996400893AFE /* LaunchScreen.storyboard */; };
+		B7C2FCD01FDA8F1A0088DDAE /* loginProfile.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C2FCCE1FDA8EFD0088DDAE /* loginProfile.png */; };
+		B7C2FCD11FDA8F1A0088DDAE /* loginLock.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C2FCCF1FDA8F080088DDAE /* loginLock.png */; };
 		B7E9B91F1FCF6E2300234840 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9B91E1FCF6E2300234840 /* TabBarViewController.swift */; };
 		B7E9B9211FCF6EF000234840 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9B9201FCF6EF000234840 /* User.swift */; };
 		B7E9B9231FCF6FF000234840 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9B9221FCF6FF000234840 /* Session.swift */; };
@@ -140,6 +142,8 @@
 		B7A264AE1FBF996400893AFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7A264B11FBF996400893AFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7A264B31FBF996400893AFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7C2FCCE1FDA8EFD0088DDAE /* loginProfile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loginProfile.png; path = Resources/loginProfile.png; sourceTree = "<group>"; };
+		B7C2FCCF1FDA8F080088DDAE /* loginLock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = loginLock.png; path = Resources/loginLock.png; sourceTree = "<group>"; };
 		B7E9B91E1FCF6E2300234840 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		B7E9B9201FCF6EF000234840 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B7E9B9221FCF6FF000234840 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
@@ -315,6 +319,8 @@
 				B766CC831FD0FCEE00495638 /* LoggedOut */,
 				B766CC801FD0FC9100495638 /* Meta Files */,
 				B7A264A81FBF996400893AFE /* Main.storyboard */,
+				B7C2FCCF1FDA8F080088DDAE /* loginLock.png */,
+				B7C2FCCE1FDA8EFD0088DDAE /* loginProfile.png */,
 				B766CC811FD0FCBA00495638 /* LoggedIn */,
 				B7E9B9281FCF750B00234840 /* Model */,
 				B7A264AE1FBF996400893AFE /* Assets.xcassets */,
@@ -534,6 +540,7 @@
 				B7F62D571FD7E91F0010CC7B /* icons8-settings-30.png in Resources */,
 				B783916B1FD81241004FB5AB /* plus.png in Resources */,
 				E815D5111FD01366005CB34F /* icons in Resources */,
+				B7C2FCD11FDA8F1A0088DDAE /* loginLock.png in Resources */,
 				B7F118271FD96DD1008E5340 /* bankPic.png in Resources */,
 				E8064B461FD8201F003C83DA /* progress_tree_2.png in Resources */,
 				B7A264AF1FBF996400893AFE /* Assets.xcassets in Resources */,
@@ -551,6 +558,7 @@
 				D3E8CC8A1FD969DE00D9BDC7 /* shoes.png in Resources */,
 				B774C83E1FCFFA5E009DFC76 /* wallet.png in Resources */,
 				E823DB821FD14A6600A427D9 /* lock-open.png in Resources */,
+				B7C2FCD01FDA8F1A0088DDAE /* loginProfile.png in Resources */,
 				B7F1181F1FD9695C008E5340 /* profile.png in Resources */,
 				B7F62D521FD7E8180010CC7B /* hamburger.png in Resources */,
 				D3E8CC8C1FD969DE00D9BDC7 /* headphones.png in Resources */,

@@ -28,6 +28,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         self.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
         emailField.delegate = self
         passwordField.delegate = self
+        emailField.layer.cornerRadius = 20
+        emailField.layer.borderWidth = 1
+        passwordField.layer.cornerRadius = 20
+        loginButton.layer.cornerRadius = 22
+        passwordField.layer.borderWidth = 1
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard (_:)))
         self.view.addGestureRecognizer(tapGesture)
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
@@ -41,6 +46,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         emailField.textContentType = UITextContentType.init(rawValue: "")
         passwordField.textContentType = UITextContentType.init(rawValue: "")
         mainView.layer.cornerRadius = 10
+        
+        if let attributedTitle = loginButton.attributedTitle(for: .normal) {
+            let formattedString = NSMutableAttributedString()
+            formattedString.bold(
+                attributedTitle.string)
+            loginButton.setAttributedTitle(formattedString, for: .normal)
+        }
     }
     
     @objc func dismissKeyboard (_ sender: UITapGestureRecognizer) {
@@ -73,16 +85,21 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
-    
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+extension NSMutableAttributedString {
+    @discardableResult func bold(_ text: String) -> NSMutableAttributedString {
+        let attrs: [NSAttributedStringKey: Any] = [.font: UIFont(name: "AvenirNext-Medium", size: 12)!]
+        let boldString = NSMutableAttributedString(string:text, attributes: attrs)
+        append(boldString)
+        
+        return self
     }
-    */
-
+    
+    @discardableResult func normal(_ text: String) -> NSMutableAttributedString {
+        let normal = NSAttributedString(string: text)
+        append(normal)
+        
+        return self
+    }
 }
