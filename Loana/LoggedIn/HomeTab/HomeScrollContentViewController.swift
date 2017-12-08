@@ -34,6 +34,10 @@ class HomeContentViewController: UIViewController, UICollectionViewDelegate, UIC
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        mainView.reloadData()
+    }
+    
 //    override func viewWillAppear(_ animated: Bool) {
 //        welcomeLabel.text = String(format: "$%.02f", Session.shared.user.auto_pay_installment)
 //        switch Session.shared.user.intervalPlan {
@@ -65,24 +69,34 @@ class HomeContentViewController: UIViewController, UICollectionViewDelegate, UIC
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if (indexPath.row == 0) {
             let cell = mainView.dequeueReusableCell(withReuseIdentifier: "welcome", for: indexPath) as! WelcomeCollectionViewCell
-            cell.welcomeText.text = String(format: "$%.02f", Session.shared.user.auto_pay_installment)
+            cell.welcomeText.text = "Welcome back \(Session.shared.user.name)!"
+            cell.welcomeText.font = UIFont(name: "Avenir", size: 30)
+            cell.welcomeText.adjustsFontSizeToFitWidth = true
+            cell.welcomeText.textAlignment = .center
+            cell.moneyText.text = String(format: "$%.02f", Session.shared.user.auto_pay_installment)
+            cell.moneyText.font = UIFont(name: "Avenir", size: 60)
+            cell.moneyText.textAlignment = .center
+            cell.intervalText.textColor = UIColor.gray
+            cell.intervalText.font = UIFont(name: "Avenir", size: 12)
+            cell.intervalText.textAlignment = .center
             switch Session.shared.user.intervalPlan {
             case .daily:
-                cell.intervalText.text = "For Today"
+                cell.intervalText.text = "Today"
             case .weekly:
-                cell.intervalText.text = "For This Week"
+                cell.intervalText.text = "This Week"
             case .biweekly:
-                cell.intervalText.text = "For These Two Weeks"
+                cell.intervalText.text = "These Two Weeks"
             default:
-                cell.intervalText.text = "For This Month"
+                cell.intervalText.text = "This Month"
             }
-            let proPicImage = UIImage(named: "shoes.png")
+            let proPicImage = UIImage(named: "peterprofile.png")
             cell.propic.contentMode = .scaleAspectFit
             cell.propic.image = proPicImage
             return cell
         }
         if (indexPath.row == 1) {
-            let cell = mainView.dequeueReusableCell(withReuseIdentifier: "coffee", for: indexPath)
+            let cell = mainView.dequeueReusableCell(withReuseIdentifier: "coffee", for: indexPath) as! ShoesCollectionViewCell
+            cell.imageView.image = UIImage(named: "shoes.png")
             return cell
         }
         if (indexPath.row == 4) {

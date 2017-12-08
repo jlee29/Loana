@@ -114,6 +114,7 @@ class PlanDetailViewController: UIViewController {
         //        }
         
         var planTitle = ""
+        print(testString)
         if testString == "IBR"{
             planTitle = short2Long("IBR")
         } else if testString == "ICR"{
