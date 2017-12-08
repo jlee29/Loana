@@ -127,14 +127,40 @@ class HomeContentViewController: UIViewController, UICollectionViewDelegate, UIC
                 price = 200.0
                 interval = "monthly"
             }
-            let times = Int(round(Session.shared.user.auto_pay_installment / price))
+            var times = Int(round(Session.shared.user.auto_pay_installment / price))
             var object = singleObject
+            if times < 1{
+                if Session.shared.user.intervalPlan == .weekly{
+                    imageFileName = "coffee.png"
+                    singleObject = "coffee"
+                    multiObject = "coffees"
+                    price = 7.0
+                } else if Session.shared.user.intervalPlan == .biweekly{
+                    imageFileName = "shoes.png"
+                    singleObject = "pair of shoes"
+                    multiObject = "pairs of shoes"
+                    price = 50.0
+                    interval = "weekly"
+                } else if Session.shared.user.intervalPlan == .monthly{
+                    imageFileName = "tickets.png"
+                    singleObject = "concert ticket"
+                    multiObject = "concert tickets"
+                    price = 100.0
+                } else {
+                    cell.timesLabel.numberOfLines = 0
+                    cell.timesLabel.text = "Your " + interval + " payment is less than 1 coffee!"
+                    cell.imageView.image = UIImage(named: imageFileName)
+                    return cell
+                }
+                times = Int(round(Session.shared.user.auto_pay_installment / price))
+                object = singleObject
+            }
             if times > 1{
                 object = multiObject
             }
             var text = "Your " + interval
-            text = text + " payment is equivalent to \n"
-            text = text + String(times) + object
+            text = text + " payment is roughly equivalent to \n"
+            text = text + String(times) + " " + object
             cell.timesLabel.numberOfLines = 0
             cell.timesLabel.text = text
             cell.imageView.image = UIImage(named: imageFileName)
