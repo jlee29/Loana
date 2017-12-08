@@ -95,7 +95,7 @@ class HomeContentViewController: UIViewController, UICollectionViewDelegate, UIC
             cell.propic.image = proPicImage
             return cell
         }
-        if (indexPath.row == 1) {
+        if (indexPath.row == 2) {
             let cell = mainView.dequeueReusableCell(withReuseIdentifier: "coffee", for: indexPath) as! ShoesCollectionViewCell
             var imageFileName = ""
             var singleObject = ""
@@ -154,7 +154,7 @@ class HomeContentViewController: UIViewController, UICollectionViewDelegate, UIC
             return cell
         } else {
             let cell = mainView.dequeueReusableCell(withReuseIdentifier: "graph", for: indexPath) as! GraphCollectionViewCell
-            if indexPath.row == 2 {
+            if indexPath.row == 1 {
                 let homeChart2 = cell.mainView
                 
                 util.updateGraph2(chart: homeChart2 as! LineChartView)

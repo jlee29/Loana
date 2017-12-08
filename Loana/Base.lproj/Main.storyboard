@@ -779,13 +779,13 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="125" height="32.5"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bankPic.png" translatesAutoresizingMaskIntoConstraints="NO" id="bzf-Pv-tHm">
-                                                                <rect key="frame" x="0.0" y="0.0" width="32" height="32.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="31.5" height="32.5"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="bzf-Pv-tHm" secondAttribute="height" multiplier="1:1" id="444-n8-DTv"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3h-JC-aVj">
-                                                                <rect key="frame" x="32" y="0.0" width="93" height="32.5"/>
+                                                                <rect key="frame" x="31.5" y="0.0" width="93.5" height="32.5"/>
                                                                 <state key="normal" title="Bank">
                                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </state>
@@ -851,13 +851,13 @@
                                                         <rect key="frame" x="0.0" y="-0.5" width="125" height="33"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plansList.png" translatesAutoresizingMaskIntoConstraints="NO" id="5oG-V5-DuM">
-                                                                <rect key="frame" x="0.0" y="0.0" width="32" height="33"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="32.5" height="33"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="5oG-V5-DuM" secondAttribute="height" multiplier="1:1" id="FGY-iE-v8Q"/>
                                                                 </constraints>
                                                             </imageView>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3L-sb-F6f">
-                                                                <rect key="frame" x="32" y="0.0" width="93" height="33"/>
+                                                                <rect key="frame" x="32.5" y="0.0" width="92.5" height="33"/>
                                                                 <state key="normal" title="Plans">
                                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </state>
