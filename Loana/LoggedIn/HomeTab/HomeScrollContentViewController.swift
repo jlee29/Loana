@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import Charts
 
 class HomeContentViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     let currMonth = Session.shared.currMonth
     let currDay = Session.shared.currDay
+    
+    let util = Util()
     
     @IBOutlet weak var mainView: UICollectionView!
     
@@ -83,11 +86,28 @@ class HomeContentViewController: UIViewController, UICollectionViewDelegate, UIC
             return cell
         } else {
             let cell = mainView.dequeueReusableCell(withReuseIdentifier: "graph", for: indexPath) as! GraphCollectionViewCell
-//            if indexPath.row == 2 {
-//                cell.mainView =
-//            } else {
-//
-//            }
+            if indexPath.row == 2 {
+                let homeChart1 = cell.mainView
+                
+                let plans = ["Standard","Pay As You Earn","Graduated"]
+                
+                let pastSchedule = Session.shared.user.repaymentHistory
+                let past = RepaymentPlan(title: "Repayment History",schedule: pastSchedule)
+                
+                var planArr = [RepaymentPlan]()
+                
+                for planTitle in plans{
+                    let longTermSchedule = Session.shared.getProjectedRepaymentPlan(plan: planTitle)
+                    planArr.append(RepaymentPlan(title: planTitle, schedule:longTermSchedule))
+                }
+                
+                util.update_graph(chart: homeChart1 as! LineChartView, curr_plan: past, alt_plans: planArr)
+                
+            } else {
+                let homeChart2 = cell.mainView
+                
+                util.updateGraph2(chart: homeChart2 as! LineChartView)
+            }
             return cell
         }
     }
