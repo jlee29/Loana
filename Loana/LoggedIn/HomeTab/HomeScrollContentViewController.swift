@@ -10,6 +10,10 @@ import UIKit
 import Charts
 
 class HomeContentViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    @IBOutlet weak var totalMonthsLabel: UILabel!
+    @IBOutlet weak var totalMonthsFixedLabel: UILabel!
+    @IBOutlet weak var remainingLoanCostLabel: UILabel!
+    @IBOutlet weak var remainingLoanCostFixedLabel: UILabel!
     let currMonth = Session.shared.currMonth
     let currDay = Session.shared.currDay
     
