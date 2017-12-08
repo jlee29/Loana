@@ -19,6 +19,10 @@ class AutopayViewController: UIViewController, UIPickerViewDelegate, UIPickerVie
         self.planPicker.delegate = self
         self.planPicker.dataSource = self
         let enumStr = util.intervalEnumToString(interval: Session.shared.user.intervalPlan)
+        
+        saveButton.layer.cornerRadius = 22
+        saveButton.layer.borderWidth = 1
+        
         currentPlanLabel.font = UIFont(name: "Avenir", size: 30)
         currentPlanLabel.text = "Your current plan is: \(enumStr)"
         for (index, element) in planPickerData.enumerated() {

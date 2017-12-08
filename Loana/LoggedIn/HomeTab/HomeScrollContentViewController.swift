@@ -142,6 +142,7 @@ class HomeContentViewController: UIViewController, UICollectionViewDelegate, UIC
         }
         if (indexPath.row == 4) {
             let cell = mainView.dequeueReusableCell(withReuseIdentifier: "stats", for: indexPath) as! StatsCollectionViewCell
+            cell.outerView.layer.cornerRadius = 10
             cell.adjustedIncomeFixedLabel.text = "Adjusted Income:"
             cell.adjustedIncomeLabel.text = String(Session.shared.user.age)
             cell.interestRateFixedLabel.text = "Interest Rate:"

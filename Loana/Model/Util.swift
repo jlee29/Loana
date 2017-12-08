@@ -123,12 +123,18 @@ class Util {
         continuationLine.lineDashLengths = [5,2]
         data.addDataSet(continuationLine)
         
-//        let midLine = LineChartDataSet(values: middleLine, label:"Today")
-//        midLine.colors = [NSUIColor.green]
-//        midLine.circleRadius = 0
-//        midLine.lineWidth = 2
-//        midLine.drawValuesEnabled = false
-//        data.addDataSet(midline)
+        var middleLine = [ChartDataEntry]()
+        let point1 = ChartDataEntry(x: Double(month), y: 0)
+        let point2 = ChartDataEntry(x: Double(month), y: 32000)
+        middleLine.append(point1)
+        middleLine.append(point2)
+        
+        let midLine = LineChartDataSet(values: middleLine, label:"Current Month")
+        midLine.colors = [NSUIColor.green]
+        midLine.circleRadius = 0
+        midLine.lineWidth = 2
+        midLine.drawValuesEnabled = false
+        data.addDataSet(midLine)
         
         
         

@@ -95,6 +95,9 @@ class PlanDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
+        self.useButton.titleLabel?.textColor = .white
+        self.useButton.layer.cornerRadius = 22
+        self.useButton.layer.borderWidth = 1
     }
     
     override func viewWillAppear(_ animated: Bool) {

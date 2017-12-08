@@ -13,9 +13,11 @@ class BankViewController: UIViewController, UICollectionViewDelegate, UICollecti
     @IBOutlet weak var currBankLabel1: UILabel!
     @IBOutlet weak var currBankLabel2: UILabel!
     
+    @IBOutlet weak var titleLabel: UILabel!
+    
     var bankNames = ["Wells Fargo", "Wells Fargo"]
     var linkedAccounts = ["Peter Lu's Checking", "Peter Lu's Savings"]
-    var linkedAccountTexts = ["Checking xxx5067", "Savings xxx5067"]
+    var linkedAccountTexts = ["xxx5067", "xxx5067"]
 
     @IBOutlet weak var bankCollection: UICollectionView!
     
@@ -29,6 +31,8 @@ class BankViewController: UIViewController, UICollectionViewDelegate, UICollecti
         bankCollection.dataSource = self
         bankCollection.backgroundColor = .clear
         bankCollection.reloadData()
+        
+        titleLabel.font = UIFont(name: "Avenir", size: 25)
         // Do any additional setup after loading the view.
     }
     
