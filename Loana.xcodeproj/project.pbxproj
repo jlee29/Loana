@@ -46,6 +46,8 @@
 		B7C2FCD01FDA8F1A0088DDAE /* loginProfile.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C2FCCE1FDA8EFD0088DDAE /* loginProfile.png */; };
 		B7C2FCD11FDA8F1A0088DDAE /* loginLock.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C2FCCF1FDA8F080088DDAE /* loginLock.png */; };
 		B7C2FCD31FDAB3EE0088DDAE /* bigBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = B7C2FCD21FDAB3800088DDAE /* bigBackground.png */; };
+		B7C2FCD51FDAF9770088DDAE /* ShoesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7C2FCD41FDAF9770088DDAE /* ShoesCollectionViewCell.swift */; };
+		B7DC9BB01FDAFE0700D70C25 /* peterprofile.png in Resources */ = {isa = PBXBuildFile; fileRef = E89E9A3C1FDAE45700962646 /* peterprofile.png */; };
 		B7E9B91F1FCF6E2300234840 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9B91E1FCF6E2300234840 /* TabBarViewController.swift */; };
 		B7E9B9211FCF6EF000234840 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9B9201FCF6EF000234840 /* User.swift */; };
 		B7E9B9231FCF6FF000234840 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9B9221FCF6FF000234840 /* Session.swift */; };
@@ -72,7 +74,6 @@
 		D3E8CC8C1FD969DE00D9BDC7 /* headphones.png in Resources */ = {isa = PBXBuildFile; fileRef = D3E8CC881FD969DD00D9BDC7 /* headphones.png */; };
 		D3F665051FDADA1C00782CA7 /* WelcomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F665041FDADA1C00782CA7 /* WelcomeCollectionViewCell.swift */; };
 		D3F665071FDADA8F00782CA7 /* GraphCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F665061FDADA8F00782CA7 /* GraphCollectionViewCell.swift */; };
-		D3F6650D1FDADB3A00782CA7 /* CoffeeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F6650C1FDADB3A00782CA7 /* CoffeeCollectionViewCell.swift */; };
 		D3F6650F1FDAE02D00782CA7 /* StatsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F6650E1FDAE02D00782CA7 /* StatsCollectionViewCell.swift */; };
 		D64B813745412D65661C802B /* Pods_Loana.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A876C0EE2993CA6739387610 /* Pods_Loana.framework */; };
 		E8064B3E1FD7FC8A003C83DA /* Graph1Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8064B3D1FD7FC8A003C83DA /* Graph1Controller.swift */; };
@@ -154,6 +155,7 @@
 		B7C2FCCE1FDA8EFD0088DDAE /* loginProfile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginProfile.png; sourceTree = "<group>"; };
 		B7C2FCCF1FDA8F080088DDAE /* loginLock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginLock.png; sourceTree = "<group>"; };
 		B7C2FCD21FDAB3800088DDAE /* bigBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bigBackground.png; sourceTree = "<group>"; };
+		B7C2FCD41FDAF9770088DDAE /* ShoesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoesCollectionViewCell.swift; sourceTree = "<group>"; };
 		B7E9B91E1FCF6E2300234840 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		B7E9B9201FCF6EF000234840 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B7E9B9221FCF6FF000234840 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
@@ -182,8 +184,7 @@
 		D3E8CC881FD969DD00D9BDC7 /* headphones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = headphones.png; sourceTree = "<group>"; };
 		D3F665041FDADA1C00782CA7 /* WelcomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		D3F665061FDADA8F00782CA7 /* GraphCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphCollectionViewCell.swift; sourceTree = "<group>"; };
-		D3F6650C1FDADB3A00782CA7 /* CoffeeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeCollectionViewCell.swift; sourceTree = "<group>"; };
-		D3F6650E1FDAE02D00782CA7 /* StatsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StatsCollectionViewCell.swift; path = LoggedIn/HomeTab/StatsCollectionViewCell.swift; sourceTree = "<group>"; };
+		D3F6650E1FDAE02D00782CA7 /* StatsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCollectionViewCell.swift; sourceTree = "<group>"; };
 		E8064B3D1FD7FC8A003C83DA /* Graph1Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph1Controller.swift; sourceTree = "<group>"; };
 		E8064B3F1FD8201D003C83DA /* progress_tree_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress_tree_6.png; sourceTree = "<group>"; };
 		E8064B401FD8201E003C83DA /* progress_tree_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = progress_tree_2.png; sourceTree = "<group>"; };
@@ -277,9 +278,10 @@
 				B766CC781FCFFEA600495638 /* HomeViewController.swift */,
 				D3F665041FDADA1C00782CA7 /* WelcomeCollectionViewCell.swift */,
 				D3F665061FDADA8F00782CA7 /* GraphCollectionViewCell.swift */,
+				D3F6650E1FDAE02D00782CA7 /* StatsCollectionViewCell.swift */,
 				D384E5751FDAC7A50070DBDC /* HomeScrollContentViewController.swift */,
 				E825CC6A1FD9572800A256F9 /* ManualPayController.swift */,
-				D3F6650C1FDADB3A00782CA7 /* CoffeeCollectionViewCell.swift */,
+				B7C2FCD41FDAF9770088DDAE /* ShoesCollectionViewCell.swift */,
 			);
 			path = HomeTab;
 			sourceTree = "<group>";
@@ -342,7 +344,6 @@
 				B766CC831FD0FCEE00495638 /* LoggedOut */,
 				B766CC801FD0FC9100495638 /* Meta Files */,
 				B7A264A81FBF996400893AFE /* Main.storyboard */,
-				D3F6650E1FDAE02D00782CA7 /* StatsCollectionViewCell.swift */,
 				B766CC811FD0FCBA00495638 /* LoggedIn */,
 				B7E9B9281FCF750B00234840 /* Model */,
 				B7A264AE1FBF996400893AFE /* Assets.xcassets */,
@@ -579,6 +580,7 @@
 				E823DB881FD14D7800A427D9 /* box.png in Resources */,
 				B783916A1FD81241004FB5AB /* forward.png in Resources */,
 				B7F62D581FD7E91F0010CC7B /* icons8-menu-30.png in Resources */,
+				B7DC9BB01FDAFE0700D70C25 /* peterprofile.png in Resources */,
 				E8064B491FD8201F003C83DA /* progress_tree_3.png in Resources */,
 				B735301E1FD18999007FF4B4 /* IBR.png in Resources */,
 				E815D50D1FD01136005CB34F /* hat30.png in Resources */,
@@ -699,6 +701,7 @@
 				B7A264A51FBF996400893AFE /* AppDelegate.swift in Sources */,
 				B766CC7D1FD0131200495638 /* NavigationViewController.swift in Sources */,
 				E815D4F31FCFE1C1005CB34F /* RepaymentPlan.swift in Sources */,
+				B7C2FCD51FDAF9770088DDAE /* ShoesCollectionViewCell.swift in Sources */,
 				D3F665071FDADA8F00782CA7 /* GraphCollectionViewCell.swift in Sources */,
 				B7E9B9251FCF710C00234840 /* LoanFinder.swift in Sources */,
 				E8064B4C1FD82370003C83DA /* TreeController.swift in Sources */,
@@ -711,7 +714,6 @@
 				B7A264AD1FBF996400893AFE /* Loana.xcdatamodeld in Sources */,
 				E825CC6D1FD960A700A256F9 /* Util.swift in Sources */,
 				B7780C221FCFB67A0093A2C9 /* PlansViewController.swift in Sources */,
-				D3F6650D1FDADB3A00782CA7 /* CoffeeCollectionViewCell.swift in Sources */,
 				D3F6650F1FDAE02D00782CA7 /* StatsCollectionViewCell.swift in Sources */,
 				B766CC7B1FD00C0400495638 /* NavigationBar.swift in Sources */,
 			);

@@ -980,6 +980,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="fJ8-Ih-ZCJ">
+                                <rect key="frame" x="0.0" y="20" width="320" height="484"/>
+                            </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="evt-9q-ZUE">
                                 <rect key="frame" x="0.0" y="20" width="320" height="484"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Kw1-gy-wJ0">
@@ -1000,36 +1003,36 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="374" height="258"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Laj-ed-Gag">
-                                                            <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="300" height="94"/>
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AAO-xP-9mx">
-                                                                    <rect key="frame" x="0.0" y="32" width="40" height="40"/>
+                                                                    <rect key="frame" x="0.0" y="27" width="40" height="40"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="40" id="ali-2R-5ea"/>
                                                                         <constraint firstAttribute="width" secondItem="AAO-xP-9mx" secondAttribute="height" multiplier="1:1" id="yY4-bQ-E4C"/>
                                                                     </constraints>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="soP-cq-9g2">
-                                                                    <rect key="frame" x="40" y="42" width="280" height="20.5"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
+                                                                    <rect key="frame" x="40" y="13" width="260" height="68.5"/>
+                                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="50"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="9Y9-d9-aLY">
-                                                            <rect key="frame" x="0.0" y="104" width="320" height="104"/>
+                                                            <rect key="frame" x="0.0" y="94" width="300" height="94"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXO-cV-RoE">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="83.5"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="70.5"/>
+                                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfU-NQ-zV1">
-                                                                    <rect key="frame" x="0.0" y="83.5" width="320" height="20.5"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                    <nil key="textColor"/>
+                                                                    <rect key="frame" x="0.0" y="70.5" width="300" height="23.5"/>
+                                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
@@ -1040,20 +1043,19 @@
                                                         </stackView>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstItem="Laj-ed-Gag" firstAttribute="leading" secondItem="qOo-84-NgR" secondAttribute="leading" id="290-4h-Vbd"/>
-                                                        <constraint firstAttribute="trailing" secondItem="Laj-ed-Gag" secondAttribute="trailing" id="Q5E-xo-ced"/>
-                                                        <constraint firstItem="Laj-ed-Gag" firstAttribute="top" secondItem="qOo-84-NgR" secondAttribute="top" id="SXP-0V-vOr"/>
-                                                        <constraint firstItem="9Y9-d9-aLY" firstAttribute="width" secondItem="Laj-ed-Gag" secondAttribute="width" id="ovw-2H-D5s"/>
+                                                        <constraint firstItem="9Y9-d9-aLY" firstAttribute="width" secondItem="qOo-84-NgR" secondAttribute="width" id="4Fk-oY-tHf"/>
+                                                        <constraint firstItem="Laj-ed-Gag" firstAttribute="centerX" secondItem="qOo-84-NgR" secondAttribute="centerX" id="7II-8W-QPK"/>
+                                                        <constraint firstItem="Laj-ed-Gag" firstAttribute="width" secondItem="qOo-84-NgR" secondAttribute="width" id="kRj-2I-N0r"/>
                                                     </constraints>
                                                 </stackView>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" red="0.82251857890000002" green="1" blue="0.77610038969999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstItem="qOo-84-NgR" firstAttribute="top" secondItem="8eN-zD-Pvc" secondAttribute="top" id="0Ax-Gd-Ksf"/>
-                                            <constraint firstAttribute="bottom" secondItem="qOo-84-NgR" secondAttribute="bottom" id="9hk-Px-79D"/>
-                                            <constraint firstItem="qOo-84-NgR" firstAttribute="leading" secondItem="8eN-zD-Pvc" secondAttribute="leading" id="ffw-P7-Ih6"/>
-                                            <constraint firstAttribute="trailing" secondItem="qOo-84-NgR" secondAttribute="trailing" id="lpP-nA-znB"/>
+                                            <constraint firstItem="qOo-84-NgR" firstAttribute="top" secondItem="8eN-zD-Pvc" secondAttribute="top" constant="10" id="0Ax-Gd-Ksf"/>
+                                            <constraint firstAttribute="bottom" secondItem="qOo-84-NgR" secondAttribute="bottom" constant="10" id="9hk-Px-79D"/>
+                                            <constraint firstItem="qOo-84-NgR" firstAttribute="leading" secondItem="8eN-zD-Pvc" secondAttribute="leading" constant="10" id="ffw-P7-Ih6"/>
+                                            <constraint firstAttribute="trailing" secondItem="qOo-84-NgR" secondAttribute="trailing" constant="10" id="lpP-nA-znB"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="intervalText" destination="mfU-NQ-zV1" id="z6k-sq-Agq"/>
@@ -1062,14 +1064,23 @@
                                             <outlet property="welcomeText" destination="soP-cq-9g2" id="pb2-WK-9WR"/>
                                         </connections>
                                     </collectionViewCell>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="coffee" id="qb6-th-qnM" customClass="CoffeeCollectionViewCell">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="coffee" id="qb6-th-qnM" customClass="ShoesCollectionViewCell" customModule="Loana" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="218" width="320" height="208"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="208"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nsZ-kX-MWm">
+                                                    <rect key="frame" x="40" y="40" width="240" height="128"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
                                         </view>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="nsZ-kX-MWm" id="8OQ-zh-5N6"/>
+                                        </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="graph" id="Hl3-g8-2SF" customClass="GraphCollectionViewCell" customModule="Loana" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="436" width="320" height="208"/>
@@ -1105,10 +1116,14 @@
                             </collectionView>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="qS3-SA-Xue" firstAttribute="leading" secondItem="fJ8-Ih-ZCJ" secondAttribute="leading" id="6Ua-dY-Iip"/>
+                            <constraint firstItem="fJ8-Ih-ZCJ" firstAttribute="trailing" secondItem="qS3-SA-Xue" secondAttribute="trailing" id="A9p-8M-euC"/>
                             <constraint firstItem="evt-9q-ZUE" firstAttribute="top" secondItem="qS3-SA-Xue" secondAttribute="top" id="BF5-bA-EaK"/>
                             <constraint firstItem="evt-9q-ZUE" firstAttribute="leading" secondItem="qS3-SA-Xue" secondAttribute="leading" id="HCP-yP-fna"/>
                             <constraint firstItem="qS3-SA-Xue" firstAttribute="bottom" secondItem="evt-9q-ZUE" secondAttribute="bottom" id="TDk-at-mQ9"/>
                             <constraint firstItem="qS3-SA-Xue" firstAttribute="trailing" secondItem="evt-9q-ZUE" secondAttribute="trailing" id="X2H-I1-TVn"/>
+                            <constraint firstItem="fJ8-Ih-ZCJ" firstAttribute="bottom" secondItem="qS3-SA-Xue" secondAttribute="bottom" id="q6g-p4-26v"/>
+                            <constraint firstItem="qS3-SA-Xue" firstAttribute="top" secondItem="fJ8-Ih-ZCJ" secondAttribute="top" id="yPk-Gk-Tt5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qS3-SA-Xue"/>
                     </view>

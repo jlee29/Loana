@@ -72,13 +72,14 @@ class HomeContentViewController: UIViewController, UICollectionViewDelegate, UIC
             default:
                 cell.intervalText.text = "For This Month"
             }
-            let proPicImage = UIImage(named: "shoes.png")
+            let proPicImage = UIImage(named: "peterprofile.png")
             cell.propic.contentMode = .scaleAspectFit
             cell.propic.image = proPicImage
             return cell
         }
         if (indexPath.row == 1) {
-            let cell = mainView.dequeueReusableCell(withReuseIdentifier: "coffee", for: indexPath)
+            let cell = mainView.dequeueReusableCell(withReuseIdentifier: "coffee", for: indexPath) as! ShoesCollectionViewCell
+            cell.imageView.image = UIImage(named: "shoes.png")
             return cell
         }
         if (indexPath.row == 4) {
