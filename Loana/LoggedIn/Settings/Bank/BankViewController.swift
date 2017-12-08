@@ -55,14 +55,6 @@ class BankViewController: UIViewController, UICollectionViewDelegate, UICollecti
         }
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if (indexPath.row != bankNames.count) {
-            let bankCell = bankCollection.cellForItem(at: indexPath) as! BankCollectionViewCell
-            
-            
-        }
-    }
-    
     func addedBank(_ acc: BankAccount) {
         bankNames.insert(acc.bankName, at: 0)
         linkedAccounts.insert(acc.accountName, at: 0)

@@ -16,22 +16,61 @@ class HomeViewController: UIViewController {
     let currDay = Session.shared.currDay
 
     @IBOutlet weak var welcomeLabel: UILabel!
-    
-    @IBOutlet weak var proPic: UIImageView!
-    
+    @IBOutlet weak var intervalText: UILabel!
     @IBOutlet weak var sideMenuConstraint: NSLayoutConstraint!
     
     @IBOutlet weak var darkenView: UIView!
+    
+    @IBOutlet weak var profileView: UIView!
+    @IBOutlet weak var bankView: UIView!
+    @IBOutlet weak var autoPayView: UIView!
+    @IBOutlet weak var plansView: UIView!
+    @IBOutlet weak var logoutView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
         darkenView.alpha = 0
+        welcomeLabel.baselineAdjustment = .alignCenters
+        welcomeLabel.font = UIFont(name: "Avenir", size: 60)
+        intervalText.font = UIFont(name: "Avenir", size: 15)
 
-        proPic.layer.cornerRadius = 37
         sideMenuConstraint.constant = -140
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissMenu (_:)))
+        let profileTapGesture = UITapGestureRecognizer(target: self, action: #selector(self.showProfile(_:)))
+        profileView.addGestureRecognizer(profileTapGesture)
+        let bankTapGesture = UITapGestureRecognizer(target: self, action: #selector(self.showBank(_:)))
+        bankView.addGestureRecognizer(bankTapGesture)
+        let autoPayTapGesture = UITapGestureRecognizer(target: self, action: #selector(self.showAutoPay(_:)))
+        autoPayView.addGestureRecognizer(autoPayTapGesture)
+        let plansTapGesture = UITapGestureRecognizer(target: self, action: #selector(self.showPlans(_:)))
+        plansView.addGestureRecognizer(plansTapGesture)
+        
+        let logOutTapGesture = UITapGestureRecognizer(target: self, action: #selector(self.logOut(_:)))
+        logoutView.addGestureRecognizer(logOutTapGesture)
+        
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissMenu(_:)))
         self.view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func logOut(_ sender: UITapGestureRecognizer) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @objc func showProfile(_ sender: UITapGestureRecognizer) {
+        performSegue(withIdentifier: "profile", sender: self)
+    }
+    
+    @objc func showBank(_ sender: UITapGestureRecognizer) {
+        performSegue(withIdentifier: "bank", sender: self)
+    }
+    
+    @objc func showAutoPay(_ sender: UITapGestureRecognizer) {
+        performSegue(withIdentifier: "autoPay", sender: self)
+    }
+    
+    @objc func showPlans(_ sender: UITapGestureRecognizer) {
+        performSegue(withIdentifier: "plans", sender: self)
     }
     
     @objc func dismissMenu (_ sender: UITapGestureRecognizer) {
@@ -46,8 +85,17 @@ class HomeViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        welcomeLabel.text = String(Session.shared.user.auto_pay_installment) + " - " + Session.shared.user.intervalPlan
-        welcomeLabel.font = UIFont(name: "Avenir", size: 25)
+        welcomeLabel.text = String(format: "$%.02f", Session.shared.user.auto_pay_installment)
+        switch Session.shared.user.intervalPlan {
+        case .daily:
+            intervalText.text = "For Today"
+        case .weekly:
+            intervalText.text = "For This Week"
+        case .biweekly:
+            intervalText.text = "For These Two Weeks"
+        default:
+            intervalText.text = "For This Month"
+        }
         util.remaining_month()
         
         if (!slideMenuHidden) {
@@ -56,14 +104,6 @@ class HomeViewController: UIViewController {
             darkenView.alpha = 0
         }
     }
-    
-
-    
-//    func remaining_month(){
-//        print(Session.shared.user.repayment_schedule[currMonth])
-//        print(Session.shared.user.repayment_balance[currMonth][currDay])
-//        Session.shared.user.remaining_amount =  Session.shared.user.repayment_schedule[currMonth] - Session.shared.user.repayment_balance[currMonth][currDay]
-//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

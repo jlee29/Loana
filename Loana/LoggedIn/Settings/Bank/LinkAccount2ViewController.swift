@@ -20,9 +20,12 @@ class LinkAccount2ViewController: UIViewController {
         
     }
     
+    @IBOutlet weak var logInLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         image.image = UIImage(named: bankName!)
+        logInLabel.font = UIFont(name: "Avenir", size: 30)
         // Do any additional setup after loading the view.
     }
 

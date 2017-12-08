@@ -9,6 +9,12 @@
 import Foundation
 
 struct User {
+    enum IntervalPlan {
+        case daily
+        case weekly
+        case biweekly
+        case monthly
+    }
     var name: String
     var age: Int
     var maritalStatus: String
@@ -18,7 +24,7 @@ struct User {
     var loanProvider: String
     var loanID: String
     var id: String
-    var intervalPlan: String
+    var intervalPlan: IntervalPlan
     var repayment_balance: [[Double]] //
     var repayment_schedule: [Double] //
     var auto_pay_schedule: [[Double]] //

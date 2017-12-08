@@ -14,7 +14,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordField: UITextField!
     
     @IBAction func logIn(_ sender: UIButton) {
-        Session.shared.user.name = emailField.text!
         Session.shared.loggedIn = true
     }
     @IBOutlet weak var loginButton: UIButton!
@@ -31,11 +30,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         passwordField.delegate = self
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard (_:)))
         self.view.addGestureRecognizer(tapGesture)
-//        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "background.png")!)
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "background.png")
         self.view.insertSubview(backgroundImage, at: 0)
-        // Do any additional setup after loading the view.
         let fontSize = loginButton.titleLabel?.font.pointSize
         let avenirFont = UIFont(name: "Avenir", size: fontSize!)
         loginButton.titleLabel?.font = avenirFont
