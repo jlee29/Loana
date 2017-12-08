@@ -98,6 +98,8 @@
 		E823DB8C1FD14D7800A427D9 /* backbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = E823DB871FD14D7800A427D9 /* backbutton.png */; };
 		E825CC6B1FD9572800A256F9 /* ManualPayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E825CC6A1FD9572800A256F9 /* ManualPayController.swift */; };
 		E825CC6D1FD960A700A256F9 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = E825CC6C1FD960A700A256F9 /* Util.swift */; };
+		E89E9A381FDAA9BD00962646 /* hatnew.png in Resources */ = {isa = PBXBuildFile; fileRef = E89E9A361FDAA9BC00962646 /* hatnew.png */; };
+		E89E9A391FDAA9BD00962646 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = E89E9A371FDAA9BD00962646 /* button.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -198,6 +200,8 @@
 		E823DB871FD14D7800A427D9 /* backbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backbutton.png; sourceTree = "<group>"; };
 		E825CC6A1FD9572800A256F9 /* ManualPayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualPayController.swift; sourceTree = "<group>"; };
 		E825CC6C1FD960A700A256F9 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		E89E9A361FDAA9BC00962646 /* hatnew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hatnew.png; sourceTree = "<group>"; };
+		E89E9A371FDAA9BD00962646 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -391,6 +395,8 @@
 		D34FAC4C1FCFECB60008A8AF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E89E9A371FDAA9BD00962646 /* button.png */,
+				E89E9A361FDAA9BC00962646 /* hatnew.png */,
 				D3E8CC871FD969DD00D9BDC7 /* coffee.png */,
 				D3E8CC881FD969DD00D9BDC7 /* headphones.png */,
 				D3E8CC861FD969DD00D9BDC7 /* shoes.png */,
@@ -542,6 +548,7 @@
 				E815D5111FD01366005CB34F /* icons in Resources */,
 				B7C2FCD11FDA8F1A0088DDAE /* loginLock.png in Resources */,
 				B7F118271FD96DD1008E5340 /* bankPic.png in Resources */,
+				E89E9A381FDAA9BD00962646 /* hatnew.png in Resources */,
 				E8064B461FD8201F003C83DA /* progress_tree_2.png in Resources */,
 				B7A264AF1FBF996400893AFE /* Assets.xcassets in Resources */,
 				E8064B4A1FD8201F003C83DA /* progress_tree_5.png in Resources */,
@@ -561,6 +568,7 @@
 				B7C2FCD01FDA8F1A0088DDAE /* loginProfile.png in Resources */,
 				B7F1181F1FD9695C008E5340 /* profile.png in Resources */,
 				B7F62D521FD7E8180010CC7B /* hamburger.png in Resources */,
+				E89E9A391FDAA9BD00962646 /* button.png in Resources */,
 				D3E8CC8C1FD969DE00D9BDC7 /* headphones.png in Resources */,
 				E815D5071FD003B5005CB34F /* money.png in Resources */,
 				E823DB8B1FD14D7800A427D9 /* widebox.png in Resources */,
