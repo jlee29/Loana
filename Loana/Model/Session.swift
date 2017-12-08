@@ -14,12 +14,13 @@ class Session {
         self.currMonth = 1
         self.currDay = 7
         self.loggedIn = loggedIn
+        self.currMonthLongTerm = 60
         
         self.user = User(
             name: "Peter Lu",
             age: 35,
             maritalStatus: "Single",
-            income: 1,
+            income: 25000,
             publicSector: true,
             stateOfResidence: "California",
             loanProvider: "Random",
@@ -35,12 +36,110 @@ class Session {
             auto_pay_installment: 50.0,
             remaining_amount: 150.0,
             currPlan: "Standard",
+            repaymentHistory: Array(repeating: 0.0,count: 60),
+            projectedRepaymentPlan: Array(repeating: 0.0,count: 240),
             bankAccount: BankAccount(bankName: "Wells Fargo", accountName: "Peter Lu", number: "4578"))
+        setPaidHistory()
+        changeProjectedRepaymentPlan(plan: self.user.currPlan)
+    }
+    
+    func setPaidHistory(){
+        var result = Array(repeating: 0.0,count: 60)
+        var amount = 0.0
+        for i in 0...result.count - 1{
+            amount = amount + 200.0
+            result[i] = amount
+        }
+        self.user.repaymentHistory = result
+    }
+    
+    func changeProjectedRepaymentPlan(plan: String){
+        if(plan == "Income-Based Repayment"){
+            self.user.projectedRepaymentPlan = getIncomeBasedRepayment()
+        }else if(plan == "Income-Contingent Repayment"){
+            self.user.projectedRepaymentPlan = getIncomeBasedRepayment()
+        }else if(plan == "Pay As You Earn"){
+            self.user.projectedRepaymentPlan = getPayAsYouEarnRepayment()
+        }else if(plan == "Standard"){
+            self.user.projectedRepaymentPlan = getStandardRepayment()
+        }else if(plan == "Graduated"){
+            //return getGraduatedRepayment()
+            self.user.projectedRepaymentPlan = getStandardRepayment()
+        }else{
+            //return getExtendedRepayment()
+            self.user.projectedRepaymentPlan = getStandardRepayment()
+        }
     }
     var loggedIn: Bool
     var user: User
     var currMonth: Int
     var currDay: Int
+    var currMonthLongTerm: Int
+    
+    func getStandardRepayment()->[Double]{
+        var result = Array(repeating: 0.0,count: 240)
+        let finalAmount = 27619.0
+        let monthlyPayment = 200.0
+        let base = 12000.0
+        for i in 0...result.count - 1{
+            if i==0{
+                result[i] = base + monthlyPayment
+            }else{
+                if result[i-1] >= finalAmount{
+                    result[i] = result[i-1]
+                }else{
+                    result[i] = result[i-1] + monthlyPayment
+                }
+            }
+        }
+        return result 
+    }
+    
+    func getPayAsYouEarnRepayment()->[Double]{
+        var income = Double(self.user.income)
+        let annualIncomeIncrease = 1.05
+        let percentageOfIncomePaid = 0.10
+        let finalAmount = 27414.0
+        let base = 12000.0
+        var result = Array(repeating: 0.0,count: 240)
+        for i in 0...result.count - 1{
+            income = annualIncomeIncrease*income
+            let monthlyPayment = percentageOfIncomePaid * income
+            if i==0{
+                result[i] = base + monthlyPayment
+            }else{
+                if result[i-1] >= finalAmount{
+                    result[i] = result[i-1]
+                }else{
+                    result[i] = result[i-1] + monthlyPayment
+                }
+            }
+        }
+        return result
+    }
+    
+    func getIncomeBasedRepayment()->[Double]{
+        var income = Double(self.user.income)
+        let annualIncomeIncrease = 1.05
+        let percentageOfIncomePaid = 0.10
+        let finalAmount = 22877.0
+        let base = 12000.0
+        var result = Array(repeating: 0.0,count: 240)
+        for i in 0...result.count - 1{
+            income = annualIncomeIncrease*income
+            let monthlyPayment = percentageOfIncomePaid * income
+            if i==0{
+                result[i] = base + monthlyPayment
+            }else{
+                if result[i-1] >= finalAmount{
+                    result[i] = result[i-1]
+                }else{
+                    result[i] = result[i-1] + monthlyPayment
+                }
+            }
+        }
+        return result
+    }
 
 }
     
