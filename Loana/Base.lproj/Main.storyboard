@@ -964,14 +964,6 @@
             </objects>
             <point key="canvasLocation" x="4428.75" y="132.04225352112675"/>
         </scene>
-        <!--Main Page View Controller-->
-        <scene sceneID="YFb-Pv-Aln">
-            <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Vkj-hV-NRc" customClass="MainPageViewController" customModule="Loana" customModuleProvider="target" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vmc-Sc-fHI" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5235" y="1756"/>
-        </scene>
         <!--Home Content View Controller-->
         <scene sceneID="lD9-gy-8Z4">
             <objects>
@@ -1315,41 +1307,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LhG-ed-sbd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5344.8000000000002" y="979.16041979010504"/>
-        </scene>
-        <!--Manual Pay Controller-->
-        <scene sceneID="adH-2M-sCH">
-            <objects>
-                <viewController id="u18-NA-Fxf" customClass="ManualPayController" customModule="Loana" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="nzo-Y3-oPb">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DFb-UM-TlZ">
-                                <rect key="frame" x="139" y="226" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ifn-0A-djv">
-                                <rect key="frame" x="164" y="264" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="manualPayButton:" destination="u18-NA-Fxf" eventType="touchUpInside" id="UCE-UU-LJf"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="eeP-hV-Bbm"/>
-                    </view>
-                    <connections>
-                        <outlet property="manualPayAmount" destination="DFb-UM-TlZ" id="coJ-Ot-b3C"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0uk-9F-qHe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4873" y="2040"/>
         </scene>
         <!--PlanDetailViewController-->
         <scene sceneID="cDn-Pj-2ep">
