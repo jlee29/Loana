@@ -9,10 +9,6 @@
 import UIKit
 
 class BankViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, LinkAccount3ViewControllerDelegate {
-    
-    @IBOutlet weak var currBankLabel1: UILabel!
-    @IBOutlet weak var currBankLabel2: UILabel!
-    
     @IBOutlet weak var titleLabel: UILabel!
     
     var bankNames = ["Wells Fargo", "Wells Fargo"]
@@ -24,9 +20,6 @@ class BankViewController: UIViewController, UICollectionViewDelegate, UICollecti
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        currBankLabel1.text = Session.shared.user.bankAccount.accountName
-        currBankLabel2.text = Session.shared.user.bankAccount.number
-        
         bankCollection.delegate = self
         bankCollection.dataSource = self
         bankCollection.backgroundColor = .clear
@@ -34,13 +27,6 @@ class BankViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         titleLabel.font = UIFont(name: "Avenir", size: 25)
         // Do any additional setup after loading the view.
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        currBankLabel1.text = Session.shared.user.bankAccount.accountName
-        currBankLabel2.text = Session.shared.user.bankAccount.number
     }
     
     @objc func tap(sender: UITapGestureRecognizer){
@@ -52,14 +38,12 @@ class BankViewController: UIViewController, UICollectionViewDelegate, UICollecti
                 
                 // Create OK button with action handler
                 let ok = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
+                    Session.shared.user.bankAccIndex = indexPath.row
                     let newAccName = cell.label1.text!
                     let newAccNum = cell.label2.text!
-                    cell.label1.text = Session.shared.user.bankAccount.accountName
-                    cell.label2.text = Session.shared.user.bankAccount.number
-                    self.currBankLabel1.text = newAccName
-                    self.currBankLabel2.text = newAccNum
                     Session.shared.user.bankAccount.accountName = newAccName
                     Session.shared.user.bankAccount.number = newAccNum
+                    self.bankCollection.reloadData()
                 })
                 
                 // Create Cancel button with action handlder
@@ -97,11 +81,18 @@ class BankViewController: UIViewController, UICollectionViewDelegate, UICollecti
             let cell = bankCollection.dequeueReusableCell(withReuseIdentifier: "add", for: indexPath) as! AddCollectionViewCell
             cell.label1.text = "Add New Account"
             cell.button.setImage(UIImage(named: "icons8-plus-100.png"), for: .normal)
+            
             return cell
         } else {
             let cell = bankCollection.dequeueReusableCell(withReuseIdentifier: "bankCell", for: indexPath) as! BankCollectionViewCell
             cell.label1.text = linkedAccounts[indexPath.row]
             cell.label2.text = linkedAccountTexts[indexPath.row]
+            if indexPath.row == Session.shared.user.bankAccIndex {
+                cell.cellView.layer.borderWidth = 1
+                cell.cellView.layer.cornerRadius = 5
+            } else {
+                cell.cellView.layer.borderWidth = 0
+            }
             cell.button.setImage(UIImage(named: "icons8-forward-100.png"), for: .normal)
             cell.cellView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tap)))
             return cell

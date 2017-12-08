@@ -35,4 +35,5 @@ struct User {
     var repaymentHistory: [Double]
     var projectedRepaymentPlan: [Double]
     var bankAccount: BankAccount
+    var bankAccIndex: Int
 }
