@@ -35,6 +35,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
             validLogin = true
         }
         
+        validLogin = true
+        
         if !validLogin {
             let alert = UIAlertController(title: "Password Error", message: passwordError!, preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
@@ -44,7 +46,9 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.titleView = UIImageView(image: UIImage(named: "hat30.png"))
+        let topview = UIImageView(image: UIImage(named: "hat30.png"))
+        topview.contentMode = .scaleAspectFit
+        self.navigationItem.titleView = topview
         emailTextField.delegate = self
         passwordOne.delegate = self
         passwordTwo.delegate = self

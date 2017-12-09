@@ -989,7 +989,7 @@
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="evt-9q-ZUE">
                                 <rect key="frame" x="0.0" y="20" width="320" height="484"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="80" minimumInteritemSpacing="80" id="Kw1-gy-wJ0">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="40" minimumInteritemSpacing="40" id="Kw1-gy-wJ0">
                                     <size key="itemSize" width="320" height="208"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -1080,7 +1080,7 @@
                                         </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="coffee" id="qb6-th-qnM" customClass="ShoesCollectionViewCell" customModule="Loana" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="288" width="320" height="208"/>
+                                        <rect key="frame" x="0.0" y="248" width="320" height="208"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="208"/>
@@ -1089,7 +1089,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9Xh-FA-XkS">
                                                     <rect key="frame" x="105" y="4" width="110" height="200"/>
                                                     <subviews>
-                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nsZ-kX-MWm">
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nsZ-kX-MWm">
                                                             <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hph-Sq-tm5">
@@ -1117,7 +1117,7 @@
                                         </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="graph" id="Hl3-g8-2SF" customClass="GraphCollectionViewCell" customModule="Loana" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="576" width="320" height="208"/>
+                                        <rect key="frame" x="0.0" y="496" width="320" height="208"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="208"/>
@@ -1139,7 +1139,7 @@
                                         </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="stats" id="h3x-9z-Cjq" customClass="StatsCollectionViewCell" customModule="Loana" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="864" width="320" height="208"/>
+                                        <rect key="frame" x="0.0" y="744" width="320" height="208"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="208"/>
@@ -1445,6 +1445,7 @@
                     <connections>
                         <outlet property="currentPlanLabel" destination="q8o-dl-3Fq" id="oSW-E6-uOA"/>
                         <outlet property="currentPlanLabelOnCard" destination="Ses-3K-dZK" id="jvW-Ci-x3R"/>
+                        <outlet property="kickBackView" destination="6wi-cK-lXk" id="Zv8-yp-f4T"/>
                         <outlet property="plansCollectionView" destination="k74-ir-8FK" id="xRy-i6-CIW"/>
                     </connections>
                 </viewController>

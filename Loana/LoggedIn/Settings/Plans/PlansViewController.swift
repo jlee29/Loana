@@ -30,6 +30,8 @@ class PlansViewController: UIViewController, UICollectionViewDelegate, UICollect
         plansCollectionView.reloadData()
     }
     
+    @IBOutlet weak var kickBackView: UIView!
+    
     var allPlans = ["IBR", "PAYE", "ICR", "Standard", "Graduated", "Extended"]
     var plans = ["IBR", "PAYE", "ICR", "Standard", "Graduated", "Extended"]
     var currPlan: String?
@@ -47,6 +49,7 @@ class PlansViewController: UIViewController, UICollectionViewDelegate, UICollect
         reloadCollection()
         // Do any additional setup after loading the view.
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

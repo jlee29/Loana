@@ -23,6 +23,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var mainView: UIView!
     
     @IBOutlet weak var mainStack: UIStackView!
+    
+    var activeField: UITextField?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let titleImg = UIImageView(image: UIImage(named: "hatnoloana.png"))
@@ -60,7 +63,32 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 attributedTitle.string)
             loginButton.setAttributedTitle(formattedString, for: .normal)
         }
-//        errorMessageLabel.text = ""
+        
+    }
+    
+    // Move the text field in a pretty animation!
+    func moveTextField(_ textField: UITextField, moveDistance: Int, up: Bool) {
+        let moveDuration = 0.3
+        let movement: CGFloat = CGFloat(up ? moveDistance : -moveDistance)
+        
+        UIView.beginAnimations("animateTextField", context: nil)
+        UIView.setAnimationBeginsFromCurrentState(true)
+        UIView.setAnimationDuration(moveDuration)
+        self.view.frame = self.view.frame.offsetBy(dx: 0, dy: movement)
+        UIView.commitAnimations()
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        if textField == passwordField {
+            moveTextField(textField, moveDistance: -250, up: true)
+        }
+    }
+    
+    // Finish Editing The Text Field
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField == passwordField {
+            moveTextField(textField, moveDistance: -250, up: false)
+        }
     }
     
     @objc func dismissKeyboard (_ sender: UITapGestureRecognizer) {
@@ -91,6 +119,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
         if identifier == "login"{
+            return true
             if emailField.text == "jaime1deverall@gmail.com" && passwordField.text == "iloveCS147" || emailField.text == "a" {
                 Session.shared.loggedIn = true
                 return true
